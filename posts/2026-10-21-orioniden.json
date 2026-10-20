@@ -1,0 +1,17 @@
+{
+  "id": "2026-10-21-orioniden",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "staunen",
+  "source": { "name": "scinexx / NASA JPL", "url": "https://www.scinexx.de/news/kosmos/sternschnuppen-halleys-komet-sorgt-diese-woche-fuer-ein-himmelsspektakel/" },
+  "image": { "file": "images/2026-10-21-orioniden.jpg", "credit": "NASA", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/" },
+  "slides": [
+    { "type": "cover", "label": "Heute Nacht", "title": "Heute Nacht regnet es **Sternschnuppen** vom Halleyschen Kometen" },
+    { "label": "Was ist da los?", "title": "Die Orioniden", "text": ["Die Erde fliegt jedes Jahr durch eine **Staubspur des Halleyschen Kometen**. Die Körnchen verglühen in der Atmosphäre."] },
+    { "label": "Wie schnell?", "big": "66", "title": "Kilometer pro Sekunde", "text": ["So schnell rasen die Staubteilchen in unsere Atmosphäre."] },
+    { "label": "Wann gucken?", "title": "Nacht vom 21. auf den 22. Oktober", "text": ["Am besten in den **Stunden vor Sonnenaufgang**, wenn der Mond untergegangen ist.", "Bei dunklem Himmel sind 10 bis 20 pro Stunde möglich."] },
+    { "label": "Fun Fact", "title": "Halley selbst kommt erst **2061** wieder.", "text": ["Zuletzt war er 1986 zu sehen. Seinen Staub sehen wir trotzdem jedes Jahr."] },
+    { "type": "cta", "label": "Mehr davon?", "title": "Schick das jemandem, der heute Nacht mit dir rausgeht." }
+  ],
+  "caption": "Heute Nacht ist Sternschnuppen-Maximum! ☄️ Die Orioniden sind Staub vom Halleyschen Kometen. Am besten vor Sonnenaufgang Richtung Orion schauen – Sternschnuppen können aber überall am Himmel auftauchen.\n\nMarkier jemanden, der mit rausgeht 👇\n\nQuellen: scinexx, NASA JPL · Foto: NASA (gemeinfrei) · Text mit KI erstellt\n#sternschnuppen #orioniden #halley #weltraum #astronomie #wissenschaft #nachthimmel"
+}
