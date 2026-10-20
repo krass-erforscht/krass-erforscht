@@ -1,9 +1,10 @@
 // Veröffentlicht einen gerenderten Post als Karussell auf Instagram: node publish.js posts/<datei>.json
-// Braucht IG_USER_ID, IG_TOKEN und GITHUB_RAW_BASE (öffentliche Adresse des Repos) als Umgebungsvariablen.
+// Braucht IG_TOKEN (Instagram-Zugriffsschlüssel) als Umgebungsvariable.
 // Die Bilder unter out/<id>/ müssen vorher ins GitHub-Repo gepusht sein, damit Instagram sie abrufen kann.
 const fs = require('fs');
-const API = 'https://graph.facebook.com/v23.0';
-const { IG_USER_ID, IG_TOKEN, GITHUB_RAW_BASE } = process.env;
+const API = 'https://graph.instagram.com/v23.0';
+const { IG_USER_ID = 'me', IG_TOKEN } = process.env;
+const GITHUB_RAW_BASE = process.env.GITHUB_RAW_BASE || 'https://raw.githubusercontent.com/krass-erforscht/krass-erforscht/main';
 
 async function call(path, params) {
   const res = await fetch(`${API}/${path}`, { method: 'POST', body: new URLSearchParams({ ...params, access_token: IG_TOKEN }) });
@@ -14,7 +15,7 @@ async function call(path, params) {
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 (async () => {
-  if (!IG_USER_ID || !IG_TOKEN || !GITHUB_RAW_BASE) throw new Error('IG_USER_ID, IG_TOKEN oder GITHUB_RAW_BASE fehlt');
+  if (!IG_TOKEN) throw new Error('IG_TOKEN fehlt');
   const file = process.argv[2];
   const post = JSON.parse(fs.readFileSync(file, 'utf8'));
   const children = [];

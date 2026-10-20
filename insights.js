@@ -1,6 +1,6 @@
 // Holt die Statistiken aller veröffentlichten Posts und fasst zusammen, was am besten läuft: node insights.js
 const fs = require('fs');
-const API = 'https://graph.facebook.com/v23.0';
+const API = 'https://graph.instagram.com/v23.0';
 const { IG_TOKEN } = process.env;
 const METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'follows'];
 
