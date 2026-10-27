@@ -1,0 +1,16 @@
+{
+  "id": "2026-10-27-rollende-schlange",
+  "category": "Tiere",
+  "topic": "tiere",
+  "tone": "witzig",
+  "source": { "name": "Spektrum.de / Toho University", "url": "https://www.sciencedaily.com/releases/2026/10/261023023718.htm" },
+  "slides": [
+    { "type": "cover", "label": "Tiere", "title": "Diese Schlange **rollt** vor ihren Feinden davon" },
+    { "label": "Wer ist das?", "title": "Die Zwergwühlnatter", "text": ["Eine kleine Schlange aus Südostasien. Wenn es brenzlig wird, schlängelt sie nicht weg. Sie **rollt sich über den Boden**."] },
+    { "label": "Wie schnell?", "big": "4×", "title": "so schnell wie Schlängeln", "text": ["Beim Rollen schafft sie bis zu **3,7 Meter pro Sekunde**. Das sind rund 13 km/h."] },
+    { "label": "Der Trick", "title": "Der Körper dreht sich, der **Kopf bleibt ruhig**.", "text": ["Sie hält ihn nach vorne gerichtet und fast immer auf gleicher Höhe. So behält sie die Richtung."] },
+    { "label": "Fun Fact", "title": "Sie rollt sogar **auf Spur**.", "text": ["Im Versuch blieben die Schlangen auf einer nur 20 Zentimeter breiten Rennbahn."] },
+    { "type": "cta", "label": "Mehr davon?", "title": "Schick das jemandem, der morgens auch so aus dem Bett rollt." }
+  ],
+  "caption": "Wenn Schlängeln zu langsam ist, wird eben gerollt. 🐍🌀 Forschende haben die Zwergwühlnatter in Zeitlupe gefilmt: Sie rollt viermal so schnell, wie sie schlängelt, und hält dabei den Kopf ganz ruhig.\n\nWelches Tier sollte das auch können? 👇\n\nQuellen: Spektrum.de, Toho University via ScienceDaily · Text mit KI erstellt\n#schlangen #tiere #natur #wissenschaft #wusstestdu #tierwelt #krasseFakten"
+}
