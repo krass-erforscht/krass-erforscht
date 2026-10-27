@@ -7,7 +7,12 @@ Vor jedem `node`-Befehl: `export NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/
 
 ## Ablauf
 
-0. **Zeitfenster prüfen:** `node slot.js <morgens|mittags|abends>` (das Fenster steht in der Aufgabe). Bei „NEIN“ sofort aufhören, ohne Nachricht.
+A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wird; nur wenn `IG_TOKEN` gesetzt ist):
+   `node comments.js list` zeigt offene Kommentare. Für jeden Kommentar entscheiden (Regeln siehe „Kommentare“ unten):
+   antworten mit `node comments.js reply <id> "<text>"` oder auslassen mit `node comments.js skip <id>`.
+   Danach `data/answered.json` committen und pushen.
+0. **Zeitfenster prüfen:** `node slot.js <morgens|mittags|abends>` (das Fenster steht in der Aufgabe). Bei „NEIN“ hier aufhören.
+   Nur wenn Kommentare beantwortet wurden, dem Nutzer kurz schreiben, wie viele; sonst keine Nachricht.
    Gepostet wird einmal pro Tag. Die ersten 21 Posts wechseln täglich zwischen 7:45, 12:15 und 18:15 Uhr, danach gewinnt das Fenster mit den besten Zahlen.
 1. `npm ci`
 2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist). Danach `data/learnings.json` lesen.
@@ -48,6 +53,22 @@ Nur Bilder aus `find-image.js`. Erlaubt: Public Domain, CC0, CC BY, CC BY-SA. Ni
 Niemals Bilder von News-Seiten, Pressemitteilungen oder aus Social Media.
 Bei CC-BY- und CC-BY-SA-Bildern muss in der Caption stehen: Fotograf, Lizenz und Quelle (z. B. „Foto: Rushen, CC BY-SA 2.0, via Wikimedia Commons“).
 Auf der Titelfolie steht der Kurz-Bildnachweis automatisch.
+
+## Kommentare
+
+Ziel: echte Gespräche, die Leute zum Wiederkommen bringen. Instagram belohnt Posts, unter denen geantwortet wird.
+
+- **Ton:** locker, freundlich, auf Deutsch (bei fremdsprachigen Kommentaren in deren Sprache), mit „du“. 1–2 Sätze, höchstens ein Emoji.
+  Auf den Inhalt des Kommentars eingehen, keine Standardfloskeln wie „Danke für deinen Kommentar!“. Den Namen mit @ ansprechen.
+- **Fragen:** nur mit Fakten aus dem Post oder den geprüften Quellen beantworten. Weiß man es nicht sicher: ehrlich sagen und auf die Quelle verweisen.
+- **Hinweis auf einen Fehler:** Quelle nochmal prüfen. Stimmt der Hinweis, bedanken und richtigstellen, und das in `data/probleme.md` notieren.
+  Stimmt er nicht: freundlich mit Quelle erklären.
+- **Gegenfrage stellen**, wenn es passt („Welches Tier sollte das auch können?“). Das hält das Gespräch am Laufen.
+- **Auslassen (`skip`):** Spam, Werbung, Links, Beleidigungen, Hass, Politik, Religion, Fragen nach Gesundheits- oder Finanzrat,
+  sehr persönliche Themen, reine Emoji- oder Ein-Wort-Kommentare (z. B. „🔥“, „krass“) – auf die höchstens ab und zu mit einem kurzen Emoji antworten.
+- Wird gefragt, ob hier eine KI schreibt: ehrlich ja sagen (die Inhalte werden mit KI erstellt, die Fakten aus echten Quellen geprüft).
+- Niemals Privates erfragen, nichts versprechen, keine Links schicken, nicht auf Streit einsteigen.
+- Höchstens 30 Antworten pro Lauf.
 
 ## Wenn etwas schiefgeht
 
