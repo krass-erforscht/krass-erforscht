@@ -7,6 +7,8 @@ Vor jedem `node`-Befehl: `export NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/
 
 ## Ablauf
 
+0. **Zeitfenster prüfen:** `node slot.js <morgens|mittags|abends>` (das Fenster steht in der Aufgabe). Bei „NEIN“ sofort aufhören, ohne Nachricht.
+   Gepostet wird einmal pro Tag. Die ersten 21 Posts wechseln täglich zwischen 7:45, 12:15 und 18:15 Uhr, danach gewinnt das Fenster mit den besten Zahlen.
 1. `npm ci`
 2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist). Danach `data/learnings.json` lesen.
    Bei 70 % der Posts Thema und Ton wählen, die im Ranking oben stehen; bei 30 % bewusst etwas anderes ausprobieren.
@@ -15,8 +17,13 @@ Vor jedem `node`-Befehl: `export NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/
 4. **Meldung auswählen:** die überraschendste, leicht verständliche Meldung, die in `data/posted.json` noch nicht vorkommt.
 5. **Fakten prüfen:** Originalartikel lesen. Jede Zahl und Behauptung muss in einer zweiten unabhängigen Quelle
    (z. B. Pressemitteilung der Uni, NASA, zweites Magazin) bestätigt sein. Wenn das nicht gelingt: andere Meldung nehmen.
-6. **Bild suchen:** `node find-image.js "<englischer Suchbegriff>" <post-id>`. Jeden Kandidaten ansehen und nur ein Bild nehmen,
-   das wirklich zum Thema passt. Kein passendes Bild: Post ohne Foto (blaue Titelfolie). Passendes Bild nach `images/<post-id>.jpg` kopieren.
+6. **Bild suchen:** Ein echtes Foto macht den Post deutlich spannender, deshalb gründlich suchen.
+   - Bei Tieren, Pflanzen, Pilzen: `node find-image.js "<englischer Begriff>" <post-id> --taxon "<wissenschaftlicher Name>"`
+     (sucht in iNaturalist, GBIF, Wikimedia Commons, NASA). Den wissenschaftlichen Namen aus dem Artikel nehmen; findet die Art nichts, die Gattung probieren.
+   - Sonst: `node find-image.js "<englischer Begriff>" <post-id>` (NASA, Wikimedia Commons, iNaturalist).
+   - Mindestens 3 verschiedene Suchbegriffe probieren (genau, allgemeiner, verwandtes Motiv), bevor aufgegeben wird.
+   - Jeden Kandidaten ansehen und nur ein Bild nehmen, das wirklich zum Thema passt. Lieber kein Foto als ein falsches.
+   - Kein passendes Bild nach 3 Versuchen: Post ohne Foto (blaue Titelfolie). Passendes Bild nach `images/<post-id>.jpg` kopieren.
 7. **Post schreiben:** `posts/<YYYY-MM-DD>-<stichwort>.json` nach dem Muster von `posts/2026-10-21-orioniden.json`.
    4–6 Folien, kurze Sätze, ein Fun Fact, letzte Folie `cta`. `**Wort**` = Textmarker.
    Felder `topic` (weltraum | tiere | natur | technik | koerper | geschichte | kurios) und `tone` (staunen | witzig | nuetzlich) ausfüllen.
@@ -34,8 +41,10 @@ Vor jedem `node`-Befehl: `export NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/
 
 ## Bildregeln
 
-Nur Bilder aus `find-image.js` (NASA gemeinfrei oder Wikimedia Commons mit freier Lizenz). Niemals Bilder von News-Seiten oder aus Social Media.
-Bei CC-BY- oder CC-BY-SA-Bildern muss in der Caption stehen: Urheber, Lizenz und „via Wikimedia Commons“.
+Nur Bilder aus `find-image.js`. Erlaubt: Public Domain, CC0, CC BY, CC BY-SA. Nie Bilder mit „NC“ (nicht kommerziell) oder „ND“.
+Niemals Bilder von News-Seiten, Pressemitteilungen oder aus Social Media.
+Bei CC-BY- und CC-BY-SA-Bildern muss in der Caption stehen: Fotograf, Lizenz und Quelle (z. B. „Foto: Rushen, CC BY-SA 2.0, via Wikimedia Commons“).
+Auf der Titelfolie steht der Kurz-Bildnachweis automatisch.
 
 ## Wenn etwas schiefgeht
 
