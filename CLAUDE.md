@@ -31,14 +31,22 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
      ESA/Hubble, ESA/Webb und ESO (Weltraum), Smithsonian (Tiere, Pflanzen, Technik, Geschichte), Library of Congress (historische Fotos).
    - Jeden Kandidaten ansehen und nur ein Bild nehmen, das wirklich zum Thema passt. Lieber kein Foto als ein falsches.
    - Erst wenn auch `--mehr` nichts Passendes liefert: Post ohne Foto (blaue Titelfolie).
-   - Passendes Bild nach `images/<post-id>.jpg` kopieren und `image` (file, credit, license, page) in die Post-Datei eintragen.
+   - Passendes Titelbild nach `images/<post-id>.jpg` kopieren und `image` (file, credit, short, license, page) in die Post-Datei eintragen.
+     `short` ist der Kurz-Nachweis auf der Folie, z. B. „Foto: Max Tibby, CC0“ oder „Illustration: NASA, ESA, CSA“.
+   - **Jede Folie bekommt ein passendes Hintergrundfoto** (das macht die Posts deutlich spannender):
+     Für jede Inhaltsfolie ein Motiv suchen, das genau zu ihrem Text passt (z. B. Lebensraum, Detailaufnahme, Forschende, Teleskop, Vergleich).
+     Dafür weitere `find-image.js`-Suchen mit eigener ID (`<post-id>-2`, `-3` …) und das Bild nach `images/<post-id>-<n>.jpg` kopieren.
+     In der Folie eintragen: `"image": { "file", "credit", "short", "license", "page", "position" }`.
+     `position` ist der Bildausschnitt (CSS, z. B. „30% center“), so wählen, dass das Motiv in der oberen Hälfte sichtbar ist – der Text steht unten.
+     Folien ohne eigenes Foto zeigen automatisch das Titelbild mit wechselndem Ausschnitt. Dasselbe Foto höchstens auf zwei Folien.
 7. **Post schreiben:** `posts/<YYYY-MM-DD>-<stichwort>.json` nach dem Muster von `posts/2026-10-21-orioniden.json`.
    4–6 Folien, kurze Sätze, ein Fun Fact, letzte Folie `cta`. `**Wort**` = Textmarker.
    Felder `topic` (weltraum | tiere | natur | technik | koerper | geschichte | kurios) und `tone` (staunen | witzig | nuetzlich) ausfüllen.
    Caption:
    - Erster Satz = Hook **mit dem Suchbegriff**, unter dem Leute das Thema suchen würden (z. B. „Schlange“, „Exoplanet“, „Sternschnuppen“).
      Instagram durchsucht Beschreibungen inzwischen wie eine Suchmaschine.
-   - Dann 1–2 Sätze Inhalt, eine Frage an die Leser, Quellen, „Text mit KI erstellt“, Bildnachweis mit Lizenz.
+   - Dann 1–2 Sätze Inhalt, eine Frage an die Leser, Quellen, „Text mit KI erstellt“, Bildnachweise aller verwendeten Fotos mit Lizenz
+     (z. B. „Fotos: Sharon Reid (CC BY), Max Tibby (CC0) via iNaturalist“).
    - **Höchstens 5 Hashtags** (Instagram-Grenze seit Dezember 2025): 1–2 allgemeine (#wissenschaft) und 3–4 genaue zum Thema.
      `publish.js` kürzt überzählige automatisch, aber besser gleich 5 passende wählen.
    Bildbeschreibungen (Alternativtext) für jede Folie und der Musiknachweis beim Reel werden automatisch ergänzt.

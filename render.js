@@ -6,9 +6,11 @@ const { slideHtml } = require('./template');
 (async () => {
   const file = process.argv[2];
   const post = JSON.parse(fs.readFileSync(file, 'utf8'));
-  if (post.image && post.image.file) {
-    const ext = path.extname(post.image.file).slice(1).replace('jpg', 'jpeg');
-    post.image.dataUri = `data:image/${ext};base64,` + fs.readFileSync(post.image.file).toString('base64');
+  // Titelbild und Bilder einzelner Folien einbetten
+  for (const img of [post.image, ...post.slides.map(s => s.image)]) {
+    if (!img?.file) continue;
+    const ext = path.extname(img.file).slice(1).replace('jpg', 'jpeg');
+    img.dataUri = `data:image/${ext};base64,` + fs.readFileSync(img.file).toString('base64');
   }
   const outDir = path.join('out', post.id);
   fs.mkdirSync(outDir, { recursive: true });
