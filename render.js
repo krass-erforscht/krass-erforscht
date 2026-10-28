@@ -19,7 +19,10 @@ const { slideHtml } = require('./template');
     // Schrift verkleinern, bis nichts mehr über den Rand ragt oder die Folie überläuft
     await page.evaluate(() => {
       const slide = document.querySelector('.slide');
-      const tooBig = () => [...slide.querySelectorAll('h2,p,.big')].some(el => el.scrollWidth > el.clientWidth + 1) || slide.scrollHeight > slide.clientHeight + 1;
+      // Der Textblock muss zwischen Kopfzeile (bis 100px) und Fußzeile (ab 1350-130px) passen, auch wenn er nach oben überläuft
+      const blocks = () => [...slide.querySelectorAll('h2,p,.big,.swipe,.handle')].map(el => el.getBoundingClientRect());
+      const tooBig = () => [...slide.querySelectorAll('h2,p,.big')].some(el => el.scrollWidth > el.clientWidth + 1) ||
+        blocks().some(r => r.top < 100 || r.bottom > 1350 - 130);
       for (let k = 0; k < 30 && tooBig(); k++)
         slide.querySelectorAll('h2,p,.big').forEach(el => { el.style.fontSize = parseFloat(getComputedStyle(el).fontSize) * 0.95 + 'px'; });
     });

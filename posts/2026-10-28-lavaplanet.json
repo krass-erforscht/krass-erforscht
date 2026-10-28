@@ -1,0 +1,18 @@
+{
+  "id": "2026-10-28-lavaplanet",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "staunen",
+  "source": { "name": "ScienceDaily / NASA", "url": "https://www.sciencedaily.com/releases/2026/10/261026225603.htm" },
+  "image": { "file": "images/2026-10-28-lavaplanet.jpg", "credit": "NASA, ESA, CSA, R. Crawford (STScI), CC BY 4.0 (Illustration)", "short": "Illustration: NASA, ESA, CSA, R. Crawford (STScI)", "license": "CC BY 4.0", "page": "https://commons.wikimedia.org/wiki/File:Super-Earth_Exoplanet_TOI-561_b_(Artist%27s_Concept)_-_54985712327.jpg" },
+  "slides": [
+    { "type": "cover", "label": "Weltraum", "title": "Ein Planet aus **Lava** – und er hat eine Lufthülle, die es nicht geben dürfte" },
+    { "label": "Steckbrief", "title": "TOI-561 b", "text": ["Ein Gesteinsplanet, etwas größer als die Erde, rund **280 Lichtjahre** entfernt.", "Seine Oberfläche: ein Ozean aus geschmolzenem Gestein."] },
+    { "label": "Ein Jahr dauert …", "big": "10,5", "title": "Stunden", "text": ["So schnell umkreist er seinen Stern. Er ist ihm extrem nah."] },
+    { "label": "Das Rätsel", "title": "Seine Luft müsste längst **weg** sein.", "text": ["So nah am Stern bläst die Strahlung Gase normalerweise weg. Das Weltraumteleskop James Webb hat trotzdem eine dichte Gashülle entdeckt."] },
+    { "label": "Der Beweis", "title": "Er ist **zu kühl**.", "text": ["Ohne Atmosphäre wäre die Tagseite rund 2700 °C heiß. Gemessen wurde deutlich weniger. Die Gashülle verteilt die Hitze."] },
+    { "label": "Neu entdeckt", "title": "Wolken aus **Gestein** als Sonnenschutz?", "text": ["Eine neue Studie vermutet: Wolken aus Silikat-Mineralien werfen viel Sternenlicht zurück, wie ein riesiger Sonnenschirm."] },
+    { "type": "cta", "label": "Mehr davon?", "title": "Jeden Tag eine krasse Entdeckung." }
+  ],
+  "caption": "Ein Ozean aus Lava, ein Jahr von nur 10,5 Stunden – und eine Atmosphäre, die dort eigentlich gar nicht sein dürfte. 🌋🪐 Das Webb-Teleskop hat beim Planeten TOI-561 b eine dichte Gashülle entdeckt. Eine neue Studie vermutet sogar Wolken aus Gestein, die ihn wie ein Sonnenschirm schützen.\n\nWürdest du so einen Planeten gern mal aus der Nähe sehen? 👇\n\nQuellen: NASA, University of Birmingham via ScienceDaily, scinexx · Text mit KI erstellt\nIllustration: NASA, ESA, CSA, Ralf Crawford (STScI), CC BY 4.0, via Wikimedia Commons\n#weltraum #exoplanet #jameswebb #astronomie #wissenschaft #lava #wusstestdu"
+}

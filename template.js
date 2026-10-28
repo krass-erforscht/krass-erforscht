@@ -23,7 +23,7 @@ p{font-size:62px;line-height:1.3;margin:0}
 .cover.photo>*{position:relative}.cover.photo .meta,.cover.photo .foot,.cover.photo .credit{position:absolute}
 .swipe{font-family:"DejaVu Sans Mono",monospace;font-size:36px;color:#ffe14d}
 .handle{font-weight:800;font-size:96px;color:#1b2cc1}
-.credit{position:absolute;bottom:56px;right:97px;font-size:24px;color:rgba(255,255,255,.7)}
+.credit{position:absolute;bottom:56px;right:97px;max-width:540px;text-align:right;font-size:24px;line-height:1.25;color:rgba(255,255,255,.7)}
 `;
 
 function slideHtml(post, slide, i, n) {
@@ -33,7 +33,7 @@ function slideHtml(post, slide, i, n) {
     cls += ' cover';
     if (post.image) { cls += ' photo'; bg = ` style="background-image:url('${post.image.dataUri}')"`; }
     body = `<h2>${mark(slide.title)}</h2><span class="swipe">wischen →</span>` +
-      (post.image ? `<div class="credit">Foto: ${esc(post.image.credit)}</div>` : '');
+      (post.image ? `<div class="credit">${esc(post.image.short || 'Foto: ' + post.image.credit)}</div>` : '');
   } else if (slide.type === 'cta') {
     body = `<h2>${mark(slide.title)}</h2><span class="handle">${handle}</span><p>Speichern, teilen, folgen.</p>`;
     foot = `Quelle: ${esc(post.source.name)}`;
