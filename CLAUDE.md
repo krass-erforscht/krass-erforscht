@@ -46,10 +46,14 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
      Nature Communications, Scientific Reports, Current Biology nur wenn als „open access“ unter CC BY markiert) haben oft Zusatzvideos unter CC BY.
      Die Lizenz muss auf der Seite **ausdrücklich** stehen. Dann: `node find-video.js --url <mp4-adresse> <post-id> --credit "<Urheber>" --license "CC BY 4.0" --page <seite>`.
    - **Niemals** Videos von YouTube, TikTok, Instagram, Nachrichtenseiten oder ohne klare freie Lizenz (Public Domain, CC0, CC BY, CC BY-SA).
-   - Bei jedem Kandidaten den Bogen `videos/candidates/<post-id>-v<n>-frames.jpg` ansehen. Nur nehmen, wenn das Video wirklich das Thema zeigt –
-     eine allgemeine Illustration („irgendein Planet“) zählt nicht. Den besten Abschnitt anhand der Zeitstempel wählen (8–30 Sekunden).
+   - Bei jedem Kandidaten den Bogen `videos/candidates/<post-id>-v<n>-frames.jpg` ansehen. Erste Wahl: ein Video, das genau das Thema zeigt.
+     Zweite Wahl (vom Nutzer ausdrücklich erlaubt): ein Video, das **das Prinzip dahinter anschaulich erklärt**, auch wenn es nicht genau
+     dasselbe Objekt ist (z. B. eine NASA-Animation eines Lava-Planeten für einen Post über einen bestimmten Lava-Planeten).
+     Dann in der Post-Datei `"symbolisch": true` setzen – das Video wird sichtbar als „Symbolvideo“ gekennzeichnet.
+     Es muss inhaltlich zum Post passen und darf nichts Falsches zeigen (keine Spiralgalaxie bei einem Post über einen Kometen).
+     Den besten Abschnitt anhand der Zeitstempel wählen (8–30 Sekunden).
    - Gefunden: Video nach `videos/<post-id>.mp4` kopieren (`.webm` vorher mit `ffmpeg -i in.webm -c:v libx264 -an videos/<post-id>.mp4` umwandeln)
-     und in die Post-Datei eintragen: `"video": { "file", "start", "duration", "credit", "short", "license", "page", "headline", "captions" }`.
+     und in die Post-Datei eintragen: `"video": { "file", "start", "duration", "credit", "short", "license", "page", "symbolisch", "headline", "captions" }`.
      `headline` = große Überschrift oben (mit `**Textmarker**`), `captions` = 2–4 kurze Fakten, die nacheinander eingeblendet werden.
    - **Format wählen:** `node format.js ja` (Video gefunden) bzw. `node format.js nein`. Ergebnis `bilder`, `video` oder `zusammen`
      in die Post-Datei als `"format"` eintragen. Die App testet so, welches Format die meiste Reichweite bringt.

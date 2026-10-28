@@ -49,7 +49,7 @@ async function waitReady(containerId) {
 function fullCaption(post, musicFile) {
   const music = musicFile && fs.existsSync(`out/${post.id}/${musicFile}`) ? JSON.parse(fs.readFileSync(`out/${post.id}/${musicFile}`)) : null;
   const v = post.video;
-  const videoCredit = v && !post.caption.includes(v.credit) ? `\nVideo: ${v.credit}, ${v.license}` : '';
+  const videoCredit = v && !post.caption.includes(v.credit) ? `\n${v.symbolisch ? 'Symbolvideo' : 'Video'}: ${v.credit}, ${v.license}` : '';
   return limitHashtags(post.caption) + videoCredit + (music?.credit ? `\n${music.credit}` : '');
 }
 
