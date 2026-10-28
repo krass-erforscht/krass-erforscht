@@ -37,8 +37,15 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Felder `topic` (weltraum | tiere | natur | technik | koerper | geschichte | kurios) und `tone` (staunen | witzig | nuetzlich) ausfüllen.
    Caption: Hook, eine Frage an die Leser, Quellen, „Text mit KI erstellt“, Bildnachweis mit Lizenz, 5–8 Hashtags.
 8. **Rendern:** `node render.js posts/<datei>.json`, dann jede Folie ansehen. Text abgeschnitten oder unlesbar: korrigieren und neu rendern.
-9. **Speichern:** Post, Bilder unter `out/` und `data/` committen und pushen.
-10. **Posten:** `node publish.js posts/<datei>.json` (nur wenn `IG_TOKEN` gesetzt ist), danach `data/posted.json` committen und pushen.
+   Danach das Reel: `node reel.js posts/<datei>.json` (dauert etwa eine Minute) und zwei, drei Standbilder daraus prüfen,
+   z. B. `ffmpeg -ss 5 -i out/<id>/reel.mp4 -frames:v 1 <scratchpad>/frame.jpg`.
+9. **Speichern:** Post, Bilder und `reel.mp4` unter `out/` und `data/` committen und pushen.
+10. **Posten** (nur wenn `IG_TOKEN` gesetzt ist):
+    - Karussell: `node publish.js posts/<datei>.json`
+    - Reel: `node publish.js posts/<datei>.json --reel` (wartet, bis Instagram das Video verarbeitet hat, bis zu 10 Minuten).
+      Das Reel erscheint nur im Reels-Tab, nicht doppelt im Profilraster, und wird Leuten gezeigt, die noch nicht folgen.
+      Schlägt nur das Reel fehl: Karussell bleibt online, Fehler in `data/probleme.md` notieren.
+    - Danach `data/posted.json` committen und pushen.
 
 ## Sicherheitsregeln – immer überspringen
 

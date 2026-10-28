@@ -3,14 +3,24 @@ const fs = require('fs');
 const API = 'https://graph.instagram.com/v23.0';
 const { IG_TOKEN } = process.env;
 const METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'follows'];
+const REEL_METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'views'];
+
+async function insights(mediaId, metrics) {
+  const r = await (await fetch(`${API}/${mediaId}/insights?metric=${metrics.join(',')}&access_token=${IG_TOKEN}`)).json();
+  if (r.error) throw new Error(r.error.message);
+  return Object.fromEntries(r.data.map(m => [m.name, m.values?.[0]?.value ?? m.total_value?.value ?? 0]));
+}
 
 (async () => {
   const posted = fs.existsSync('data/posted.json') ? JSON.parse(fs.readFileSync('data/posted.json')) : [];
   for (const p of posted) {
     try {
-      const r = await (await fetch(`${API}/${p.mediaId}/insights?metric=${METRICS.join(',')}&access_token=${IG_TOKEN}`)).json();
-      if (r.error) throw new Error(r.error.message);
-      p.stats = Object.fromEntries(r.data.map(m => [m.name, m.values?.[0]?.value ?? m.total_value?.value ?? 0]));
+      p.stats = await insights(p.mediaId, METRICS);
+      // Karussell und Reel zum selben Thema zählen zusammen, die Reel-Zahlen stehen zusätzlich einzeln da
+      if (p.reelMediaId) {
+        p.reelStats = await insights(p.reelMediaId, REEL_METRICS);
+        for (const k of ['reach', 'likes', 'comments', 'shares', 'saved']) p.stats[k] += p.reelStats[k] || 0;
+      }
       p.statsAt = new Date().toISOString();
     } catch (e) { console.error(`${p.id}: ${e.message}`); }
   }
