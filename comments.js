@@ -25,11 +25,14 @@ async function list() {
   const open = [];
   for (const p of recent) {
     const post = fs.existsSync(`posts/${p.id}.json`) ? JSON.parse(fs.readFileSync(`posts/${p.id}.json`)) : null;
-    const r = await get(`${p.mediaId}/comments?fields=id,text,username,timestamp,replies{username}&limit=50`);
-    for (const c of r.data || []) {
-      if (done.includes(c.id) || c.username === me.username) continue;
-      if (c.replies?.data?.some(x => x.username === me.username)) continue; // schon von Hand beantwortet
-      open.push({ id: c.id, post: p.id, postTitle: post?.slides?.[0]?.title, username: c.username, text: c.text, timestamp: c.timestamp });
+    for (const [format, mediaId] of [['Karussell', p.mediaId], ['Reel', p.reelMediaId]]) {
+      if (!mediaId) continue;
+      const r = await get(`${mediaId}/comments?fields=id,text,username,timestamp,replies{username}&limit=50`);
+      for (const c of r.data || []) {
+        if (done.includes(c.id) || c.username === me.username) continue;
+        if (c.replies?.data?.some(x => x.username === me.username)) continue; // schon von Hand beantwortet
+        open.push({ id: c.id, post: p.id, format, postTitle: post?.slides?.[0]?.title, username: c.username, text: c.text, timestamp: c.timestamp });
+      }
     }
   }
   console.log(JSON.stringify(open, null, 2));
