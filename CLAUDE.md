@@ -35,11 +35,18 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
 7. **Post schreiben:** `posts/<YYYY-MM-DD>-<stichwort>.json` nach dem Muster von `posts/2026-10-21-orioniden.json`.
    4–6 Folien, kurze Sätze, ein Fun Fact, letzte Folie `cta`. `**Wort**` = Textmarker.
    Felder `topic` (weltraum | tiere | natur | technik | koerper | geschichte | kurios) und `tone` (staunen | witzig | nuetzlich) ausfüllen.
-   Caption: Hook, eine Frage an die Leser, Quellen, „Text mit KI erstellt“, Bildnachweis mit Lizenz, 5–8 Hashtags.
+   Caption:
+   - Erster Satz = Hook **mit dem Suchbegriff**, unter dem Leute das Thema suchen würden (z. B. „Schlange“, „Exoplanet“, „Sternschnuppen“).
+     Instagram durchsucht Beschreibungen inzwischen wie eine Suchmaschine.
+   - Dann 1–2 Sätze Inhalt, eine Frage an die Leser, Quellen, „Text mit KI erstellt“, Bildnachweis mit Lizenz.
+   - **Höchstens 5 Hashtags** (Instagram-Grenze seit Dezember 2025): 1–2 allgemeine (#wissenschaft) und 3–4 genaue zum Thema.
+     `publish.js` kürzt überzählige automatisch, aber besser gleich 5 passende wählen.
+   Bildbeschreibungen (Alternativtext) für jede Folie und der Musiknachweis beim Reel werden automatisch ergänzt.
 8. **Rendern:** `node render.js posts/<datei>.json`, dann jede Folie ansehen. Text abgeschnitten oder unlesbar: korrigieren und neu rendern.
-   Danach das Reel: `node reel.js posts/<datei>.json` (dauert etwa eine Minute) und zwei, drei Standbilder daraus prüfen,
-   z. B. `ffmpeg -ss 5 -i out/<id>/reel.mp4 -frames:v 1 <scratchpad>/frame.jpg`.
-9. **Speichern:** Post, Bilder und `reel.mp4` unter `out/` und `data/` committen und pushen.
+   Danach das Reel mit Musik: `node reel.js posts/<datei>.json` (1–3 Minuten). Die Musik passt sich dem `tone` an
+   (incompetech, ccMixter, notfalls Internet Archive oder selbst erzeugte Klangfläche) und steht in `out/<id>/music.json`.
+   Zwei, drei Standbilder prüfen, z. B. `ffmpeg -ss 5 -i out/<id>/reel.mp4 -frames:v 1 <scratchpad>/frame.jpg`.
+9. **Speichern:** Post, Bilder, `reel.mp4` und `music.json` unter `out/`, `data/` und `music/library.json` committen und pushen.
 10. **Posten** (nur wenn `IG_TOKEN` gesetzt ist):
     - Karussell: `node publish.js posts/<datei>.json`
     - Reel: `node publish.js posts/<datei>.json --reel` (wartet, bis Instagram das Video verarbeitet hat, bis zu 10 Minuten).

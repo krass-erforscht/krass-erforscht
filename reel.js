@@ -1,4 +1,4 @@
-// Macht aus den gerenderten Folien ein Reel (9:16, MP4): node reel.js posts/<datei>.json
+// Macht aus den gerenderten Folien ein Reel (9:16, MP4) mit passender Musik: node reel.js posts/<datei>.json
 // Erst render.js laufen lassen. Ergebnis: out/<id>/reel.mp4
 // Jede Folie steht so lange, wie man zum Lesen braucht, mit leichtem Zoom und weichen Übergängen.
 const fs = require('fs'), path = require('path');
@@ -36,7 +36,17 @@ function duration(slide) {
   const durs = post.slides.map(duration);
   const args = ['-y'];
   durs.forEach((d, i) => args.push('-loop', '1', '-t', String(d), '-i', path.join(tmp, `${i + 1}.png`)));
-  args.push('-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=44100');
+  const total = durs.reduce((a, b) => a + b, 0) - FADE * (durs.length - 1);
+
+  // Musik passend zum Ton des Posts; ccMixter schickt sehr große Kopfzeilen, daher die höhere Grenze
+  const music = JSON.parse(execFileSync('node', ['--max-http-header-size=262144', 'music.js', post.tone || 'staunen', String(Math.ceil(total))],
+    { env: process.env, stdio: ['ignore', 'pipe', 'inherit'] }).toString());
+  // Lange Stücke nicht ganz von vorn, damit kein leises Intro läuft; kurze Stücke werden wiederholt
+  const start = music.seconds > total + 30 ? Math.min(15, Math.round(music.seconds * 0.1)) : 0;
+  args.push('-stream_loop', '-1', '-ss', String(start), '-i', music.file);
+  fs.writeFileSync(path.join(dir, 'music.json'), JSON.stringify({ title: music.title, artist: music.artist, source: music.source,
+    license: music.license, licenseUrl: music.licenseUrl, page: music.page, credit: music.credit }, null, 2));
+
   const parts = durs.map((d, i) =>
     `[${i}:v]scale=${W * 2}:-1,zoompan=z='min(zoom+0.0005,1.05)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${Math.round(d * FPS)}:s=${W}x${H}:fps=${FPS},setsar=1,format=yuv420p[v${i}]`);
   let last = 'v0', offset = 0;
@@ -45,11 +55,12 @@ function duration(slide) {
     parts.push(`[${last}][v${i}]xfade=transition=fade:duration=${FADE}:offset=${offset.toFixed(2)}[x${i}]`);
     last = `x${i}`;
   }
-  const total = durs.reduce((a, b) => a + b, 0) - FADE * (durs.length - 1);
-  args.push('-filter_complex', parts.join(';'), '-map', `[${last}]`, '-map', `${durs.length}:a`, '-t', total.toFixed(2),
+  // Ton: sanft ein- und ausblenden, Lautstärke auf übliches Social-Media-Niveau angleichen
+  parts.push(`[${durs.length}:a]atrim=0:${total.toFixed(2)},afade=t=in:d=0.8,afade=t=out:st=${(total - 1.5).toFixed(2)}:d=1.5,loudnorm=I=-16:TP=-1.5:LRA=11,aformat=sample_rates=44100:channel_layouts=stereo[a]`);
+  args.push('-filter_complex', parts.join(';'), '-map', `[${last}]`, '-map', '[a]', '-t', total.toFixed(2),
     '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', '-r', String(FPS),
     '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', path.join(dir, 'reel.mp4'));
   execFileSync('ffmpeg', args, { stdio: ['ignore', 'ignore', 'pipe'] });
   fs.rmSync(tmp, { recursive: true, force: true });
-  console.log(`Reel (${total.toFixed(1)} s) -> ${path.join(dir, 'reel.mp4')}`);
+  console.log(`Reel (${total.toFixed(1)} s, ${music.credit || 'eigene Klangfläche'}) -> ${path.join(dir, 'reel.mp4')}`);
 })();
