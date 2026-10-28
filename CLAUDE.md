@@ -39,6 +39,20 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
      In der Folie eintragen: `"image": { "file", "credit", "short", "license", "page", "position" }`.
      `position` ist der Bildausschnitt (CSS, z. B. „30% center“), so wählen, dass das Motiv in der oberen Hälfte sichtbar ist – der Text steht unten.
      Folien ohne eigenes Foto zeigen automatisch das Titelbild mit wechselndem Ausschnitt. Dasselbe Foto höchstens auf zwei Folien.
+6b. **Video suchen:** Ein echtes Video, das **genau zeigt, was der Post beschreibt** (die Schlange, die rollt; der Planet, um den es geht),
+   ist das Spannendste überhaupt. Gründlich suchen:
+   - `node find-video.js "<englischer Begriff>" <post-id>` (NASA, ESA/Webb, ESA/Hubble, ESO, Wikimedia Commons). Mehrere Begriffe probieren.
+   - Zusätzlich per Websuche nach dem Video der Studie selbst suchen: Open-Access-Studien (z. B. PLOS, eLife, Royal Society, Frontiers,
+     Nature Communications, Scientific Reports, Current Biology nur wenn als „open access“ unter CC BY markiert) haben oft Zusatzvideos unter CC BY.
+     Die Lizenz muss auf der Seite **ausdrücklich** stehen. Dann: `node find-video.js --url <mp4-adresse> <post-id> --credit "<Urheber>" --license "CC BY 4.0" --page <seite>`.
+   - **Niemals** Videos von YouTube, TikTok, Instagram, Nachrichtenseiten oder ohne klare freie Lizenz (Public Domain, CC0, CC BY, CC BY-SA).
+   - Bei jedem Kandidaten den Bogen `videos/candidates/<post-id>-v<n>-frames.jpg` ansehen. Nur nehmen, wenn das Video wirklich das Thema zeigt –
+     eine allgemeine Illustration („irgendein Planet“) zählt nicht. Den besten Abschnitt anhand der Zeitstempel wählen (8–30 Sekunden).
+   - Gefunden: Video nach `videos/<post-id>.mp4` kopieren (`.webm` vorher mit `ffmpeg -i in.webm -c:v libx264 -an videos/<post-id>.mp4` umwandeln)
+     und in die Post-Datei eintragen: `"video": { "file", "start", "duration", "credit", "short", "license", "page", "headline", "captions" }`.
+     `headline` = große Überschrift oben (mit `**Textmarker**`), `captions` = 2–4 kurze Fakten, die nacheinander eingeblendet werden.
+   - **Format wählen:** `node format.js ja` (Video gefunden) bzw. `node format.js nein`. Ergebnis `bilder`, `video` oder `zusammen`
+     in die Post-Datei als `"format"` eintragen. Die App testet so, welches Format die meiste Reichweite bringt.
 7. **Post schreiben:** `posts/<YYYY-MM-DD>-<stichwort>.json` nach dem Muster von `posts/2026-10-21-orioniden.json`.
    4–6 Folien, kurze Sätze, ein Fun Fact, letzte Folie `cta`. `**Wort**` = Textmarker.
    Felder `topic` (weltraum | tiere | natur | technik | koerper | geschichte | kurios) und `tone` (staunen | witzig | nuetzlich) ausfüllen.
@@ -54,13 +68,17 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Danach das Reel mit Musik: `node reel.js posts/<datei>.json` (1–3 Minuten). Die Musik passt sich dem `tone` an
    (incompetech, ccMixter, notfalls Internet Archive oder selbst erzeugte Klangfläche) und steht in `out/<id>/music.json`.
    Zwei, drei Standbilder prüfen, z. B. `ffmpeg -ss 5 -i out/<id>/reel.mp4 -frames:v 1 <scratchpad>/frame.jpg`.
-9. **Speichern:** Post, Bilder, `reel.mp4` und `music.json` unter `out/`, `data/` und `music/library.json` committen und pushen.
-10. **Posten** (nur wenn `IG_TOKEN` gesetzt ist):
-    - Karussell: `node publish.js posts/<datei>.json`
-    - Reel: `node publish.js posts/<datei>.json --reel` (wartet, bis Instagram das Video verarbeitet hat, bis zu 10 Minuten).
-      Das Reel erscheint nur im Reels-Tab, nicht doppelt im Profilraster, und wird Leuten gezeigt, die noch nicht folgen.
-      Schlägt nur das Reel fehl: Karussell bleibt online, Fehler in `data/probleme.md` notieren.
-    - Danach `data/posted.json` committen und pushen.
+   Bei Format `video` oder `zusammen` außerdem: `node video-reel.js posts/<datei>.json` (macht `video-reel.mp4` und `video-45.mp4`)
+   und auch davon Standbilder prüfen (Überschrift lesbar, Fakten nicht abgeschnitten, Video zeigt das Thema).
+9. **Speichern:** Post, Bilder, Videos unter `out/`, `videos/<post-id>.mp4`, `data/` und `music/library.json` committen und pushen.
+10. **Posten** (nur wenn `IG_TOKEN` gesetzt ist), je nach Format:
+    - `bilder`: `node publish.js posts/<datei>.json`, danach `node publish.js posts/<datei>.json --reel`
+    - `zusammen`: `node publish.js posts/<datei>.json --zusammen`, danach `node publish.js posts/<datei>.json --reel`
+    - `video`: nur `node publish.js posts/<datei>.json --video` (echtes Video als Reel im Feed)
+    Videos werden von Instagram im Hintergrund verarbeitet, das kann bis zu 10 Minuten dauern.
+    Das Folien-Reel (`--reel`) erscheint nur im Reels-Tab und wird Leuten gezeigt, die noch nicht folgen.
+    Schlägt ein Video-Teil fehl: auf `bilder` zurückfallen (Karussell posten), Fehler in `data/probleme.md` notieren.
+    Danach `data/posted.json` committen und pushen.
 
 ## Sicherheitsregeln – immer überspringen
 

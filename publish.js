@@ -1,5 +1,4 @@
-// Veröffentlicht einen gerenderten Post als Karussell auf Instagram: node publish.js posts/<datei>.json
-// Mit --reel stattdessen das Video out/<id>/reel.mp4 als Reel (nach dem Karussell desselben Posts).
+// Veröffentlicht einen gerenderten Post auf Instagram (Aufrufvarianten siehe unten über dem Hauptteil).
 // Braucht IG_TOKEN (Instagram-Zugriffsschlüssel) als Umgebungsvariable.
 // Die Dateien unter out/<id>/ müssen vorher ins GitHub-Repo gepusht sein, damit Instagram sie abrufen kann.
 const fs = require('fs');
@@ -30,32 +29,48 @@ function altText(post, slide) {
 
 // GitHub liefert Videos ohne Video-Dateityp aus; jsDelivr spiegelt das Repo mit richtigem Typ.
 // Die Commit-ID in der Adresse verhindert, dass eine alte Version aus dem Zwischenspeicher kommt.
-async function publishReel(post) {
+function cdnUrl(post, name) {
   const sha = execFileSync('git', ['rev-parse', 'HEAD']).toString().trim();
-  const video_url = `https://cdn.jsdelivr.net/gh/krass-erforscht/krass-erforscht@${sha}/out/${post.id}/reel.mp4`;
-  // CC-BY-Musik braucht einen Nachweis, der kommt ans Ende der Beschreibung
-  const music = fs.existsSync(`out/${post.id}/music.json`) ? JSON.parse(fs.readFileSync(`out/${post.id}/music.json`)) : null;
-  const caption = limitHashtags(post.caption) + (music?.credit ? `\n${music.credit}` : '');
-  const container = await call(`${IG_USER_ID}/media`, { media_type: 'REELS', video_url, caption, share_to_feed: 'false' });
-  for (let i = 0; i < 60; i++) { // Instagram verarbeitet Videos im Hintergrund, bis zu 10 Minuten warten
-    await sleep(10000);
-    const r = await (await fetch(`${API}/${container.id}?fields=status_code,status&access_token=${IG_TOKEN}`)).json();
-    if (r.status_code === 'FINISHED') break;
-    if (r.status_code === 'ERROR' || r.status_code === 'EXPIRED') throw new Error(`Reel-Verarbeitung: ${r.status}`);
-  }
-  const { id } = await call(`${IG_USER_ID}/media_publish`, { creation_id: container.id });
-  const log = JSON.parse(fs.readFileSync('data/posted.json'));
-  const entry = log.find(p => p.id === post.id);
-  if (entry) entry.reelMediaId = id;
-  fs.writeFileSync('data/posted.json', JSON.stringify(log, null, 2));
-  console.log(`Reel veröffentlicht: ${post.id} (Media-ID ${id})`);
+  return `https://cdn.jsdelivr.net/gh/krass-erforscht/krass-erforscht@${sha}/out/${post.id}/${name}`;
 }
 
-(async () => {
-  if (!IG_TOKEN) throw new Error('IG_TOKEN fehlt');
-  const file = process.argv[2];
-  const post = JSON.parse(fs.readFileSync(file, 'utf8'));
-  if (process.argv.includes('--reel')) return publishReel(post);
+// Instagram verarbeitet Videos im Hintergrund; bis zu 10 Minuten warten
+async function waitReady(containerId) {
+  for (let i = 0; i < 60; i++) {
+    await sleep(10000);
+    const r = await (await fetch(`${API}/${containerId}?fields=status_code,status&access_token=${IG_TOKEN}`)).json();
+    if (r.status_code === 'FINISHED') return;
+    if (r.status_code === 'ERROR' || r.status_code === 'EXPIRED') throw new Error(`Video-Verarbeitung: ${r.status}`);
+  }
+  throw new Error('Video-Verarbeitung dauert zu lange');
+}
+
+// Beschreibung mit allen Pflicht-Nachweisen: Musik (CC BY) und Video, falls noch nicht drinsteht
+function fullCaption(post, musicFile) {
+  const music = musicFile && fs.existsSync(`out/${post.id}/${musicFile}`) ? JSON.parse(fs.readFileSync(`out/${post.id}/${musicFile}`)) : null;
+  const v = post.video;
+  const videoCredit = v && !post.caption.includes(v.credit) ? `\nVideo: ${v.credit}, ${v.license}` : '';
+  return limitHashtags(post.caption) + videoCredit + (music?.credit ? `\n${music.credit}` : '');
+}
+
+function logPost(post, fields) {
+  const log = fs.existsSync('data/posted.json') ? JSON.parse(fs.readFileSync('data/posted.json')) : [];
+  let entry = log.find(p => p.id === post.id);
+  if (!entry) log.push(entry = { id: post.id, postedAt: new Date().toISOString(), topic: post.topic, tone: post.tone, sourceUrl: post.source.url });
+  Object.assign(entry, fields);
+  fs.writeFileSync('data/posted.json', JSON.stringify(log, null, 2));
+}
+
+// Reel veröffentlichen: das Folien-Reel nur im Reels-Tab, das Video-Reel auch im Feed
+async function publishReel(post, { file, musicFile, feed }) {
+  const container = await call(`${IG_USER_ID}/media`, { media_type: 'REELS', video_url: cdnUrl(post, file), caption: fullCaption(post, musicFile), share_to_feed: String(feed) });
+  await waitReady(container.id);
+  const { id } = await call(`${IG_USER_ID}/media_publish`, { creation_id: container.id });
+  return id;
+}
+
+// Karussell aus den Folien; mit videoSlide wird das 4:5-Video als zweite Folie eingefügt
+async function publishCarousel(post, { videoSlide }) {
   const children = [];
   let withAlt = true;
   for (let i = 1; i <= post.slides.length; i++) {
@@ -71,13 +86,40 @@ async function publishReel(post) {
       item = await call(`${IG_USER_ID}/media`, params);
     }
     children.push(item.id);
+    if (videoSlide && i === 1) {
+      const vid = await call(`${IG_USER_ID}/media`, { media_type: 'VIDEO', video_url: cdnUrl(post, 'video-45.mp4'), is_carousel_item: 'true' });
+      await waitReady(vid.id);
+      children.push(vid.id);
+    }
   }
-  const container = await call(`${IG_USER_ID}/media`, { media_type: 'CAROUSEL', children: children.join(','), caption: limitHashtags(post.caption) });
+  const container = await call(`${IG_USER_ID}/media`, { media_type: 'CAROUSEL', children: children.join(','), caption: fullCaption(post, videoSlide ? 'video-music.json' : null) });
   await sleep(10000); // Instagram braucht kurz, um die Bilder zu verarbeiten
-  const { id: mediaId } = await call(`${IG_USER_ID}/media_publish`, { creation_id: container.id });
+  if (videoSlide) await waitReady(container.id);
+  const { id } = await call(`${IG_USER_ID}/media_publish`, { creation_id: container.id });
+  return id;
+}
 
-  const log = fs.existsSync('data/posted.json') ? JSON.parse(fs.readFileSync('data/posted.json')) : [];
-  log.push({ id: post.id, mediaId, postedAt: new Date().toISOString(), topic: post.topic, tone: post.tone, sourceUrl: post.source.url });
-  fs.writeFileSync('data/posted.json', JSON.stringify(log, null, 2));
-  console.log(`Veröffentlicht: ${post.id} (Media-ID ${mediaId})`);
+// Aufruf:
+//   node publish.js posts/<datei>.json            Format „bilder“: Karussell aus Fotos/Folien
+//   node publish.js posts/<datei>.json --zusammen Format „zusammen“: Karussell mit dem echten Video als zweiter Folie
+//   node publish.js posts/<datei>.json --video    Format „video“: echtes Video als Reel im Feed (video-reel.mp4)
+//   node publish.js posts/<datei>.json --reel     zusätzlich das Folien-Reel (nur Reels-Tab), nach „bilder“ oder „zusammen“
+(async () => {
+  if (!IG_TOKEN) throw new Error('IG_TOKEN fehlt');
+  const post = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
+  const has = flag => process.argv.includes(flag);
+  if (has('--reel')) {
+    const id = await publishReel(post, { file: 'reel.mp4', musicFile: 'music.json', feed: false });
+    logPost(post, { reelMediaId: id });
+    console.log(`Folien-Reel veröffentlicht: ${post.id} (Media-ID ${id})`);
+  } else if (has('--video')) {
+    const id = await publishReel(post, { file: 'video-reel.mp4', musicFile: 'video-music.json', feed: true });
+    logPost(post, { mediaId: id, format: 'video' });
+    console.log(`Video-Reel veröffentlicht: ${post.id} (Media-ID ${id})`);
+  } else {
+    const format = has('--zusammen') ? 'zusammen' : 'bilder';
+    const id = await publishCarousel(post, { videoSlide: format === 'zusammen' });
+    logPost(post, { mediaId: id, format });
+    console.log(`Karussell (${format}) veröffentlicht: ${post.id} (Media-ID ${id})`);
+  }
 })().catch(e => { console.error(e.message); process.exit(1); });
