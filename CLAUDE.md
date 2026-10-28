@@ -85,6 +85,19 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
     Das Folien-Reel (`--reel`) erscheint nur im Reels-Tab und wird Leuten gezeigt, die noch nicht folgen.
     Schlägt ein Video-Teil fehl: auf `bilder` zurückfallen (Karussell posten), Fehler in `data/probleme.md` notieren.
     Danach `data/posted.json` committen und pushen.
+11. **Selbst verbessern** (einmal am Tag, nach dem Posten):
+    - Rückblick: Was ist heute schiefgegangen oder war umständlich (Fehlermeldungen, kein Bild/Video gefunden, Text musste oft korrigiert werden)?
+      `data/probleme.md` und `data/learnings.json` lesen: Welche Themen, Töne, Formate, Uhrzeiten laufen gut oder schlecht?
+    - **Montags** zusätzlich kurz im Netz nachsehen, ob sich bei Instagram etwas geändert hat (Algorithmus, Regeln, Schnittstelle, neue Funktionen).
+    - Daraus **höchstens eine** kleine, sinnvolle Verbesserung umsetzen (Code, Anleitung, Vorlage, neue freie Quelle).
+      Vorher prüfen, dass sie funktioniert: den heutigen Post probeweise neu rendern bzw. das geänderte Skript testen.
+      Klappt der Test nicht: Änderung verwerfen (`git checkout -- <datei>`). Nur Funktionierendes committen und pushen.
+    - Jede Verbesserung mit Datum und einem Satz in `data/verbesserungen.md` festhalten und dem Nutzer in der Tagesnachricht kurz nennen.
+    - **Nicht ohne den Nutzer ändern:** die Grundregeln (kostenlos, nur frei lizenzierte Bilder/Videos/Musik, Sicherheitsregeln,
+      Ehrlichkeit über KI), die Zeitpläne der geplanten Aufgaben, Konten und Zugänge. Das nur vorschlagen.
+    - **Wenn etwas vom Nutzer gebraucht wird** (neue Berechtigung, freigegebene Internetadresse, neuer Token, ein Konto, eine Entscheidung):
+      in der Tagesnachricht klar und kurz Bescheid geben, was genau und warum, mit einfacher Schritt-für-Schritt-Anleitung auf Deutsch.
+      Dieselbe Bitte nicht jeden Tag wiederholen; offene Bitten in `data/offene-bitten.md` führen und erst nach 3 Tagen erneut erinnern.
 
 ## Sicherheitsregeln – immer überspringen
 
