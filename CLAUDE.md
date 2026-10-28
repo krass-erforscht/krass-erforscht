@@ -20,8 +20,10 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Solange weniger als 10 Posts Statistiken haben: Themen und Töne abwechseln.
 3. **News sammeln:** `node fetch-news.js > data/candidates.json`
 4. **Meldung auswählen:** die überraschendste, leicht verständliche Meldung, die in `data/posted.json` noch nicht vorkommt.
-5. **Fakten prüfen:** Originalartikel lesen. Jede Zahl und Behauptung muss in einer zweiten unabhängigen Quelle
-   (z. B. Pressemitteilung der Uni, NASA, zweites Magazin) bestätigt sein. Wenn das nicht gelingt: andere Meldung nehmen.
+5. **Fakten prüfen:** Originalartikel ganz lesen. Eine seriöse Quelle reicht (Wissenschaftsmagazin, Pressemitteilung einer Uni
+   oder Forschungseinrichtung, NASA/ESA). Alle Zahlen und Aussagen genau so übernehmen, wie sie dort stehen, nichts dazuerfinden.
+   Vorsichtige Formulierungen beibehalten: „könnte“, „vermuten Forschende“, „erste Hinweise“ nicht zu Tatsachen machen.
+   Eine zweite Quelle ist nicht nötig, aber willkommen, wenn sie schnell zu finden ist.
 6. **Bild suchen:** Ein echtes Foto macht den Post deutlich spannender, deshalb gründlich suchen.
    - Bei Tieren, Pflanzen, Pilzen: `node find-image.js "<englischer Begriff>" <post-id> --taxon "<wissenschaftlicher Name>"`
      (sucht in iNaturalist, GBIF, Wikimedia Commons, NASA). Den wissenschaftlichen Namen aus dem Artikel nehmen; findet die Art nichts, die Gattung probieren.
@@ -89,7 +91,7 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
 - Straftaten, Unglücke mit Opfern, Krieg, Politik, Religion
 - Gesundheits- und Ernährungstipps, Medikamente, Heilversprechen
 - Meldungen über einzelne, namentlich genannte Privatpersonen
-- Meldungen, die nur auf einer einzigen Quelle beruhen
+- Meldungen von unseriösen Seiten (Boulevard, Blogs ohne Quellen, Social Media)
 
 ## Bildregeln
 
