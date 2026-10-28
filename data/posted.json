@@ -14,7 +14,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-10-28T06:47:18.700Z"
+    "statsAt": "2026-10-28T06:54:36.365Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -22,6 +22,15 @@
     "postedAt": "2026-10-28T06:54:15.311Z",
     "topic": "weltraum",
     "tone": "staunen",
-    "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261026225603.htm"
+    "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261026225603.htm",
+    "stats": {
+      "reach": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "follows": 0
+    },
+    "statsAt": "2026-10-28T06:54:36.654Z"
   }
 ]

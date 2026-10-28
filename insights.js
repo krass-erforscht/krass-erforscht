@@ -19,7 +19,8 @@ const METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'follows'];
   // Punkte pro Post: Shares und Saves zählen am meisten, weil Instagram sie am stärksten belohnt
   const score = s => s ? (s.shares * 5 + s.saved * 4 + (s.follows || 0) * 6 + s.comments * 2 + s.likes) / Math.max(s.reach, 1) * 100 : null;
   const groups = {};
-  for (const p of posted.filter(p => p.stats)) {
+  // Erst ab 30 erreichten Konten zählt ein Post, sonst verzerren einzelne Likes das Ranking
+  for (const p of posted.filter(p => p.stats && p.stats.reach >= 30)) {
     const hour = new Date(p.postedAt).toLocaleString('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit' });
     for (const key of [`thema:${p.topic}`, `ton:${p.tone}`, `uhrzeit:${hour}`]) {
       (groups[key] ||= []).push(score(p.stats));
