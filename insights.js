@@ -21,7 +21,7 @@ const METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'follows'];
   const groups = {};
   // Erst ab 30 erreichten Konten zählt ein Post, sonst verzerren einzelne Likes das Ranking
   for (const p of posted.filter(p => p.stats && p.stats.reach >= 30)) {
-    const hour = new Date(p.postedAt).toLocaleString('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit' });
+    const hour = +new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', hourCycle: 'h23' }).format(new Date(p.postedAt));
     for (const key of [`thema:${p.topic}`, `ton:${p.tone}`, `uhrzeit:${hour}`]) {
       (groups[key] ||= []).push(score(p.stats));
     }
