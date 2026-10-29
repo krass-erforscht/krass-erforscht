@@ -24,8 +24,13 @@ async function getJson(url, tries = 3) {
 }
 
 async function inaturalist(q, taxon, max) {
-  const params = new URLSearchParams({ photo_license: 'cc0,cc-by,cc-by-sa', quality_grade: 'research', per_page: '15', order_by: 'votes', photos: 'true' });
-  if (taxon) params.set('taxon_name', taxon); else params.set('q', q);
+  // Nur mit wissenschaftlichem Namen: die Freitextsuche liefert bei iNaturalist meist fremde Arten.
+  // Den Namen erst in eine Taxon-ID auflösen, sonst kommen bei manchen Namen verwandte Arten statt der gesuchten.
+  if (!taxon) return [];
+  const t = await getJson(`https://api.inaturalist.org/v1/taxa/autocomplete?q=${encodeURIComponent(taxon)}&per_page=5`);
+  const match = t.results?.find(x => x.name.toLowerCase() === taxon.toLowerCase()) || t.results?.[0];
+  if (!match) return [];
+  const params = new URLSearchParams({ taxon_id: match.id, photo_license: 'cc0,cc-by,cc-by-sa', quality_grade: 'research', per_page: '15', order_by: 'votes', photos: 'true' });
   const r = await getJson(`https://api.inaturalist.org/v1/observations?${params}`);
   const out = [];
   for (const o of r.results || []) {

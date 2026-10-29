@@ -14,9 +14,10 @@ const FREE_TEXT = /^(public domain|pd|cc0|cc by(-sa)? [0-9.]+)/i;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function getJson(url) {
-  for (let i = 0; i < 3; i++) {
+  // Bei Überlastung (vor allem Wikimedia) länger warten: 5, 15, 30, 45 Sekunden
+  for (const wait of [5, 15, 30, 45]) {
     const res = await fetch(url, { headers: UA });
-    if (res.status === 429 || res.status >= 500) { await sleep(3000 * (i + 1)); continue; }
+    if (res.status === 429 || res.status >= 500) { await sleep(wait * 1000); continue; }
     return res.json();
   }
   throw new Error(`zu viele Anfragen: ${new URL(url).host}`);
@@ -72,7 +73,12 @@ async function commons(q, max) {
 
 // Lädt ein Video, prüft die Länge und legt einen Bogen mit 6 Standbildern daneben
 async function fetchCandidate(c, file) {
-  const res = await fetch(c.url, { headers: UA });
+  let res;
+  for (const wait of [5, 15, 30]) { // Wikimedia lehnt Downloads bei Andrang kurz ab
+    res = await fetch(c.url, { headers: UA });
+    if (res.status !== 429) break;
+    await sleep(wait * 1000);
+  }
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   if (+res.headers.get('content-length') > MAX_BYTES) throw new Error('zu groß');
   fs.writeFileSync(file, Buffer.from(await res.arrayBuffer()));

@@ -1,0 +1,30 @@
+{
+  "id": "2026-10-29-feuersalamander",
+  "category": "Tiere",
+  "topic": "tiere",
+  "tone": "staunen",
+  "format": "video",
+  "source": { "name": "Max-Planck-Institut / ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/10/261027063707.htm" },
+  "image": { "file": "images/2026-10-29-feuersalamander.jpg", "credit": "Petar Milošević, CC BY-SA 4.0, via Wikimedia Commons", "short": "Foto: Petar Milošević, CC BY-SA 4.0", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:Fire_salamander_(Salamandra_Salamandra).jpg" },
+  "video": {
+    "file": "videos/2026-10-29-feuersalamander.mp4", "start": 0, "duration": 15,
+    "credit": "Miltos Gikas / Wikimedia Commons", "short": "Video: Miltos Gikas, CC BY 2.0", "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Salamandra_salamandra_locomotion.webm", "symbolisch": false,
+    "headline": "Der Feuersalamander hat ein **Geheimnis**: Er leuchtet",
+    "captions": ["Unter UV-Licht leuchtet er **grün und türkis**", "Sogar sein **Gift** leuchtet – über 24 Stunden lang", "Wozu? Vielleicht erkennen sich Salamander so **im Mondlicht**"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Tiere", "title": "Feuersalamander **leuchten** – man sieht es nur mit UV-Licht" },
+    { "label": "Die Entdeckung", "title": "Grün und **türkis**", "text": ["Unter ultraviolettem Licht leuchtet der Salamander, vor allem am gelben Bauch und an den Seiten."],
+      "image": { "file": "images/2026-10-29-feuersalamander-2.jpg", "credit": "carnifex / iNaturalist, CC BY", "short": "Foto: carnifex, CC BY", "license": "CC BY", "page": "https://www.inaturalist.org", "position": "40% 30%" } },
+    { "label": "Leuchtendes Gift", "big": "24 h", "title": "leuchtet sein Gift nach", "text": ["Das Leuchten kommt aus Drüsen in der Haut – und aus dem giftigen Sekret, das sie abgeben."],
+      "image": { "file": "images/2026-10-29-feuersalamander-3.jpg", "credit": "Diego González Dopico / iNaturalist, CC BY", "short": "Foto: Diego González Dopico, CC BY", "license": "CC BY", "page": "https://www.inaturalist.org", "position": "60% 20%" } },
+    { "label": "Kein Glühwürmchen", "title": "Er braucht **Licht von außen**.", "text": ["Glühwürmchen machen ihr Licht selbst. Der Salamander schluckt UV-Licht und gibt es als sichtbares Licht wieder ab: Biofluoreszenz."],
+      "image": { "file": "images/2026-10-29-feuersalamander-4.jpg", "credit": "Edward Bell / iNaturalist, CC BY", "short": "Foto: Edward Bell, CC BY (Glühwürmchen)", "license": "CC BY", "page": "https://www.inaturalist.org", "position": "center 30%" } },
+    { "label": "Wozu?", "title": "Noch ein **Rätsel**.", "text": ["Vielleicht erkennen sich Salamander nachts daran – Vollmondlicht enthält mehr UV als Tageslicht. Oder es verstärkt die Warnfarbe."],
+      "image": { "file": "images/2026-10-29-feuersalamander-5.jpg", "credit": "Tero Karppinen / Wikimedia Commons, CC BY 2.0", "short": "Foto: Tero Karppinen, CC BY 2.0", "license": "CC BY 2.0", "page": "https://commons.wikimedia.org/wiki/File:Night_in_a_Moonlit_Forest_(51144052194).jpg", "position": "center 20%" } },
+    { "type": "cta", "label": "Mehr davon?", "title": "Jeden Tag eine krasse Entdeckung.",
+      "image": { "file": "images/2026-10-29-feuersalamander-6.jpg", "credit": "Cesare Sandri / iNaturalist, CC BY-SA", "short": "Foto: Cesare Sandri, CC BY-SA", "license": "CC BY-SA", "page": "https://www.inaturalist.org", "position": "center 35%" } }
+  ],
+  "caption": "Feuersalamander leuchten – grün und türkis, sobald UV-Licht auf sie fällt. 🦎✨ Forschende vom Max-Planck-Institut für chemische Ökologie und aus Barcelona haben entdeckt: Sogar das Gift des Salamanders leuchtet noch über 24 Stunden nach. Wozu das gut ist, weiß noch niemand.\n\nHast du schon mal einen Feuersalamander in freier Wildbahn gesehen? 👇\n\nQuelle: Max-Planck-Institut für chemische Ökologie / Naturkundemuseum Barcelona via ScienceDaily · Text mit KI erstellt\nVideo: Miltos Gikas, CC BY 2.0, via Wikimedia Commons\n#feuersalamander #salamander #tiere #natur #wissenschaft"
+}

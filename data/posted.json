@@ -7,14 +7,14 @@
     "tone": "witzig",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261023023718.htm",
     "stats": {
-      "reach": 1,
+      "reach": 2,
       "likes": 1,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-10-28T08:37:28.598Z"
+    "statsAt": "2026-10-29T11:24:52.285Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -24,22 +24,22 @@
     "tone": "staunen",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261026225603.htm",
     "stats": {
-      "reach": 0,
+      "reach": 14,
       "likes": 0,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-10-28T08:37:29.241Z",
+    "statsAt": "2026-10-29T11:24:52.964Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
-      "reach": 0,
+      "reach": 13,
       "likes": 0,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 0
+      "views": 13
     }
   }
 ]
