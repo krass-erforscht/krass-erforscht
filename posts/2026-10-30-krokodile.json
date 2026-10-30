@@ -1,0 +1,22 @@
+{
+  "id": "2026-10-30-krokodile",
+  "category": "Urzeit",
+  "topic": "geschichte",
+  "tone": "witzig",
+  "format": "bilder",
+  "source": { "name": "UCL / Science Advances via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/10/261030002922.htm" },
+  "image": { "file": "images/2026-10-30-krokodile.jpg", "credit": "Tony King / iNaturalist, CC BY", "short": "Foto: Tony King, CC BY", "license": "CC BY", "page": "https://www.inaturalist.org", "size": "auto 230%", "position": "74% 78%" },
+  "slides": [
+    { "type": "cover", "label": "Urzeit", "title": "Warum haben **Krokodile** den Dino-Asteroiden überlebt?" },
+    { "label": "Die Antwort", "title": "Sie mögen es **warm**.", "text": ["250 Millionen Jahre lang sind Krokodile und ihre Verwandten dem warmen Klima hinterhergezogen – statt sich an Kälte anzupassen."],
+      "image": { "file": "images/2026-10-30-krokodile.jpg", "credit": "Tony King / iNaturalist, CC BY", "short": "Foto: Tony King, CC BY", "license": "CC BY", "page": "https://www.inaturalist.org", "size": "auto 170%", "position": "68% 92%" } },
+    { "label": "Vor 66 Millionen Jahren", "title": "Der Einschlag", "text": ["Danach blieb es rund um den **Äquator** warm genug. Perfekte Zufluchtsorte für Krokodile.", "Die Dinosaurier verloren viel mehr Lebensraum."],
+      "image": { "file": "images/2026-10-30-krokodile-2.jpg", "credit": "Donald E. Davis / NASA, gemeinfrei, via Wikimedia Commons", "short": "Illustration: Donald E. Davis (gemeinfrei)", "license": "Public domain", "page": "https://commons.wikimedia.org/wiki/File:Chicxulub_impact_-_artist_impression.jpg", "position": "center 30%" } },
+    { "label": "Moment mal", "title": "Krokodile in der **Antarktis**?", "text": ["Vor rund 50 Millionen Jahren war es etwa 10 °C wärmer als heute. Krokodil-Verwandte lebten damals sogar dort."],
+      "image": { "file": "images/2026-10-30-krokodile-3.jpg", "credit": "NASA/GSFC, gemeinfrei", "short": "Foto: NASA (gemeinfrei)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov", "position": "center 30%" } },
+    { "label": "Fun Fact", "big": "12 m", "title": "lang: das „Super-Croc“", "text": ["Sarcosuchus war so groß wie ein Bus. Hier sein Zahn."],
+      "image": { "file": "images/2026-10-30-krokodile-4.jpg", "credit": "Yale Peabody Museum / Wikimedia Commons, CC BY 4.0", "short": "Foto: Yale Peabody Museum, CC BY 4.0", "license": "CC BY 4.0", "page": "https://commons.wikimedia.org/wiki/File:Sarcosuchus_hartii_lectotype_tooth_YPM_VP_000516.jpg", "position": "15% 20%" } },
+    { "type": "cta", "label": "Mehr davon?", "title": "Zwei Massenaussterben überlebt. Wir schaffen gerade so den Freitag." }
+  ],
+  "caption": "Krokodile haben den Asteroiden überlebt, der die Dinosaurier ausgelöscht hat – und Forschende wissen jetzt wohl, warum: Sie lieben es warm. 🐊☀️ Eine Studie mit über 7.000 Fossilien zeigt, dass es nach dem Einschlag am Äquator warm genug blieb – perfekte Zufluchtsorte.\n\nWelches Tier würde deiner Meinung nach die nächste Katastrophe überleben? 👇\n\nQuelle: University College London, Science Advances via ScienceDaily · Text mit KI erstellt\nFotos: Tony King (CC BY, iNaturalist), Donald E. Davis (gemeinfrei), NASA (gemeinfrei), Yale Peabody Museum (CC BY 4.0, Wikimedia Commons)\n#krokodile #dinosaurier #urzeit #evolution #wissenschaft"
+}

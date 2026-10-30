@@ -44,8 +44,12 @@ function slideHtml(post, slide, i, n) {
   let cls = 'slide', body = '', foot = handle, style = '';
   if (img?.dataUri) {
     cls += ' photo';
-    const pos = slide.image ? (slide.image.position || 'center') : CROPS[i % CROPS.length];
-    style = ` style="background-image:url('${img.dataUri}');background-position:${pos}"`;
+    // Eigenes Foto der Folie: Ausschnitt aus "position"; Titelfolie: Ausschnitt des Titelbilds; sonst wechselnde Ausschnitte.
+    // "size" vergrößert das Foto (z. B. "auto 200%"), um ein Motiv aus der unteren Hälfte nach oben zu holen.
+    const own = slide.image || (slide.type === 'cover' ? post.image : null);
+    const pos = own ? (own.position || 'center') : CROPS[i % CROPS.length];
+    const size = own?.size ? `;background-size:${own.size}` : '';
+    style = ` style="background-image:url('${img.dataUri}');background-position:${pos}${size}"`;
   }
   if (slide.type === 'cover') {
     cls += ' cover';

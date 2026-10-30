@@ -1,4 +1,33 @@
 {
-  "aktualisiert": "2026-10-29T11:24:52.965Z",
-  "ranking": []
+  "aktualisiert": "2026-10-30T17:18:07.546Z",
+  "ranking": [
+    {
+      "gruppe": "thema:tiere",
+      "posts": 1,
+      "punkte": 0.97,
+      "reichweite": 103,
+      "follower": 0
+    },
+    {
+      "gruppe": "ton:staunen",
+      "posts": 1,
+      "punkte": 0.97,
+      "reichweite": 103,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:12",
+      "posts": 1,
+      "punkte": 0.97,
+      "reichweite": 103,
+      "follower": 0
+    },
+    {
+      "gruppe": "format:video",
+      "posts": 1,
+      "punkte": 0.97,
+      "reichweite": 103,
+      "follower": 0
+    }
+  ]
 }

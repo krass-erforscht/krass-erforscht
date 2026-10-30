@@ -40,6 +40,8 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
      Dafür weitere `find-image.js`-Suchen mit eigener ID (`<post-id>-2`, `-3` …) und das Bild nach `images/<post-id>-<n>.jpg` kopieren.
      In der Folie eintragen: `"image": { "file", "credit", "short", "license", "page", "position" }`.
      `position` ist der Bildausschnitt (CSS, z. B. „30% center“), so wählen, dass das Motiv in der oberen Hälfte sichtbar ist – der Text steht unten.
+     Liegt das Motiv im Foto weit unten, zusätzlich `size` (z. B. „auto 170%“) setzen: das vergrößert das Foto, damit das Motiv nach oben rückt.
+     `position` und `size` gelten auch für das Titelbild (`image` des Posts) auf der ersten Folie.
      Folien ohne eigenes Foto zeigen automatisch das Titelbild mit wechselndem Ausschnitt. Dasselbe Foto höchstens auf zwei Folien.
 6b. **Video suchen:** Ein echtes Video, das **genau zeigt, was der Post beschreibt** (die Schlange, die rollt; der Planet, um den es geht),
    ist das Spannendste überhaupt. Gründlich suchen:
