@@ -14,7 +14,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-10-30T17:18:05.846Z"
+    "statsAt": "2026-10-31T06:46:37.079Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -31,7 +31,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-10-30T17:18:07.073Z",
+    "statsAt": "2026-10-31T06:46:37.935Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -58,7 +58,7 @@
       "saved": 0,
       "views": 119
     },
-    "statsAt": "2026-10-30T17:18:07.529Z"
+    "statsAt": "2026-10-31T06:46:38.310Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -68,6 +68,23 @@
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261030002922.htm",
     "mediaId": "18125207873312472",
     "format": "bilder",
-    "reelMediaId": "18037608218846843"
+    "reelMediaId": "18037608218846843",
+    "stats": {
+      "reach": 3,
+      "likes": 1,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "follows": 0
+    },
+    "reelStats": {
+      "reach": 1,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 1
+    },
+    "statsAt": "2026-10-31T06:46:38.934Z"
   }
 ]

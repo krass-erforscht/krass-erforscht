@@ -1,0 +1,29 @@
+{
+  "id": "2026-10-31-gluehwuermchen-aliens",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "staunen",
+  "format": "zusammen",
+  "source": { "name": "Arizona State University / Scientific Reports via scinexx", "url": "https://www.scinexx.de/news/kosmos/gluehwuermchen-prinzip-koennte-suche-nach-ausserirdischen-verbessern/" },
+  "image": { "file": "images/2026-10-31-gluehwuermchen-aliens.jpg", "credit": "art farmer / Wikimedia Commons, CC BY-SA 2.0", "short": "Foto: art farmer, CC BY-SA 2.0", "license": "CC BY-SA 2.0", "page": "https://commons.wikimedia.org/wiki/File:Photinus_pyralis_Firefly_3.jpg", "size": "auto 120%", "position": "75% 25%" },
+  "video": {
+    "file": "videos/2026-10-31-gluehwuermchen-aliens.mp4", "start": 3, "duration": 20,
+    "credit": "NASA (Animation: Dana Berry) / Wikimedia Commons", "short": "Animation: NASA / Dana Berry (gemeinfrei)", "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Millisecond_pulsar_and_accretion_disk_-_NASA_animation_(hi-res).ogv", "symbolisch": false,
+    "headline": "Wie **Glühwürmchen** bei der Suche nach Aliens helfen könnten",
+    "captions": ["Pulsare blinken wie **kosmische Leuchttürme**", "Ein Alien-Signal müsste nur **anders blinken**", "Getestet mit Daten von **158 Pulsaren**"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Weltraum", "title": "Wie **Glühwürmchen** uns helfen könnten, Außerirdische zu finden" },
+    { "label": "Das Vorbild", "title": "Blinken statt **Botschaft**", "text": ["Glühwürmchen erkennen Artgenossen an ihrem typischen Blink-Rhythmus – mitten zwischen vielen anderen Lichtern."],
+      "image": { "file": "images/2026-10-31-gluehwuermchen-aliens-2.jpg", "credit": "Kim H / iNaturalist, CC BY-SA", "short": "Foto: Kim H, CC BY-SA", "license": "CC BY-SA", "page": "https://www.inaturalist.org", "position": "30% center" } },
+    { "label": "Die Idee", "title": "Ein Signal muss nur **anders blinken**.", "text": ["Dann fällt es auf – auch wenn niemand die Botschaft entschlüsseln kann. So das neue Modell der Arizona State University."] },
+    { "label": "Der Test", "big": "158", "title": "Pulsare", "text": ["Pulsare sind rotierende Neutronensterne, die wie kosmische Leuchttürme blinken. Gegen ihre Signale trat das Modell an."],
+      "image": { "file": "images/2026-10-31-gluehwuermchen-aliens-3.jpg", "credit": "NASA/JPL, gemeinfrei", "short": "Illustration: NASA/JPL (gemeinfrei)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov", "position": "35% center" } },
+    { "label": "Ehrlich gesagt", "title": "Noch **kein** Alien-Signal.", "text": ["Das Modell hat nur künstliche Signale berechnet und verglichen. Es zeigt, wonach man künftig suchen könnte."],
+      "image": { "file": "images/2026-10-31-gluehwuermchen-aliens-4.jpg", "credit": "CSIRO / Wikimedia Commons, CC BY 3.0", "short": "Foto: CSIRO, CC BY 3.0 (Parkes-Radioteleskop)", "license": "CC BY 3.0", "page": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_4350_CSIROs_Parkes_Radio_Telescope_with_moon_in_the_background.jpg", "position": "center 15%" } },
+    { "type": "cta", "label": "Mehr davon?", "title": "Falls da draußen jemand blinkt: Wir sagen Bescheid.",
+      "image": { "file": "images/2026-10-31-gluehwuermchen-aliens-5.jpg", "credit": "John Brew / iNaturalist, CC BY", "short": "Foto: John Brew, CC BY", "license": "CC BY", "page": "https://www.inaturalist.org", "position": "center 30%" } }
+  ],
+  "caption": "Außerirdische finden mit Glühwürmchen-Trick: Ein Signal muss nicht verständlich sein – es muss nur anders blinken als alles, was das Universum von selbst macht. 👽✨ Forschende der Arizona State University haben das mit Daten von 158 Pulsaren durchgerechnet. Ein Alien-Signal ist das noch nicht, aber eine neue Idee, wonach man suchen könnte.\n\nWas würdest du zurückblinken? 👇\n\nQuelle: Arizona State University, Scientific Reports via scinexx · Text mit KI erstellt\nFotos: art farmer (CC BY-SA 2.0), CSIRO (CC BY 3.0) via Wikimedia Commons; Kim H (CC BY-SA), John Brew (CC BY) via iNaturalist; NASA/JPL (gemeinfrei)\nAnimation: NASA / Dana Berry (gemeinfrei)\n#aliens #weltraum #glühwürmchen #astronomie #wissenschaft"
+}
