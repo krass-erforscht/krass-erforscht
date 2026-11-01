@@ -1,0 +1,23 @@
+{
+  "id": "2026-11-01-baum-muskeln",
+  "category": "Natur",
+  "topic": "natur",
+  "tone": "witzig",
+  "format": "video",
+  "source": { "name": "INRAE via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/10/261030003006.htm" },
+  "video": {
+    "file": "videos/2026-11-01-baum-muskeln.mp4", "start": 0, "duration": 22,
+    "credit": "Herrera R. et al., BMC Plant Biology / Wikimedia Commons", "short": "Zeitraffer (24 Std.): junge Kiefer richtet sich auf · Herrera et al., CC BY 2.0",
+    "license": "CC BY 2.0", "page": "https://commons.wikimedia.org/wiki/File:Apex_reorientation_in_Pinus_pinaster_during_the_first_24h_after_plant_inclination_-_1471-2229-10-217-S1.ogv",
+    "symbolisch": false,
+    "headline": "Bäume haben **Muskeln** – damit richten sie sich auf",
+    "captions": ["Bäume spüren ihre **eigene Form**", "Spezielles **Zugholz** zieht wie ein Muskel", "Es wächst bei Bedarf auf der **Gegenseite** – und zieht den Stamm wieder gerade"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Natur", "title": "Bäume haben **Muskeln**" },
+    { "label": "Körpergefühl", "title": "Bäume spüren ihre **eigene Form**." },
+    { "label": "Der Trick", "title": "**Zugholz** zieht wie ein Muskel." },
+    { "type": "cta", "label": "Mehr davon?", "title": "Jeden Tag eine krasse Entdeckung." }
+  ],
+  "caption": "Bäume haben Muskeln – zumindest so etwas Ähnliches. 🌳💪 Forschende des französischen Instituts INRAE haben gezeigt: Junge Pappeln spüren ihre eigene Form. Ist der Stamm krumm, bildet sich spezielles Zugholz, das sich wie ein Muskel zusammenzieht – und wenn nötig auf der Gegenseite, um den Stamm wieder geradezuziehen. Wie Bizeps und Trizeps, nur aus Holz.\n\nWann hast du dich das letzte Mal so schön gerade hingesetzt? 👇\n\nQuelle: INRAE via ScienceDaily · Text mit KI erstellt\nVideo: Zeitraffer einer jungen Kiefer über 24 Stunden, Herrera R. et al., BMC Plant Biology, CC BY 2.0, via Wikimedia Commons\n#bäume #natur #pflanzen #wald #wissenschaft"
+}

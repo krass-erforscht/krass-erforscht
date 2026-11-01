@@ -1,32 +1,53 @@
 {
-  "aktualisiert": "2026-10-31T06:46:38.952Z",
+  "aktualisiert": "2026-11-01T11:16:23.365Z",
   "ranking": [
     {
       "gruppe": "thema:tiere",
       "posts": 1,
-      "punkte": 0.97,
-      "reichweite": 103,
-      "follower": 0
-    },
-    {
-      "gruppe": "ton:staunen",
-      "posts": 1,
-      "punkte": 0.97,
-      "reichweite": 103,
+      "punkte": 0.96,
+      "reichweite": 104,
       "follower": 0
     },
     {
       "gruppe": "uhrzeit:12",
       "posts": 1,
-      "punkte": 0.97,
-      "reichweite": 103,
+      "punkte": 0.96,
+      "reichweite": 104,
       "follower": 0
     },
     {
       "gruppe": "format:video",
       "posts": 1,
-      "punkte": 0.97,
-      "reichweite": 103,
+      "punkte": 0.96,
+      "reichweite": 104,
+      "follower": 0
+    },
+    {
+      "gruppe": "ton:staunen",
+      "posts": 2,
+      "punkte": 0.48,
+      "reichweite": 72,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:weltraum",
+      "posts": 1,
+      "punkte": 0,
+      "reichweite": 40,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:7",
+      "posts": 1,
+      "punkte": 0,
+      "reichweite": 40,
+      "follower": 0
+    },
+    {
+      "gruppe": "format:zusammen",
+      "posts": 1,
+      "punkte": 0,
+      "reichweite": 40,
       "follower": 0
     }
   ]

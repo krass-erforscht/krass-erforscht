@@ -7,14 +7,14 @@
     "tone": "witzig",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261023023718.htm",
     "stats": {
-      "reach": 3,
+      "reach": 4,
       "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-10-31T06:46:37.079Z"
+    "statsAt": "2026-11-01T11:16:21.474Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -24,14 +24,14 @@
     "tone": "staunen",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261026225603.htm",
     "stats": {
-      "reach": 16,
+      "reach": 17,
       "likes": 1,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-10-31T06:46:37.935Z",
+    "statsAt": "2026-11-01T11:16:21.942Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -51,14 +51,14 @@
     "mediaId": "18131870548873398",
     "format": "video",
     "stats": {
-      "reach": 103,
+      "reach": 104,
       "likes": 1,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 119
+      "views": 120
     },
-    "statsAt": "2026-10-31T06:46:38.310Z"
+    "statsAt": "2026-11-01T11:16:22.229Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -70,7 +70,7 @@
     "format": "bilder",
     "reelMediaId": "18037608218846843",
     "stats": {
-      "reach": 3,
+      "reach": 10,
       "likes": 1,
       "comments": 0,
       "shares": 0,
@@ -78,14 +78,14 @@
       "follows": 0
     },
     "reelStats": {
-      "reach": 1,
+      "reach": 7,
       "likes": 0,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 1
+      "views": 7
     },
-    "statsAt": "2026-10-31T06:46:38.934Z"
+    "statsAt": "2026-11-01T11:16:22.840Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -95,6 +95,23 @@
     "sourceUrl": "https://www.scinexx.de/news/kosmos/gluehwuermchen-prinzip-koennte-suche-nach-ausserirdischen-verbessern/",
     "mediaId": "17865169260695656",
     "format": "zusammen",
-    "reelMediaId": "18201584050387146"
+    "reelMediaId": "18201584050387146",
+    "stats": {
+      "reach": 40,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "follows": 0
+    },
+    "reelStats": {
+      "reach": 38,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 41
+    },
+    "statsAt": "2026-11-01T11:16:23.349Z"
   }
 ]
