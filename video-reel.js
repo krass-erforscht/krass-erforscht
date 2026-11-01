@@ -13,8 +13,8 @@ const mark = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<span class="hl">$1</span>')
 
 // Layout je Format: wo die Überschrift steht, wo das Video sitzt und wo die Fakten erscheinen
 const LAYOUTS = {
-  reel: { W: 1080, H: 1920, head: [200, 470], video: 560, caption: [1250, 1640], headSize: 76, capSize: 58 },
-  '45': { W: 1080, H: 1350, head: [40, 300], video: 330, caption: [930, 1230], headSize: 64, capSize: 48 },
+  reel: { W: 1080, H: 1920, head: [200, 470], caption: [1250, 1640], headSize: 76, capSize: 58 },
+  '45': { W: 1080, H: 1350, head: [40, 300], caption: [930, 1230], headSize: 64, capSize: 48 },
 };
 
 const css = (L) => `*{box-sizing:border-box}html,body{margin:0;width:${L.W}px;height:${L.H}px;background:transparent;font-family:"DejaVu Sans",Arial,sans-serif}
@@ -45,8 +45,20 @@ async function overlays(page, L, post, captions, tmp, tag) {
   }
 }
 
+// Das Video so groß wie möglich zwischen Überschrift und Fakten setzen, ohne dass sich beides überdeckt
+function placement(L, file) {
+  const [w, h] = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', file])
+    .toString().trim().split(',').map(Number);
+  const top = L.head[1] + 20, room = L.caption[0] - 20 - top;
+  let fw = L.W, fh = Math.round(L.W * h / w);
+  if (fh > room) { fh = room; fw = Math.round(room * w / h); }
+  fw -= fw % 2; fh -= fh % 2; // H.264 braucht gerade Maße
+  return { fw, fh, x: Math.round((L.W - fw) / 2), y: top + Math.round((room - fh) / 2) };
+}
+
 function render(L, post, captions, music, tmp, tag, out) {
   const v = post.video;
+  const p = placement(L, v.file);
   const dur = v.duration;
   const per = dur / captions.length;
   const args = ['-y', '-v', 'error',
@@ -58,8 +70,8 @@ function render(L, post, captions, music, tmp, tag, out) {
   const f = [
     `[0:v]fps=${FPS},split[a][b]`,
     `[a]scale=${L.W}:${L.H}:force_original_aspect_ratio=increase,crop=${L.W}:${L.H},boxblur=30:3,eq=brightness=-0.15[bg]`,
-    `[b]scale=${L.W}:-2[fg]`,
-    `[bg][fg]overlay=0:${L.video}[base]`,
+    `[b]scale=${p.fw}:${p.fh}[fg]`,
+    `[bg][fg]overlay=${p.x}:${p.y}[base]`,
     `[base][1:v]overlay=0:0[o0]`,
   ];
   let last = 'o0';
