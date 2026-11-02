@@ -131,5 +131,15 @@
       "views": 117
     },
     "statsAt": "2026-11-02T17:21:35.138Z"
+  },
+  {
+    "id": "2026-11-02-vega-schaedel",
+    "postedAt": "2026-11-02T17:35:54.922Z",
+    "topic": "kurios",
+    "tone": "witzig",
+    "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261101010538.htm",
+    "mediaId": "18119783627621034",
+    "format": "zusammen",
+    "reelMediaId": "18115420781146219"
   }
 ]
