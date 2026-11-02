@@ -1,0 +1,29 @@
+{
+  "id": "2026-11-02-vega-schaedel",
+  "category": "Kurioses",
+  "topic": "kurios",
+  "tone": "witzig",
+  "format": "zusammen",
+  "source": { "name": "NASA Earth Observatory via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261101010538.htm" },
+  "image": { "file": "images/2026-11-02-vega-schaedel.jpg", "credit": "NASA Earth Observatory / Lauren Dauphin, Landsat-Daten: USGS (gemeinfrei)", "short": "Bild: NASA Earth Observatory (gemeinfrei)", "license": "Public domain", "page": "https://science.nasa.gov/earth/earth-observatory/vega-island-frozen-in-fright/", "position": "center 20%" },
+  "video": {
+    "file": "videos/2026-11-02-vega-schaedel.mp4", "start": 0, "duration": 13.5,
+    "credit": "NASA Earth Observatory / Lauren Dauphin, Landsat-Daten: USGS", "short": "Satellitenbilder: NASA Earth Observatory (gemeinfrei)", "license": "Public domain",
+    "page": "https://science.nasa.gov/earth/earth-observatory/vega-island-frozen-in-fright/", "symbolisch": false,
+    "headline": "Ein **Totenschädel** im Eis der Antarktis",
+    "captions": ["Die Vega-Insel von oben: ein **grinsender Schädel**", "2026 lag viel **blankes Eis** frei", "Dunkles Eis schluckt mehr Sonne – und **schmilzt schneller**"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Kurioses", "title": "Die NASA hat einen **Totenschädel** im Eis der Antarktis entdeckt" },
+    { "label": "Wo?", "title": "Die **Vega-Insel**", "text": ["Im Weddellmeer vor der Antarktischen Halbinsel. Von oben sieht sie aus wie ein grinsender Schädel im Profil – und schaut zur Teufelsinsel."],
+      "image": { "file": "images/2026-11-02-vega-schaedel-2.jpg", "credit": "Joseph W. Holliday / Wikimedia Commons, CC BY-SA 4.0", "short": "Foto: Joseph W. Holliday, CC BY-SA 4.0", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:Vega_island_Antarctica.jpg", "position": "60% center" } },
+    { "label": "Das Gesicht", "title": "Auge, Mund, **Kiefer**", "text": ["Augenhöhle: ein Felsgipfel, der aus dem Eis ragt. Mund: ein Moränenwall. Unterkiefer: der Gletscher der Teufelsbucht."],
+      "image": { "file": "images/2026-11-02-vega-schaedel-4.jpg", "credit": "NASA Earth Observatory / Lauren Dauphin, Landsat-Daten: USGS (gemeinfrei)", "short": "Bild: NASA Earth Observatory (gemeinfrei)", "license": "Public domain", "page": "https://science.nasa.gov/earth/earth-observatory/vega-island-frozen-in-fright/", "position": "40% center" } },
+    { "label": "Der ernste Teil", "title": "Viel **blankes Eis**", "text": ["Der Winter 2026 war ungewöhnlich warm, es fiel wenig Schnee. Dunkles Eis schluckt mehr Sonnenlicht – und schmilzt schneller."],
+      "image": { "file": "images/2026-11-02-vega-schaedel-3.jpg", "credit": "NASA Earth Observatory / Lauren Dauphin, Landsat-Daten: USGS (gemeinfrei)", "short": "Bild: NASA Earth Observatory (gemeinfrei)", "license": "Public domain", "page": "https://science.nasa.gov/earth/earth-observatory/vega-island-frozen-in-fright/", "position": "60% center" } },
+    { "label": "Fun Fact", "big": "29", "title": "Gletscher", "text": ["So viele zählten Forschende 1982 auf der Insel – mit Daten der ersten Landsat-Satelliten."],
+      "image": { "file": "images/2026-11-02-vega-schaedel-5.jpg", "credit": "Murray Foubister / Wikimedia Commons, CC BY-SA 2.0", "short": "Foto: Murray Foubister, CC BY-SA 2.0 (Teufelsinsel)", "license": "CC BY-SA 2.0", "page": "https://commons.wikimedia.org/wiki/File:Landing_No._4.a_quick_but_cool_visit_to_Devil_Island,_just_N_of_Vega_Island._(25878288292).jpg", "position": "center 30%" } },
+    { "type": "cta", "label": "Mehr davon?", "title": "Halloween ist vorbei. Die Antarktis hat’s nicht mitbekommen. 💀" }
+  ],
+  "caption": "Totenschädel in der Antarktis: Auf NASA-Satellitenbildern sieht die Vega-Insel aus wie ein grinsender Schädel – mit Felsen als Augenhöhle, einer Moräne als Mund und einem Gletscher als Kiefer. 💀🧊 Der ernste Teil: Nach einem ungewöhnlich warmen Winter lag 2026 viel blankes Eis frei, das schneller schmilzt.\n\nSiehst du den Schädel auch – oder brauchst du einen zweiten Blick? 👇\n\nQuelle: NASA Earth Observatory via ScienceDaily · Text mit KI erstellt\nBilder: NASA Earth Observatory / Lauren Dauphin, Landsat-Daten USGS (gemeinfrei); Fotos: Joseph W. Holliday (CC BY-SA 4.0), Murray Foubister (CC BY-SA 2.0) via Wikimedia Commons\n#antarktis #nasa #satellitenbild #gletscher #wissenschaft"
+}

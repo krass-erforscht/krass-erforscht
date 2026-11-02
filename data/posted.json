@@ -14,7 +14,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-01T11:16:21.474Z"
+    "statsAt": "2026-11-02T17:21:32.713Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -31,7 +31,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-01T11:16:21.942Z",
+    "statsAt": "2026-11-02T17:21:33.293Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -58,7 +58,7 @@
       "saved": 0,
       "views": 120
     },
-    "statsAt": "2026-11-01T11:16:22.229Z"
+    "statsAt": "2026-11-02T17:21:33.580Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -70,22 +70,22 @@
     "format": "bilder",
     "reelMediaId": "18037608218846843",
     "stats": {
-      "reach": 10,
-      "likes": 1,
+      "reach": 11,
+      "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0
     },
     "reelStats": {
-      "reach": 7,
-      "likes": 0,
+      "reach": 8,
+      "likes": 1,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 7
+      "views": 8
     },
-    "statsAt": "2026-11-01T11:16:22.840Z"
+    "statsAt": "2026-11-02T17:21:34.220Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -97,7 +97,7 @@
     "format": "zusammen",
     "reelMediaId": "18201584050387146",
     "stats": {
-      "reach": 40,
+      "reach": 41,
       "likes": 0,
       "comments": 0,
       "shares": 0,
@@ -105,14 +105,14 @@
       "follows": 0
     },
     "reelStats": {
-      "reach": 38,
+      "reach": 39,
       "likes": 0,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 41
+      "views": 43
     },
-    "statsAt": "2026-11-01T11:16:23.349Z"
+    "statsAt": "2026-11-02T17:21:34.896Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -121,6 +121,15 @@
     "tone": "witzig",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261030003006.htm",
     "mediaId": "18117241286167555",
-    "format": "video"
+    "format": "video",
+    "stats": {
+      "reach": 104,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 117
+    },
+    "statsAt": "2026-11-02T17:21:35.138Z"
   }
 ]

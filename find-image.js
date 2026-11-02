@@ -3,6 +3,8 @@
 // Standard-Quellen: iNaturalist (Tiere, Pflanzen, Pilze), GBIF (Museums- und Forschungsfotos), NASA, Wikimedia Commons.
 // Mit --mehr zusätzlich: ESA/Hubble, ESA/Webb, ESO (Weltraum), Smithsonian (Natur, Technik, Geschichte),
 // Library of Congress (historische Fotos). Für den Fall, dass die Standard-Quellen nichts Passendes liefern.
+// Für ein bei der Recherche gefundenes, ausdrücklich frei lizenziertes Bild (z. B. NASA Earth Observatory, gemeinfrei):
+//   node find-image.js --url <bildadresse> <post-id> --credit "<Urheber>" --license "<Lizenz>" --page <quellseite>
 // Lädt bis zu 8 Kandidaten nach images/candidates/<post-id>-<n>.jpg und gibt Bildnachweis + Lizenz als JSON aus.
 // Danach jeden Kandidaten ansehen, den passendsten auswählen und in die Post-Datei unter "image" eintragen.
 // Erlaubt sind nur Lizenzen ohne Einschränkung auf nicht-kommerzielle Nutzung: Public Domain, CC0, CC BY, CC BY-SA.
@@ -134,6 +136,19 @@ async function loc(q, taxon, max) {
 
 (async () => {
   const args = process.argv.slice(2);
+  const opt = name => { const i = args.indexOf(name); return i >= 0 ? args.splice(i, 2)[1] : null; };
+  const manual = opt('--url');
+  if (manual) {
+    const credit = opt('--credit'), license = opt('--license'), page = opt('--page');
+    if (!credit || !license || !FREE_TEXT.test(license.replace(/^public domain.*/i, 'public domain'))) throw new Error('--credit und eine freie --license angeben');
+    fs.mkdirSync('images/candidates', { recursive: true });
+    const file = `images/candidates/${args[0]}-url.jpg`;
+    const res = await fetch(manual, { headers: UA });
+    if (!res.ok || !/^image\//.test(res.headers.get('content-type') || '')) throw new Error(`Download fehlgeschlagen: ${res.status}`);
+    fs.writeFileSync(file, Buffer.from(await res.arrayBuffer()));
+    console.log(JSON.stringify([{ file, url: manual, credit, license, page: page || manual }], null, 2));
+    return;
+  }
   const ti = args.indexOf('--taxon');
   const taxon = ti >= 0 ? args.splice(ti, 2)[1] : null;
   const mi = args.indexOf('--mehr');

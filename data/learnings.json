@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "2026-11-01T11:16:23.365Z",
+  "aktualisiert": "2026-11-02T17:21:35.159Z",
   "ranking": [
     {
       "gruppe": "thema:tiere",
@@ -9,45 +9,59 @@
       "follower": 0
     },
     {
+      "gruppe": "ton:staunen",
+      "posts": 2,
+      "punkte": 0.48,
+      "reichweite": 73,
+      "follower": 0
+    },
+    {
       "gruppe": "uhrzeit:12",
-      "posts": 1,
-      "punkte": 0.96,
+      "posts": 2,
+      "punkte": 0.48,
       "reichweite": 104,
       "follower": 0
     },
     {
       "gruppe": "format:video",
-      "posts": 1,
-      "punkte": 0.96,
-      "reichweite": 104,
-      "follower": 0
-    },
-    {
-      "gruppe": "ton:staunen",
       "posts": 2,
       "punkte": 0.48,
-      "reichweite": 72,
+      "reichweite": 104,
       "follower": 0
     },
     {
       "gruppe": "thema:weltraum",
       "posts": 1,
       "punkte": 0,
-      "reichweite": 40,
+      "reichweite": 41,
       "follower": 0
     },
     {
       "gruppe": "uhrzeit:7",
       "posts": 1,
       "punkte": 0,
-      "reichweite": 40,
+      "reichweite": 41,
       "follower": 0
     },
     {
       "gruppe": "format:zusammen",
       "posts": 1,
       "punkte": 0,
-      "reichweite": 40,
+      "reichweite": 41,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:natur",
+      "posts": 1,
+      "punkte": 0,
+      "reichweite": 104,
+      "follower": 0
+    },
+    {
+      "gruppe": "ton:witzig",
+      "posts": 1,
+      "punkte": 0,
+      "reichweite": 104,
       "follower": 0
     }
   ]
