@@ -14,7 +14,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-02T17:21:32.713Z"
+    "statsAt": "2026-11-03T17:16:56.353Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -31,7 +31,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-02T17:21:33.293Z",
+    "statsAt": "2026-11-03T17:16:57.001Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -58,7 +58,7 @@
       "saved": 0,
       "views": 120
     },
-    "statsAt": "2026-11-02T17:21:33.580Z"
+    "statsAt": "2026-11-03T17:16:57.234Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -85,7 +85,7 @@
       "saved": 0,
       "views": 8
     },
-    "statsAt": "2026-11-02T17:21:34.220Z"
+    "statsAt": "2026-11-03T17:16:57.800Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -97,7 +97,7 @@
     "format": "zusammen",
     "reelMediaId": "18201584050387146",
     "stats": {
-      "reach": 41,
+      "reach": 42,
       "likes": 0,
       "comments": 0,
       "shares": 0,
@@ -112,7 +112,7 @@
       "saved": 0,
       "views": 43
     },
-    "statsAt": "2026-11-02T17:21:34.896Z"
+    "statsAt": "2026-11-03T17:16:58.248Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -130,7 +130,7 @@
       "saved": 0,
       "views": 117
     },
-    "statsAt": "2026-11-02T17:21:35.138Z"
+    "statsAt": "2026-11-03T17:16:58.464Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -140,6 +140,23 @@
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261101010538.htm",
     "mediaId": "18119783627621034",
     "format": "zusammen",
-    "reelMediaId": "18115420781146219"
+    "reelMediaId": "18115420781146219",
+    "stats": {
+      "reach": 113,
+      "likes": 1,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "follows": 0
+    },
+    "reelStats": {
+      "reach": 112,
+      "likes": 1,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 123
+    },
+    "statsAt": "2026-11-03T17:16:58.932Z"
   }
 ]

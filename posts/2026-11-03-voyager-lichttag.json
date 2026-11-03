@@ -1,0 +1,28 @@
+{
+  "id": "2026-11-03-voyager-lichttag",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "nuetzlich",
+  "format": "zusammen",
+  "source": { "name": "NASA JPL via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261103003152.htm" },
+  "image": { "file": "images/2026-11-03-voyager-lichttag.jpg", "credit": "NASA/JPL (gemeinfrei)", "short": "Bild: NASA/JPL (gemeinfrei)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov", "position": "center 20%" },
+  "video": {
+    "file": "videos/2026-11-03-voyager-lichttag.mp4", "start": 2, "duration": 20,
+    "credit": "NASA/JPL (Animation von 1981) / Wikimedia Commons", "short": "Symbolvideo: Voyager-Sonde, NASA/JPL-Animation von 1981 (gemeinfrei)", "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:JPL-19810825-VOYAGEf-0001-AVC2002151_Voyager_2_at_Saturn.webm", "symbolisch": true,
+    "headline": "Voyager 1 ist bald einen **Lichttag** von uns entfernt",
+    "captions": ["Am 18. November: **25,89 Milliarden km**", "Licht braucht dorthin **24 Stunden**", "Wer „Hallo“ funkt, wartet **2 Tage** auf Antwort"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Weltraum", "title": "Voyager 1 ist bald einen ganzen **Lichttag** von uns entfernt" },
+    { "label": "Was heißt das?", "big": "24 h", "title": "braucht Licht bis zu ihr", "text": ["Am 18. November ist die Sonde 25,89 Milliarden Kilometer entfernt – weiter als jedes andere Objekt, das Menschen gebaut haben."] },
+    { "label": "Hallo, Voyager?", "title": "Antwort in **2 Tagen**", "text": ["Ein Funkspruch braucht einen Tag hin und einen zurück. Gefunkt wird über riesige Antennen des Deep Space Network der NASA."],
+      "image": { "file": "images/2026-11-03-voyager-lichttag-3.jpg", "credit": "NASA/JPL (gemeinfrei)", "short": "Bild: NASA/JPL (gemeinfrei)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov", "position": "center 20%" } },
+    { "label": "Seit 1977 unterwegs", "title": "Mit **61.155 km/h**", "text": ["Erst an Jupiter und Saturn vorbei, heute im interstellaren Raum – außerhalb der riesigen Blase, die unsere Sonne umgibt."],
+      "image": { "file": "images/2026-11-03-voyager-lichttag-4.jpg", "credit": "NASA/JPL (gemeinfrei)", "short": "Bild: NASA/JPL (gemeinfrei)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov", "position": "60% center" } },
+    { "label": "Fun Fact", "title": "Sie hat die **Erde** als Pünktchen fotografiert.", "text": ["1990 drehte sich Voyager 1 noch einmal um. Auf dem berühmten Foto „Pale Blue Dot“ ist unser Planet nur ein winziger Punkt in einem Lichtstrahl."],
+      "image": { "file": "images/2026-11-03-voyager-lichttag-2.jpg", "credit": "NASA/JPL (gemeinfrei)", "short": "Bild: NASA/JPL (gemeinfrei)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov", "position": "center center" } },
+    { "type": "cta", "label": "Mehr davon?", "title": "Fast 50 Jahre unterwegs und immer noch im Dienst. Respekt, Voyager." }
+  ],
+  "caption": "Voyager 1 ist bald einen ganzen Lichttag von der Erde entfernt: Am 18. November trennen uns 25,89 Milliarden Kilometer – Licht braucht dafür 24 Stunden. 🛰️✨ Wer der Sonde „Hallo“ funkt, wartet zwei Tage auf die Antwort. Seit 1977 ist sie unterwegs, ihr Strom wird jedes Jahr etwas weniger – aber die NASA hält sie mit Tricks am Laufen.\n\nWas würdest du Voyager funken, wenn du 2 Tage auf die Antwort warten müsstest? 👇\n\nQuelle: NASA Jet Propulsion Laboratory via ScienceDaily · Text mit KI erstellt\nBilder: NASA/JPL (gemeinfrei)\n#voyager #nasa #weltraum #astronomie #wissenschaft"
+}

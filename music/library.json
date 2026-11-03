@@ -122,8 +122,8 @@
     "mood": "nuetzlich",
     "file": "music/files/incompetech-Kevin_MacLeod-Cattails.mp3",
     "seconds": 159,
-    "used": 0,
-    "lastUsed": null
+    "used": 1,
+    "lastUsed": "2026-11-03T17:25:19.469Z"
   },
   {
     "source": "incompetech",
@@ -276,8 +276,8 @@
     "mood": "nuetzlich",
     "file": "music/files/incompetech-Kevin_MacLeod-Rainbows.mp3",
     "seconds": 219,
-    "used": 0,
-    "lastUsed": null
+    "used": 1,
+    "lastUsed": "2026-11-03T17:26:42.334Z"
   },
   {
     "source": "incompetech",
@@ -290,6 +290,48 @@
     "mood": "nuetzlich",
     "file": "music/files/incompetech-Kevin_MacLeod-Anamalie.mp3",
     "seconds": 208,
+    "used": 0,
+    "lastUsed": null
+  },
+  {
+    "source": "incompetech",
+    "title": "Space Jazz",
+    "artist": "Kevin MacLeod",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://incompetech.com",
+    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Space%20Jazz.mp3",
+    "mood": "nuetzlich",
+    "file": "music/files/incompetech-Kevin_MacLeod-Space_Jazz.mp3",
+    "seconds": 370,
+    "used": 0,
+    "lastUsed": null
+  },
+  {
+    "source": "incompetech",
+    "title": "Circus Waltz",
+    "artist": "Kevin MacLeod",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://incompetech.com",
+    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Circus%20Waltz%20FX.mp3",
+    "mood": "nuetzlich",
+    "file": "music/files/incompetech-Kevin_MacLeod-Circus_Waltz.mp3",
+    "seconds": 41,
+    "used": 0,
+    "lastUsed": null
+  },
+  {
+    "source": "incompetech",
+    "title": "Glitter Blast",
+    "artist": "Kevin MacLeod",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://incompetech.com",
+    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Glitter%20Blast.mp3",
+    "mood": "nuetzlich",
+    "file": "music/files/incompetech-Kevin_MacLeod-Glitter_Blast.mp3",
+    "seconds": 178,
     "used": 0,
     "lastUsed": null
   }
