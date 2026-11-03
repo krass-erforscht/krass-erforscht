@@ -13,11 +13,13 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Danach `data/answered.json` committen und pushen.
 0. **Zeitfenster prüfen:** `node slot.js <morgens|mittags|abends>` (das Fenster steht in der Aufgabe). Bei „NEIN“ hier aufhören.
    Nur wenn Kommentare beantwortet wurden, dem Nutzer kurz schreiben, wie viele; sonst keine Nachricht.
-   Gepostet wird einmal pro Tag. Die ersten 21 Posts wechseln täglich zwischen 7:45, 12:15 und 18:15 Uhr, danach gewinnt das Fenster mit den besten Zahlen.
+   Gepostet wird einmal pro Tag (7:45, 12:15 oder 18:15 Uhr). Die Uhrzeit richtet sich von Anfang an nach der besten Reichweite
+   (siehe „Immer nach der besten Reichweite“ unten).
 1. `npm ci`
-2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist). Danach `data/learnings.json` lesen.
-   Bei 70 % der Posts Thema und Ton wählen, die im Ranking oben stehen; bei 30 % bewusst etwas anderes ausprobieren.
-   Solange weniger als 10 Posts Statistiken haben: Themen und Töne abwechseln.
+2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist), danach `node choose.js empfehlung`.
+   Die Empfehlung nennt Thema und Ton für heute. Möglichst eine Meldung dazu nehmen; gibt es keine gute (oder wäre sie nach den
+   Sicherheitsregeln tabu, z. B. Gesundheitstipps beim Thema „koerper“), das nächstbeste Thema aus der Liste nehmen.
+   Eine richtig spannende Meldung schlägt die Empfehlung – Reichweite entsteht vor allem durch gute Geschichten.
 3. **News sammeln:** `node fetch-news.js > data/candidates.json`
 4. **Meldung auswählen:** die überraschendste, leicht verständliche Meldung, die in `data/posted.json` noch nicht vorkommt.
 5. **Fakten prüfen:** Originalartikel ganz lesen. Eine seriöse Quelle reicht (Wissenschaftsmagazin, Pressemitteilung einer Uni
@@ -60,7 +62,7 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
      und in die Post-Datei eintragen: `"video": { "file", "start", "duration", "credit", "short", "license", "page", "symbolisch", "headline", "captions" }`.
      `headline` = große Überschrift oben (mit `**Textmarker**`), `captions` = 2–4 kurze Fakten, die nacheinander eingeblendet werden.
    - **Format wählen:** `node format.js ja` (Video gefunden) bzw. `node format.js nein`. Ergebnis `bilder`, `video` oder `zusammen`
-     in die Post-Datei als `"format"` eintragen. Die App testet so, welches Format die meiste Reichweite bringt.
+     in die Post-Datei als `"format"` eintragen. Weil Videos bisher deutlich mehr Reichweite bringen, lohnt sich gründliches Suchen.
 7. **Post schreiben:** `posts/<YYYY-MM-DD>-<stichwort>.json` nach dem Muster von `posts/2026-10-21-orioniden.json`.
    4–6 Folien, kurze Sätze, ein Fun Fact, letzte Folie `cta`. `**Wort**` = Textmarker.
    Felder `topic` (weltraum | tiere | natur | technik | koerper | geschichte | kurios) und `tone` (staunen | witzig | nuetzlich) ausfüllen.
@@ -100,6 +102,13 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
     - **Wenn etwas vom Nutzer gebraucht wird** (neue Berechtigung, freigegebene Internetadresse, neuer Token, ein Konto, eine Entscheidung):
       in der Tagesnachricht klar und kurz Bescheid geben, was genau und warum, mit einfacher Schritt-für-Schritt-Anleitung auf Deutsch.
       Dieselbe Bitte nicht jeden Tag wiederholen; offene Bitten in `data/offene-bitten.md` führen und erst nach 3 Tagen erneut erinnern.
+
+## Immer nach der besten Reichweite
+
+Uhrzeit (`slot.js`), Format (`format.js`), Thema und Ton (`choose.js empfehlung`) folgen derselben Regel aus `choose.js`:
+gezählt werden die erreichten Konten aller Posts, die mindestens einen Tag alt sind. Was noch keine 2 Posts hat, bekommt eine faire Chance;
+sonst gewinnt an 3 von 4 Tagen die Variante mit der höchsten durchschnittlichen Reichweite, am 4. wird zum Weiterlernen etwas anderes probiert.
+Die Entscheidung hängt nur vom Datum ab, damit alle Läufe eines Tages übereinstimmen.
 
 ## Sicherheitsregeln – immer überspringen
 
