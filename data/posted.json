@@ -158,5 +158,15 @@
       "views": 123
     },
     "statsAt": "2026-11-03T17:16:58.932Z"
+  },
+  {
+    "id": "2026-11-03-voyager-lichttag",
+    "postedAt": "2026-11-03T17:29:37.299Z",
+    "topic": "weltraum",
+    "tone": "nuetzlich",
+    "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261103003152.htm",
+    "mediaId": "17932889949165916",
+    "format": "zusammen",
+    "reelMediaId": "18069702098759425"
   }
 ]
