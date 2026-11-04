@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-04-beteigeuze-begleiter",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "nuetzlich",
+  "format": "video",
+  "source": { "name": "MIT Haystack Observatory via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261103003149.htm" },
+  "video": {
+    "file": "videos/2026-11-04-beteigeuze-begleiter.mp4", "start": 0, "duration": 14,
+    "credit": "ESO", "short": "Video: ESO (CC BY 4.0)", "license": "CC BY 4.0",
+    "page": "https://www.eso.org/public/videos/", "symbolisch": false,
+    "headline": "Ein versteckter Stern pflügt durch **Beteigeuze**",
+    "captions": ["Ihr Begleiter **Siwarha** kreist extrem nah", "So nah, dass er **durch ihre Atmosphäre** fliegt", "Dadurch wird Beteigeuzes Hülle **oval**"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Weltraum", "title": "Ein versteckter Stern pflügt durch **Beteigeuze**" },
+    { "type": "cta", "label": "Mehr davon?", "title": "Jeden Tag eine krasse Entdeckung." }
+  ],
+  "caption": "Beteigeuze hat einen heimlichen Begleiter – und der fliegt mitten durch ihre Atmosphäre. ⭐🌊 Der kleine Stern Siwarha kreist so nah um den roten Riesen im Orion, dass er durch dessen Gashülle pflügt wie ein Boot durchs Wasser. Sehen kann man ihn mit Radioteleskopen nicht direkt – aber Beteigeuzes Hülle wird genau dann oval, wenn er seitlich steht.\n\nFun Fact: Siwarha bedeutet „ihr Armband“. 💫 Hast du Beteigeuze schon mal am Himmel gesucht? Sie ist der rötliche Schulterstern im Sternbild Orion. 👇\n\nQuelle: MIT Haystack Observatory, Harvard & Smithsonian, University of Manchester, ESO via ScienceDaily · Text mit KI erstellt\nVideo: ESO, CC BY 4.0\n#beteigeuze #orion #sterne #astronomie #wissenschaft"
+}

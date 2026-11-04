@@ -14,7 +14,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-03T17:16:56.353Z"
+    "statsAt": "2026-11-04T11:17:09.380Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -31,7 +31,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-03T17:16:57.001Z",
+    "statsAt": "2026-11-04T11:17:10.198Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -58,7 +58,7 @@
       "saved": 0,
       "views": 120
     },
-    "statsAt": "2026-11-03T17:16:57.234Z"
+    "statsAt": "2026-11-04T11:17:10.466Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -85,7 +85,7 @@
       "saved": 0,
       "views": 8
     },
-    "statsAt": "2026-11-03T17:16:57.800Z"
+    "statsAt": "2026-11-04T11:17:11.114Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -112,7 +112,7 @@
       "saved": 0,
       "views": 43
     },
-    "statsAt": "2026-11-03T17:16:58.248Z"
+    "statsAt": "2026-11-04T11:17:11.805Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -130,7 +130,7 @@
       "saved": 0,
       "views": 117
     },
-    "statsAt": "2026-11-03T17:16:58.464Z"
+    "statsAt": "2026-11-04T11:17:12.067Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -142,7 +142,7 @@
     "format": "zusammen",
     "reelMediaId": "18115420781146219",
     "stats": {
-      "reach": 113,
+      "reach": 117,
       "likes": 1,
       "comments": 0,
       "shares": 0,
@@ -150,14 +150,14 @@
       "follows": 0
     },
     "reelStats": {
-      "reach": 112,
+      "reach": 116,
       "likes": 1,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 123
+      "views": 127
     },
-    "statsAt": "2026-11-03T17:16:58.932Z"
+    "statsAt": "2026-11-04T11:17:12.901Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -167,6 +167,23 @@
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261103003152.htm",
     "mediaId": "17932889949165916",
     "format": "zusammen",
-    "reelMediaId": "18069702098759425"
+    "reelMediaId": "18069702098759425",
+    "stats": {
+      "reach": 102,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "follows": 0
+    },
+    "reelStats": {
+      "reach": 102,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 110
+    },
+    "statsAt": "2026-11-04T11:17:13.645Z"
   }
 ]
