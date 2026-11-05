@@ -14,7 +14,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-04T11:17:09.380Z"
+    "statsAt": "2026-11-05T11:16:21.351Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -31,7 +31,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-04T11:17:10.198Z",
+    "statsAt": "2026-11-05T11:16:22.052Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -58,7 +58,7 @@
       "saved": 0,
       "views": 120
     },
-    "statsAt": "2026-11-04T11:17:10.466Z"
+    "statsAt": "2026-11-05T11:16:22.437Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -85,7 +85,7 @@
       "saved": 0,
       "views": 8
     },
-    "statsAt": "2026-11-04T11:17:11.114Z"
+    "statsAt": "2026-11-05T11:16:23.233Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -112,7 +112,7 @@
       "saved": 0,
       "views": 43
     },
-    "statsAt": "2026-11-04T11:17:11.805Z"
+    "statsAt": "2026-11-05T11:16:23.839Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -130,7 +130,7 @@
       "saved": 0,
       "views": 117
     },
-    "statsAt": "2026-11-04T11:17:12.067Z"
+    "statsAt": "2026-11-05T11:16:24.293Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -142,7 +142,7 @@
     "format": "zusammen",
     "reelMediaId": "18115420781146219",
     "stats": {
-      "reach": 117,
+      "reach": 118,
       "likes": 1,
       "comments": 0,
       "shares": 0,
@@ -157,7 +157,7 @@
       "saved": 0,
       "views": 127
     },
-    "statsAt": "2026-11-04T11:17:12.901Z"
+    "statsAt": "2026-11-05T11:16:24.857Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -169,7 +169,7 @@
     "format": "zusammen",
     "reelMediaId": "18069702098759425",
     "stats": {
-      "reach": 102,
+      "reach": 103,
       "likes": 0,
       "comments": 0,
       "shares": 0,
@@ -177,14 +177,14 @@
       "follows": 0
     },
     "reelStats": {
-      "reach": 102,
+      "reach": 103,
       "likes": 0,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 110
+      "views": 111
     },
-    "statsAt": "2026-11-04T11:17:13.645Z"
+    "statsAt": "2026-11-05T11:16:26.014Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -193,6 +193,15 @@
     "tone": "nuetzlich",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261103003149.htm",
     "mediaId": "18125144383934934",
-    "format": "video"
+    "format": "video",
+    "stats": {
+      "reach": 169,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 191
+    },
+    "statsAt": "2026-11-05T11:16:26.417Z"
   }
 ]

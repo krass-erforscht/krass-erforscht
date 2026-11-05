@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "2026-11-04T11:17:13.660Z",
+  "aktualisiert": "2026-11-05T11:16:26.448Z",
   "ranking": [
     {
       "gruppe": "thema:tiere",
@@ -12,7 +12,7 @@
       "gruppe": "thema:kurios",
       "posts": 1,
       "punkte": 0.85,
-      "reichweite": 117,
+      "reichweite": 118,
       "follower": 0
     },
     {
@@ -23,45 +23,45 @@
       "follower": 0
     },
     {
-      "gruppe": "uhrzeit:12",
-      "posts": 2,
-      "punkte": 0.48,
-      "reichweite": 104,
-      "follower": 0
-    },
-    {
-      "gruppe": "format:video",
-      "posts": 2,
-      "punkte": 0.48,
-      "reichweite": 104,
-      "follower": 0
-    },
-    {
       "gruppe": "ton:witzig",
       "posts": 2,
-      "punkte": 0.43,
+      "punkte": 0.42,
       "reichweite": 111,
       "follower": 0
     },
     {
       "gruppe": "uhrzeit:18",
       "posts": 2,
-      "punkte": 0.43,
-      "reichweite": 110,
+      "punkte": 0.42,
+      "reichweite": 111,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:12",
+      "posts": 3,
+      "punkte": 0.32,
+      "reichweite": 126,
+      "follower": 0
+    },
+    {
+      "gruppe": "format:video",
+      "posts": 3,
+      "punkte": 0.32,
+      "reichweite": 126,
       "follower": 0
     },
     {
       "gruppe": "format:zusammen",
       "posts": 3,
       "punkte": 0.28,
-      "reichweite": 87,
+      "reichweite": 88,
       "follower": 0
     },
     {
       "gruppe": "thema:weltraum",
-      "posts": 2,
+      "posts": 3,
       "punkte": 0,
-      "reichweite": 72,
+      "reichweite": 105,
       "follower": 0
     },
     {
@@ -80,9 +80,9 @@
     },
     {
       "gruppe": "ton:nuetzlich",
-      "posts": 1,
+      "posts": 2,
       "punkte": 0,
-      "reichweite": 102,
+      "reichweite": 136,
       "follower": 0
     }
   ]

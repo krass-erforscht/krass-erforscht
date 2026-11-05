@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-05-ueberkreuz-gehirn",
+  "category": "Körper",
+  "topic": "koerper",
+  "tone": "nuetzlich",
+  "format": "video",
+  "source": { "name": "University of Minnesota, Frontiers in Neuroanatomy via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261103003146.htm" },
+  "video": {
+    "file": "videos/2026-11-05-ueberkreuz-gehirn.mp4", "start": 0, "duration": 22,
+    "credit": "AgnieszkaStarostecka / Wikimedia Commons", "short": "Symbolvideo: 3D-Gehirn, AgnieszkaStarostecka (CC BY 4.0)", "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Animation_of_the_anatomy_and_physiology_of_the_human_brain_AS.webm", "symbolisch": true,
+    "headline": "Warum steuert deine **linke** Hirnhälfte deine **rechte** Hand?",
+    "captions": ["Dein Nervensystem ist **über Kreuz** verdrahtet", "Die Augenlinse dreht das Bild um: **rechts landet links**", "Forscher vermuten: Spätere Nervenbahnen wurden um dieses **uralte Sehsystem** herum gebaut"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Körper", "title": "Warum steuert die **linke** Hirnhälfte die **rechte** Hand?" },
+    { "type": "cta", "label": "Mehr davon?", "title": "Jeden Tag eine krasse Entdeckung." }
+  ],
+  "caption": "Warum steuert die linke Gehirnhälfte die rechte Körperseite – und umgekehrt? 🧠✋ Forscher der University of Minnesota haben eine Idee, die Hunderte Millionen Jahre zurückreicht: Die Augenlinse dreht das Bild um, was rechts ist, landet links auf der Netzhaut. Die Sehnerven kreuzen sich deshalb – und spätere Nervenbahnen für Tasten, Schmerz und Bewegung könnten um dieses uralte Sehsystem herum entstanden sein. Das ist noch eine Hypothese, aber eine spannende.\n\nProbier’s aus: Heb die rechte Hand – gerade hat deine linke Hirnhälfte gearbeitet. 👇\n\nQuelle: University of Minnesota, Frontiers in Neuroanatomy via ScienceDaily · Text mit KI erstellt\nSymbolvideo: AgnieszkaStarostecka, CC BY 4.0, via Wikimedia Commons\n#gehirn #körper #nervensystem #evolution #wissenschaft"
+}
