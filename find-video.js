@@ -73,8 +73,10 @@ async function commons(q, max) {
 
 // Lädt ein Video, prüft die Länge und legt einen Bogen mit 6 Standbildern daneben
 async function fetchCandidate(c, file) {
+  // Zwischen zwei Wikimedia-Downloads kurz warten, sonst lehnt der Server viele davon gleich ab
+  if (/wikimedia\.org/.test(c.url)) await sleep(4000);
   let res;
-  for (const wait of [5, 15, 30]) { // Wikimedia lehnt Downloads bei Andrang kurz ab
+  for (const wait of [10, 30, 60]) { // Wikimedia lehnt Downloads bei Andrang kurz ab
     res = await fetch(c.url, { headers: UA });
     if (res.status !== 429) break;
     await sleep(wait * 1000);
