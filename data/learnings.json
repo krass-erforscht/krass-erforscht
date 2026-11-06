@@ -1,88 +1,95 @@
 {
-  "aktualisiert": "2026-11-05T11:16:26.448Z",
+  "aktualisiert": "2026-11-06T11:16:37.797Z",
   "ranking": [
     {
-      "gruppe": "thema:tiere",
+      "gruppe": "uhrzeit:7",
       "posts": 1,
-      "punkte": 0.96,
-      "reichweite": 104,
-      "follower": 0
-    },
-    {
-      "gruppe": "thema:kurios",
-      "posts": 1,
-      "punkte": 0.85,
-      "reichweite": 118,
+      "punkte": 4.65,
+      "reichweite": 43,
       "follower": 0
     },
     {
       "gruppe": "ton:staunen",
       "posts": 2,
-      "punkte": 0.48,
-      "reichweite": 73,
-      "follower": 0
-    },
-    {
-      "gruppe": "ton:witzig",
-      "posts": 2,
-      "punkte": 0.42,
-      "reichweite": 111,
-      "follower": 0
-    },
-    {
-      "gruppe": "uhrzeit:18",
-      "posts": 2,
-      "punkte": 0.42,
-      "reichweite": 111,
-      "follower": 0
-    },
-    {
-      "gruppe": "uhrzeit:12",
-      "posts": 3,
-      "punkte": 0.32,
-      "reichweite": 126,
-      "follower": 0
-    },
-    {
-      "gruppe": "format:video",
-      "posts": 3,
-      "punkte": 0.32,
-      "reichweite": 126,
+      "punkte": 3.28,
+      "reichweite": 74,
       "follower": 0
     },
     {
       "gruppe": "format:zusammen",
       "posts": 3,
-      "punkte": 0.28,
-      "reichweite": 88,
+      "punkte": 3.03,
+      "reichweite": 89,
       "follower": 0
     },
     {
       "gruppe": "thema:weltraum",
       "posts": 3,
-      "punkte": 0,
-      "reichweite": 105,
+      "punkte": 2.57,
+      "reichweite": 107,
       "follower": 0
     },
     {
-      "gruppe": "uhrzeit:7",
+      "gruppe": "thema:kurios",
       "posts": 1,
-      "punkte": 0,
-      "reichweite": 42,
+      "punkte": 2.52,
+      "reichweite": 119,
+      "follower": 0
+    },
+    {
+      "gruppe": "ton:witzig",
+      "posts": 2,
+      "punkte": 2.21,
+      "reichweite": 112,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:18",
+      "posts": 2,
+      "punkte": 2.21,
+      "reichweite": 112,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:koerper",
+      "posts": 1,
+      "punkte": 1.94,
+      "reichweite": 103,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:tiere",
+      "posts": 1,
+      "punkte": 1.9,
+      "reichweite": 105,
       "follower": 0
     },
     {
       "gruppe": "thema:natur",
       "posts": 1,
-      "punkte": 0,
-      "reichweite": 104,
+      "punkte": 1.9,
+      "reichweite": 105,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:12",
+      "posts": 4,
+      "punkte": 1.73,
+      "reichweite": 122,
+      "follower": 0
+    },
+    {
+      "gruppe": "format:video",
+      "posts": 4,
+      "punkte": 1.73,
+      "reichweite": 122,
       "follower": 0
     },
     {
       "gruppe": "ton:nuetzlich",
-      "posts": 2,
-      "punkte": 0,
-      "reichweite": 136,
+      "posts": 3,
+      "punkte": 1.67,
+      "reichweite": 127,
       "follower": 0
     }
   ]

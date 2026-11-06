@@ -7,14 +7,14 @@
     "tone": "witzig",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261023023718.htm",
     "stats": {
-      "reach": 4,
-      "likes": 2,
+      "reach": 5,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-05T11:16:21.351Z"
+    "statsAt": "2026-11-06T11:16:33.310Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -24,14 +24,14 @@
     "tone": "staunen",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261026225603.htm",
     "stats": {
-      "reach": 17,
-      "likes": 1,
+      "reach": 18,
+      "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-05T11:16:22.052Z",
+    "statsAt": "2026-11-06T11:16:34.116Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -51,14 +51,14 @@
     "mediaId": "18131870548873398",
     "format": "video",
     "stats": {
-      "reach": 104,
-      "likes": 1,
+      "reach": 105,
+      "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 120
+      "views": 122
     },
-    "statsAt": "2026-11-05T11:16:22.437Z"
+    "statsAt": "2026-11-06T11:16:34.425Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -70,8 +70,8 @@
     "format": "bilder",
     "reelMediaId": "18037608218846843",
     "stats": {
-      "reach": 11,
-      "likes": 2,
+      "reach": 12,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -85,7 +85,7 @@
       "saved": 0,
       "views": 8
     },
-    "statsAt": "2026-11-05T11:16:23.233Z"
+    "statsAt": "2026-11-06T11:16:35.011Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -97,8 +97,8 @@
     "format": "zusammen",
     "reelMediaId": "18201584050387146",
     "stats": {
-      "reach": 42,
-      "likes": 0,
+      "reach": 43,
+      "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -112,7 +112,7 @@
       "saved": 0,
       "views": 43
     },
-    "statsAt": "2026-11-05T11:16:23.839Z"
+    "statsAt": "2026-11-06T11:16:35.691Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -123,14 +123,14 @@
     "mediaId": "18117241286167555",
     "format": "video",
     "stats": {
-      "reach": 104,
-      "likes": 0,
+      "reach": 105,
+      "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 117
+      "views": 119
     },
-    "statsAt": "2026-11-05T11:16:24.293Z"
+    "statsAt": "2026-11-06T11:16:36.012Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -142,8 +142,8 @@
     "format": "zusammen",
     "reelMediaId": "18115420781146219",
     "stats": {
-      "reach": 118,
-      "likes": 1,
+      "reach": 119,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -157,7 +157,7 @@
       "saved": 0,
       "views": 127
     },
-    "statsAt": "2026-11-05T11:16:24.857Z"
+    "statsAt": "2026-11-06T11:16:36.566Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -169,8 +169,8 @@
     "format": "zusammen",
     "reelMediaId": "18069702098759425",
     "stats": {
-      "reach": 103,
-      "likes": 0,
+      "reach": 105,
+      "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -184,7 +184,7 @@
       "saved": 0,
       "views": 111
     },
-    "statsAt": "2026-11-05T11:16:26.014Z"
+    "statsAt": "2026-11-06T11:16:37.084Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -195,14 +195,14 @@
     "mediaId": "18125144383934934",
     "format": "video",
     "stats": {
-      "reach": 169,
-      "likes": 0,
+      "reach": 173,
+      "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 191
+      "views": 193
     },
-    "statsAt": "2026-11-05T11:16:26.417Z"
+    "statsAt": "2026-11-06T11:16:37.484Z"
   },
   {
     "id": "2026-11-05-ueberkreuz-gehirn",
@@ -211,6 +211,15 @@
     "tone": "nuetzlich",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261103003146.htm",
     "mediaId": "18006322479009398",
-    "format": "video"
+    "format": "video",
+    "stats": {
+      "reach": 103,
+      "likes": 2,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 110
+    },
+    "statsAt": "2026-11-06T11:16:37.779Z"
   }
 ]

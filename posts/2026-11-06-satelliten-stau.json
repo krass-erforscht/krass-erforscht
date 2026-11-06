@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-06-satelliten-stau",
+  "category": "Technik",
+  "topic": "technik",
+  "tone": "nuetzlich",
+  "format": "video",
+  "source": { "name": "scinexx (G7-Akademien, ESA, TU Braunschweig)", "url": "https://www.scinexx.de/news/kosmos/satellitenboom-erhoeht-das-kollisionsrisiko-im-erdnahen-weltraum-2/" },
+  "video": {
+    "file": "videos/2026-11-06-satelliten-stau.mp4", "start": 0, "duration": 18,
+    "credit": "NASA Scientific Visualization Studio / Wikimedia Commons", "short": "Visualisierung: NASA SVS (gemeinfrei) – jeder Punkt ein erfasstes Objekt", "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Tracking_Satellites_and_Space_Debris_in_Earth_Orbit_(Feb_2024)_(SVS5258_-_all_trackable_2160p60).webm", "symbolisch": false,
+    "headline": "Stau im All: So voll ist es um die **Erde**",
+    "captions": ["2025: über **4.000 neue** Satelliten und Nutzlasten im Orbit", "Ein Crash kann eine **Kettenreaktion** auslösen", "Forschende fordern jetzt **Verkehrsregeln** fürs All"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Technik", "title": "Stau im All" },
+    { "type": "cta", "label": "Mehr davon?", "title": "Jeden Tag eine krasse Entdeckung." }
+  ],
+  "caption": "Satelliten-Stau im All: Jeder orange Punkt in diesem NASA-Video ist ein erfasster Satellit oder ein Trümmerteil. 🛰️💥 Allein 2025 gab es über 300 Raketenstarts und mehr als 4.000 neue Nutzlasten im Orbit. Kracht es, entstehen neue Trümmer – im schlimmsten Fall eine Kettenreaktion (Kessler-Syndrom), die ganze Umlaufbahnen unbrauchbar machen könnte. Die Wissenschaftsakademien der G7-Staaten fordern deshalb verbindliche Regeln fürs Aufräumen.\n\nWusstest du: Beim Verglühen gelangten 2024 bei 24 chemischen Elementen schon mehr Stoffe aus Raumfahrtschrott in die Atmosphäre als aus Meteoriten. Sollte es eine „Müllabfuhr“ fürs All geben? 👇\n\nQuelle: scinexx (Stellungnahme der G7-Akademien, ESA-Bericht 2026, TU Braunschweig) · Text mit KI erstellt\nVideo: NASA Scientific Visualization Studio (gemeinfrei), via Wikimedia Commons\n#weltraumschrott #satelliten #raumfahrt #technik #wissenschaft"
+}
