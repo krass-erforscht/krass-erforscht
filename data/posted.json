@@ -221,5 +221,14 @@
       "views": 110
     },
     "statsAt": "2026-11-06T11:16:37.779Z"
+  },
+  {
+    "id": "2026-11-06-satelliten-stau",
+    "postedAt": "2026-11-06T11:24:29.320Z",
+    "topic": "technik",
+    "tone": "nuetzlich",
+    "sourceUrl": "https://www.scinexx.de/news/kosmos/satellitenboom-erhoeht-das-kollisionsrisiko-im-erdnahen-weltraum-2/",
+    "mediaId": "17978309556170067",
+    "format": "video"
   }
 ]
