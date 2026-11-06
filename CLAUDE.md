@@ -22,6 +22,9 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Eine richtig spannende Meldung schlägt die Empfehlung – Reichweite entsteht vor allem durch gute Geschichten.
 3. **News sammeln:** `node fetch-news.js > data/candidates.json`
 4. **Meldung auswählen:** die überraschendste, leicht verständliche Meldung, die in `data/posted.json` noch nicht vorkommt.
+   Achtung: Spektrum.de-Artikel lassen sich von hier aus nicht abrufen (Fehler 403), der Feed liefert nur einen kurzen Anreißer.
+   Eine Spektrum-Meldung nur nehmen, wenn sich dieselbe Nachricht in einer lesbaren Quelle findet (ScienceDaily, scinexx mit vollem Text im Feed,
+   Pressemitteilung der Forschungseinrichtung). Bei scinexx steht der ganze Artikel im Feld `content:encoded` des Feeds.
 5. **Fakten prüfen:** Originalartikel ganz lesen. Eine seriöse Quelle reicht (Wissenschaftsmagazin, Pressemitteilung einer Uni
    oder Forschungseinrichtung, NASA/ESA). Alle Zahlen und Aussagen genau so übernehmen, wie sie dort stehen, nichts dazuerfinden.
    Vorsichtige Formulierungen beibehalten: „könnte“, „vermuten Forschende“, „erste Hinweise“ nicht zu Tatsachen machen.
