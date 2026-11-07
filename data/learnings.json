@@ -1,11 +1,25 @@
 {
-  "aktualisiert": "2026-11-06T11:16:37.797Z",
+  "aktualisiert": "2026-11-07T06:45:58.535Z",
   "ranking": [
     {
       "gruppe": "uhrzeit:7",
       "posts": 1,
       "punkte": 4.65,
       "reichweite": 43,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:kurios",
+      "posts": 1,
+      "punkte": 3.33,
+      "reichweite": 120,
+      "follower": 0
+    },
+    {
+      "gruppe": "format:zusammen",
+      "posts": 3,
+      "punkte": 3.29,
+      "reichweite": 90,
       "follower": 0
     },
     {
@@ -16,38 +30,24 @@
       "follower": 0
     },
     {
-      "gruppe": "format:zusammen",
-      "posts": 3,
-      "punkte": 3.03,
-      "reichweite": 89,
-      "follower": 0
-    },
-    {
-      "gruppe": "thema:weltraum",
-      "posts": 3,
-      "punkte": 2.57,
-      "reichweite": 107,
-      "follower": 0
-    },
-    {
-      "gruppe": "thema:kurios",
-      "posts": 1,
-      "punkte": 2.52,
-      "reichweite": 119,
-      "follower": 0
-    },
-    {
       "gruppe": "ton:witzig",
       "posts": 2,
-      "punkte": 2.21,
-      "reichweite": 112,
+      "punkte": 2.62,
+      "reichweite": 113,
       "follower": 0
     },
     {
       "gruppe": "uhrzeit:18",
       "posts": 2,
-      "punkte": 2.21,
-      "reichweite": 112,
+      "punkte": 2.61,
+      "reichweite": 113,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:weltraum",
+      "posts": 3,
+      "punkte": 2.56,
+      "reichweite": 108,
       "follower": 0
     },
     {
@@ -73,23 +73,30 @@
     },
     {
       "gruppe": "uhrzeit:12",
-      "posts": 4,
-      "punkte": 1.73,
-      "reichweite": 122,
+      "posts": 5,
+      "punkte": 1.6,
+      "reichweite": 134,
       "follower": 0
     },
     {
       "gruppe": "format:video",
-      "posts": 4,
-      "punkte": 1.73,
-      "reichweite": 122,
+      "posts": 5,
+      "punkte": 1.6,
+      "reichweite": 134,
       "follower": 0
     },
     {
       "gruppe": "ton:nuetzlich",
-      "posts": 3,
-      "punkte": 1.67,
-      "reichweite": 127,
+      "posts": 4,
+      "punkte": 1.52,
+      "reichweite": 142,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:technik",
+      "posts": 1,
+      "punkte": 1.09,
+      "reichweite": 183,
       "follower": 0
     }
   ]

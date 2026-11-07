@@ -1,0 +1,21 @@
+{
+  "id": "2026-11-07-dino-blut",
+  "category": "Urzeit",
+  "topic": "geschichte",
+  "tone": "staunen",
+  "format": "video",
+  "source": { "name": "Curtin University, PNAS via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261105224542.htm" },
+  "video": {
+    "file": "videos/2026-11-07-dino-blut.mp4", "start": 0, "duration": 14.5,
+    "credit": "Fossil: Sayão, Saraiva et al. (CC BY 4.0); Blutzelle: Louisa Howard (gemeinfrei), via Wikimedia Commons",
+    "short": "Fossil: Sayão et al., CC BY 4.0 · Blutzelle (heute): L. Howard, gemeinfrei", "license": "CC BY 4.0 / Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Aratasaurus_museunacionali_holotype.jpg", "symbolisch": false,
+    "headline": "In diesem Dino-Knochen steckt **Blut** – 115 Millionen Jahre alt",
+    "captions": ["Versteinerte **rote Blutkörperchen** im Beinknochen", "Darin: Bausteine von **Hämoglobin**", "Ein Mineral schützte sie wie eine **Zeitkapsel**"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Urzeit", "title": "Dinosaurier-**Blut**, 115 Millionen Jahre alt" },
+    { "type": "cta", "label": "Mehr davon?", "title": "Jeden Tag eine krasse Entdeckung." }
+  ],
+  "caption": "Dinosaurier-Blut, 115 Millionen Jahre alt: Im Beinknochen des Raubsauriers Aratasaurus aus Brasilien haben Forschende versteinerte rote Blutkörperchen gefunden – und darin Bausteine von Hämoglobin, dem Stoff, der Sauerstoff transportiert. 🦖🩸 Es ist der erste eindeutige chemische Nachweis solcher Moleküle in Dino-Blutzellen. Ein Mineral namens Hausmannit hat sie wie eine Zeitkapsel geschützt.\n\nWas würdest du die Forschenden fragen, wenn du dürftest? 👇\n\nQuelle: Curtin University, Proceedings of the National Academy of Sciences (PNAS) via ScienceDaily · Text mit KI erstellt\nBilder: Fossil – Sayão, Saraiva et al., CC BY 4.0; rotes Blutkörperchen (heute, zum Vergleich) – Louisa Howard, gemeinfrei; beide via Wikimedia Commons\n#dinosaurier #fossilien #urzeit #paläontologie #wissenschaft"
+}

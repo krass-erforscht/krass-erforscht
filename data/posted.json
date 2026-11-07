@@ -14,7 +14,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-06T11:16:33.310Z"
+    "statsAt": "2026-11-07T06:45:53.496Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -31,7 +31,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-06T11:16:34.116Z",
+    "statsAt": "2026-11-07T06:45:54.294Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -58,7 +58,7 @@
       "saved": 0,
       "views": 122
     },
-    "statsAt": "2026-11-06T11:16:34.425Z"
+    "statsAt": "2026-11-07T06:45:54.672Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -85,7 +85,7 @@
       "saved": 0,
       "views": 8
     },
-    "statsAt": "2026-11-06T11:16:35.011Z"
+    "statsAt": "2026-11-07T06:45:55.339Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -112,7 +112,7 @@
       "saved": 0,
       "views": 43
     },
-    "statsAt": "2026-11-06T11:16:35.691Z"
+    "statsAt": "2026-11-07T06:45:55.973Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -130,7 +130,7 @@
       "saved": 0,
       "views": 119
     },
-    "statsAt": "2026-11-06T11:16:36.012Z"
+    "statsAt": "2026-11-07T06:45:56.212Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -142,8 +142,8 @@
     "format": "zusammen",
     "reelMediaId": "18115420781146219",
     "stats": {
-      "reach": 119,
-      "likes": 3,
+      "reach": 120,
+      "likes": 4,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -157,7 +157,7 @@
       "saved": 0,
       "views": 127
     },
-    "statsAt": "2026-11-06T11:16:36.566Z"
+    "statsAt": "2026-11-07T06:45:57.006Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -169,7 +169,7 @@
     "format": "zusammen",
     "reelMediaId": "18069702098759425",
     "stats": {
-      "reach": 105,
+      "reach": 106,
       "likes": 2,
       "comments": 0,
       "shares": 0,
@@ -184,7 +184,7 @@
       "saved": 0,
       "views": 111
     },
-    "statsAt": "2026-11-06T11:16:37.084Z"
+    "statsAt": "2026-11-07T06:45:57.654Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -195,14 +195,14 @@
     "mediaId": "18125144383934934",
     "format": "video",
     "stats": {
-      "reach": 173,
+      "reach": 174,
       "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 193
+      "views": 194
     },
-    "statsAt": "2026-11-06T11:16:37.484Z"
+    "statsAt": "2026-11-07T06:45:58.021Z"
   },
   {
     "id": "2026-11-05-ueberkreuz-gehirn",
@@ -220,7 +220,7 @@
       "saved": 0,
       "views": 110
     },
-    "statsAt": "2026-11-06T11:16:37.779Z"
+    "statsAt": "2026-11-07T06:45:58.283Z"
   },
   {
     "id": "2026-11-06-satelliten-stau",
@@ -229,6 +229,15 @@
     "tone": "nuetzlich",
     "sourceUrl": "https://www.scinexx.de/news/kosmos/satellitenboom-erhoeht-das-kollisionsrisiko-im-erdnahen-weltraum-2/",
     "mediaId": "17978309556170067",
-    "format": "video"
+    "format": "video",
+    "stats": {
+      "reach": 183,
+      "likes": 2,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 224
+    },
+    "statsAt": "2026-11-07T06:45:58.508Z"
   }
 ]
