@@ -64,6 +64,10 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    - Gefunden: Video nach `videos/<post-id>.mp4` kopieren (`.webm` vorher mit `ffmpeg -i in.webm -c:v libx264 -an videos/<post-id>.mp4` umwandeln)
      und in die Post-Datei eintragen: `"video": { "file", "start", "duration", "credit", "short", "license", "page", "symbolisch", "headline", "captions" }`.
      `headline` = große Überschrift oben (mit `**Textmarker**`), `captions` = 2–4 kurze Fakten, die nacheinander eingeblendet werden.
+   - **Kein passendes Video, aber gute Bilder?** Daraus ein Video machen: `node bilder-video.js videos/<post-id>.mp4 "<bild1>|<beschriftung>" "<bild2>|<beschriftung>"`
+     (1–4 Bilder, je ca. 6 Sekunden mit Zoom und Überblendung; z. B. Satellitenbild vorher/nachher, Fossil + Vergleichsbild).
+     Vergleichsbilder, die nicht das Objekt aus der Meldung zeigen, in der Beschriftung klar kennzeichnen („Zum Vergleich: … heute“).
+     Das zählt dann als Video. Bisher brachten Videos rund zehnmal so viel Reichweite wie reine Bilder.
    - **Format wählen:** `node format.js ja` (Video gefunden) bzw. `node format.js nein`. Ergebnis `bilder`, `video` oder `zusammen`
      in die Post-Datei als `"format"` eintragen. Weil Videos bisher deutlich mehr Reichweite bringen, lohnt sich gründliches Suchen.
 7. **Post schreiben:** `posts/<YYYY-MM-DD>-<stichwort>.json` nach dem Muster von `posts/2026-10-21-orioniden.json`.
