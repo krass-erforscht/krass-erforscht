@@ -239,5 +239,14 @@
       "views": 224
     },
     "statsAt": "2026-11-07T06:45:58.508Z"
+  },
+  {
+    "id": "2026-11-07-dino-blut",
+    "postedAt": "2026-11-07T06:55:52.278Z",
+    "topic": "geschichte",
+    "tone": "staunen",
+    "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261105224542.htm",
+    "mediaId": "18169323721488278",
+    "format": "video"
   }
 ]
