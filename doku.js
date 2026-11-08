@@ -3,6 +3,7 @@
 // Drehbuch: { id, title, description, tags, mood, segments: [ { text, visual: { file, start?, position? }, label?, credit } ], sources: [] }
 //   text: ein Satz pro Zeile (Zahlen ausschreiben, damit die Stimme sie richtig spricht).
 //   visual.file: Video (.mp4/.webm) oder Bild (.jpg/.png); Bilder bekommen einen langsamen Zoom.
+//   visual.fit: true = ganzes Motiv zeigen (Hochformat/Quadrat), Rand unscharf gefüllt; visual.position: Ausschnitt (crop x:y)
 //   label: kurze Einblendung oben links (z. B. „Brasilien, vor 115 Mio. Jahren“), credit: Kurz-Nachweis unten rechts.
 // Ergebnis: out/doku-<id>/doku.mp4 und vorschau.jpg; Sprachaufnahme wird zwischengespeichert (nur neu, wenn der Text sich ändert).
 // Die Stimme braucht die einmalige Einrichtung aus stimme/sprechen.py (Python-Umgebung unter /tmp/cb).
@@ -69,7 +70,12 @@ function main() {
     const input = isVideo(v.file)
       ? ['-ss', String(v.start || 0), '-stream_loop', '-1', '-i', v.file]
       : ['-i', v.file];
-    const base = isVideo(v.file)
+    // fit: ganzes Bild/Video zeigen (z. B. quadratisch), Rand mit unscharfer Kopie füllen
+    const fit = `split[a][b];[a]scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},boxblur=40:2,eq=brightness=-0.15[bg];` +
+      `[b]scale=${W}:${H}:force_original_aspect_ratio=decrease[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2`;
+    const base = v.fit && isVideo(v.file) ? `${fit},fps=${FPS}`
+      : v.fit ? `${fit},zoompan=z='min(zoom+0.0004,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${Math.ceil(d * FPS)}:s=${W}x${H}:fps=${FPS}`
+      : isVideo(v.file)
       ? `scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},fps=${FPS}`
       : `scale=${W * 1.5}:${H * 1.5}:force_original_aspect_ratio=increase,crop=${W * 1.5}:${H * 1.5}:${v.position || '(iw-ow)/2:(ih-oh)/2'},` +
         `zoompan=z='min(zoom+0.0006,1.15)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${Math.ceil(d * FPS)}:s=${W}x${H}:fps=${FPS}`;
