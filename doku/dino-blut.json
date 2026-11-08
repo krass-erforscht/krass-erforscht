@@ -1,7 +1,7 @@
 {
   "id": "dino-blut",
   "title": "Blut im Dino-Knochen: 115 Millionen Jahre alt | Kurz-Doku",
-  "thumbText": "Blut im Dino-Knochen – 115 Mio. Jahre alt",
+  "thumbText": "Blut im Dino-Knochen!\n115 Millionen Jahre alt",
   "description": "In einem 115 Millionen Jahre alten Knochen des Raubsauriers Aratasaurus aus Brasilien haben Forschende versteinerte rote Blutkörperchen entdeckt – und darin Bausteine von Hämoglobin. Wie konnte das so lange überdauern? Und was hat das mit der Suche nach Leben auf anderen Planeten zu tun?\n\nWas könnte in alten Fossilien noch verborgen sein? Schreib's in die Kommentare!",
   "tags": [
     "Dinosaurier",
@@ -25,7 +25,8 @@
         "file": "images/doku/dino-arata.jpg",
         "fit": true
       },
-      "credit": "Fossil: Sayão, Saraiva et al., CC BY 4.0"
+      "credit": "Fossil: Sayão, Saraiva et al., CC BY 4.0",
+      "label": "Brasilien · vor 115 Mio. Jahren"
     },
     {
       "text": "Der Knochen gehörte einem Raubsaurier namens Aratasaurus.\nEin Fleischfresser aus der Gruppe der Theropoden.\nGefunden wurde er im Nordosten Brasiliens.",
@@ -50,16 +51,24 @@
         "file": "images/doku/dino-blutzelle.jpg",
         "fit": true
       },
-      "credit": "Blutzelle (heute): Louisa Howard, gemeinfrei, via Wikimedia Commons"
+      "credit": "Blutzelle (heute): Louisa Howard, gemeinfrei, via Wikimedia Commons",
+      "label": "Zum Vergleich: rotes Blutkörperchen heute"
     },
     {
       "text": "Frühere Studien hatten zwar Strukturen gefunden, die wie Blutzellen aussahen.\nAber was genau darin steckte, war nie sicher belegt.\nDas hier ist der erste eindeutige chemische Nachweis solcher Moleküle in versteinerten Blutzellen eines Dinosauriers.\nDazu kommen Aminosäuren, die zu Kollagen passen, einem wichtigen Baustoff von Knochen.",
-      "visual": {
-        "file": "videos/doku/blutzellen-mikroskop.mp4",
-        "fit": true
-      },
-      "credit": "Video: Ankashchuk, CC BY 4.0, via Wikimedia Commons",
-      "label": "Zum Vergleich: heutige rote Blutkörperchen"
+      "visuals": [
+        {
+          "file": "videos/doku/blutzellen-mikroskop.mp4",
+          "fit": true,
+          "label": "Zum Vergleich: heutige rote Blutkörperchen",
+          "credit": "Video: Ankashchuk, CC BY 4.0, via Wikimedia Commons"
+        },
+        {
+          "file": "images/doku/dino-achatknochen-2.jpg",
+          "label": "Zum Vergleich: versteinerter Dino-Knochen",
+          "credit": "Foto: Smithsonian NMNH, CC0"
+        }
+      ]
     },
     {
       "text": "Wie konnte etwas so Zerbrechliches hundertfünfzehn Millionen Jahre überdauern?\nDie Antwort hat offenbar mit einem Mineral zu tun: Hausmannit.\nEs hat die Blutzellen stabilisiert, wie eine natürliche Zeitkapsel.",
@@ -80,10 +89,16 @@
     },
     {
       "text": "Lange galt in der Paläontologie: Moleküle aus dem Blut können solche Zeiträume nicht überstehen.\nDiese Studie stellt das infrage.\nUnd vielleicht stecken auch in anderen Fossilien noch Informationen, die bisher übersehen wurden.\nDie Forschenden hoffen, so mehr über Blut, Stoffwechsel und sogar die Aktivität ausgestorbener Tiere zu erfahren.",
-      "visual": {
-        "file": "images/doku/dino-theropode.jpg"
-      },
-      "credit": "Foto: Gary Todd, CC0, via Wikimedia Commons"
+      "visuals": [
+        {
+          "file": "images/doku/dino-theropode.jpg",
+          "credit": "Foto: Gary Todd, CC0, via Wikimedia Commons"
+        },
+        {
+          "file": "videos/doku/museum.mp4",
+          "credit": "Video: Voice of America, gemeinfrei"
+        }
+      ]
     },
     {
       "text": "Die Entdeckung könnte sogar über die Erde hinaus wichtig sein.\nWenn biologische Spuren unter den richtigen Bedingungen mehr als hundert Millionen Jahre überdauern, müssen Forschende vielleicht neu überlegen, wo und wie sie nach Spuren von altem Leben suchen, auch auf anderen Planeten.",
@@ -95,12 +110,19 @@
     },
     {
       "text": "Ein einzelner Knochen, ein paar winzige Zellen, und ein Fenster in eine Welt, die seit hundertfünfzehn Millionen Jahren verschwunden ist.\nWas meinst du: Was könnte in alten Fossilien noch alles verborgen sein?",
-      "visual": {
-        "file": "videos/doku/fossil-haende.mp4",
-        "start": 2
-      },
-      "credit": "Video: Voice of America, gemeinfrei",
-      "label": "Symbolbild"
+      "visuals": [
+        {
+          "file": "videos/doku/fossil-haende.mp4",
+          "label": "Symbolbild",
+          "credit": "Video: Voice of America, gemeinfrei"
+        },
+        {
+          "file": "images/doku/dino-arata.jpg",
+          "fit": true,
+          "label": "Aratasaurus · 115 Mio. Jahre",
+          "credit": "Fossil: Sayão, Saraiva et al., CC BY 4.0"
+        }
+      ]
     }
   ]
 }

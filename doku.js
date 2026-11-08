@@ -4,6 +4,7 @@
 //   text: ein Satz pro Zeile (Zahlen ausschreiben, damit die Stimme sie richtig spricht).
 //   visual.file: Video (.mp4/.webm) oder Bild (.jpg/.png); Bilder bekommen einen langsamen Zoom.
 //   visual.fit: true = ganzes Motiv zeigen (Hochformat/Quadrat), Rand unscharf gefüllt; visual.position: Ausschnitt (crop x:y)
+//   visuals: [ {file, start, fit, label, credit}, … ] statt visual – mehrere Motive, Zeit wird gleichmäßig geteilt.
 //   label: kurze Einblendung oben links (z. B. „Brasilien, vor 115 Mio. Jahren“), credit: Kurz-Nachweis unten rechts.
 // Ergebnis: out/doku-<id>/doku.mp4 und vorschau.jpg; Sprachaufnahme wird zwischengespeichert (nur neu, wenn der Text sich ändert).
 // Die Stimme braucht die einmalige Einrichtung aus stimme/sprechen.py (Python-Umgebung unter /tmp/cb).
@@ -33,6 +34,21 @@ function textFile(dir, name, text) {
   const f = path.join(dir, name);
   fs.writeFileSync(f, text.replace(/%/g, '%%'));
   return f;
+}
+
+// Ein Motiv als Clip ohne Schrift: Video (ggf. in Schleife) oder Bild mit langsamem Zoom
+function visualClip(v, d, out) {
+  const input = isVideo(v.file) ? ['-ss', String(v.start || 0), '-stream_loop', '-1', '-i', v.file] : ['-i', v.file];
+  // fit: ganzes Bild/Video zeigen (z. B. quadratisch), Rand mit unscharfer Kopie füllen
+  const fit = `split[a][b];[a]scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},boxblur=40:2,eq=brightness=-0.15[bg];` +
+    `[b]scale=${W}:${H}:force_original_aspect_ratio=decrease[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2`;
+  const base = v.fit && isVideo(v.file) ? `${fit},fps=${FPS}`
+    : v.fit ? `${fit},zoompan=z='min(zoom+0.0004,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${Math.ceil(d * FPS)}:s=${W}x${H}:fps=${FPS}`
+    : isVideo(v.file) ? `scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},fps=${FPS}`
+    : `scale=${W * 1.5}:${H * 1.5}:force_original_aspect_ratio=increase,crop=${W * 1.5}:${H * 1.5}:${v.position || '(iw-ow)/2:(ih-oh)/2'},` +
+      `zoompan=z='min(zoom+0.0006,1.15)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${Math.ceil(d * FPS)}:s=${W}x${H}:fps=${FPS}`;
+  ff([...input, '-t', d.toFixed(2), '-vf', `${base},setsar=1,format=yuv420p`, '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-r', String(FPS), out]);
+  return out;
 }
 
 function main() {
@@ -66,31 +82,27 @@ function main() {
   const clips = spec.segments.map((seg, i) => {
     const { start, end } = bounds[i], d = end - start;
     const out = path.join(tmp, `seg${i}.mp4`);
-    const v = seg.visual;
-    const input = isVideo(v.file)
-      ? ['-ss', String(v.start || 0), '-stream_loop', '-1', '-i', v.file]
-      : ['-i', v.file];
-    // fit: ganzes Bild/Video zeigen (z. B. quadratisch), Rand mit unscharfer Kopie füllen
-    const fit = `split[a][b];[a]scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},boxblur=40:2,eq=brightness=-0.15[bg];` +
-      `[b]scale=${W}:${H}:force_original_aspect_ratio=decrease[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2`;
-    const base = v.fit && isVideo(v.file) ? `${fit},fps=${FPS}`
-      : v.fit ? `${fit},zoompan=z='min(zoom+0.0004,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${Math.ceil(d * FPS)}:s=${W}x${H}:fps=${FPS}`
-      : isVideo(v.file)
-      ? `scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},fps=${FPS}`
-      : `scale=${W * 1.5}:${H * 1.5}:force_original_aspect_ratio=increase,crop=${W * 1.5}:${H * 1.5}:${v.position || '(iw-ow)/2:(ih-oh)/2'},` +
-        `zoompan=z='min(zoom+0.0006,1.15)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${Math.ceil(d * FPS)}:s=${W}x${H}:fps=${FPS}`;
-    const f = [base, 'setsar=1'];
+    // Mehrere Motive pro Abschnitt möglich (visuals): die Zeit wird gleichmäßig aufgeteilt
+    const vs = seg.visuals || [{ ...seg.visual, label: seg.label, credit: seg.credit }];
+    const part = d / vs.length;
+    const f = [];
+    vs.forEach((v, n) => {
+      const a = n * part, b = a + part;
+      if (v.label) f.push(`drawtext=fontfile=${FONT}:textfile=${textFile(tmp, `label${i}-${n}.txt`, v.label)}:fontsize=40:fontcolor=white:` +
+        `box=1:boxcolor=0x1d4ed8@0.85:boxborderw=14:x=60:y=60:enable='between(t,${(a + 0.3).toFixed(2)},${Math.min(b, a + 6).toFixed(2)})'`);
+      if (v.credit) f.push(`drawtext=fontfile=${FONT_R}:textfile=${textFile(tmp, `credit${i}-${n}.txt`, v.credit)}:fontsize=22:fontcolor=white@0.85:` +
+        `box=1:boxcolor=black@0.4:boxborderw=6:x=w-tw-30:y=30:enable='between(t,${a.toFixed(2)},${b.toFixed(2)})'`);
+    });
     segTimes[i].forEach((t, j) => {
       const a = (t.start + LEAD - start).toFixed(2), b = (t.end + LEAD - start + 0.2).toFixed(2);
       f.push(`drawtext=fontfile=${FONT}:textfile=${textFile(tmp, `sub${i}-${j}.txt`, wrap(t.text))}:fontsize=44:fontcolor=white:line_spacing=10:` +
         `box=1:boxcolor=black@0.55:boxborderw=16:x=(w-tw)/2:y=h-th-90:enable='between(t,${a},${b})'`);
     });
-    if (seg.label) f.push(`drawtext=fontfile=${FONT}:textfile=${textFile(tmp, `label${i}.txt`, seg.label)}:fontsize=40:fontcolor=white:` +
-      `box=1:boxcolor=0x1d4ed8@0.85:boxborderw=14:x=60:y=60:enable='between(t,0.3,${Math.min(d, 6).toFixed(2)})'`);
-    if (seg.credit) f.push(`drawtext=fontfile=${FONT_R}:textfile=${textFile(tmp, `credit${i}.txt`, seg.credit)}:fontsize=22:fontcolor=white@0.85:` +
-      `box=1:boxcolor=black@0.4:boxborderw=6:x=w-tw-30:y=30`);
     f.push('format=yuv420p');
-    ff([...input, '-t', d.toFixed(2), '-vf', f.join(','), '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '21', '-r', String(FPS), out]);
+    const raws = vs.map((v, n) => visualClip(v, part, path.join(tmp, `raw${i}-${n}.mp4`)));
+    const list = path.join(tmp, `raw${i}.txt`);
+    fs.writeFileSync(list, raws.map(r => `file '${path.resolve(r)}'`).join('\n'));
+    ff(['-f', 'concat', '-safe', '0', '-i', list, '-t', d.toFixed(2), '-vf', f.join(','), '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '21', '-r', String(FPS), out]);
     console.log(`Abschnitt ${i + 1}/${spec.segments.length}: ${d.toFixed(1)} s`);
     return out;
   });
@@ -103,7 +115,7 @@ function main() {
 
   // 4. Abspann: Quellen, Nachweise, KI-Hinweis
   const mus = await music.pick(spec.mood || 'staunen', 60);
-  const credits = [...new Set(spec.segments.map(s => s.credit).filter(Boolean))];
+  const credits = [...new Set(spec.segments.flatMap(s => s.visuals ? s.visuals.map(v => v.credit) : [s.credit]).filter(Boolean))];
   const endText = ['Quellen: ' + spec.sources.join(' · '), '', ...credits, mus.credit || '', '',
     'Text und Stimme mit KI erstellt – Fakten aus den genannten Quellen geprüft.', '', 'Mehr kuriose Wissenschaft: @krass.erforscht']
     .map(l => wrap(l, 80)).join('\n');
@@ -124,8 +136,8 @@ function main() {
 
   // 6. Vorschaubild: Standbild aus dem ersten Abschnitt mit großem Titel
   const thumb = path.join(dir, 'vorschau.jpg');
-  ff(['-ss', '2', '-i', clips[0], '-frames:v', '1', '-vf',
-    `scale=1280:720,drawbox=y=ih-300:w=iw:h=300:color=black@0.6:t=fill,drawtext=fontfile=${FONT}:textfile=${textFile(tmp, 'thumb.txt', wrap(spec.thumbText || spec.title, 26))}:` +
+  ff(['-ss', '0.5', '-i', clips[0], '-frames:v', '1', '-vf',
+    `scale=1280:720,drawbox=y=ih-300:w=iw:h=300:color=black@0.6:t=fill,drawtext=fontfile=${FONT}:textfile=${textFile(tmp, 'thumb.txt', (spec.thumbText || spec.title).split('\n').map(l => wrap(l, 26)).join('\n'))}:` +
     `fontsize=68:fontcolor=white:line_spacing=8:x=50:y=h-th-60`, '-q:v', '3', thumb]);
 
   fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ id: spec.id, title: spec.title, tags: spec.tags, output: out, thumbnail: thumb,
