@@ -12,24 +12,23 @@ import sys, os, re, json, difflib, torch, torchaudio as ta
 from chatterbox.mtl_tts import ChatterboxMultilingualTTS
 from faster_whisper import WhisperModel
 
-TRIES, GOOD = 5, 0.9
+TRIES, GOOD = 4, 0.85
 src, out = sys.argv[1], sys.argv[2]
 ref = os.path.join(os.path.dirname(__file__), 'referenz.wav')
 m = ChatterboxMultilingualTTS.from_pretrained(device='cpu')
 ear = WhisperModel('small', device='cpu', compute_type='int8')
 # Zahlwörter schreibt Whisper oft als Ziffern – die werden beim Vergleich ignoriert
-NUM = re.compile(r'(ein|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|zig|ßig|hundert|tausend|million|milliard)', re.I)
+NUM = re.compile(r'^(und|ein|eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|zwan|zig|ßig|hundert|tausend|millionen?|milliarden?)+$')
 
-def words(s, expected=False):
-    w = re.findall(r'[a-zäöüß]+|\d+', s.lower())
-    return [x for x in w if not x.isdigit() and not (expected and NUM.search(x))]
+def words(s):
+    return [x for x in re.findall(r'[a-zäöüß]+|\d+', s.lower()) if not x.isdigit() and not NUM.match(x)]
 
 def check(line, wav):
     a = ta.functional.resample(wav, m.sr, 16000)[0].numpy()
     segs, _ = ear.transcribe(a, language='de', word_timestamps=True)
     ws = [w for s in segs for w in (s.words or [])]
     heard = ' '.join(w.word for w in ws)
-    exp, hyp = words(line, True), [x for x in words(heard) if not NUM.search(x) or x in exp]
+    exp, hyp = words(line), words(heard)
     score = difflib.SequenceMatcher(None, exp, hyp).ratio() if exp else 1.0
     end = ws[-1].end + 0.2 if ws else wav.shape[1] / m.sr
     return score, heard, end
