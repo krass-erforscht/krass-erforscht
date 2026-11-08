@@ -138,6 +138,7 @@ Ziel: echte Gespräche, die Leute zum Wiederkommen bringen. Instagram belohnt Po
 
 - **Ton:** locker, freundlich, auf Deutsch (bei fremdsprachigen Kommentaren in deren Sprache), mit „du“. 1–2 Sätze, höchstens ein Emoji.
   Auf den Inhalt des Kommentars eingehen, keine Standardfloskeln wie „Danke für deinen Kommentar!“. Den Namen mit @ ansprechen.
+- **Witze und Sprüche:** mitspielen statt belehren. Nicht korrigieren oder erklären, warum etwas nicht geht – das wirkt klugscheißerisch (Wunsch des Nutzers).
 - **Fragen:** nur mit Fakten aus dem Post oder den geprüften Quellen beantworten. Weiß man es nicht sicher: ehrlich sagen und auf die Quelle verweisen.
 - **Hinweis auf einen Fehler:** Quelle nochmal prüfen. Stimmt der Hinweis, bedanken und richtigstellen, und das in `data/probleme.md` notieren.
   Stimmt er nicht: freundlich mit Quelle erklären.
