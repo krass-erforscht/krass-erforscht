@@ -1,0 +1,21 @@
+{
+  "id": "dino-blut",
+  "title": "Blut im Dino-Knochen: 115 Millionen Jahre alt | Kurz-Doku",
+  "thumbText": "Blut im Dino-Knochen – 115 Mio. Jahre alt",
+  "description": "In einem 115 Millionen Jahre alten Knochen des Raubsauriers Aratasaurus aus Brasilien haben Forschende versteinerte rote Blutkörperchen entdeckt – und darin Bausteine von Hämoglobin. Wie konnte das so lange überdauern? Und was hat das mit der Suche nach Leben auf anderen Planeten zu tun?\n\nWas könnte in alten Fossilien noch verborgen sein? Schreib's in die Kommentare!",
+  "tags": ["Dinosaurier", "Fossilien", "Paläontologie", "Wissenschaft", "Doku", "Dino Blut", "Aratasaurus", "Hämoglobin"],
+  "mood": "staunen",
+  "sources": ["Curtin University / ScienceDaily (5. Nov. 2026)", "Grice et al., Proceedings of the National Academy of Sciences (PNAS)"],
+  "segments": [
+    { "text": "Hundertfünfzehn Millionen Jahre.\nSo lange lag dieser Knochen im Gestein von Brasilien.\nUnd in seinem Inneren steckte etwas, das es dort eigentlich gar nicht mehr geben dürfte.\nBlut.", "label": "Brasilien · vor 115 Mio. Jahren", "visual": { "file": "TODO" } },
+    { "text": "Der Knochen gehörte einem Raubsaurier namens Aratasaurus.\nEin Fleischfresser aus der Gruppe der Theropoden.\nGefunden wurde er im Nordosten Brasiliens.", "visual": { "file": "TODO" } },
+    { "text": "Ein internationales Forschungsteam unter Leitung der Curtin University in Australien hat seine Beinknochen genau untersucht.\nIn winzigen Kanälen, in denen einst Blutgefäße verliefen, fanden sie zahlreiche versteinerte rote Blutkörperchen.", "visual": { "file": "TODO" } },
+    { "text": "Doch das eigentlich Erstaunliche steckt in diesen Zellen.\nDie chemische Analyse zeigte Häm-Moleküle, also Bausteine des Hämoglobins.\nDas ist der Stoff, mit dem rote Blutkörperchen Sauerstoff transportieren.", "visual": { "file": "TODO" } },
+    { "text": "Frühere Studien hatten zwar Strukturen gefunden, die wie Blutzellen aussahen.\nAber was genau darin steckte, war nie sicher belegt.\nDas hier ist der erste eindeutige chemische Nachweis solcher Moleküle in versteinerten Blutzellen eines Dinosauriers.\nDazu kommen Aminosäuren, die zu Kollagen passen, einem wichtigen Baustoff von Knochen.", "visual": { "file": "TODO" } },
+    { "text": "Wie konnte etwas so Zerbrechliches hundertfünfzehn Millionen Jahre überdauern?\nDie Antwort hat offenbar mit einem Mineral zu tun: Hausmannit.\nEs hat die Blutzellen stabilisiert, wie eine natürliche Zeitkapsel.", "visual": { "file": "TODO" } },
+    { "text": "Dazu kam wohl ein glücklicher Umstand.\nDie Forschenden vermuten, dass das Tier nach seinem Tod schnell von Sediment bedeckt wurde.\nIn einer Umgebung mit wenig Sauerstoff und vielen Mikroben.", "visual": { "file": "TODO" } },
+    { "text": "Lange galt in der Paläontologie: Moleküle aus dem Blut können solche Zeiträume nicht überstehen.\nDiese Studie stellt das infrage.\nUnd vielleicht stecken auch in anderen Fossilien noch Informationen, die bisher übersehen wurden.\nDie Forschenden hoffen, so mehr über Blut, Stoffwechsel und sogar die Aktivität ausgestorbener Tiere zu erfahren.", "visual": { "file": "TODO" } },
+    { "text": "Die Entdeckung könnte sogar über die Erde hinaus wichtig sein.\nWenn biologische Spuren unter den richtigen Bedingungen mehr als hundert Millionen Jahre überdauern,\nmüssen Forschende vielleicht neu überlegen, wo und wie sie nach Spuren von altem Leben suchen.\nAuch auf anderen Planeten.", "visual": { "file": "TODO" } },
+    { "text": "Ein einzelner Knochen. Ein paar winzige Zellen.\nUnd ein Fenster in eine Welt, die seit hundertfünfzehn Millionen Jahren verschwunden ist.\nWas meinst du: Was könnte in alten Fossilien noch alles verborgen sein?", "visual": { "file": "TODO" } }
+  ]
+}
