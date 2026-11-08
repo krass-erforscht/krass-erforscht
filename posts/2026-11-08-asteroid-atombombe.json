@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-08-asteroid-atombombe",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "staunen",
+  "format": "video",
+  "source": { "name": "Sandia National Laboratories, Icarus via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261106174532.htm" },
+  "video": {
+    "file": "videos/2026-11-08-asteroid-atombombe.mp4", "start": 0, "duration": 24,
+    "credit": "NASA/Johns Hopkins APL / Wikimedia Commons", "short": "Echte Aufnahmen: NASA-Sonde DART rast 2022 auf Asteroid Dimorphos zu (gemeinfrei)", "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Dart_impact_replay_stabilized.webm", "symbolisch": false,
+    "headline": "Könnte eine **Atomexplosion** die Erde vor einem Asteroiden retten?",
+    "captions": ["Röntgenstrahlen erhitzen eine Seite – der Asteroid wird **weggeschoben**", "Doch es kommt auf die Richtung an: fast **5-mal** so viel Wirkung", "Im Video: der echte Test von 2022 – die NASA rammte einen Asteroiden"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Weltraum", "title": "Atomexplosion gegen **Asteroiden**?" },
+    { "type": "cta", "label": "Mehr davon?", "title": "Jeden Tag eine krasse Entdeckung." }
+  ],
+  "caption": "Asteroid auf Kollisionskurs – könnte eine Atomexplosion die Erde retten? ☄️💥 Forschende der Sandia National Laboratories haben das im Computer durchgerechnet: Die Explosion würde neben dem Asteroiden gezündet, ihre Röntgenstrahlen verdampfen Material an der Oberfläche und schieben ihn so von der Bahn. Der Haken: Es kommt extrem auf die Richtung an. Je nach Seite änderte sich die Geschwindigkeit um 3,9 oder nur 0,8 Millimeter pro Sekunde – fast fünfmal so viel. Echte Asteroiden sind eben keine Kugeln.\n\nIm Video siehst du die echten letzten Bilder der NASA-Sonde DART, die 2022 absichtlich in den Asteroiden Dimorphos krachte – einen anderen Weg, Asteroiden abzulenken.\n\nWas wäre dir lieber: Rammen oder Röntgen-Schubs? 👇\n\nQuelle: Sandia National Laboratories, Fachjournal Icarus via ScienceDaily · Text mit KI erstellt\nVideo: NASA/Johns Hopkins APL (gemeinfrei), via Wikimedia Commons\n#asteroid #weltraum #nasa #astronomie #wissenschaft"
+}
