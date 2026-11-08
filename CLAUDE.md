@@ -114,7 +114,8 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
 
 Uhrzeit (`slot.js`), Format (`format.js`), Thema und Ton (`choose.js empfehlung`) folgen derselben Regel aus `choose.js`:
 gezählt werden die erreichten Konten aller Posts, die mindestens einen Tag alt sind. Was noch keine 2 Posts hat, bekommt eine faire Chance;
-sonst gewinnt an 3 von 4 Tagen die Variante mit der höchsten durchschnittlichen Reichweite, am 4. wird zum Weiterlernen etwas anderes probiert.
+sonst gewinnt an 3 von 4 Tagen die Variante mit der höchsten mittleren Reichweite (Median, damit ein einzelner viraler Post nicht alles verzerrt),
+am 4. wird zum Weiterlernen etwas anderes probiert.
 Die Entscheidung hängt nur vom Datum ab, damit alle Läufe eines Tages übereinstimmen.
 
 ## Sicherheitsregeln – immer überspringen

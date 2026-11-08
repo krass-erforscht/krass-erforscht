@@ -11,3 +11,4 @@ Hier hält die App fest, was sie selbst verbessert hat (Datum, ein Satz).
 - 2026-11-05: Videosuche wartet zwischen Wikimedia-Downloads kurz – im Test kamen 3 von 3 Videos an statt 1 von 3.
 - 2026-11-06: Anleitung: Spektrum-Artikel sind hier nicht lesbar – nur mit lesbarer Zweitquelle verwenden; scinexx-Volltext steht im Feed.
 - 2026-11-07: Neues Werkzeug bilder-video.js: macht aus 1–4 Standbildern ein Video mit Zoom, Beschriftung und Überblendung (vorher jedes Mal von Hand, einmal mit Fehler).
+- 2026-11-08: Auswahl nutzt den Median statt des Durchschnitts, damit ein einzelner viraler Post (Dino-Blut: 3.318 Konten) die Entscheidungen nicht verzerrt.
