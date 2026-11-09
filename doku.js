@@ -129,7 +129,7 @@ function main() {
   fs.writeFileSync(list, [...clips, endClip].map(c => `file '${path.resolve(c)}'`).join('\n'));
   const out = path.join(dir, 'doku.mp4');
   ff(['-f', 'concat', '-safe', '0', '-i', list, '-i', voice, '-stream_loop', '-1', '-i', mus.file, '-filter_complex',
-    `[1:a]adelay=${LEAD * 1000}|${LEAD * 1000},aresample=48000,pan=stereo|c0=c0|c1=c0,loudnorm=I=-16[v];` +
+    `[1:a]adelay=${LEAD * 1000}|${LEAD * 1000},aresample=48000,pan=stereo|c0=c0|c1=c0,apad=pad_dur=4,loudnorm=I=-16,aresample=48000[v];` +
     `[2:a]aresample=48000,volume=0.10,afade=t=in:d=2,afade=t=out:st=${(total - 4).toFixed(2)}:d=4[m];` +
     `[v][m]amix=inputs=2:duration=first:normalize=0,apad[a]`,
     '-map', '0:v', '-map', '[a]', '-t', total.toFixed(2), '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', out]);
