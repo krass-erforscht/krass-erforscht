@@ -96,6 +96,19 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
     Das Folien-Reel (`--reel`) erscheint nur im Reels-Tab und wird Leuten gezeigt, die noch nicht folgen.
     Schlägt ein Video-Teil fehl: auf `bilder` zurückfallen (Karussell posten), Fehler in `data/probleme.md` notieren.
     Danach `data/posted.json` committen und pushen.
+10b. **YouTube Short** (nur wenn `YT_REFRESH_TOKEN` gesetzt ist und es ein `video-reel.mp4` gibt): `node youtube.js short posts/<datei>.json`,
+    danach `data/youtube.json` committen und pushen. Kommt der Status „private“ zurück, den Nutzer einmalig bitten, es in YouTube Studio auf „Öffentlich“ zu stellen.
+10c. **Kurz-Doku für YouTube** (einmal pro Woche, samstags im Lauf, in dem gepostet wird):
+    - Thema: der Post der letzten 14 Tage mit der höchsten Reichweite (`data/posted.json`), der noch keine Doku hat (`data/youtube.json`, type „doku“).
+    - Originalquelle nochmal ganz lesen, Drehbuch `doku/<id>.json` nach dem Muster von `doku/dino-blut.json` schreiben: 8–10 Abschnitte, ca. 3 Minuten,
+      ruhiger Doku-Ton, nur Fakten aus der Quelle, Zahlen ausschreiben, sehr kurze Sätze (1–3 Wörter) mit dem Nachbarsatz verbinden, letzte Zeile eine Frage an die Zuschauer.
+    - Motive mit `find-video.js`/`find-image.js` suchen (Regeln wie oben); Fremdmotive als „Zum Vergleich“ oder „Symbolbild“ kennzeichnen. Keine Gesichter von Privatpersonen.
+      Abschnitte über 15 Sekunden bekommen 2 Motive (`visuals`).
+    - Stimme einmalig einrichten (siehe `stimme/sprechen.py`, Python-Umgebung unter /tmp/cb), dann `node doku.js doku/<id>.json` (Sprachaufnahme dauert ca. 25 Minuten).
+      WARNUNGEN der Stimmprüfung lesen; klingt ein Satz falsch, umformulieren und neu bauen.
+    - Prüfen: Standbilder-Bogen ansehen, Ende des Videos mit Whisper abhören (letzter Satz vollständig?), Vorschaubild ansehen.
+    - Hochladen: `node youtube.js doku out/doku-<id>/meta.json`, `doku/<id>.json`, neue Bilder/Videos und `data/youtube.json` committen und pushen.
+      Dem Nutzer den Link in der Tagesnachricht nennen.
 11. **Selbst verbessern** (einmal am Tag, nach dem Posten):
     - Rückblick: Was ist heute schiefgegangen oder war umständlich (Fehlermeldungen, kein Bild/Video gefunden, Text musste oft korrigiert werden)?
       `data/probleme.md` und `data/learnings.json` lesen: Welche Themen, Töne, Formate, Uhrzeiten laufen gut oder schlecht?
