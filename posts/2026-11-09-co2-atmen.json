@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-09-co2-atmen",
+  "category": "Körper",
+  "topic": "koerper",
+  "tone": "witzig",
+  "format": "zusammen",
+  "source": { "name": "University of Bath, The Lancet Planetary Health via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261104012305.htm" },
+  "image": { "file": "images/2026-11-09-co2-atmen.jpg", "credit": "NASA GSFC / NOAA NGDC", "short": "Bild: NASA/NOAA, gemeinfrei", "license": "Public domain", "page": "https://commons.wikimedia.org/wiki/File:Earth%27s_City_Lights_by_DMSP,_1994-1995_(large).jpg", "position": "center center" },
+  "video": {
+    "file": "videos/2026-11-09-co2-atmen.mp4", "start": 0, "duration": 24,
+    "credit": "NASA/Goddard Space Flight Center", "short": "Symbolvideo: Kohlenstoffkreislauf (NASA, gemeinfrei)", "license": "Public Domain (NASA)",
+    "page": "https://images.nasa.gov/details/GSFC_20091009_Carbon_m10494_Cycle", "symbolisch": true,
+    "headline": "Wir Menschen atmen **2 Milliarden Tonnen** CO₂ aus – pro Jahr",
+    "captions": ["Einfach nur, weil unser Körper **Essen in Energie** verwandelt", "**+74 %** seit 1985 – vor allem, weil wir mehr Menschen sind", "Keine Panik: Das CO₂ kam vorher aus **Pflanzen** – anders als bei Kohle und Öl"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Körper", "title": "Menschen atmen **2 Milliarden Tonnen** CO₂ aus – pro Jahr" },
+    { "label": "Einfach durchs Leben", "title": "Atmen = CO₂", "text": ["Unser Körper verwandelt **Essen in Energie**. Dabei entsteht CO₂, das wir ausatmen.", "Forschende der University of Bath haben das für die ganze Menschheit ausgerechnet."],
+      "image": { "file": "images/2026-11-09-co2-atmen-2.jpg", "credit": "Library of Congress", "short": "Foto: Library of Congress, gemeinfrei", "license": "Public domain", "page": "http://www.loc.gov/item/2016829090/", "position": "center 30%" } },
+    { "label": "In 30 Jahren", "big": "+74%", "title": "mehr Atem-CO₂", "text": ["1985: **1,18 Milliarden Tonnen**. 2015: **2,05 Milliarden Tonnen** pro Jahr."],
+      "image": { "file": "images/2026-11-09-co2-atmen-3.jpg", "credit": "NASA/GSFC", "short": "Bild: NASA, gemeinfrei", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001586", "position": "center 35%" } },
+    { "label": "Warum?", "title": "Wir sind einfach **mehr**", "text": ["Über **60 %** des Anstiegs gehen aufs Bevölkerungswachstum zurück.", "Pro Kopf hat sich viel weniger verändert. Niemand schnauft heute doppelt so viel 😄"],
+      "image": { "file": "images/2026-11-09-co2-atmen-4.jpg", "credit": "Smithsonian NMAAHC", "short": "Foto: Smithsonian, CC0", "license": "CC0", "page": "https://nmaahc.si.edu/object/nmaahc_2019.95.5", "position": "center 40%" } },
+    { "label": "Keine Panik", "title": "Atmen heizt das Klima **nicht** an", "text": ["Das CO₂ im Atem stammt aus der Nahrung – Pflanzen haben es kurz vorher **aus der Luft** geholt.", "Kohle, Öl und Gas dagegen setzen Kohlenstoff frei, der **Millionen Jahre** unter der Erde lag."],
+      "image": { "file": "images/2026-11-09-co2-atmen-5.jpg", "credit": "Library of Congress", "short": "Foto: Library of Congress, gemeinfrei", "license": "Public domain", "page": "http://www.loc.gov/item/ri0458/", "position": "center 70%", "size": "auto 125%" } },
+    { "label": "Fun Fact", "title": "In Großstädten sieht man unseren **Atem** in den Messdaten", "text": ["Wo viele Menschen dicht beieinander leben, fällt das Atem-CO₂ bei örtlichen Messungen auf. Die Studie soll helfen, CO₂-Bilanzen genauer zu machen."],
+      "image": { "file": "images/2026-11-09-co2-atmen-6.jpg", "credit": "NASA/JSC", "short": "Foto: NASA (New York bei Nacht), gemeinfrei", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/s36-39-014", "position": "center center" } },
+    { "type": "cta", "label": "Mehr davon?", "title": "Schick das jemandem, der heute schon viel geschnauft hat." }
+  ],
+  "caption": "Atmen und CO₂: Wir Menschen atmen zusammen rund 2 Milliarden Tonnen CO₂ aus – pro Jahr! 😮‍💨 Das hat ein Team der University of Bath ausgerechnet: Von 1985 bis 2015 stieg die Menge um 74 %, vor allem, weil es mehr Menschen gibt. Wichtig: Atmen treibt den Klimawandel nicht an. Das CO₂ in unserem Atem stammt aus der Nahrung, Pflanzen haben es kurz vorher aus der Luft geholt. Bei Kohle, Öl und Gas kommt dagegen Kohlenstoff dazu, der Millionen Jahre unter der Erde lag.\n\nHättest du gedacht, dass es so viel ist? 👇\n\nQuelle: University of Bath, Fachjournal The Lancet Planetary Health via ScienceDaily · Text mit KI erstellt\nBilder: NASA/NOAA (gemeinfrei, via Wikimedia Commons), NASA (gemeinfrei), Library of Congress (gemeinfrei), Smithsonian NMAAHC (CC0) · Symbolvideo: NASA Goddard (gemeinfrei)\n#atmen #co2 #klima #menschlicherkörper #wissenschaft"
+}

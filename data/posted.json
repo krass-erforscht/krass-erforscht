@@ -7,14 +7,14 @@
     "tone": "witzig",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261023023718.htm",
     "stats": {
-      "reach": 5,
-      "likes": 3,
+      "reach": 6,
+      "likes": 4,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-08T11:16:00.143Z"
+    "statsAt": "2026-11-09T17:16:47.727Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -24,14 +24,14 @@
     "tone": "staunen",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261026225603.htm",
     "stats": {
-      "reach": 18,
-      "likes": 2,
+      "reach": 19,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-08T11:16:00.778Z",
+    "statsAt": "2026-11-09T17:16:48.501Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -51,14 +51,14 @@
     "mediaId": "18131870548873398",
     "format": "video",
     "stats": {
-      "reach": 105,
-      "likes": 2,
+      "reach": 106,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 122
+      "views": 123
     },
-    "statsAt": "2026-11-08T11:16:01.046Z"
+    "statsAt": "2026-11-09T17:16:48.717Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -70,8 +70,8 @@
     "format": "bilder",
     "reelMediaId": "18037608218846843",
     "stats": {
-      "reach": 12,
-      "likes": 3,
+      "reach": 13,
+      "likes": 4,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -85,7 +85,7 @@
       "saved": 0,
       "views": 8
     },
-    "statsAt": "2026-11-08T11:16:01.540Z"
+    "statsAt": "2026-11-09T17:16:49.305Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -97,8 +97,8 @@
     "format": "zusammen",
     "reelMediaId": "18201584050387146",
     "stats": {
-      "reach": 43,
-      "likes": 2,
+      "reach": 44,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -112,7 +112,7 @@
       "saved": 0,
       "views": 43
     },
-    "statsAt": "2026-11-08T11:16:02.181Z"
+    "statsAt": "2026-11-09T17:16:49.944Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -123,14 +123,14 @@
     "mediaId": "18117241286167555",
     "format": "video",
     "stats": {
-      "reach": 105,
-      "likes": 2,
+      "reach": 107,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 119
+      "views": 121
     },
-    "statsAt": "2026-11-08T11:16:02.547Z"
+    "statsAt": "2026-11-09T17:16:50.272Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -142,8 +142,8 @@
     "format": "zusammen",
     "reelMediaId": "18115420781146219",
     "stats": {
-      "reach": 120,
-      "likes": 4,
+      "reach": 122,
+      "likes": 5,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -157,7 +157,7 @@
       "saved": 0,
       "views": 127
     },
-    "statsAt": "2026-11-08T11:16:03.051Z"
+    "statsAt": "2026-11-09T17:16:51.007Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -169,8 +169,8 @@
     "format": "zusammen",
     "reelMediaId": "18069702098759425",
     "stats": {
-      "reach": 106,
-      "likes": 2,
+      "reach": 107,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -184,7 +184,7 @@
       "saved": 0,
       "views": 111
     },
-    "statsAt": "2026-11-08T11:16:04.754Z"
+    "statsAt": "2026-11-09T17:16:51.583Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -195,14 +195,14 @@
     "mediaId": "18125144383934934",
     "format": "video",
     "stats": {
-      "reach": 174,
-      "likes": 2,
+      "reach": 175,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 194
+      "views": 195
     },
-    "statsAt": "2026-11-08T11:16:04.983Z"
+    "statsAt": "2026-11-09T17:16:51.920Z"
   },
   {
     "id": "2026-11-05-ueberkreuz-gehirn",
@@ -213,14 +213,14 @@
     "mediaId": "18006322479009398",
     "format": "video",
     "stats": {
-      "reach": 103,
-      "likes": 2,
+      "reach": 104,
+      "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 110
+      "views": 111
     },
-    "statsAt": "2026-11-08T11:16:05.262Z"
+    "statsAt": "2026-11-09T17:16:52.151Z"
   },
   {
     "id": "2026-11-06-satelliten-stau",
@@ -231,14 +231,14 @@
     "mediaId": "17978309556170067",
     "format": "video",
     "stats": {
-      "reach": 224,
-      "likes": 3,
+      "reach": 226,
+      "likes": 4,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 270
+      "views": 272
     },
-    "statsAt": "2026-11-08T11:16:05.573Z"
+    "statsAt": "2026-11-09T17:16:52.522Z"
   },
   {
     "id": "2026-11-07-dino-blut",
@@ -249,14 +249,14 @@
     "mediaId": "18169323721488278",
     "format": "video",
     "stats": {
-      "reach": 3318,
-      "likes": 28,
-      "comments": 1,
+      "reach": 3556,
+      "likes": 31,
+      "comments": 2,
       "shares": 4,
       "saved": 2,
-      "views": 4480
+      "views": 4819
     },
-    "statsAt": "2026-11-08T11:16:05.822Z"
+    "statsAt": "2026-11-09T17:16:52.777Z"
   },
   {
     "id": "2026-11-08-asteroid-atombombe",
@@ -265,6 +265,15 @@
     "tone": "staunen",
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261106174532.htm",
     "mediaId": "18077788952743951",
-    "format": "video"
+    "format": "video",
+    "stats": {
+      "reach": 234,
+      "likes": 3,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 261
+    },
+    "statsAt": "2026-11-09T17:16:53.042Z"
   }
 ]
