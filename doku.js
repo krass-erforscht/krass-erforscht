@@ -5,6 +5,7 @@
 //   visual.file: Video (.mp4/.webm) oder Bild (.jpg/.png); Bilder bekommen einen langsamen Zoom.
 //   visual.fit: true = ganzes Motiv zeigen (Hochformat/Quadrat), Rand unscharf gefüllt; visual.position: Ausschnitt (crop x:y)
 //   visuals: [ {file, start, fit, label, credit}, … ] statt visual – mehrere Motive, Zeit wird gleichmäßig geteilt.
+//   kapitel: Name eines YouTube-Kapitels ab diesem Abschnitt (erster Abschnitt braucht eins); hashtags: ["#…"] für die Beschreibung.
 //   label: kurze Einblendung oben links (z. B. „Brasilien, vor 115 Mio. Jahren“), credit: Kurz-Nachweis unten rechts.
 // Ergebnis: out/doku-<id>/doku.mp4 und vorschau.jpg; Sprachaufnahme wird zwischengespeichert (nur neu, wenn der Text sich ändert).
 // Die Stimme braucht die einmalige Einrichtung aus stimme/sprechen.py (Python-Umgebung unter /tmp/cb).
@@ -107,14 +108,25 @@ function main() {
     return out;
   });
 
-  return { spec, dir, tmp, voice, clips, total: bounds.at(-1).end + END };
+  return { spec, dir, tmp, voice, clips, bounds, total: bounds.at(-1).end + END };
+}
+
+// Kapitel für YouTube (Abschnitte mit „kapitel“; YouTube verlangt mind. 3, das erste bei 0:00, jedes mind. 10 s lang)
+function chapters(spec, bounds) {
+  const t = sec => `${Math.floor(sec / 60)}:${String(Math.floor(sec % 60)).padStart(2, '0')}`;
+  const list = spec.segments.map((s, i) => s.kapitel ? { at: i === 0 ? 0 : bounds[i].start, name: s.kapitel } : null).filter(Boolean);
+  if (list.length < 3 || list[0].at !== 0 || list.some((c, i) => i && c.at - list[i - 1].at < 10)) return '';
+  return 'Kapitel:\n' + list.map(c => `${t(c.at)} ${c.name}`).join('\n');
 }
 
 (async () => {
-  const { spec, dir, tmp, voice, clips, total } = main();
+  const { spec, dir, tmp, voice, clips, bounds, total } = main();
 
   // 4. Abspann: Quellen, Nachweise, KI-Hinweis
-  const mus = await music.pick(spec.mood || 'staunen', 60);
+  // Musik pro Doku merken, damit ein Neubau dieselbe Musik behält (wichtig für Nachweise in schon hochgeladenen Videos)
+  const musFile = path.join(dir, 'music.json');
+  const mus = fs.existsSync(musFile) ? JSON.parse(fs.readFileSync(musFile)) : await music.pick(spec.mood || 'staunen', 60);
+  fs.writeFileSync(musFile, JSON.stringify(mus, null, 2));
   const credits = [...new Set(spec.segments.flatMap(s => s.visuals ? s.visuals.map(v => v.credit) : [s.credit]).filter(Boolean))];
   const endText = ['Quellen: ' + spec.sources.join(' · '), '', ...credits, mus.credit || '', '',
     'Text und Stimme mit KI erstellt – Fakten aus den genannten Quellen geprüft.', '', 'Mehr kuriose Wissenschaft: @krass.erforscht']
@@ -141,7 +153,9 @@ function main() {
     `fontsize=68:fontcolor=white:line_spacing=8:x=50:y=h-th-60`, '-q:v', '3', thumb]);
 
   fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ id: spec.id, title: spec.title, tags: spec.tags, output: out, thumbnail: thumb,
-    description: [spec.description, 'Quellen: ' + spec.sources.join(' · '), 'Bild- und Videonachweise:\n' + credits.join('\n'), mus.credit,
-      'Text und Stimme mit KI erstellt. Die Fakten stammen aus den genannten Quellen.'].filter(Boolean).join('\n\n') }, null, 2));
+    description: [spec.description, chapters(spec, bounds), 'Quellen: ' + spec.sources.join(' · '), 'Bild- und Videonachweise:\n' + credits.join('\n'), mus.credit,
+      'Text und Stimme mit KI erstellt. Die Fakten stammen aus den genannten Quellen.',
+      '🔔 Jeden Tag eine echte, kuriose Entdeckung aus der Wissenschaft – abonnier @krass.erforscht!',
+      (spec.hashtags || spec.tags.slice(0, 5).map(t => '#' + t.replace(/\s+/g, ''))).join(' ')].filter(Boolean).join('\n\n') }, null, 2));
   console.log(`Doku (${dur(out).toFixed(0)} s) -> ${out}`);
 })().catch(e => { console.error(e.message); process.exit(1); });

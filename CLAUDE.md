@@ -96,12 +96,15 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
     Das Folien-Reel (`--reel`) erscheint nur im Reels-Tab und wird Leuten gezeigt, die noch nicht folgen.
     Schlägt ein Video-Teil fehl: auf `bilder` zurückfallen (Karussell posten), Fehler in `data/probleme.md` notieren.
     Danach `data/posted.json` committen und pushen.
-10b. **YouTube Short** (nur wenn `YT_REFRESH_TOKEN` gesetzt ist und es ein `video-reel.mp4` gibt): `node youtube.js short posts/<datei>.json`,
-    danach `data/youtube.json` committen und pushen. Kommt der Status „private“ zurück, den Nutzer einmalig bitten, es in YouTube Studio auf „Öffentlich“ zu stellen.
+10b. **YouTube Shorts** (nur wenn `YT_REFRESH_TOKEN` gesetzt ist): `node youtube.js reels posts/<datei>.json` lädt dieselben Reels wie auf Instagram hoch
+    (Video-Reel und Folien-Reel, soweit vorhanden) – mit Beschreibung aus der Caption, Nachweisen, Abo-Hinweis und Hashtags (#Shorts + die des Posts).
+    Vorher mit `node youtube.js vorschau posts/<datei>.json` Titel und Beschreibung prüfen.
+    Danach `node youtube.js nachholen` (lädt ältere, noch fehlende Reels hoch, bis das Tageslimit von ca. 6 Uploads erreicht ist).
+    `data/youtube.json` committen und pushen. Kommt der Status „private“ zurück, den Nutzer einmalig bitten, es in YouTube Studio auf „Öffentlich“ zu stellen.
 10c. **Kurz-Doku für YouTube** (einmal pro Woche, samstags im Lauf, in dem gepostet wird):
     - Thema: der Post der letzten 14 Tage mit der höchsten Reichweite (`data/posted.json`), der noch keine Doku hat (`data/youtube.json`, type „doku“).
     - Originalquelle nochmal ganz lesen, Drehbuch `doku/<id>.json` nach dem Muster von `doku/dino-blut.json` schreiben: 8–10 Abschnitte, ca. 3 Minuten,
-      ruhiger Doku-Ton, nur Fakten aus der Quelle, Zahlen ausschreiben, sehr kurze Sätze (1–3 Wörter) mit dem Nachbarsatz verbinden, letzte Zeile eine Frage an die Zuschauer.
+      ruhiger Doku-Ton, nur Fakten aus der Quelle, 4–6 Abschnitte mit `kapitel` (YouTube-Kapitel, der erste Abschnitt immer), 5 passende `hashtags`, Zahlen ausschreiben, sehr kurze Sätze (1–3 Wörter) mit dem Nachbarsatz verbinden, letzte Zeile eine Frage an die Zuschauer.
     - Motive mit `find-video.js`/`find-image.js` suchen (Regeln wie oben); Fremdmotive als „Zum Vergleich“ oder „Symbolbild“ kennzeichnen. Keine Gesichter von Privatpersonen.
       Abschnitte über 15 Sekunden bekommen 2 Motive (`visuals`).
     - Stimme einmalig einrichten (siehe `stimme/sprechen.py`, Python-Umgebung unter /tmp/cb), dann `node doku.js doku/<id>.json` (Sprachaufnahme dauert ca. 25 Minuten).

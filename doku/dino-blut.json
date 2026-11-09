@@ -26,7 +26,8 @@
         "fit": true
       },
       "credit": "Fossil: Sayão, Saraiva et al., CC BY 4.0",
-      "label": "Brasilien · vor 115 Mio. Jahren"
+      "label": "Brasilien · vor 115 Mio. Jahren",
+      "kapitel": "Blut in einem Dino-Knochen"
     },
     {
       "text": "Der Knochen gehörte einem Raubsaurier namens Aratasaurus.\nEin Fleischfresser aus der Gruppe der Theropoden.\nGefunden wurde er im Nordosten Brasiliens.",
@@ -43,7 +44,8 @@
         "fit": true
       },
       "credit": "Spiekman, Butler & Maidment, CC BY 4.0, via Wikimedia Commons",
-      "label": "Zum Vergleich: Knochen-Dünnschnitt eines Urzeit-Reptils"
+      "label": "Zum Vergleich: Knochen-Dünnschnitt eines Urzeit-Reptils",
+      "kapitel": "Die Entdeckung"
     },
     {
       "text": "Doch das eigentlich Erstaunliche steckt in diesen Zellen.\nDie chemische Analyse zeigte Häm-Moleküle, also Bausteine des Hämoglobins.\nDas ist der Stoff, mit dem rote Blutkörperchen Sauerstoff transportieren.",
@@ -52,7 +54,8 @@
         "fit": true
       },
       "credit": "Blutzelle (heute): Louisa Howard, gemeinfrei, via Wikimedia Commons",
-      "label": "Zum Vergleich: rotes Blutkörperchen heute"
+      "label": "Zum Vergleich: rotes Blutkörperchen heute",
+      "kapitel": "Hämoglobin nach 115 Millionen Jahren"
     },
     {
       "text": "Frühere Studien hatten zwar Strukturen gefunden, die wie Blutzellen aussahen.\nAber was genau darin steckte, war nie sicher belegt.\nDas hier ist der erste eindeutige chemische Nachweis solcher Moleküle in versteinerten Blutzellen eines Dinosauriers.\nDazu kommen Aminosäuren, die zu Kollagen passen, einem wichtigen Baustoff von Knochen.",
@@ -76,7 +79,8 @@
         "file": "images/doku/dino-achatknochen.jpg"
       },
       "credit": "Foto: Smithsonian NMNH, CC0",
-      "label": "Zum Vergleich: mineralisierter Dino-Knochen"
+      "label": "Zum Vergleich: mineralisierter Dino-Knochen",
+      "kapitel": "Die natürliche Zeitkapsel"
     },
     {
       "text": "Dazu kam wohl ein glücklicher Umstand.\nDie Forschenden vermuten, dass das Tier nach seinem Tod schnell von Sediment bedeckt wurde.\nIn einer Umgebung mit wenig Sauerstoff und vielen Mikroben.",
@@ -98,7 +102,8 @@
           "file": "videos/doku/museum.mp4",
           "credit": "Video: Voice of America, gemeinfrei"
         }
-      ]
+      ],
+      "kapitel": "Was das für die Forschung bedeutet"
     },
     {
       "text": "Die Entdeckung könnte sogar über die Erde hinaus wichtig sein.\nWenn biologische Spuren unter den richtigen Bedingungen mehr als hundert Millionen Jahre überdauern, müssen Forschende vielleicht neu überlegen, wo und wie sie nach Spuren von altem Leben suchen, auch auf anderen Planeten.",
@@ -106,7 +111,8 @@
         "file": "videos/doku/mars.mp4"
       },
       "credit": "Video: NASA/JPL-Caltech, gemeinfrei",
-      "label": "Mars – Suche nach Spuren von Leben"
+      "label": "Mars – Suche nach Spuren von Leben",
+      "kapitel": "Spuren von Leben auf anderen Planeten?"
     },
     {
       "text": "Ein einzelner Knochen, ein paar winzige Zellen, und ein Fenster in eine Welt, die seit hundertfünfzehn Millionen Jahren verschwunden ist.\nWas meinst du: Was könnte in alten Fossilien noch alles verborgen sein?",
@@ -124,5 +130,12 @@
         }
       ]
     }
+  ],
+  "hashtags": [
+    "#dinosaurier",
+    "#fossilien",
+    "#paläontologie",
+    "#wissenschaft",
+    "#doku"
   ]
 }

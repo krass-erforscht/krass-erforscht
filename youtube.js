@@ -1,6 +1,9 @@
 // Lädt ein Video auf den YouTube-Kanal @krass.erforscht hoch (offizielle YouTube Data API, kostenlos).
 //   node youtube.js test                                  → prüft den Zugang und zeigt den Kanal
-//   node youtube.js short posts/<datei>.json              → Video-Reel des Posts als YouTube Short
+//   node youtube.js reels posts/<datei>.json              → Video-Reel und Folien-Reel des Posts als YouTube Shorts (wie auf Instagram)
+//   node youtube.js short posts/<datei>.json              → nur das Video-Reel
+//   node youtube.js nachholen [anzahl]                    → ältere Reels nachträglich hochladen (höchstens ~6 Uploads pro Tag)
+//   node youtube.js vorschau posts/<datei>.json           → Titel und Beschreibungen ansehen, ohne hochzuladen
 //   node youtube.js doku out/doku-<id>/meta.json        → fertige Kurz-Doku (doku.js) als normales Video
 // Braucht YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN. Jeder Upload wird in data/youtube.json vermerkt.
 // Hinweis: Google stellt Uploads nicht überprüfter Apps meist auf „privat“; der Nutzer schaltet sie in YouTube Studio frei.
@@ -64,8 +67,51 @@ function log(entry) {
   fs.writeFileSync(LOG, JSON.stringify(all, null, 2));
 }
 
+const ABO = '🔔 Jeden Tag eine echte, kuriose Entdeckung aus der Wissenschaft – abonnier @krass.erforscht!';
+const PER_DAY = 6; // YouTube erlaubt pro Tag ca. 6 Uploads (10.000 Quota-Einheiten, 1.600 pro Upload)
+
+// Hashtags: die des Instagram-Posts, dazu #Shorts und #wissenschaft, höchstens 6 (YouTube zeigt die ersten 3 über dem Titel)
+function hashtags(post, extra = []) {
+  const own = (post.caption.match(/#[\p{L}\d_]+/gu) || []);
+  return [...new Set([...extra, ...own, '#wissenschaft'].map(t => t.toLowerCase() === '#shorts' ? '#Shorts' : t))].slice(0, 6).join(' ');
+}
+
+// Beschreibung für Shorts: Text des Posts ohne Hashtag-Zeile, Video-/Musiknachweis, Abo-Hinweis, Hashtags am Ende
+function shortDescription(post, { musicFile, withVideo }) {
+  const music = fs.existsSync(musicFile) ? JSON.parse(fs.readFileSync(musicFile)).credit : '';
+  const body = post.caption.replace(/\n#[^\n]*$/s, '').trim();
+  const video = withVideo && post.video ? `${post.video.symbolisch ? 'Symbolvideo' : 'Video'}: ${post.video.credit} (${post.video.license})` : '';
+  return [body, [video, music].filter(Boolean).join('\n'), ABO, hashtags(post, ['#Shorts'])].filter(Boolean).join('\n\n');
+}
+
+const plain = s => s.replace(/\*\*/g, '');
+// Was zu einem Post hochgeladen werden kann: das Video-Reel (echtes Video) und das Folien-Reel
+function uploadsFor(post) {
+  const out = [];
+  if (fs.existsSync(`out/${post.id}/video-reel.mp4`)) out.push({ type: 'short', file: `out/${post.id}/video-reel.mp4`,
+    title: plain(post.video?.headline || post.slides[0].title), description: shortDescription(post, { musicFile: `out/${post.id}/video-music.json`, withVideo: true }) });
+  if (fs.existsSync(`out/${post.id}/reel.mp4`)) out.push({ type: 'reel', file: `out/${post.id}/reel.mp4`,
+    title: plain(post.slides[0].title), description: shortDescription(post, { musicFile: `out/${post.id}/music.json`, withVideo: false }) });
+  // Gleiche Titel vermeiden, wenn beide Reels dieselbe Überschrift hätten
+  if (out.length === 2 && out[0].title === out[1].title) out[1].title += ' (in Bildern)';
+  return out;
+}
+
+async function uploadPost(token, post, types, done) {
+  for (const u of uploadsFor(post).filter(u => types.includes(u.type))) {
+    if (done.some(d => d.id === post.id && d.type === u.type)) { console.log(`${post.id} (${u.type}): schon hochgeladen`); continue; }
+    const tags = [...new Set([...tagsFrom(post.caption), 'Wissenschaft', 'Shorts'])];
+    const v = await upload(token, u.file, meta({ title: u.title, description: u.description, tags }));
+    const entry = { id: post.id, type: u.type, videoId: v.id, privacy: v.status?.privacyStatus };
+    log(entry); done.push(entry);
+    console.log(`${post.id} (${u.type}) hochgeladen: https://youtube.com/shorts/${v.id} (Status: ${entry.privacy})`);
+  }
+}
+
+const today = () => new Date().toISOString().slice(0, 10);
+
 (async () => {
-  const [mode, file] = process.argv.slice(2);
+  const [mode, file, arg] = process.argv.slice(2);
   const token = await accessToken();
   if (mode === 'test') {
     const c = await (await fetch(`${API}/channels?part=snippet&mine=true`, { headers: { Authorization: `Bearer ${token}` } })).json();
@@ -73,18 +119,18 @@ function log(entry) {
     return;
   }
   const done = fs.existsSync(LOG) ? JSON.parse(fs.readFileSync(LOG)) : [];
-  if (mode === 'short') {
+  if (mode === 'short' || mode === 'reels') {
+    // short: nur das Video-Reel; reels: Video-Reel und Folien-Reel (so wie auf Instagram)
     const post = JSON.parse(fs.readFileSync(file));
-    if (done.some(d => d.id === post.id && d.type === 'short')) return console.log('Schon als Short hochgeladen.');
-    const video = `out/${post.id}/video-reel.mp4`;
-    if (!fs.existsSync(video)) throw new Error(`${video} fehlt (erst video-reel.js laufen lassen)`);
-    const music = fs.existsSync(`out/${post.id}/video-music.json`) ? JSON.parse(fs.readFileSync(`out/${post.id}/video-music.json`)).credit : '';
-    const title = (post.video?.headline || post.slides[0].title).replace(/\*\*/g, '');
-    const description = [post.caption.replace(/\n#.*$/s, ''), music, `Video: ${post.video?.credit || ''} (${post.video?.license || ''})`,
-      '#Shorts #wissenschaft'].filter(Boolean).join('\n\n');
-    const v = await upload(token, video, meta({ title: `${title} #Shorts`, description, tags: tagsFrom(post.caption) }));
-    log({ id: post.id, type: 'short', videoId: v.id, privacy: v.status?.privacyStatus });
-    console.log(`Short hochgeladen: https://youtube.com/shorts/${v.id} (Status: ${v.status?.privacyStatus})`);
+    await uploadPost(token, post, mode === 'short' ? ['short'] : ['short', 'reel'], done);
+  } else if (mode === 'nachholen') {
+    // Ältere Instagram-Reels nachträglich hochladen, ohne das Tageslimit zu sprengen (heutige Uploads werden mitgezählt)
+    const left = Math.min(+(file || PER_DAY), PER_DAY - done.filter(d => (d.uploadedAt || '').startsWith(today())).length);
+    const posts = JSON.parse(fs.readFileSync('data/posted.json')).map(p => p.id).filter(id => fs.existsSync(`posts/${id}.json`));
+    const todo = posts.flatMap(id => { const post = JSON.parse(fs.readFileSync(`posts/${id}.json`));
+      return uploadsFor(post).filter(u => !done.some(d => d.id === id && d.type === u.type)).map(u => ({ post, type: u.type })); });
+    console.log(`Noch offen: ${todo.length}, heute möglich: ${Math.max(left, 0)}`);
+    for (const t of todo.slice(0, Math.max(left, 0))) await uploadPost(token, t.post, [t.type], done);
   } else if (mode === 'doku') {
     const d = JSON.parse(fs.readFileSync(file));
     if (done.some(x => x.id === d.id && x.type === 'doku')) return console.log('Doku schon hochgeladen.');
@@ -92,8 +138,11 @@ function log(entry) {
     if (d.thumbnail && fs.existsSync(d.thumbnail)) await thumbnail(token, v.id, d.thumbnail);
     log({ id: d.id, type: 'doku', videoId: v.id, privacy: v.status?.privacyStatus });
     console.log(`Doku hochgeladen: https://youtu.be/${v.id} (Status: ${v.status?.privacyStatus})`);
+  } else if (mode === 'vorschau') {
+    // Zeigt Titel und Beschreibung, ohne hochzuladen
+    for (const u of uploadsFor(JSON.parse(fs.readFileSync(file)))) console.log(`--- ${u.type}: ${u.title}\n${u.description}\n`);
   } else {
-    console.error('Aufruf: node youtube.js test | short <post.json> | doku <doku.json>');
+    console.error('Aufruf: node youtube.js test | short <post.json> | reels <post.json> | nachholen [anzahl] | doku <meta.json> | vorschau <post.json>');
     process.exit(1);
   }
 })().catch(e => { console.error(e.message); process.exit(1); });
