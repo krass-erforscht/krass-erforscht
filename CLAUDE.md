@@ -16,7 +16,12 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Gepostet wird einmal pro Tag (7:45, 12:15 oder 18:15 Uhr). Die Uhrzeit richtet sich von Anfang an nach der besten Reichweite
    (siehe „Immer nach der besten Reichweite“ unten).
 1. `npm ci`
-2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist), danach `node choose.js empfehlung`.
+2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist), dann `node analyse.js` und danach `node choose.js empfehlung`.
+   **Algorithmus-Analyse:** `data/analyse.md` lesen (Vergleich aller Posts nach Format, Thema, Uhrzeit, Überschrift, Videolänge, Wiedergabezeit usw.)
+   und `data/strategie.md` aktualisieren: neue deutliche Unterschiede als Regel „im Test“ aufnehmen, Regeln mit genug Daten (je 3 Posts mit/ohne)
+   auf „bestätigt“ oder „verworfen“ setzen, mit Datum und Zahlen begründen, Verlauf ergänzen. Höchstens 6 Regeln; wenig Daten vorsichtig deuten.
+   Beim heutigen Post **alle bestätigten Regeln anwenden** und **genau eine Regel im Test** (abwechselnd, damit es Vergleichsposts mit und ohne gibt);
+   deren Kurzname als `"test"` in die Post-Datei schreiben. Ändert sich eine Regel, das dem Nutzer in der Tagesnachricht in einem Satz sagen.
    Die Empfehlung nennt Thema und Ton für heute. Möglichst eine Meldung dazu nehmen; gibt es keine gute (oder wäre sie nach den
    Sicherheitsregeln tabu, z. B. Gesundheitstipps beim Thema „koerper“), das nächstbeste Thema aus der Liste nehmen.
    Eine richtig spannende Meldung schlägt die Empfehlung – Reichweite entsteht vor allem durch gute Geschichten.
@@ -95,7 +100,7 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
     Videos werden von Instagram im Hintergrund verarbeitet, das kann bis zu 10 Minuten dauern.
     Das Folien-Reel (`--reel`) erscheint nur im Reels-Tab und wird Leuten gezeigt, die noch nicht folgen.
     Schlägt ein Video-Teil fehl: auf `bilder` zurückfallen (Karussell posten), Fehler in `data/probleme.md` notieren.
-    Danach `data/posted.json` committen und pushen.
+    Danach `data/posted.json` committen und pushen (auch `data/analyse.md`, `data/analyse.json`, `data/account.json`, `data/strategie.md`).
 10b. **YouTube Shorts** (nur wenn `YT_REFRESH_TOKEN` gesetzt ist): `node youtube.js reels posts/<datei>.json` lädt dieselben Reels wie auf Instagram hoch
     (Video-Reel und Folien-Reel, soweit vorhanden) – mit Beschreibung aus der Caption, Nachweisen, Abo-Hinweis und Hashtags (#Shorts + die des Posts).
     Vorher mit `node youtube.js vorschau posts/<datei>.json` Titel und Beschreibung prüfen.
@@ -116,6 +121,7 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
     - Rückblick: Was ist heute schiefgegangen oder war umständlich (Fehlermeldungen, kein Bild/Video gefunden, Text musste oft korrigiert werden)?
       `data/probleme.md` und `data/learnings.json` lesen: Welche Themen, Töne, Formate, Uhrzeiten laufen gut oder schlecht?
     - **Montags** zusätzlich kurz im Netz nachsehen, ob sich bei Instagram etwas geändert hat (Algorithmus, Regeln, Schnittstelle, neue Funktionen).
+      Neue Erkenntnisse oben in `data/strategie.md` eintragen und, wenn sinnvoll, als Regel „im Test“ aufnehmen.
     - Daraus **höchstens eine** kleine, sinnvolle Verbesserung umsetzen (Code, Anleitung, Vorlage, neue freie Quelle).
       Vorher prüfen, dass sie funktioniert: den heutigen Post probeweise neu rendern bzw. das geänderte Skript testen.
       Klappt der Test nicht: Änderung verwerfen (`git checkout -- <datei>`). Nur Funktionierendes committen und pushen.

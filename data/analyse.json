@@ -1,0 +1,713 @@
+{
+  "datum": "2026-11-10T07:02:18.839Z",
+  "hinweise": [
+    "Format: „video“ erreicht im Mittel 175 Konten, „bilder“ nur 13 (7 bzw. 3 Posts).",
+    "Thema: „geschichte“ erreicht im Mittel 1.797,5 Konten, „tiere“ nur 56 (2 bzw. 2 Posts).",
+    "Ton: „nuetzlich“ erreicht im Mittel 141 Konten, „witzig“ nur 60 (4 bzw. 4 Posts).",
+    "Uhrzeit: „12 Uhr“ erreicht im Mittel 141 Konten, „7 Uhr“ nur 44 (6 bzw. 3 Posts).",
+    "Wochentag: „Sa“ erreicht im Mittel 1.813 Konten, „Di“ nur 56,5 (2 bzw. 2 Posts).",
+    "Zahl in der Überschrift: „mit Zahl“ erreicht im Mittel 1.844,5 Konten, „ohne Zahl“ nur 106 (2 bzw. 11 Posts).",
+    "Zuschau-Anteil und Reichweite: Rangkorrelation 0,6 (deutlicher Zusammenhang – Videos, die bis zum Ende geschaut werden, verbreiten sich weiter)."
+  ],
+  "watchCorr": 0.5714285714285714,
+  "vergleich": [
+    {
+      "merkmal": "format",
+      "name": "Format",
+      "gruppen": [
+        {
+          "wert": "video",
+          "posts": 7,
+          "reichweite": 175,
+          "likes_pro_1000": 11.027790030877812,
+          "teilen_speichern_pro_1000": 1.3233348037053376,
+          "wiedergabe_s": 5.193
+        },
+        {
+          "wert": "zusammen",
+          "posts": 3,
+          "reichweite": 107,
+          "likes_pro_1000": 40.2930402930403,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.552
+        },
+        {
+          "wert": "bilder",
+          "posts": 3,
+          "reichweite": 13,
+          "likes_pro_1000": 289.4736842105263,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 3.691
+        }
+      ]
+    },
+    {
+      "merkmal": "thema",
+      "name": "Thema",
+      "gruppen": [
+        {
+          "wert": "geschichte",
+          "posts": 2,
+          "reichweite": 1797.5,
+          "likes_pro_1000": 9.735744089012517,
+          "teilen_speichern_pro_1000": 1.6689847009735743,
+          "wiedergabe_s": 6.4445
+        },
+        {
+          "wert": "technik",
+          "posts": 1,
+          "reichweite": 226,
+          "likes_pro_1000": 17.699115044247787,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 7.119
+        },
+        {
+          "wert": "kurios",
+          "posts": 1,
+          "reichweite": 122,
+          "likes_pro_1000": 40.983606557377044,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.828
+        },
+        {
+          "wert": "weltraum",
+          "posts": 5,
+          "reichweite": 107,
+          "likes_pro_1000": 25.906735751295336,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.135
+        },
+        {
+          "wert": "natur",
+          "posts": 1,
+          "reichweite": 107,
+          "likes_pro_1000": 28.037383177570092,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 3.653
+        },
+        {
+          "wert": "koerper",
+          "posts": 1,
+          "reichweite": 104,
+          "likes_pro_1000": 28.846153846153847,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.464
+        },
+        {
+          "wert": "tiere",
+          "posts": 2,
+          "reichweite": 56,
+          "likes_pro_1000": 62.5,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 5.193
+        }
+      ]
+    },
+    {
+      "merkmal": "ton",
+      "name": "Ton",
+      "gruppen": [
+        {
+          "wert": "nuetzlich",
+          "posts": 4,
+          "reichweite": 141,
+          "likes_pro_1000": 21.241830065359476,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.508
+        },
+        {
+          "wert": "staunen",
+          "posts": 5,
+          "reichweite": 106,
+          "likes_pro_1000": 10.790464240903388,
+          "teilen_speichern_pro_1000": 1.50564617314931,
+          "wiedergabe_s": 5.193
+        },
+        {
+          "wert": "witzig",
+          "posts": 4,
+          "reichweite": 60,
+          "likes_pro_1000": 64.51612903225806,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 3.725
+        }
+      ]
+    },
+    {
+      "merkmal": "uhrzeit",
+      "name": "Uhrzeit",
+      "gruppen": [
+        {
+          "wert": "12 Uhr",
+          "posts": 6,
+          "reichweite": 141,
+          "likes_pro_1000": 19.95798319327731,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.8285
+        },
+        {
+          "wert": "18 Uhr",
+          "posts": 3,
+          "reichweite": 107,
+          "likes_pro_1000": 49.586776859504134,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.552
+        },
+        {
+          "wert": "7 Uhr",
+          "posts": 3,
+          "reichweite": 44,
+          "likes_pro_1000": 10.150891632373114,
+          "teilen_speichern_pro_1000": 1.646090534979424,
+          "wiedergabe_s": 3.657
+        },
+        {
+          "wert": "15 Uhr",
+          "posts": 1,
+          "reichweite": 6,
+          "likes_pro_1000": 666.6666666666666,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": null
+        }
+      ]
+    },
+    {
+      "merkmal": "wochentag",
+      "name": "Wochentag",
+      "gruppen": [
+        {
+          "wert": "Sa",
+          "posts": 2,
+          "reichweite": 1813,
+          "likes_pro_1000": 9.376723662437948,
+          "teilen_speichern_pro_1000": 1.654715940430226,
+          "wiedergabe_s": 5.827999999999999
+        },
+        {
+          "wert": "So",
+          "posts": 2,
+          "reichweite": 170.5,
+          "likes_pro_1000": 17.595307917888565,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.8475
+        },
+        {
+          "wert": "Mo",
+          "posts": 1,
+          "reichweite": 122,
+          "likes_pro_1000": 40.983606557377044,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.828
+        },
+        {
+          "wert": "Fr",
+          "posts": 2,
+          "reichweite": 119.5,
+          "likes_pro_1000": 33.47280334728033,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 5.422
+        },
+        {
+          "wert": "Do",
+          "posts": 2,
+          "reichweite": 105,
+          "likes_pro_1000": 28.57142857142857,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.8285
+        },
+        {
+          "wert": "Mi",
+          "posts": 2,
+          "reichweite": 97,
+          "likes_pro_1000": 30.927835051546392,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 3.896
+        },
+        {
+          "wert": "Di",
+          "posts": 2,
+          "reichweite": 56.5,
+          "likes_pro_1000": 61.94690265486726,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.552
+        }
+      ]
+    },
+    {
+      "merkmal": "ueberschrift",
+      "name": "Überschrift",
+      "gruppen": [
+        {
+          "wert": "kurz (≤45 Zeichen)",
+          "posts": 4,
+          "reichweite": 148.5,
+          "likes_pro_1000": 30.245746691871457,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.828
+        },
+        {
+          "wert": "lang (>45 Zeichen)",
+          "posts": 9,
+          "reichweite": 106,
+          "likes_pro_1000": 12.974976830398516,
+          "teilen_speichern_pro_1000": 1.3901760889712698,
+          "wiedergabe_s": 4.464
+        }
+      ]
+    },
+    {
+      "merkmal": "zahl_im_titel",
+      "name": "Zahl in der Überschrift",
+      "gruppen": [
+        {
+          "wert": "mit Zahl",
+          "posts": 2,
+          "reichweite": 1844.5,
+          "likes_pro_1000": 9.216589861751151,
+          "teilen_speichern_pro_1000": 1.626457034426674,
+          "wiedergabe_s": 6.858
+        },
+        {
+          "wert": "ohne Zahl",
+          "posts": 11,
+          "reichweite": 106,
+          "likes_pro_1000": 32.8719723183391,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.2995
+        }
+      ]
+    },
+    {
+      "merkmal": "frage_im_titel",
+      "name": "Frage oder Aussage",
+      "gruppen": [
+        {
+          "wert": "Aussage",
+          "posts": 10,
+          "reichweite": 107,
+          "likes_pro_1000": 13.796172674677347,
+          "teilen_speichern_pro_1000": 1.335113484646195,
+          "wiedergabe_s": 4.552
+        },
+        {
+          "wert": "Frage",
+          "posts": 3,
+          "reichweite": 104,
+          "likes_pro_1000": 28.49002849002849,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.464
+        }
+      ]
+    },
+    {
+      "merkmal": "videolaenge",
+      "name": "Videolänge",
+      "gruppen": [
+        {
+          "wert": "bis 15 s",
+          "posts": 4,
+          "reichweite": 148.5,
+          "likes_pro_1000": 10.53952321204517,
+          "teilen_speichern_pro_1000": 1.50564617314931,
+          "wiedergabe_s": 5.0105
+        },
+        {
+          "wert": "16–25 s",
+          "posts": 6,
+          "reichweite": 107,
+          "likes_pro_1000": 23.114355231143552,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.508
+        }
+      ]
+    },
+    {
+      "merkmal": "symbolvideo",
+      "name": "Echtes Video oder Symbolvideo",
+      "gruppen": [
+        {
+          "wert": "echtes Video",
+          "posts": 8,
+          "reichweite": 148.5,
+          "likes_pro_1000": 11.96692776327241,
+          "teilen_speichern_pro_1000": 1.3054830287206267,
+          "wiedergabe_s": 5.0105
+        },
+        {
+          "wert": "Symbolvideo",
+          "posts": 2,
+          "reichweite": 105.5,
+          "likes_pro_1000": 28.43601895734597,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.508
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "2026-10-27-rollende-schlange",
+      "datum": "2026-10-27",
+      "titel": "Diese Schlange rollt vor ihren Feinden davon",
+      "format": "bilder",
+      "thema": "tiere",
+      "ton": "witzig",
+      "uhrzeit": "15 Uhr",
+      "wochentag": "Di",
+      "ueberschrift": "kurz (≤45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": null,
+      "test": null,
+      "symbolvideo": null,
+      "reichweite": 6,
+      "aufrufe": 12,
+      "likes": 4,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "profilbesuche": 1,
+      "wiedergabe_s": null,
+      "wiedergabe_anteil": null,
+      "likes_pro_1000": 666.6666666666666,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-10-28-lavaplanet",
+      "datum": "2026-10-28",
+      "titel": "Ein Planet aus Lava – und er hat eine Lufthülle, die es nicht geben dürfte",
+      "format": "bilder",
+      "thema": "weltraum",
+      "ton": "staunen",
+      "uhrzeit": "7 Uhr",
+      "wochentag": "Mi",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": null,
+      "test": null,
+      "symbolvideo": null,
+      "reichweite": 19,
+      "aufrufe": 10,
+      "likes": 3,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "profilbesuche": 0,
+      "wiedergabe_s": 3.657,
+      "wiedergabe_anteil": null,
+      "likes_pro_1000": 157.89473684210526,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-10-29-feuersalamander",
+      "datum": "2026-10-29",
+      "titel": "Der Feuersalamander hat ein Geheimnis: Er leuchtet",
+      "format": "video",
+      "thema": "tiere",
+      "ton": "staunen",
+      "uhrzeit": "12 Uhr",
+      "wochentag": "Do",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": "bis 15 s",
+      "test": null,
+      "symbolvideo": "echtes Video",
+      "reichweite": 106,
+      "aufrufe": 123,
+      "likes": 3,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": null,
+      "profilbesuche": null,
+      "wiedergabe_s": 5.193,
+      "wiedergabe_anteil": 0.34619999999999995,
+      "likes_pro_1000": 28.30188679245283,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-10-30-krokodile",
+      "datum": "2026-10-30",
+      "titel": "Warum haben Krokodile den Dino-Asteroiden überlebt?",
+      "format": "bilder",
+      "thema": "geschichte",
+      "ton": "witzig",
+      "uhrzeit": "18 Uhr",
+      "wochentag": "Fr",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Frage",
+      "videolaenge": null,
+      "test": null,
+      "symbolvideo": null,
+      "reichweite": 13,
+      "aufrufe": 13,
+      "likes": 4,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "profilbesuche": 0,
+      "wiedergabe_s": 3.725,
+      "wiedergabe_anteil": null,
+      "likes_pro_1000": 307.69230769230774,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-10-31-gluehwuermchen-aliens",
+      "datum": "2026-10-31",
+      "titel": "Wie Glühwürmchen bei der Suche nach Aliens helfen könnten",
+      "format": "zusammen",
+      "thema": "weltraum",
+      "ton": "staunen",
+      "uhrzeit": "7 Uhr",
+      "wochentag": "Sa",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": "16–25 s",
+      "test": null,
+      "symbolvideo": "echtes Video",
+      "reichweite": 44,
+      "aufrufe": 12,
+      "likes": 3,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "profilbesuche": 0,
+      "wiedergabe_s": 2.492,
+      "wiedergabe_anteil": null,
+      "likes_pro_1000": 68.18181818181817,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-11-01-baum-muskeln",
+      "datum": "2026-11-01",
+      "titel": "Bäume haben Muskeln – damit richten sie sich auf",
+      "format": "video",
+      "thema": "natur",
+      "ton": "witzig",
+      "uhrzeit": "12 Uhr",
+      "wochentag": "So",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": "16–25 s",
+      "test": null,
+      "symbolvideo": "echtes Video",
+      "reichweite": 107,
+      "aufrufe": 121,
+      "likes": 3,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": null,
+      "profilbesuche": null,
+      "wiedergabe_s": 3.653,
+      "wiedergabe_anteil": 0.16604545454545455,
+      "likes_pro_1000": 28.037383177570092,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-11-02-vega-schaedel",
+      "datum": "2026-11-02",
+      "titel": "Ein Totenschädel im Eis der Antarktis",
+      "format": "zusammen",
+      "thema": "kurios",
+      "ton": "witzig",
+      "uhrzeit": "18 Uhr",
+      "wochentag": "Mo",
+      "ueberschrift": "kurz (≤45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": "bis 15 s",
+      "test": null,
+      "symbolvideo": "echtes Video",
+      "reichweite": 122,
+      "aufrufe": 20,
+      "likes": 5,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "profilbesuche": 0,
+      "wiedergabe_s": 4.828,
+      "wiedergabe_anteil": null,
+      "likes_pro_1000": 40.983606557377044,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-11-03-voyager-lichttag",
+      "datum": "2026-11-03",
+      "titel": "Voyager 1 ist bald einen Lichttag von uns entfernt",
+      "format": "zusammen",
+      "thema": "weltraum",
+      "ton": "nuetzlich",
+      "uhrzeit": "18 Uhr",
+      "wochentag": "Di",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "mit Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": "16–25 s",
+      "test": null,
+      "symbolvideo": "Symbolvideo",
+      "reichweite": 107,
+      "aufrufe": 4,
+      "likes": 3,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "profilbesuche": 0,
+      "wiedergabe_s": 4.552,
+      "wiedergabe_anteil": null,
+      "likes_pro_1000": 28.037383177570092,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-11-04-beteigeuze-begleiter",
+      "datum": "2026-11-04",
+      "titel": "Ein versteckter Stern pflügt durch Beteigeuze",
+      "format": "video",
+      "thema": "weltraum",
+      "ton": "nuetzlich",
+      "uhrzeit": "12 Uhr",
+      "wochentag": "Mi",
+      "ueberschrift": "kurz (≤45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": "bis 15 s",
+      "test": null,
+      "symbolvideo": "echtes Video",
+      "reichweite": 175,
+      "aufrufe": 195,
+      "likes": 3,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": null,
+      "profilbesuche": null,
+      "wiedergabe_s": 4.135,
+      "wiedergabe_anteil": 0.2953571428571428,
+      "likes_pro_1000": 17.142857142857142,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-11-05-ueberkreuz-gehirn",
+      "datum": "2026-11-05",
+      "titel": "Warum steuert deine linke Hirnhälfte deine rechte Hand?",
+      "format": "video",
+      "thema": "koerper",
+      "ton": "nuetzlich",
+      "uhrzeit": "12 Uhr",
+      "wochentag": "Do",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Frage",
+      "videolaenge": "16–25 s",
+      "test": null,
+      "symbolvideo": "Symbolvideo",
+      "reichweite": 104,
+      "aufrufe": 111,
+      "likes": 3,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": null,
+      "profilbesuche": null,
+      "wiedergabe_s": 4.464,
+      "wiedergabe_anteil": 0.20290909090909093,
+      "likes_pro_1000": 28.846153846153847,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-11-06-satelliten-stau",
+      "datum": "2026-11-06",
+      "titel": "Stau im All: So voll ist es um die Erde",
+      "format": "video",
+      "thema": "technik",
+      "ton": "nuetzlich",
+      "uhrzeit": "12 Uhr",
+      "wochentag": "Fr",
+      "ueberschrift": "kurz (≤45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": "16–25 s",
+      "test": null,
+      "symbolvideo": "echtes Video",
+      "reichweite": 226,
+      "aufrufe": 272,
+      "likes": 4,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": null,
+      "profilbesuche": null,
+      "wiedergabe_s": 7.119,
+      "wiedergabe_anteil": 0.39549999999999996,
+      "likes_pro_1000": 17.699115044247787,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-11-07-dino-blut",
+      "datum": "2026-11-07",
+      "titel": "In diesem Dino-Knochen steckt Blut – 115 Millionen Jahre alt",
+      "format": "video",
+      "thema": "geschichte",
+      "ton": "staunen",
+      "uhrzeit": "7 Uhr",
+      "wochentag": "Sa",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "mit Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": "bis 15 s",
+      "test": null,
+      "symbolvideo": "echtes Video",
+      "reichweite": 3582,
+      "aufrufe": 4846,
+      "likes": 31,
+      "kommentare": 2,
+      "shares": 4,
+      "saves": 2,
+      "follows": null,
+      "profilbesuche": null,
+      "wiedergabe_s": 9.164,
+      "wiedergabe_anteil": 0.632,
+      "likes_pro_1000": 8.654383026242323,
+      "teilen_speichern_pro_1000": 1.6750418760469012
+    },
+    {
+      "id": "2026-11-08-asteroid-atombombe",
+      "datum": "2026-11-08",
+      "titel": "Könnte eine Atomexplosion die Erde vor einem Asteroiden retten?",
+      "format": "video",
+      "thema": "weltraum",
+      "ton": "staunen",
+      "uhrzeit": "12 Uhr",
+      "wochentag": "So",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "ohne Zahl",
+      "frage_im_titel": "Frage",
+      "videolaenge": "16–25 s",
+      "test": null,
+      "symbolvideo": "echtes Video",
+      "reichweite": 234,
+      "aufrufe": 261,
+      "likes": 3,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": null,
+      "profilbesuche": null,
+      "wiedergabe_s": 6.042,
+      "wiedergabe_anteil": 0.25175,
+      "likes_pro_1000": 12.82051282051282,
+      "teilen_speichern_pro_1000": 0
+    }
+  ]
+}

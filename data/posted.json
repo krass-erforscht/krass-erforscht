@@ -12,9 +12,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "follows": 0
+      "follows": 0,
+      "views": 12,
+      "profile_visits": 1
     },
-    "statsAt": "2026-11-10T06:47:18.494Z"
+    "statsAt": "2026-11-10T07:01:31.414Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -29,9 +31,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "follows": 0
+      "follows": 0,
+      "views": 10,
+      "profile_visits": 0
     },
-    "statsAt": "2026-11-10T06:47:19.256Z",
+    "statsAt": "2026-11-10T07:01:31.915Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -39,7 +43,9 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 15
+      "views": 15,
+      "ig_reels_avg_watch_time": 3657,
+      "ig_reels_video_view_total_time": 54861
     }
   },
   {
@@ -56,9 +62,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 123
+      "views": 123,
+      "ig_reels_avg_watch_time": 5193,
+      "ig_reels_video_view_total_time": 560951
     },
-    "statsAt": "2026-11-10T06:47:19.535Z"
+    "statsAt": "2026-11-10T07:01:32.119Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -75,7 +83,9 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "follows": 0
+      "follows": 0,
+      "views": 13,
+      "profile_visits": 0
     },
     "reelStats": {
       "reach": 8,
@@ -83,9 +93,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 8
+      "views": 8,
+      "ig_reels_avg_watch_time": 3725,
+      "ig_reels_video_view_total_time": 33526
     },
-    "statsAt": "2026-11-10T06:47:20.205Z"
+    "statsAt": "2026-11-10T07:01:32.628Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -102,7 +114,9 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "follows": 0
+      "follows": 0,
+      "views": 12,
+      "profile_visits": 0
     },
     "reelStats": {
       "reach": 39,
@@ -110,9 +124,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 43
+      "views": 43,
+      "ig_reels_avg_watch_time": 2492,
+      "ig_reels_video_view_total_time": 99691
     },
-    "statsAt": "2026-11-10T06:47:21.018Z"
+    "statsAt": "2026-11-10T07:01:33.177Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -128,9 +144,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 121
+      "views": 121,
+      "ig_reels_avg_watch_time": 3653,
+      "ig_reels_video_view_total_time": 409217
     },
-    "statsAt": "2026-11-10T06:47:21.266Z"
+    "statsAt": "2026-11-10T07:01:33.413Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -147,7 +165,9 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "follows": 0
+      "follows": 0,
+      "views": 20,
+      "profile_visits": 0
     },
     "reelStats": {
       "reach": 116,
@@ -155,9 +175,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 127
+      "views": 127,
+      "ig_reels_avg_watch_time": 4828,
+      "ig_reels_video_view_total_time": 574570
     },
-    "statsAt": "2026-11-10T06:47:21.740Z"
+    "statsAt": "2026-11-10T07:01:33.978Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -174,7 +196,9 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "follows": 0
+      "follows": 0,
+      "views": 4,
+      "profile_visits": 0
     },
     "reelStats": {
       "reach": 103,
@@ -182,9 +206,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 111
+      "views": 111,
+      "ig_reels_avg_watch_time": 4552,
+      "ig_reels_video_view_total_time": 473440
     },
-    "statsAt": "2026-11-10T06:47:22.566Z"
+    "statsAt": "2026-11-10T07:01:34.654Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -200,9 +226,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 195
+      "views": 195,
+      "ig_reels_avg_watch_time": 4135,
+      "ig_reels_video_view_total_time": 736133
     },
-    "statsAt": "2026-11-10T06:47:22.833Z"
+    "statsAt": "2026-11-10T07:01:34.958Z"
   },
   {
     "id": "2026-11-05-ueberkreuz-gehirn",
@@ -218,9 +246,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 111
+      "views": 111,
+      "ig_reels_avg_watch_time": 4464,
+      "ig_reels_video_view_total_time": 477661
     },
-    "statsAt": "2026-11-10T06:47:23.096Z"
+    "statsAt": "2026-11-10T07:01:35.229Z"
   },
   {
     "id": "2026-11-06-satelliten-stau",
@@ -236,9 +266,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 272
+      "views": 272,
+      "ig_reels_avg_watch_time": 7119,
+      "ig_reels_video_view_total_time": 1644636
     },
-    "statsAt": "2026-11-10T06:47:23.436Z"
+    "statsAt": "2026-11-10T07:01:35.648Z"
   },
   {
     "id": "2026-11-07-dino-blut",
@@ -254,9 +286,11 @@
       "comments": 2,
       "shares": 4,
       "saved": 2,
-      "views": 4846
+      "views": 4846,
+      "ig_reels_avg_watch_time": 9164,
+      "ig_reels_video_view_total_time": 32836765
     },
-    "statsAt": "2026-11-10T06:47:23.767Z"
+    "statsAt": "2026-11-10T07:01:35.903Z"
   },
   {
     "id": "2026-11-08-asteroid-atombombe",
@@ -272,9 +306,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 261
+      "views": 261,
+      "ig_reels_avg_watch_time": 6042,
+      "ig_reels_video_view_total_time": 1432113
     },
-    "statsAt": "2026-11-10T06:47:24.066Z"
+    "statsAt": "2026-11-10T07:01:36.137Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
@@ -291,7 +327,9 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "follows": 0
+      "follows": 0,
+      "views": 4,
+      "profile_visits": 0
     },
     "reelStats": {
       "reach": 104,
@@ -299,9 +337,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 115
+      "views": 115,
+      "ig_reels_avg_watch_time": 3014,
+      "ig_reels_video_view_total_time": 316494
     },
-    "statsAt": "2026-11-10T06:47:24.762Z"
+    "statsAt": "2026-11-10T07:01:36.663Z"
   },
   {
     "id": "2026-11-10-europa-urwald",
@@ -311,6 +351,27 @@
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261104012333.htm",
     "mediaId": "17918838618260458",
     "format": "zusammen",
-    "reelMediaId": "18126104297510418"
+    "reelMediaId": "18126104297510418",
+    "stats": {
+      "reach": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "follows": 0,
+      "views": 0,
+      "profile_visits": 0
+    },
+    "reelStats": {
+      "reach": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 0,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0
+    },
+    "statsAt": "2026-11-10T07:01:37.313Z"
   }
 ]

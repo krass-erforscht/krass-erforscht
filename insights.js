@@ -2,8 +2,9 @@
 const fs = require('fs');
 const API = 'https://graph.instagram.com/v23.0';
 const { IG_TOKEN } = process.env;
-const METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'follows'];
-const REEL_METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'views'];
+const METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'follows', 'views', 'profile_visits'];
+// Bei Reels zusätzlich die Wiedergabezeit: wie lange Leute im Schnitt zuschauen (eines der wichtigsten Signale für den Algorithmus)
+const REEL_METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'views', 'ig_reels_avg_watch_time', 'ig_reels_video_view_total_time'];
 
 async function insights(mediaId, metrics) {
   const r = await (await fetch(`${API}/${mediaId}/insights?metric=${metrics.join(',')}&access_token=${IG_TOKEN}`)).json();
@@ -26,6 +27,19 @@ async function insights(mediaId, metrics) {
     } catch (e) { console.error(`${p.id}: ${e.message}`); }
   }
   fs.writeFileSync('data/posted.json', JSON.stringify(posted, null, 2));
+
+  // Followerzahl einmal pro Tag merken, um zu sehen, welche Posts Follower bringen
+  try {
+    const me = await (await fetch(`${API}/me?fields=followers_count,media_count&access_token=${IG_TOKEN}`)).json();
+    const file = 'data/account.json', acc = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : [];
+    const day = new Date().toISOString().slice(0, 10);
+    if (me.followers_count != null) {
+      const row = { day, followers: me.followers_count, posts: me.media_count };
+      const i = acc.findIndex(a => a.day === day);
+      if (i >= 0) acc[i] = row; else acc.push(row);
+      fs.writeFileSync(file, JSON.stringify(acc, null, 2));
+    }
+  } catch (e) { console.error(`Konto: ${e.message}`); }
 
   // Punkte pro Post: Shares und Saves zählen am meisten, weil Instagram sie am stärksten belohnt
   const score = s => s ? (s.shares * 5 + s.saved * 4 + (s.follows || 0) * 6 + s.comments * 2 + s.likes) / Math.max(s.reach, 1) * 100 : null;
