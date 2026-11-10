@@ -23,5 +23,15 @@ Höchstens 6 Regeln. Eine Regel gilt erst als bestätigt, wenn sie in mindestens
    Letzte Folie / Caption mit konkretem Anlass zum Teilen („Schick das jemandem, der …“) und ein Fakt, den man sich merken will.
    Test-Kurzname: `teilen-anreiz`.
 
+## Uhrzeit Instagram
+- Seit 2026-11-10 vier Fenster: 7:45, 12:15, 18:15 und neu 20:45 Uhr (Abendstunden sind laut Fachseiten für deutsches Publikum stark).
+- Verglichen wird die Reichweite im Verhältnis zum Median des Formats (Bilder-Posts liefen viel schlechter und lagen oft morgens –
+  ohne diese Korrektur hätte das die Uhrzeit verfälscht). Stand 2026-11-10: morgens 1,46×, abends 1,0×, mittags 0,61×, spät noch ungetestet.
+
+## YouTube
+- Echte Video-Shorts laufen weit besser als Folien-Reels: CO₂-Short 1.085 Aufrufe, Feuersalamander 755, Folien-Reels 1–22 (Stand 2026-11-10).
+  → Beim Nachholen echte Video-Shorts zuerst. Bleiben Folien-Reels nach ~10 Stück unter 5 % der Video-Short-Aufrufe: keine mehr hochladen.
+- Uhrzeit: wird ab jetzt gelernt (Fenster 7, 12, 16, 19, 21 Uhr; Videos erscheinen per Zeitplan zur gewählten Stunde).
+
 ## Verlauf
-- 2026-11-10: Analyse eingeführt, Regeln 1–4 aufgestellt.
+- 2026-11-10: Analyse eingeführt, Regeln 1–4 aufgestellt. Vierte Instagram-Uhrzeit (20:45) ergänzt, YouTube-Statistik und -Uhrzeitwahl eingeführt.

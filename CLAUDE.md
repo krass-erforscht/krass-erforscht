@@ -13,12 +13,16 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Danach `data/answered.json` committen und pushen.
 0. **Zeitfenster prüfen:** `node slot.js <morgens|mittags|abends>` (das Fenster steht in der Aufgabe). Bei „NEIN“ hier aufhören.
    Nur wenn Kommentare beantwortet wurden, dem Nutzer kurz schreiben, wie viele; sonst keine Nachricht.
-   Gepostet wird einmal pro Tag (7:45, 12:15 oder 18:15 Uhr). Die Uhrzeit richtet sich von Anfang an nach der besten Reichweite
-   (siehe „Immer nach der besten Reichweite“ unten).
+   Gepostet wird einmal pro Tag (7:45, 12:15, 18:15 oder 20:45 Uhr). Die Uhrzeit richtet sich nach der besten Reichweite
+   (siehe „Immer nach der besten Reichweite“ unten). Verglichen wird die Reichweite im Verhältnis zum Median des jeweiligen Formats.
+   **Der Nutzer erlaubt ausdrücklich, die Zeiten weiter anzupassen:** Zeigt die Analyse, dass eine Stunde außerhalb der vier Fenster
+   vielversprechend ist oder ein Fenster dauerhaft schlecht läuft, die geplanten Aufgaben (update_trigger) verschieben bzw. ergänzen
+   und `SLOTS` in `slot.js` anpassen. Höchstens eine Zeitänderung pro Woche, damit genug Daten entstehen; in `data/strategie.md` begründen.
 1. `npm ci`
-2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist), dann `node analyse.js` und danach `node choose.js empfehlung`.
+2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist), `node youtube.js statistik` (nur wenn `YT_REFRESH_TOKEN` gesetzt ist),
+   dann `node analyse.js` und danach `node choose.js empfehlung`.
    **Algorithmus-Analyse:** `data/analyse.md` lesen (Vergleich aller Posts nach Format, Thema, Uhrzeit, Überschrift, Videolänge, Wiedergabezeit usw.)
-   und `data/strategie.md` aktualisieren: neue deutliche Unterschiede als Regel „im Test“ aufnehmen, Regeln mit genug Daten (je 3 Posts mit/ohne)
+   und `data/strategie.md` aktualisieren (Instagram **und** YouTube, getrennte Abschnitte): neue deutliche Unterschiede als Regel „im Test“ aufnehmen, Regeln mit genug Daten (je 3 Posts mit/ohne)
    auf „bestätigt“ oder „verworfen“ setzen, mit Datum und Zahlen begründen, Verlauf ergänzen. Höchstens 6 Regeln; wenig Daten vorsichtig deuten.
    Beim heutigen Post **alle bestätigten Regeln anwenden** und **genau eine Regel im Test** (abwechselnd, damit es Vergleichsposts mit und ohne gibt);
    deren Kurzname als `"test"` in die Post-Datei schreiben. Ändert sich eine Regel, das dem Nutzer in der Tagesnachricht in einem Satz sagen.
@@ -105,6 +109,9 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
     (Video-Reel und Folien-Reel, soweit vorhanden) – mit Beschreibung aus der Caption, Nachweisen, Abo-Hinweis und Hashtags (#Shorts + die des Posts).
     Vorher mit `node youtube.js vorschau posts/<datei>.json` Titel und Beschreibung prüfen.
     Danach `node youtube.js nachholen` (lädt ältere, noch fehlende Reels hoch, bis das Tageslimit von ca. 6 Uploads erreicht ist).
+    Die Shorts erscheinen automatisch zur gelernten besten YouTube-Uhrzeit (publishAt, eigene Auswertung nach Aufrufen, gleiche Regel wie choose.js).
+    Zeigt die Analyse, dass eine Art (z. B. Folien-Reels) auf YouTube dauerhaft kaum Aufrufe bringt, darf sie seltener oder gar nicht mehr hochgeladen werden,
+    um das Upload-Limit für Besseres zu nutzen – in `data/strategie.md` begründen.
     `data/youtube.json` committen und pushen. Kommt der Status „private“ zurück, den Nutzer einmalig bitten, es in YouTube Studio auf „Öffentlich“ zu stellen.
 10c. **Kurz-Doku für YouTube** (einmal pro Woche, samstags im Lauf, in dem gepostet wird):
     - Thema: der Post der letzten 14 Tage mit der höchsten Reichweite (`data/posted.json`), der noch keine Doku hat (`data/youtube.json`, type „doku“).
@@ -127,7 +134,7 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
       Klappt der Test nicht: Änderung verwerfen (`git checkout -- <datei>`). Nur Funktionierendes committen und pushen.
     - Jede Verbesserung mit Datum und einem Satz in `data/verbesserungen.md` festhalten und dem Nutzer in der Tagesnachricht kurz nennen.
     - **Nicht ohne den Nutzer ändern:** die Grundregeln (kostenlos, nur frei lizenzierte Bilder/Videos/Musik, Sicherheitsregeln,
-      Ehrlichkeit über KI), die Zeitpläne der geplanten Aufgaben, Konten und Zugänge. Das nur vorschlagen.
+      Ehrlichkeit über KI), Konten und Zugänge. Das nur vorschlagen. (Uhrzeiten der geplanten Aufgaben darf ich laut Nutzer nach der Analyse anpassen.)
     - **Wenn etwas vom Nutzer gebraucht wird** (neue Berechtigung, freigegebene Internetadresse, neuer Token, ein Konto, eine Entscheidung):
       in der Tagesnachricht klar und kurz Bescheid geben, was genau und warum, mit einfacher Schritt-für-Schritt-Anleitung auf Deutsch.
       Dieselbe Bitte nicht jeden Tag wiederholen; offene Bitten in `data/offene-bitten.md` führen und erst nach 3 Tagen erneut erinnern.

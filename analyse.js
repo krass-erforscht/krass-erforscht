@@ -96,7 +96,19 @@ for (const c of compare) {
 }
 md.push('## Alle Posts', '', '| Datum | Titel | Format | Reichweite | Aufrufe | Likes | Shares | Saves | Follows | Ø geschaut | Anteil geschaut |', '|---|---|---|---|---|---|---|---|---|---|---|');
 for (const r of rows) md.push(`| ${r.datum} | ${r.titel.slice(0, 45)} | ${r.format} | ${r.reichweite} | ${r.aufrufe ?? '–'} | ${r.likes} | ${r.shares} | ${r.saves} | ${r.follows ?? '–'} | ${r.wiedergabe_s ? r1(r.wiedergabe_s) + ' s' : '–'} | ${r.wiedergabe_anteil ? Math.round(r.wiedergabe_anteil * 100) + ' %' : '–'} |`);
-if (yt.length) md.push('', `## YouTube`, '', `${yt.length} Videos hochgeladen (Aufrufzahlen: siehe youtube.js statistik).`);
+if (yt.length) {
+  const withStats = yt.filter(d => d.stats);
+  const hourOf = d => +new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', hourCycle: 'h23' }).format(new Date(d.publishedAt));
+  const TYPES = { short: 'Video-Short (echtes Video)', reel: 'Folien-Reel', doku: 'Kurz-Doku' };
+  md.push('', '## YouTube', '', `${yt.length} Videos, ${withStats.reduce((a, d) => a + d.stats.views, 0).toLocaleString('de-DE')} Aufrufe gesamt (Stand: \`node youtube.js statistik\`).`, '',
+    '| Art | Videos | Aufrufe (Median) | Likes gesamt |', '|---|---|---|---|');
+  for (const t of Object.keys(TYPES)) { const g = withStats.filter(d => d.type === t); if (g.length) md.push(`| ${TYPES[t]} | ${g.length} | ${r1(median(g.map(d => d.stats.views)))} | ${g.reduce((a, d) => a + d.stats.likes, 0)} |`); }
+  md.push('', '| Veröffentlicht um | Videos | Aufrufe (Median) |', '|---|---|---|');
+  const byHour = {};
+  for (const d of withStats.filter(d => d.publishedAt && d.privacy === 'public')) (byHour[hourOf(d)] ||= []).push(d.stats.views);
+  for (const h of Object.keys(byHour).sort((a, b) => a - b)) md.push(`| ${h} Uhr | ${byHour[h].length} | ${r1(median(byHour[h]))} |`);
+  md.push('', 'Top 5:', ...withStats.sort((a, b) => b.stats.views - a.stats.views).slice(0, 5).map(d => `- ${d.id} (${TYPES[d.type]}): ${d.stats.views} Aufrufe, ${d.stats.likes} Likes – ${d.type === 'doku' ? 'https://youtu.be/' : 'https://youtube.com/shorts/'}${d.videoId}`));
+}
 
 fs.writeFileSync('data/analyse.md', md.join('\n') + '\n');
 fs.writeFileSync('data/analyse.json', JSON.stringify({ datum: new Date().toISOString(), hinweise: hints, watchCorr, vergleich: compare, posts: rows }, null, 2));

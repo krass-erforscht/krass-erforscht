@@ -4,83 +4,167 @@
     "type": "doku",
     "videoId": "8SoSBR8ARRI",
     "privacy": "public",
-    "uploadedAt": "2026-11-09T06:50:40.043Z"
+    "uploadedAt": "2026-11-09T06:50:40.043Z",
+    "stats": {
+      "views": 12,
+      "likes": 1,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-09T06:51:44Z",
+    "statsAt": "2026-11-10T11:42:31.231Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
     "type": "short",
     "videoId": "2ZNAge38YsE",
     "privacy": "public",
-    "uploadedAt": "2026-11-09T17:33:22.379Z"
+    "uploadedAt": "2026-11-09T17:33:22.379Z",
+    "stats": {
+      "views": 1085,
+      "likes": 2,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-09T17:33:52Z",
+    "statsAt": "2026-11-10T11:42:31.231Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
     "type": "reel",
     "videoId": "YzsfBesQgU4",
     "privacy": "public",
-    "uploadedAt": "2026-11-09T20:53:09.600Z"
+    "uploadedAt": "2026-11-09T20:53:09.600Z",
+    "stats": {
+      "views": 22,
+      "likes": 0,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-09T20:53:37Z",
+    "statsAt": "2026-11-10T11:41:39.832Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
     "type": "reel",
     "videoId": "fc_wXrKVXdM",
     "privacy": "public",
-    "uploadedAt": "2026-11-09T20:53:13.841Z"
+    "uploadedAt": "2026-11-09T20:53:13.841Z",
+    "stats": {
+      "views": 1,
+      "likes": 0,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-09T20:53:46Z",
+    "statsAt": "2026-11-10T11:42:31.231Z"
   },
   {
     "id": "2026-10-29-feuersalamander",
     "type": "short",
     "videoId": "VzJz3SaGiFs",
     "privacy": "public",
-    "uploadedAt": "2026-11-09T20:53:16.738Z"
+    "uploadedAt": "2026-11-09T20:53:16.738Z",
+    "stats": {
+      "views": 755,
+      "likes": 7,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-09T20:53:37Z",
+    "statsAt": "2026-11-10T11:42:31.231Z"
   },
   {
     "id": "2026-10-30-krokodile",
     "type": "reel",
     "videoId": "Hh1RIPl4MZI",
     "privacy": "public",
-    "uploadedAt": "2026-11-09T20:53:19.666Z"
+    "uploadedAt": "2026-11-09T20:53:19.666Z",
+    "stats": {
+      "views": 3,
+      "likes": 0,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-09T20:54:02Z",
+    "statsAt": "2026-11-10T11:42:31.231Z"
   },
   {
     "id": "2026-11-10-europa-urwald",
     "type": "short",
     "videoId": "5JBNkmRw9Qo",
     "privacy": "public",
-    "uploadedAt": "2026-11-10T06:59:47.480Z"
+    "uploadedAt": "2026-11-10T06:59:47.480Z",
+    "stats": {
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-10T07:00:09Z",
+    "statsAt": "2026-11-10T11:42:31.231Z"
   },
   {
     "id": "2026-11-10-europa-urwald",
     "type": "reel",
     "videoId": "NOHrCVU2uuA",
     "privacy": "public",
-    "uploadedAt": "2026-11-10T06:59:48.944Z"
+    "uploadedAt": "2026-11-10T06:59:48.944Z",
+    "stats": {
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-10T07:00:18Z",
+    "statsAt": "2026-11-10T11:41:39.832Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
     "type": "short",
     "videoId": "mHl6ZhQrEyY",
     "privacy": "public",
-    "uploadedAt": "2026-11-10T06:59:53.801Z"
+    "uploadedAt": "2026-11-10T06:59:53.801Z",
+    "stats": {
+      "views": 1,
+      "likes": 0,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-10T07:00:20Z",
+    "statsAt": "2026-11-10T11:41:39.832Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
     "type": "reel",
     "videoId": "cdThPVIJiLM",
     "privacy": "public",
-    "uploadedAt": "2026-11-10T06:59:55.576Z"
+    "uploadedAt": "2026-11-10T06:59:55.576Z",
+    "stats": {
+      "views": 1,
+      "likes": 0,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-10T07:00:18Z",
+    "statsAt": "2026-11-10T11:41:39.832Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
     "type": "short",
     "videoId": "qTGoAjmQdAQ",
     "privacy": "public",
-    "uploadedAt": "2026-11-10T06:59:57.184Z"
+    "uploadedAt": "2026-11-10T06:59:57.184Z",
+    "stats": {
+      "views": 3,
+      "likes": 0,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-10T07:00:22Z",
+    "statsAt": "2026-11-10T11:41:39.832Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
     "type": "short",
     "videoId": "fcVZqTdhGKw",
     "privacy": "public",
-    "uploadedAt": "2026-11-10T06:59:59.408Z"
+    "uploadedAt": "2026-11-10T06:59:59.408Z",
+    "stats": {
+      "views": 5,
+      "likes": 0,
+      "comments": 0
+    },
+    "publishedAt": "2026-11-10T07:00:14Z",
+    "statsAt": "2026-11-10T11:41:39.832Z"
   }
 ]

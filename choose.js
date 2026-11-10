@@ -25,9 +25,10 @@ function dayRandom(kind) {
 }
 
 // options: Liste möglicher Werte; groupOf: ordnet einem Post seinen Wert zu; kind: Name der Entscheidung
-function choose(options, groupOf, kind) {
-  const data = posts();
-  const reaches = o => data.filter(p => groupOf(p) === o).map(p => p.stats.reach);
+// valueOf (optional): was gezählt wird, Standard = erreichte Konten; filter (optional): nur diese Posts zählen
+function choose(options, groupOf, kind, valueOf = p => p.stats.reach, filter = () => true) {
+  const data = posts().filter(filter);
+  const reaches = o => data.filter(p => groupOf(p) === o).map(valueOf);
   // Median statt Durchschnitt: ein einzelner viraler Ausreißer soll nicht die ganze Auswahl umwerfen
   const avg = o => {
     const r = reaches(o).sort((a, b) => a - b);
@@ -35,7 +36,7 @@ function choose(options, groupOf, kind) {
     const m = Math.floor(r.length / 2);
     return r.length % 2 ? r[m] : (r[m - 1] + r[m]) / 2;
   };
-  const rows = options.map(o => ({ option: o, posts: reaches(o).length, reichweite: Math.round(avg(o)) }));
+  const rows = options.map(o => ({ option: o, posts: reaches(o).length, reichweite: Math.round(avg(o) * 100) / 100 }));
   const fresh = rows.filter(r => r.posts < MIN_DATA).sort((a, b) => a.posts - b.posts);
   const ranked = rows.slice().sort((a, b) => b.reichweite - a.reichweite);
   let pick, why;
@@ -55,7 +56,7 @@ function choose(options, groupOf, kind) {
 const TOPICS = ['weltraum', 'tiere', 'natur', 'technik', 'koerper', 'geschichte', 'kurios'];
 const TONES = ['staunen', 'witzig', 'nuetzlich'];
 
-module.exports = { choose };
+module.exports = { choose, posts, dayRandom, MIN_DATA, EXPLORE };
 if (require.main === module && process.argv[2] === 'empfehlung') {
   const thema = choose(TOPICS, p => p.topic, 'thema');
   const ton = choose(TONES, p => p.tone, 'ton');

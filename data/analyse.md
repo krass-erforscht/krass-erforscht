@@ -131,4 +131,24 @@ Gesamtreichweite: 4.845 Konten, Median pro Post: 107.
 
 ## YouTube
 
-12 Videos hochgeladen (Aufrufzahlen: siehe youtube.js statistik).
+12 Videos, 1.888 Aufrufe gesamt (Stand: `node youtube.js statistik`).
+
+| Art | Videos | Aufrufe (Median) | Likes gesamt |
+|---|---|---|---|
+| Video-Short (echtes Video) | 6 | 4 | 9 |
+| Folien-Reel | 5 | 1 | 0 |
+| Kurz-Doku | 1 | 12 | 1 |
+
+| Veröffentlicht um | Videos | Aufrufe (Median) |
+|---|---|---|
+| 7 Uhr | 1 | 12 |
+| 8 Uhr | 6 | 1 |
+| 18 Uhr | 1 | 1.085 |
+| 21 Uhr | 4 | 12,5 |
+
+Top 5:
+- 2026-11-09-co2-atmen (Video-Short (echtes Video)): 1085 Aufrufe, 2 Likes – https://youtube.com/shorts/2ZNAge38YsE
+- 2026-10-29-feuersalamander (Video-Short (echtes Video)): 755 Aufrufe, 7 Likes – https://youtube.com/shorts/VzJz3SaGiFs
+- 2026-11-09-co2-atmen (Folien-Reel): 22 Aufrufe, 0 Likes – https://youtube.com/shorts/YzsfBesQgU4
+- dino-blut (Kurz-Doku): 12 Aufrufe, 1 Likes – https://youtu.be/8SoSBR8ARRI
+- 2026-11-02-vega-schaedel (Video-Short (echtes Video)): 5 Aufrufe, 0 Likes – https://youtube.com/shorts/fcVZqTdhGKw
