@@ -1,0 +1,29 @@
+{
+  "id": "2026-11-10-europa-urwald",
+  "category": "Natur",
+  "topic": "natur",
+  "tone": "staunen",
+  "format": "zusammen",
+  "source": { "name": "Aarhus University, Biological Conservation via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261104012333.htm" },
+  "image": { "file": "images/2026-11-10-europa-urwald.jpg", "credit": "Nemracc / Wikimedia Commons", "short": "Foto: Nemracc, CC BY-SA 4.0", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:Silvopasture,_wood_pasture_in_B%C3%BChren,_district_G%C3%B6ttingen_03.jpg", "position": "center 40%" },
+  "video": {
+    "file": "videos/2026-11-10-europa-urwald.mp4", "start": 79, "duration": 25,
+    "credit": "Sander van Schie – De Verfilmer / Wikimedia Commons", "short": "Symbolvideo: Wisente heute in den Niederlanden (S. van Schie, CC BY 3.0)", "license": "CC BY 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:European_bison_(Bison_bonasus)_in_the_Netherlands.webm", "symbolisch": true,
+    "headline": "Europa war **kein** dunkler Urwald",
+    "captions": ["Über **20 Millionen Jahre**: lichte Wälder, Wiesen, Blumen", "Große Pflanzenfresser hielten die Landschaft **offen**", "Sogar **Elefanten** und **Nashörner** lebten hier"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Natur", "title": "Europa war nie ein dichter **Urwald**" },
+    { "label": "Wie sah es aus?", "title": "Ein bunter **Flickenteppich**", "text": ["Verstreute Bäume, lichte Wälder, Grasflächen und **Wildblumenwiesen** – voller Vögel und Schmetterlinge.", "So sah Europa **über 20 Millionen Jahre** lang meistens aus."],
+      "image": { "file": "images/2026-11-10-europa-urwald-2.jpg", "credit": "Anthony O'Neil / Wikimedia Commons", "short": "Foto: Anthony O'Neil, CC BY-SA 2.0", "license": "CC BY-SA 2.0", "page": "https://commons.wikimedia.org/wiki/File:Wildflower_meadow_-_geograph.org.uk_-_7850906.jpg", "position": "center 60%" } },
+    { "label": "Die Gärtner", "title": "**Elefanten**, Nashörner, Wisente", "text": ["Riesige Pflanzenfresser fraßen, trampelten und wühlten – und hielten so Flächen **frei von Bäumen**.", "Im Bild: Nachbildung eines Europäischen Waldelefanten."],
+      "image": { "file": "images/2026-11-10-europa-urwald-3.jpg", "credit": "Jl FilpoC / Wikimedia Commons", "short": "Foto: Jl FilpoC, CC BY-SA 4.0", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:Reproducci%C3%B3n_de_Palaeoloxodon_antiquus.jpg", "position": "70% center" } },
+    { "label": "Woher weiß man das?", "title": "Spuren aus **23 Millionen Jahren**", "text": ["Versteinerte **Pollen**, Holzkohle alter Waldbrände, Zähne und Knochen von Pflanzenfressern, fossile Insekten und uralte **DNA** aus dem Boden."],
+      "image": { "file": "images/2026-11-10-europa-urwald-5.jpg", "credit": "Dartmouth Electron Microscope Facility / Wikimedia Commons", "short": "Pollen heute (Mikroskop): Dartmouth, gemeinfrei", "license": "Public domain", "page": "https://commons.wikimedia.org/wiki/File:Misc_pollen_colorized.jpg", "position": "center center" } },
+    { "label": "Fun Fact", "title": "Dichte, dunkle Wälder sind eher **neu**", "text": ["Laut der Studie sind sie eine relativ junge Entwicklung. Was heute fehlt: die großen **wilden Pflanzenfresser**.", "Im Bild: ein heutiger Wisent."],
+      "image": { "file": "images/2026-11-10-europa-urwald-4.jpg", "credit": "Michael Gäbler / Wikimedia Commons", "short": "Foto: Michael Gäbler, CC BY 3.0", "license": "CC BY 3.0", "page": "https://commons.wikimedia.org/wiki/File:Bison_bonasus_(Linnaeus_1758).jpg", "position": "25% 70%" } },
+    { "type": "cta", "label": "Mehr davon?", "title": "Schick das jemandem, der gern im Wald spazieren geht." }
+  ],
+  "caption": "Urwald in Europa? Eher nicht: Europa war über 20 Millionen Jahre lang meistens kein dichter, dunkler Wald, sondern ein bunter Flickenteppich aus lichten Wäldern, Wiesen und Wildblumen. 🌳🐘 Das zeigt eine Studie der Universität Aarhus, die Pollen, Holzkohle, Tierknochen, fossile Insekten und uralte DNA aus 23 Millionen Jahren ausgewertet hat. Große Pflanzenfresser wie Elefanten, Nashörner, Auerochsen und Wisente hielten die Landschaft offen.\n\nHättest du gedacht, dass hier mal Elefanten unterwegs waren? 👇\n\nQuelle: Aarhus University, Fachjournal Biological Conservation via ScienceDaily · Text mit KI erstellt\nFotos: Nemracc (CC BY-SA 4.0), Anthony O'Neil (CC BY-SA 2.0), Jl FilpoC (CC BY-SA 4.0), Michael Gäbler (CC BY 3.0), Dartmouth Electron Microscope Facility (gemeinfrei), alle via Wikimedia Commons\nSymbolvideo: Wisente in den Niederlanden – Sander van Schie / De Verfilmer, CC BY 3.0, via Wikimedia Commons\n#urwald #europa #natur #wisent #wissenschaft"
+}

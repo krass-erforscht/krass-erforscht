@@ -14,7 +14,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-09T17:16:47.727Z"
+    "statsAt": "2026-11-10T06:47:18.494Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -31,7 +31,7 @@
       "saved": 0,
       "follows": 0
     },
-    "statsAt": "2026-11-09T17:16:48.501Z",
+    "statsAt": "2026-11-10T06:47:19.256Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -58,7 +58,7 @@
       "saved": 0,
       "views": 123
     },
-    "statsAt": "2026-11-09T17:16:48.717Z"
+    "statsAt": "2026-11-10T06:47:19.535Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -85,7 +85,7 @@
       "saved": 0,
       "views": 8
     },
-    "statsAt": "2026-11-09T17:16:49.305Z"
+    "statsAt": "2026-11-10T06:47:20.205Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -112,7 +112,7 @@
       "saved": 0,
       "views": 43
     },
-    "statsAt": "2026-11-09T17:16:49.944Z"
+    "statsAt": "2026-11-10T06:47:21.018Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -130,7 +130,7 @@
       "saved": 0,
       "views": 121
     },
-    "statsAt": "2026-11-09T17:16:50.272Z"
+    "statsAt": "2026-11-10T06:47:21.266Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -157,7 +157,7 @@
       "saved": 0,
       "views": 127
     },
-    "statsAt": "2026-11-09T17:16:51.007Z"
+    "statsAt": "2026-11-10T06:47:21.740Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -184,7 +184,7 @@
       "saved": 0,
       "views": 111
     },
-    "statsAt": "2026-11-09T17:16:51.583Z"
+    "statsAt": "2026-11-10T06:47:22.566Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -202,7 +202,7 @@
       "saved": 0,
       "views": 195
     },
-    "statsAt": "2026-11-09T17:16:51.920Z"
+    "statsAt": "2026-11-10T06:47:22.833Z"
   },
   {
     "id": "2026-11-05-ueberkreuz-gehirn",
@@ -220,7 +220,7 @@
       "saved": 0,
       "views": 111
     },
-    "statsAt": "2026-11-09T17:16:52.151Z"
+    "statsAt": "2026-11-10T06:47:23.096Z"
   },
   {
     "id": "2026-11-06-satelliten-stau",
@@ -238,7 +238,7 @@
       "saved": 0,
       "views": 272
     },
-    "statsAt": "2026-11-09T17:16:52.522Z"
+    "statsAt": "2026-11-10T06:47:23.436Z"
   },
   {
     "id": "2026-11-07-dino-blut",
@@ -249,14 +249,14 @@
     "mediaId": "18169323721488278",
     "format": "video",
     "stats": {
-      "reach": 3556,
+      "reach": 3582,
       "likes": 31,
       "comments": 2,
       "shares": 4,
       "saved": 2,
-      "views": 4819
+      "views": 4846
     },
-    "statsAt": "2026-11-09T17:16:52.777Z"
+    "statsAt": "2026-11-10T06:47:23.767Z"
   },
   {
     "id": "2026-11-08-asteroid-atombombe",
@@ -274,7 +274,7 @@
       "saved": 0,
       "views": 261
     },
-    "statsAt": "2026-11-09T17:16:53.042Z"
+    "statsAt": "2026-11-10T06:47:24.066Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
@@ -284,6 +284,23 @@
     "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261104012305.htm",
     "mediaId": "18100993013551484",
     "format": "zusammen",
-    "reelMediaId": "18197083069402833"
+    "reelMediaId": "18197083069402833",
+    "stats": {
+      "reach": 105,
+      "likes": 2,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "follows": 0
+    },
+    "reelStats": {
+      "reach": 104,
+      "likes": 1,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 115
+    },
+    "statsAt": "2026-11-10T06:47:24.762Z"
   }
 ]

@@ -1,18 +1,11 @@
 {
-  "aktualisiert": "2026-11-09T17:16:53.057Z",
+  "aktualisiert": "2026-11-10T06:47:24.775Z",
   "ranking": [
-    {
-      "gruppe": "format:zusammen",
-      "posts": 3,
-      "punkte": 4.57,
-      "reichweite": 91,
-      "follower": 0
-    },
     {
       "gruppe": "uhrzeit:7",
       "posts": 2,
       "punkte": 4.29,
-      "reichweite": 1800,
+      "reichweite": 1813,
       "follower": 0
     },
     {
@@ -23,24 +16,17 @@
       "follower": 0
     },
     {
-      "gruppe": "ton:witzig",
-      "posts": 2,
-      "punkte": 3.45,
-      "reichweite": 115,
-      "follower": 0
-    },
-    {
-      "gruppe": "uhrzeit:18",
-      "posts": 2,
-      "punkte": 3.45,
-      "reichweite": 115,
+      "gruppe": "format:zusammen",
+      "posts": 4,
+      "punkte": 3.91,
+      "reichweite": 95,
       "follower": 0
     },
     {
       "gruppe": "ton:staunen",
       "posts": 4,
-      "punkte": 3.18,
-      "reichweite": 985,
+      "punkte": 3.17,
+      "reichweite": 992,
       "follower": 0
     },
     {
@@ -51,10 +37,17 @@
       "follower": 0
     },
     {
-      "gruppe": "thema:koerper",
-      "posts": 1,
-      "punkte": 2.88,
-      "reichweite": 104,
+      "gruppe": "ton:witzig",
+      "posts": 3,
+      "punkte": 2.94,
+      "reichweite": 111,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:18",
+      "posts": 3,
+      "punkte": 2.94,
+      "reichweite": 111,
       "follower": 0
     },
     {
@@ -69,6 +62,13 @@
       "posts": 1,
       "punkte": 2.8,
       "reichweite": 107,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:koerper",
+      "posts": 2,
+      "punkte": 2.39,
+      "reichweite": 105,
       "follower": 0
     },
     {
@@ -89,7 +89,7 @@
       "gruppe": "format:video",
       "posts": 7,
       "punkte": 2.15,
-      "reichweite": 644,
+      "reichweite": 648,
       "follower": 0
     },
     {
@@ -102,8 +102,8 @@
     {
       "gruppe": "thema:geschichte",
       "posts": 1,
-      "punkte": 1.77,
-      "reichweite": 3556,
+      "punkte": 1.76,
+      "reichweite": 3582,
       "follower": 0
     }
   ]
