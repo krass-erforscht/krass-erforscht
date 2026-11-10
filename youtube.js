@@ -1,6 +1,6 @@
 // Lädt ein Video auf den YouTube-Kanal @krass.erforscht hoch (offizielle YouTube Data API, kostenlos).
 //   node youtube.js test                                  → prüft den Zugang und zeigt den Kanal
-//   node youtube.js reels posts/<datei>.json              → Video-Reel und Folien-Reel des Posts als YouTube Shorts (wie auf Instagram)
+//   node youtube.js reels posts/<datei>.json              → Video-Reel des Posts als YouTube Short (Folien-Reel nur mit --mit-folien)
 //   node youtube.js short posts/<datei>.json              → nur das Video-Reel
 //   node youtube.js nachholen [anzahl]                    → ältere Reels nachträglich hochladen (höchstens ~6 Uploads pro Tag)
 //   node youtube.js vorschau posts/<datei>.json           → Titel und Beschreibungen ansehen, ohne hochzuladen
@@ -94,9 +94,9 @@ const { dayRandom, MIN_DATA, EXPLORE } = require('./choose');
 const YT_SLOTS = { morgens: 7, mittags: 12, nachmittags: 16, abends: 19, spaet: 21 };
 const berlinHour = d => +new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', hourCycle: 'h23' }).format(new Date(d));
 const slotOfHour = h => Object.entries(YT_SLOTS).reduce((best, [k, v]) => Math.abs(v - h) < Math.abs(YT_SLOTS[best] - h) ? k : best, 'morgens');
-function ytSlot(done) {
+function ytSlot(done, day = '') {
   // Nur Shorts zählen, die mindestens 2 Tage online sind (vorher sind die Aufrufzahlen noch nicht aussagekräftig)
-  const data = done.filter(d => d.type !== 'doku' && d.stats && d.privacy === 'public' && d.publishedAt && Date.now() - new Date(d.publishedAt) > 2 * 864e5);
+  const data = done.filter(d => !d.deleted && d.type !== 'doku' && d.stats && d.privacy === 'public' && d.publishedAt && Date.now() - new Date(d.publishedAt) > 2 * 864e5);
   const med = a => { const s = a.slice().sort((x, y) => x - y), m = Math.floor(s.length / 2); return s.length ? (s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2) : 0; };
   // Aufrufe im Verhältnis zum Median der eigenen Art (Video-Short oder Folien-Reel), damit die Art die Uhrzeit nicht verfälscht
   const typeMed = t => Math.max(med(data.filter(d => d.type === t).map(d => d.stats.views)), 1);
@@ -104,9 +104,9 @@ function ytSlot(done) {
     return { option: o, posts: v.length, aufrufe: Math.round(med(v) * 100) / 100 }; });
   const fresh = rows.filter(r => r.posts < MIN_DATA).sort((a, b) => a.posts - b.posts);
   const ranked = rows.slice().sort((a, b) => b.aufrufe - a.aufrufe);
-  if (fresh.length) { const f = fresh.filter(r => r.posts === fresh[0].posts); return { pick: f[Math.floor(dayRandom('yt') * f.length)].option, why: 'noch kaum getestet', rows: ranked }; }
-  if (dayRandom('yt') >= EXPLORE) return { pick: ranked[0].option, why: 'meiste Aufrufe', rows: ranked };
-  const o = ranked.slice(1); return { pick: o[Math.floor(dayRandom('ytx') * o.length)].option, why: 'zum Weiterlernen', rows: ranked };
+  if (fresh.length) { const f = fresh.filter(r => r.posts === fresh[0].posts); return { pick: f[Math.floor(dayRandom('yt' + day) * f.length)].option, why: 'noch kaum getestet', rows: ranked }; }
+  if (dayRandom('yt' + day) >= EXPLORE) return { pick: ranked[0].option, why: 'meiste Aufrufe', rows: ranked };
+  const o = ranked.slice(1); return { pick: o[Math.floor(dayRandom('ytx' + day) * o.length)].option, why: 'zum Weiterlernen', rows: ranked };
 }
 // Nächster Zeitpunkt der gewählten Uhrzeit (Berlin); n-tes Video des Tages jeweils 40 Minuten später, damit nicht alles auf einmal kommt
 function publishTime(slot, n) {
@@ -121,7 +121,32 @@ function publishTime(slot, n) {
   }
   return null;
 }
-let uploadsToday = 0, todaySlot = null;
+// Nicht zu viele Shorts auf einmal: höchstens 2 pro Tag und mindestens 6 Stunden Abstand (viele direkt hintereinander liefen
+// am 9./10.11. kaum, die einzeln veröffentlichten dagegen sehr gut). Freie Plätze werden bis zu 4 Tage im Voraus belegt.
+const MAX_SHORTS_PER_DAY = 2, MIN_GAP_H = 6, DAYS_AHEAD = 4;
+const berlinDay = t => new Date(t).toLocaleDateString('en-CA', { timeZone: 'Europe/Berlin' });
+function atBerlin(day, hour) {
+  for (const off of [1, 2]) { const t = new Date(`${day}T${String(hour).padStart(2, '0')}:00:00Z`).getTime() - off * 36e5; if (berlinHour(t) === hour) return t; }
+}
+// maxPerDay: neue Posts dürfen den 2. Platz eines Tages nehmen, Nachgeholtes nur einen, damit Platz für Neues bleibt
+function nextFreeTime(done, maxPerDay = MAX_SHORTS_PER_DAY) {
+  const times = done.filter(d => !d.deleted && d.type !== 'doku' && d.publishedAt).map(d => new Date(d.publishedAt).getTime());
+  for (let add = 0; add <= DAYS_AHEAD; add++) {
+    const day = berlinDay(Date.now() + add * 864e5);
+    const sameDay = times.filter(t => berlinDay(t) === day);
+    if (sameDay.length >= maxPerDay) continue;
+    // Die Uhrzeit wird pro Tag gewählt, damit beim Lernen verschiedene Zeiten drankommen
+    const plan = ytSlot(done, day);
+    const order = [plan.pick, ...plan.rows.map(r => r.option).filter(o => o !== plan.pick)];
+    for (const slot of order) {
+      const t = atBerlin(day, YT_SLOTS[slot]);
+      if (t < Date.now() + 20 * 6e4) continue;
+      if (times.some(x => Math.abs(x - t) < MIN_GAP_H * 36e5)) continue;
+      return { publishAt: new Date(t).toISOString(), slot, why: slot === plan.pick ? plan.why : 'zweiter Platz am Tag' };
+    }
+  }
+  return null; // alle Plätze der nächsten Tage belegt
+}
 
 const plain = s => s.replace(/\*\*/g, '');
 // Was zu einem Post hochgeladen werden kann: das Video-Reel (echtes Video) und das Folien-Reel
@@ -136,20 +161,22 @@ function uploadsFor(post) {
   return out;
 }
 
-async function uploadPost(token, post, types, done) {
+async function uploadPost(token, post, types, done, maxPerDay) {
   for (const u of uploadsFor(post).filter(u => types.includes(u.type))) {
-    if (done.some(d => d.id === post.id && d.type === u.type)) { console.log(`${post.id} (${u.type}): schon hochgeladen`); continue; }
+    if (done.some(d => d.id === post.id && d.type === u.type && !d.deleted)) { console.log(`${post.id} (${u.type}): schon hochgeladen`); continue; }
+    const when = nextFreeTime(done, maxPerDay);
+    if (!when) { console.log(`${post.id} (${u.type}): alle Plätze der nächsten ${DAYS_AHEAD} Tage belegt – später`); return false; }
     const tags = [...new Set([...tagsFrom(post.caption), 'Wissenschaft', 'Shorts'])];
-    todaySlot ||= ytSlot(done);
-    const publishAt = publishTime(todaySlot.pick, uploadsToday++);
-    const v = await upload(token, u.file, meta({ title: u.title, description: u.description, tags, publishAt }));
-    const entry = { id: post.id, type: u.type, videoId: v.id, privacy: v.status?.privacyStatus, publishAt, publishedAt: publishAt || new Date().toISOString(), ytSlot: todaySlot.pick };
+    const v = await upload(token, u.file, meta({ title: u.title, description: u.description, tags, publishAt: when.publishAt }));
+    const entry = { id: post.id, type: u.type, videoId: v.id, privacy: v.status?.privacyStatus, publishAt: when.publishAt, publishedAt: when.publishAt, ytSlot: when.slot };
     log(entry); done.push(entry);
-    console.log(`${post.id} (${u.type}) hochgeladen: https://youtube.com/shorts/${v.id} (${publishAt ? `erscheint ${new Date(publishAt).toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })} – ${todaySlot.pick}, ${todaySlot.why}` : 'sofort öffentlich'})`);
+    console.log(`${post.id} (${u.type}) hochgeladen: https://youtube.com/shorts/${v.id} – erscheint ${new Date(when.publishAt).toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })} (${when.slot}, ${when.why})`);
   }
+  return true;
 }
 
-const today = () => new Date().toISOString().slice(0, 10);
+// Das YouTube-Tageslimit wird um Mitternacht pazifischer Zeit zurückgesetzt
+const ptDay = t => new Date(t).toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
 
 (async () => {
   const [mode, file, arg] = process.argv.slice(2);
@@ -161,19 +188,18 @@ const today = () => new Date().toISOString().slice(0, 10);
   }
   const done = fs.existsSync(LOG) ? JSON.parse(fs.readFileSync(LOG)) : [];
   if (mode === 'short' || mode === 'reels') {
-    // short: nur das Video-Reel; reels: Video-Reel und Folien-Reel (so wie auf Instagram)
+    // Folien-Reels laufen auf YouTube kaum (1–22 Aufrufe gegenüber 755–1.085 bei echten Videos) – nur noch mit --mit-folien
     const post = JSON.parse(fs.readFileSync(file));
-    await uploadPost(token, post, mode === 'short' ? ['short'] : ['short', 'reel'], done);
+    await uploadPost(token, post, process.argv.includes('--mit-folien') ? ['short', 'reel'] : ['short'], done);
   } else if (mode === 'nachholen') {
-    // Ältere Instagram-Reels nachträglich hochladen, ohne das Tageslimit zu sprengen (heutige Uploads werden mitgezählt)
-    const left = Math.min(+(file || PER_DAY), PER_DAY - done.filter(d => (d.uploadedAt || '').startsWith(today())).length);
+    // Ältere Video-Shorts nachträglich einplanen (auch von YouTube gelöschte), so dass höchstens 2 pro Tag erscheinen
+    const left = Math.min(+(file || PER_DAY), PER_DAY - done.filter(d => d.uploadedAt && ptDay(d.uploadedAt) === ptDay(Date.now())).length);
     const posts = JSON.parse(fs.readFileSync('data/posted.json')).map(p => p.id).filter(id => fs.existsSync(`posts/${id}.json`));
-    const todo = posts.flatMap(id => { const post = JSON.parse(fs.readFileSync(`posts/${id}.json`));
-      return uploadsFor(post).filter(u => !done.some(d => d.id === id && d.type === u.type)).map(u => ({ post, type: u.type })); });
-    // Echte Video-Shorts zuerst: sie bekommen auf YouTube bisher viel mehr Aufrufe als Folien-Reels
-    todo.sort((a, b) => (a.type === 'short' ? 0 : 1) - (b.type === 'short' ? 0 : 1));
-    console.log(`Noch offen: ${todo.length}, heute möglich: ${Math.max(left, 0)}`);
-    for (const t of todo.slice(0, Math.max(left, 0))) await uploadPost(token, t.post, [t.type], done);
+    // Neueste zuerst: aktuelle Themen sind interessanter
+    const todo = posts.reverse().flatMap(id => { const post = JSON.parse(fs.readFileSync(`posts/${id}.json`));
+      return uploadsFor(post).filter(u => u.type === 'short' && !done.some(d => d.id === id && d.type === 'short' && !d.deleted)).map(u => ({ post, type: u.type })); });
+    console.log(`Noch offen: ${todo.length} Video-Shorts, heute höchstens ${Math.max(left, 0)} Uploads`);
+    for (const t of todo.slice(0, Math.max(left, 0))) if (!await uploadPost(token, t.post, [t.type], done, 1)) break;
   } else if (mode === 'doku') {
     const d = JSON.parse(fs.readFileSync(file));
     if (done.some(x => x.id === d.id && x.type === 'doku')) return console.log('Doku schon hochgeladen.');
@@ -186,6 +212,8 @@ const today = () => new Date().toISOString().slice(0, 10);
     for (let i = 0; i < done.length; i += 50) {
       const ids = done.slice(i, i + 50).map(d => d.videoId).join(',');
       const r = await (await fetch(`${API}/videos?part=statistics,status,snippet&id=${ids}`, { headers: { Authorization: `Bearer ${token}` } })).json();
+      const found = new Set((r.items || []).map(it => it.id));
+      for (const d of done.slice(i, i + 50)) if (!found.has(d.videoId)) d.deleted = true;
       for (const it of r.items || []) {
         const d = done.find(x => x.videoId === it.id);
         d.stats = { views: +it.statistics.viewCount || 0, likes: +it.statistics.likeCount || 0, comments: +it.statistics.commentCount || 0 };

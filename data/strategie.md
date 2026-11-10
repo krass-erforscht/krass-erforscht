@@ -30,8 +30,10 @@ Höchstens 6 Regeln. Eine Regel gilt erst als bestätigt, wenn sie in mindestens
 
 ## YouTube
 - Echte Video-Shorts laufen weit besser als Folien-Reels: CO₂-Short 1.085 Aufrufe, Feuersalamander 755, Folien-Reels 1–22 (Stand 2026-11-10).
-  → Beim Nachholen echte Video-Shorts zuerst. Bleiben Folien-Reels nach ~10 Stück unter 5 % der Video-Short-Aufrufe: keine mehr hochladen.
+  → Folien-Reels werden auf YouTube nicht mehr hochgeladen (Nutzer hat die schwachen gelöscht, 2026-11-10).
+- Abstand: Die ersten Shorts kamen einzeln und liefen gut, 6 Uploads direkt hintereinander (9./10.11.) kaum.
+  → Höchstens 2 Shorts pro Tag, mind. 6 Stunden Abstand, per Zeitplan. Später testen, ob 1 pro Tag besser ist als 2.
 - Uhrzeit: wird ab jetzt gelernt (Fenster 7, 12, 16, 19, 21 Uhr; Videos erscheinen per Zeitplan zur gewählten Stunde).
 
 ## Verlauf
-- 2026-11-10: Analyse eingeführt, Regeln 1–4 aufgestellt. Vierte Instagram-Uhrzeit (20:45) ergänzt, YouTube-Statistik und -Uhrzeitwahl eingeführt.
+- 2026-11-10: Analyse eingeführt, Regeln 1–4 aufgestellt. Vierte Instagram-Uhrzeit (20:45) ergänzt, YouTube-Statistik und -Uhrzeitwahl eingeführt. YouTube: nur noch Video-Shorts, max. 2/Tag mit 6 h Abstand.

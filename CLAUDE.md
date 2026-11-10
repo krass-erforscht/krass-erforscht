@@ -105,14 +105,14 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
     Das Folien-Reel (`--reel`) erscheint nur im Reels-Tab und wird Leuten gezeigt, die noch nicht folgen.
     Schlägt ein Video-Teil fehl: auf `bilder` zurückfallen (Karussell posten), Fehler in `data/probleme.md` notieren.
     Danach `data/posted.json` committen und pushen (auch `data/analyse.md`, `data/analyse.json`, `data/account.json`, `data/strategie.md`).
-10b. **YouTube Shorts** (nur wenn `YT_REFRESH_TOKEN` gesetzt ist): `node youtube.js reels posts/<datei>.json` lädt dieselben Reels wie auf Instagram hoch
-    (Video-Reel und Folien-Reel, soweit vorhanden) – mit Beschreibung aus der Caption, Nachweisen, Abo-Hinweis und Hashtags (#Shorts + die des Posts).
-    Vorher mit `node youtube.js vorschau posts/<datei>.json` Titel und Beschreibung prüfen.
-    Danach `node youtube.js nachholen` (lädt ältere, noch fehlende Reels hoch, bis das Tageslimit von ca. 6 Uploads erreicht ist).
-    Die Shorts erscheinen automatisch zur gelernten besten YouTube-Uhrzeit (publishAt, eigene Auswertung nach Aufrufen, gleiche Regel wie choose.js).
-    Zeigt die Analyse, dass eine Art (z. B. Folien-Reels) auf YouTube dauerhaft kaum Aufrufe bringt, darf sie seltener oder gar nicht mehr hochgeladen werden,
-    um das Upload-Limit für Besseres zu nutzen – in `data/strategie.md` begründen.
+10b. **YouTube Shorts** (nur wenn `YT_REFRESH_TOKEN` gesetzt ist): `node youtube.js reels posts/<datei>.json` lädt das Video-Reel als Short hoch
+    (Folien-Reels nicht mehr: auf YouTube 1–22 Aufrufe gegenüber 755–1.085 bei echten Videos) – mit Beschreibung aus der Caption, Nachweisen,
+    Abo-Hinweis und Hashtags. Vorher mit `node youtube.js vorschau posts/<datei>.json` prüfen.
+    **Nicht zu viele auf einmal** (Wunsch des Nutzers, viele Shorts direkt hintereinander liefen kaum): höchstens 2 Shorts pro Tag, mindestens
+    6 Stunden Abstand; jeder Short erscheint per Zeitplan (publishAt) zur gelernten besten Uhrzeit, freie Plätze bis zu 4 Tage im Voraus.
+    Danach `node youtube.js nachholen` (ältere Video-Shorts, auch vom Nutzer gelöschte, höchstens 1 pro Tag, damit Platz für neue bleibt).
     `data/youtube.json` committen und pushen. Kommt der Status „private“ zurück, den Nutzer einmalig bitten, es in YouTube Studio auf „Öffentlich“ zu stellen.
+    Zeigt die Analyse, dass etwas auf YouTube dauerhaft kaum Aufrufe bringt (Art, Uhrzeit, Abstand), anpassen und in `data/strategie.md` begründen.
 10c. **Kurz-Doku für YouTube** (einmal pro Woche, samstags im Lauf, in dem gepostet wird):
     - Thema: der Post der letzten 14 Tage mit der höchsten Reichweite (`data/posted.json`), der noch keine Doku hat (`data/youtube.json`, type „doku“).
     - Originalquelle nochmal ganz lesen, Drehbuch `doku/<id>.json` nach dem Muster von `doku/dino-blut.json` schreiben: 8–10 Abschnitte, ca. 3 Minuten,

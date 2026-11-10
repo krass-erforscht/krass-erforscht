@@ -11,7 +11,7 @@
       "comments": 0
     },
     "publishedAt": "2026-11-09T06:51:44Z",
-    "statsAt": "2026-11-10T11:42:31.231Z"
+    "statsAt": "2026-11-10T11:43:52.483Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
@@ -25,7 +25,7 @@
       "comments": 0
     },
     "publishedAt": "2026-11-09T17:33:52Z",
-    "statsAt": "2026-11-10T11:42:31.231Z"
+    "statsAt": "2026-11-10T11:43:52.483Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
@@ -39,7 +39,8 @@
       "comments": 0
     },
     "publishedAt": "2026-11-09T20:53:37Z",
-    "statsAt": "2026-11-10T11:41:39.832Z"
+    "statsAt": "2026-11-10T11:41:39.832Z",
+    "deleted": true
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -53,7 +54,8 @@
       "comments": 0
     },
     "publishedAt": "2026-11-09T20:53:46Z",
-    "statsAt": "2026-11-10T11:42:31.231Z"
+    "statsAt": "2026-11-10T11:42:31.231Z",
+    "deleted": true
   },
   {
     "id": "2026-10-29-feuersalamander",
@@ -67,7 +69,7 @@
       "comments": 0
     },
     "publishedAt": "2026-11-09T20:53:37Z",
-    "statsAt": "2026-11-10T11:42:31.231Z"
+    "statsAt": "2026-11-10T11:43:52.483Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -81,7 +83,8 @@
       "comments": 0
     },
     "publishedAt": "2026-11-09T20:54:02Z",
-    "statsAt": "2026-11-10T11:42:31.231Z"
+    "statsAt": "2026-11-10T11:42:31.231Z",
+    "deleted": true
   },
   {
     "id": "2026-11-10-europa-urwald",
@@ -95,7 +98,8 @@
       "comments": 0
     },
     "publishedAt": "2026-11-10T07:00:09Z",
-    "statsAt": "2026-11-10T11:42:31.231Z"
+    "statsAt": "2026-11-10T11:42:31.231Z",
+    "deleted": true
   },
   {
     "id": "2026-11-10-europa-urwald",
@@ -109,7 +113,8 @@
       "comments": 0
     },
     "publishedAt": "2026-11-10T07:00:18Z",
-    "statsAt": "2026-11-10T11:41:39.832Z"
+    "statsAt": "2026-11-10T11:41:39.832Z",
+    "deleted": true
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -123,7 +128,8 @@
       "comments": 0
     },
     "publishedAt": "2026-11-10T07:00:20Z",
-    "statsAt": "2026-11-10T11:41:39.832Z"
+    "statsAt": "2026-11-10T11:41:39.832Z",
+    "deleted": true
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -137,7 +143,8 @@
       "comments": 0
     },
     "publishedAt": "2026-11-10T07:00:18Z",
-    "statsAt": "2026-11-10T11:41:39.832Z"
+    "statsAt": "2026-11-10T11:41:39.832Z",
+    "deleted": true
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -151,7 +158,8 @@
       "comments": 0
     },
     "publishedAt": "2026-11-10T07:00:22Z",
-    "statsAt": "2026-11-10T11:41:39.832Z"
+    "statsAt": "2026-11-10T11:41:39.832Z",
+    "deleted": true
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -165,6 +173,47 @@
       "comments": 0
     },
     "publishedAt": "2026-11-10T07:00:14Z",
-    "statsAt": "2026-11-10T11:41:39.832Z"
+    "statsAt": "2026-11-10T11:41:39.832Z",
+    "deleted": true
+  },
+  {
+    "id": "2026-11-10-europa-urwald",
+    "type": "short",
+    "videoId": "FXHUVnutHMY",
+    "privacy": "private",
+    "publishAt": "2026-11-10T15:00:00.000Z",
+    "publishedAt": "2026-11-10T15:00:00.000Z",
+    "ytSlot": "nachmittags",
+    "uploadedAt": "2026-11-10T11:44:21.414Z"
+  },
+  {
+    "id": "2026-11-08-asteroid-atombombe",
+    "type": "short",
+    "videoId": "gd14Zq0c1vs",
+    "privacy": "private",
+    "publishAt": "2026-11-11T15:00:00.000Z",
+    "publishedAt": "2026-11-11T15:00:00.000Z",
+    "ytSlot": "nachmittags",
+    "uploadedAt": "2026-11-10T11:44:23.303Z"
+  },
+  {
+    "id": "2026-11-07-dino-blut",
+    "type": "short",
+    "videoId": "QTh1Djisqq4",
+    "privacy": "private",
+    "publishAt": "2026-11-11T06:00:00.000Z",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "ytSlot": "morgens",
+    "uploadedAt": "2026-11-10T11:44:25.224Z"
+  },
+  {
+    "id": "2026-11-06-satelliten-stau",
+    "type": "short",
+    "videoId": "Bz6kea_1BZc",
+    "privacy": "private",
+    "publishAt": "2026-11-12T15:00:00.000Z",
+    "publishedAt": "2026-11-12T15:00:00.000Z",
+    "ytSlot": "nachmittags",
+    "uploadedAt": "2026-11-10T11:44:27.589Z"
   }
 ]
