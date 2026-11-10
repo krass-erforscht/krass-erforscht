@@ -139,6 +139,14 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
       in der Tagesnachricht klar und kurz Bescheid geben, was genau und warum, mit einfacher Schritt-für-Schritt-Anleitung auf Deutsch.
       Dieselbe Bitte nicht jeden Tag wiederholen; offene Bitten in `data/offene-bitten.md` führen und erst nach 3 Tagen erneut erinnern.
 
+## Ziel und Freiheit (vom Nutzer so festgelegt)
+
+Ziel auf Instagram **und** YouTube: mehr Aufrufe, mehr Likes, mehr Follower bzw. Abonnenten.
+Der Nutzer gibt **volle Freiheit** bei Uhrzeiten, Häufigkeit, Format (Foto, Karussell, Video, Reel, Short, Doku), Länge, Aufmachung,
+Titeln, Beschreibungen und Hashtags – auf beiden Plattformen. Entscheidungen datenbasiert treffen (`data/analyse.md`), begründen
+(`data/strategie.md`) und dem Nutzer Änderungen kurz in der Tagesnachricht nennen. Unverändert gelten die Grundregeln: kostenlos,
+nur frei lizenzierte Inhalte mit Nachweis, Sicherheitsregeln, Ehrlichkeit über KI, nur offizielle Schnittstellen, Fakten aus der Quelle.
+
 ## Immer nach der besten Reichweite
 
 Uhrzeit (`slot.js`), Format (`format.js`), Thema und Ton (`choose.js empfehlung`) folgen derselben Regel aus `choose.js`:

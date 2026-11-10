@@ -35,7 +35,12 @@ async function upload(token, file, meta) {
       'X-Upload-Content-Type': 'video/mp4', 'X-Upload-Content-Length': String(size) },
     body: JSON.stringify(meta),
   });
-  if (!init.ok) throw new Error(`Upload-Start fehlgeschlagen: ${init.status} ${await init.text()}`);
+  if (!init.ok) {
+    const body = await init.text();
+    // Kanal-Limit (neue Kanäle dürfen nur begrenzt viele Videos pro Tag hochladen): kein Fehler im Ablauf, einfach morgen weiter
+    if (/uploadLimitExceeded/.test(body)) { const e = new Error('YouTube-Upload-Limit des Kanals für heute erreicht – morgen erneut versuchen'); e.limit = true; throw e; }
+    throw new Error(`Upload-Start fehlgeschlagen: ${init.status} ${body}`);
+  }
   const res = await fetch(init.headers.get('location'), {
     method: 'PUT', headers: { 'Content-Type': 'video/mp4', 'Content-Length': String(size) }, body: fs.readFileSync(file),
   });
@@ -202,11 +207,13 @@ const ptDay = t => new Date(t).toLocaleDateString('en-CA', { timeZone: 'America/
     for (const t of todo.slice(0, Math.max(left, 0))) if (!await uploadPost(token, t.post, [t.type], done, 1)) break;
   } else if (mode === 'doku') {
     const d = JSON.parse(fs.readFileSync(file));
-    if (done.some(x => x.id === d.id && x.type === 'doku')) return console.log('Doku schon hochgeladen.');
-    const v = await upload(token, d.output, meta({ title: d.title, description: d.description, tags: d.tags || [] }));
+    if (done.some(x => x.id === d.id && x.type === 'doku' && !x.deleted)) return console.log('Doku schon hochgeladen.');
+    // Optional: node youtube.js doku <meta.json> <ISO-Zeitpunkt> → erscheint erst dann
+    const publishAt = arg ? new Date(arg).toISOString() : undefined;
+    const v = await upload(token, d.output, meta({ title: d.title, description: d.description, tags: d.tags || [], publishAt }));
     if (d.thumbnail && fs.existsSync(d.thumbnail)) await thumbnail(token, v.id, d.thumbnail);
-    log({ id: d.id, type: 'doku', videoId: v.id, privacy: v.status?.privacyStatus });
-    console.log(`Doku hochgeladen: https://youtu.be/${v.id} (Status: ${v.status?.privacyStatus})`);
+    log({ id: d.id, type: 'doku', videoId: v.id, privacy: v.status?.privacyStatus, publishAt, publishedAt: publishAt || new Date().toISOString() });
+    console.log(`Doku hochgeladen: https://youtu.be/${v.id} (${publishAt ? 'erscheint ' + new Date(publishAt).toLocaleString('de-DE', { timeZone: 'Europe/Berlin' }) : 'Status: ' + v.status?.privacyStatus})`);
   } else if (mode === 'statistik') {
     // Aufrufe, Likes und Kommentare aller eigenen Videos holen und in data/youtube.json speichern
     for (let i = 0; i < done.length; i += 50) {
