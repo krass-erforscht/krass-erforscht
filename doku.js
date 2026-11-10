@@ -124,7 +124,8 @@ function chapters(spec, bounds) {
 
   // 4. Abspann: Quellen, Nachweise, KI-Hinweis
   // Musik pro Doku merken, damit ein Neubau dieselbe Musik behält (wichtig für Nachweise in schon hochgeladenen Videos)
-  const musFile = path.join(dir, 'music.json');
+  // im Repo gespeichert (doku/<id>.music.json), damit es auch nach einem Neustart des Rechners erhalten bleibt
+  const musFile = `doku/${spec.id}.music.json`;
   const mus = fs.existsSync(musFile) ? JSON.parse(fs.readFileSync(musFile)) : await music.pick(spec.mood || 'staunen', 60);
   fs.writeFileSync(musFile, JSON.stringify(mus, null, 2));
   const credits = [...new Set(spec.segments.flatMap(s => s.visuals ? s.visuals.map(v => v.credit) : [s.credit]).filter(Boolean))];
