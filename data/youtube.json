@@ -21,12 +21,12 @@
     "privacy": "public",
     "uploadedAt": "2026-11-09T17:33:22.379Z",
     "stats": {
-      "views": 1085,
+      "views": 1203,
       "likes": 2,
       "comments": 0
     },
     "publishedAt": "2026-11-09T17:33:52Z",
-    "statsAt": "2026-11-10T11:49:50.453Z"
+    "statsAt": "2026-11-11T19:46:33.735Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
@@ -65,12 +65,12 @@
     "privacy": "public",
     "uploadedAt": "2026-11-09T20:53:16.738Z",
     "stats": {
-      "views": 755,
-      "likes": 7,
+      "views": 1193,
+      "likes": 9,
       "comments": 0
     },
     "publishedAt": "2026-11-09T20:53:37Z",
-    "statsAt": "2026-11-10T11:49:50.455Z"
+    "statsAt": "2026-11-11T19:46:33.735Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -181,49 +181,49 @@
     "id": "2026-11-10-europa-urwald",
     "type": "short",
     "videoId": "FXHUVnutHMY",
-    "privacy": "private",
+    "privacy": "public",
     "publishAt": "2026-11-10T15:00:00.000Z",
-    "publishedAt": "2026-11-10T11:44:12Z",
+    "publishedAt": "2026-11-10T15:00:17Z",
     "ytSlot": "nachmittags",
     "uploadedAt": "2026-11-10T11:44:21.414Z",
     "stats": {
-      "views": 0,
-      "likes": 0,
+      "views": 634,
+      "likes": 2,
       "comments": 0
     },
-    "statsAt": "2026-11-10T11:49:50.455Z"
+    "statsAt": "2026-11-11T19:46:33.735Z"
   },
   {
     "id": "2026-11-08-asteroid-atombombe",
     "type": "short",
     "videoId": "gd14Zq0c1vs",
-    "privacy": "private",
+    "privacy": "public",
     "publishAt": "2026-11-11T15:00:00.000Z",
-    "publishedAt": "2026-11-10T11:44:21Z",
+    "publishedAt": "2026-11-11T15:00:21Z",
     "ytSlot": "nachmittags",
     "uploadedAt": "2026-11-10T11:44:23.303Z",
     "stats": {
-      "views": 0,
-      "likes": 0,
+      "views": 232,
+      "likes": 1,
       "comments": 0
     },
-    "statsAt": "2026-11-10T11:49:50.455Z"
+    "statsAt": "2026-11-11T19:46:33.735Z"
   },
   {
     "id": "2026-11-07-dino-blut",
     "type": "short",
     "videoId": "QTh1Djisqq4",
-    "privacy": "private",
+    "privacy": "public",
     "publishAt": "2026-11-11T06:00:00.000Z",
-    "publishedAt": "2026-11-10T11:44:23Z",
+    "publishedAt": "2026-11-11T06:00:14Z",
     "ytSlot": "morgens",
     "uploadedAt": "2026-11-10T11:44:25.224Z",
     "stats": {
-      "views": 0,
-      "likes": 0,
+      "views": 1223,
+      "likes": 9,
       "comments": 0
     },
-    "statsAt": "2026-11-10T11:49:50.455Z"
+    "statsAt": "2026-11-11T19:46:33.735Z"
   },
   {
     "id": "2026-11-06-satelliten-stau",
@@ -235,19 +235,25 @@
     "ytSlot": "nachmittags",
     "uploadedAt": "2026-11-10T11:44:27.589Z",
     "stats": {
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-10T11:49:50.455Z"
+    "statsAt": "2026-11-11T19:46:33.735Z"
   },
   {
     "id": "dino-blut",
     "type": "doku",
     "videoId": "zCLf2gwIVOU",
-    "privacy": "private",
+    "privacy": "public",
     "publishAt": "2026-11-11T17:30:00.000Z",
-    "publishedAt": "2026-11-11T17:30:00.000Z",
-    "uploadedAt": "2026-11-11T09:31:37.348Z"
+    "publishedAt": "2026-11-11T17:30:14Z",
+    "uploadedAt": "2026-11-11T09:31:37.348Z",
+    "stats": {
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    "statsAt": "2026-11-11T19:46:33.735Z"
   }
 ]
