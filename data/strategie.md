@@ -36,4 +36,5 @@ Höchstens 6 Regeln. Eine Regel gilt erst als bestätigt, wenn sie in mindestens
 - Uhrzeit: wird ab jetzt gelernt (Fenster 7, 12, 16, 19, 21 Uhr; Videos erscheinen per Zeitplan zur gewählten Stunde).
 
 ## Verlauf
+- 2026-11-11: Format bewusst „video“ statt der Zufalls-Testvariante „zusammen“ (Video 175 vs. zusammen 105 Konten bei 7/5 Posts – Regel 1). Erster Post um 20:45 (spät). Test: kurzes-video (10,5 s).
 - 2026-11-10: Analyse eingeführt, Regeln 1–4 aufgestellt. Vierte Instagram-Uhrzeit (20:45) ergänzt, YouTube-Statistik und -Uhrzeitwahl eingeführt. YouTube: nur noch Video-Shorts, max. 2/Tag mit 6 h Abstand.
