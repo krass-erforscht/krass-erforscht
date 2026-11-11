@@ -1,0 +1,113 @@
+{
+  "id": "2026-11-11-katzen-miauen",
+  "category": "Kurios",
+  "topic": "kurios",
+  "tone": "witzig",
+  "format": "video",
+  "test": "kurzes-video",
+  "source": {
+    "name": "scinexx, Studie der Universidade de São Paulo in Animal Behaviour",
+    "url": "https://www.scinexx.de/news/biowissen/futterprobleme-miauen-katzen-mehr-wenn-menschen-dabei-sind/"
+  },
+  "image": {
+    "file": "images/2026-11-11-katzen-miauen.jpg",
+    "credit": "chloe / iNaturalist",
+    "short": "Foto: chloe, CC BY-SA, iNaturalist",
+    "license": "CC BY-SA",
+    "page": "https://www.inaturalist.org/observations/72392101",
+    "position": "center 30%"
+  },
+  "video": {
+    "file": "videos/2026-11-11-katzen-miauen.mp4",
+    "start": 0,
+    "duration": 10.5,
+    "credit": "Fotos: Linda Hosek (gemeinfrei), chloe (CC BY-SA) – als Video mit Zoom",
+    "short": "Fotos: L. Hosek (gemeinfrei), chloe (CC BY-SA, iNaturalist)",
+    "license": "Public domain / CC BY-SA",
+    "page": "https://www.inaturalist.org/observations/72392101",
+    "symbolisch": false,
+    "headline": "Deine Katze miaut **für dich** 🐱",
+    "captions": [
+      "Mit Mensch im Raum: **86** Miaulaute – ohne: nur **20**",
+      "Dabei schauen Katzen oft **zum Menschen** und zum Futter",
+      "Ohne Publikum starren sie eher **zur Tür**"
+    ]
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "label": "Kurios",
+      "title": "Katzen miauen viel mehr, wenn **du** zuschaust"
+    },
+    {
+      "label": "Der Test",
+      "title": "Futter in der **Box**",
+      "text": [
+        "38 Hauskatzen bekamen ihr Lieblingsfutter in einer gelochten Box, die sie **nicht öffnen** konnten.",
+        "Mal war ein aufmerksamer Mensch im Raum, mal nicht."
+      ],
+      "image": {
+        "file": "images/2026-11-11-katzen-miauen-2.jpg",
+        "credit": "Linda Hosek / Wikimedia Commons",
+        "short": "Foto: Linda Hosek, gemeinfrei",
+        "license": "Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:A_cat_pauses_over_a_bowl_of_food,_2011.jpg",
+        "position": "70% center"
+      }
+    },
+    {
+      "label": "Das Ergebnis",
+      "big": "4×",
+      "title": "so viele Miaulaute mit Mensch",
+      "text": [
+        "Insgesamt **86** Miaulaute mit aufmerksamem Menschen im Raum – ohne ihn nur **20**."
+      ],
+      "image": {
+        "file": "images/2026-11-11-katzen-miauen-3.jpg",
+        "credit": "Jay KapLon / Wikimedia Commons",
+        "short": "Foto: Jay KapLon, CC BY 4.0",
+        "license": "CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Cat_eating_wet_plant-based_cat_food.jpg",
+        "position": "center 30%"
+      }
+    },
+    {
+      "label": "Der Blick",
+      "title": "Miau + **Augenkontakt**",
+      "text": [
+        "Beim Miauen sahen die Katzen oft zum Menschen – und wechselten den Blick zwischen ihm und dem Futter.",
+        "Ohne Mensch schauten sie eher **zur Tür**, durch die er gegangen war."
+      ],
+      "image": {
+        "file": "images/2026-11-11-katzen-miauen.jpg",
+        "credit": "chloe / iNaturalist",
+        "short": "Foto: chloe, CC BY-SA, iNaturalist",
+        "license": "CC BY-SA",
+        "page": "https://www.inaturalist.org/observations/72392101",
+        "position": "center 20%"
+      }
+    },
+    {
+      "label": "Aber Vorsicht",
+      "title": "Bewusstes **Bitten**? Unklar",
+      "text": [
+        "Ob die Katzen absichtlich um Hilfe bitten, zeigt der Versuch nicht. Es könnte auch **erlerntes** Verhalten sein.",
+        "Getestet wurden nur Katzen, die ohnehin gern ums Futter miauen."
+      ],
+      "image": {
+        "file": "images/2026-11-11-katzen-miauen-2.jpg",
+        "credit": "Linda Hosek / Wikimedia Commons",
+        "short": "Foto: Linda Hosek, gemeinfrei",
+        "license": "Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:A_cat_pauses_over_a_bowl_of_food,_2011.jpg",
+        "position": "40% center"
+      }
+    },
+    {
+      "type": "cta",
+      "label": "Mehr davon?",
+      "title": "Schick das jemandem, dessen Katze ständig miaut."
+    }
+  ],
+  "caption": "Katze miaut ständig? Das könnte an dir liegen! 🐱 In einem Versuch mit 38 Hauskatzen waren gut viermal so viele Miaulaute zu hören, wenn ein aufmerksamer Mensch im Raum war: 86 statt 20. Das Lieblingsfutter lag dabei unerreichbar in einer Box. Oft schauten die Katzen beim Miauen zum Menschen – ohne Publikum eher zur Tür. Ob das bewusstes Bitten oder erlerntes Verhalten ist, zeigt die Studie nicht.\n\nMiaut deine Katze auch mehr, wenn du hinschaust? 👇\n\nQuelle: scinexx, Studie der Universidade de São Paulo im Fachmagazin Animal Behaviour · Text mit KI erstellt\nFotos: chloe (CC BY-SA) via iNaturalist; Linda Hosek (gemeinfrei), Jay KapLon (CC BY 4.0) via Wikimedia Commons\n#katzen #katze #haustiere #tierverhalten #wissenschaft"
+}
