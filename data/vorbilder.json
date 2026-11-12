@@ -1,0 +1,1298 @@
+{
+  "wissen": [
+    {
+      "datum": "2026-11-12",
+      "kanaele": [
+        {
+          "id": "UChUWfBgECQB00mikCOVCc4A",
+          "name": "Humanlab",
+          "abonnenten": 24000,
+          "medianAufrufe": 27333.5,
+          "likeRate": 0.009205735958601203,
+          "shorts": 30,
+          "echt": true
+        },
+        {
+          "id": "UCs4va-N7qZWy7-17mBlg9Qw",
+          "name": "Pet Diary",
+          "abonnenten": 26000,
+          "medianAufrufe": 34184,
+          "likeRate": 0.012206067254774515,
+          "shorts": 47,
+          "echt": true
+        },
+        {
+          "id": "UCSiXByJeZbd7_qtbSa99wMA",
+          "name": "Strambix",
+          "abonnenten": 1130,
+          "medianAufrufe": 39845,
+          "likeRate": 0.011159815259203879,
+          "shorts": 18,
+          "echt": true
+        },
+        {
+          "id": "UCer23n8imlicJDyAn3LWcTg",
+          "name": "Story Kino DE",
+          "abonnenten": 53400,
+          "medianAufrufe": 30385,
+          "likeRate": 0.009478431132763778,
+          "shorts": 39,
+          "echt": true
+        },
+        {
+          "id": "UCYpxSQYuyoC9lcAYGmkJLUw",
+          "name": "Angenommen",
+          "abonnenten": 356,
+          "medianAufrufe": 3162,
+          "likeRate": 0.018575628054608738,
+          "shorts": 17,
+          "echt": true
+        },
+        {
+          "id": "UCdWtYXyN3FVmR2_tuAQJ1Og",
+          "name": "WOW BLITZ",
+          "abonnenten": 83200,
+          "medianAufrufe": 3444,
+          "likeRate": 0.018575212871671663,
+          "shorts": 50,
+          "echt": true
+        },
+        {
+          "id": "UCNOR7-LVdPzOAp5IoJaeU-A",
+          "name": "Fakten Duell",
+          "abonnenten": 888,
+          "medianAufrufe": 2491,
+          "likeRate": 0.018147498287290103,
+          "shorts": 47,
+          "echt": true
+        },
+        {
+          "id": "UCbg2Lb0KkPo6BEiq9Q39BtQ",
+          "name": "Merxy yt ",
+          "abonnenten": 5860,
+          "medianAufrufe": 1248,
+          "likeRate": 0.020820522911183807,
+          "shorts": 47,
+          "echt": true
+        },
+        {
+          "id": "UC7xbGUpFm6d7HIYzhb8o5Sg",
+          "name": "Wissen mit Biss",
+          "abonnenten": 107,
+          "medianAufrufe": 1372,
+          "likeRate": 0.016134312304166863,
+          "shorts": 32,
+          "echt": true
+        },
+        {
+          "id": "UCoemEmIeKQI9DP1imt_JSoQ",
+          "name": "FaktenMatrix",
+          "abonnenten": 15,
+          "medianAufrufe": 1178,
+          "likeRate": 0.019269307846462157,
+          "shorts": 6,
+          "echt": true
+        },
+        {
+          "id": "UCX-S3LXwWzI3uHKgp4DY2nQ",
+          "name": "Elysium",
+          "abonnenten": 20,
+          "medianAufrufe": 1217,
+          "likeRate": 0.018344352360554986,
+          "shorts": 7,
+          "echt": true
+        },
+        {
+          "id": "UCNjgbp--CJTN1RmscYHuz3A",
+          "name": "Warum eigentlich?",
+          "abonnenten": 69,
+          "medianAufrufe": 1119,
+          "likeRate": 0.018956026965180284,
+          "shorts": 32,
+          "echt": true
+        },
+        {
+          "id": "UCgjbpO87-JWeXDUPCLvB7JA",
+          "name": "Crazy.Theorien",
+          "abonnenten": 47600,
+          "medianAufrufe": 3126,
+          "likeRate": 0.033880480775431446,
+          "shorts": 37,
+          "echt": true
+        },
+        {
+          "id": "UCs2zJnk5MuLy2KeXFjwPqIw",
+          "name": "Tierisch Verrückt",
+          "abonnenten": 943,
+          "medianAufrufe": 1259.5,
+          "likeRate": 0.0339051841213843,
+          "shorts": 10,
+          "echt": true
+        },
+        {
+          "id": "UCL6zuDnBHUgiSFokVgtgW1g",
+          "name": "WissensRausch",
+          "abonnenten": 534,
+          "medianAufrufe": 1264.5,
+          "likeRate": 0.0161260373369899,
+          "shorts": 50,
+          "echt": true
+        },
+        {
+          "id": "UC0PEtxzPJQQe-QyBHuzRunA",
+          "name": "Einfach tierisch ",
+          "abonnenten": 57,
+          "medianAufrufe": 1871,
+          "likeRate": 0.022503073799788408,
+          "shorts": 15,
+          "echt": true
+        },
+        {
+          "id": "UCZHpIFMfoJJ_1QxNGLJTzyA",
+          "name": "MrWissen2go",
+          "abonnenten": 2410000,
+          "medianAufrufe": 392923,
+          "likeRate": 0.024651024385623305,
+          "shorts": 5,
+          "echt": true
+        },
+        {
+          "id": "UCE2hJ9CYR57BYhk3TjGVG6w",
+          "name": "Breaking Lab",
+          "abonnenten": 757000,
+          "medianAufrufe": 15081,
+          "likeRate": 0.026760528491409072,
+          "shorts": 27,
+          "echt": true
+        },
+        {
+          "id": "UC1Y7onDsPyfP-lu--SXF-ew",
+          "name": "Quarks",
+          "abonnenten": 867000,
+          "medianAufrufe": 15550,
+          "likeRate": 0.02398281191396904,
+          "shorts": 21,
+          "echt": true
+        },
+        {
+          "id": "UCA3mpqm67CpJ13YfA8qAnow",
+          "name": "Terra X History",
+          "abonnenten": 1430000,
+          "medianAufrufe": 209332,
+          "likeRate": 0.01704633155726027,
+          "shorts": 13,
+          "echt": true
+        },
+        {
+          "id": "UC5E9-r42JlymhLPnDv2wHuA",
+          "name": "Terra X Lesch & Co",
+          "abonnenten": 1270000,
+          "medianAufrufe": 68036,
+          "likeRate": 0.03566607084576394,
+          "shorts": 15,
+          "echt": true
+        },
+        {
+          "id": "UCLLibJTCy3sXjHLVaDimnpQ",
+          "name": "ARTEde",
+          "abonnenten": 2770000,
+          "medianAufrufe": 42352,
+          "likeRate": 0.023942231130391806,
+          "shorts": 7,
+          "echt": true
+        }
+      ],
+      "vergleich": [
+        {
+          "merkmal": "wochentag",
+          "rows": [
+            {
+              "wert": "Mi",
+              "videos": 62,
+              "kanaele": 20,
+              "ausreisser": 1.0626595393562597,
+              "likes": 0.015853044324506294
+            },
+            {
+              "wert": "Fr",
+              "videos": 87,
+              "kanaele": 19,
+              "ausreisser": 1.0462633451957295,
+              "likes": 0.018731988472622477
+            },
+            {
+              "wert": "So",
+              "videos": 100,
+              "kanaele": 19,
+              "ausreisser": 1.0146274066311833,
+              "likes": 0.01777677327842969
+            },
+            {
+              "wert": "Do",
+              "videos": 87,
+              "kanaele": 19,
+              "ausreisser": 1.0089365504915102,
+              "likes": 0.018484288354898338
+            },
+            {
+              "wert": "Mo",
+              "videos": 69,
+              "kanaele": 15,
+              "ausreisser": 0.9766763848396501,
+              "likes": 0.01803968731208659
+            },
+            {
+              "wert": "Sa",
+              "videos": 90,
+              "kanaele": 19,
+              "ausreisser": 0.9665370806108388,
+              "likes": 0.018447716897135133
+            },
+            {
+              "wert": "Di",
+              "videos": 77,
+              "kanaele": 19,
+              "ausreisser": 0.6904857486953031,
+              "likes": 0.023647225313009754
+            }
+          ]
+        },
+        {
+          "merkmal": "uhrzeit",
+          "rows": [
+            {
+              "wert": "10–13 Uhr",
+              "videos": 117,
+              "kanaele": 17,
+              "ausreisser": 1.1793002915451896,
+              "likes": 0.02111302352266208
+            },
+            {
+              "wert": "18–20 Uhr",
+              "videos": 90,
+              "kanaele": 16,
+              "ausreisser": 1.0187143916226369,
+              "likes": 0.018764988146822224
+            },
+            {
+              "wert": "14–17 Uhr",
+              "videos": 173,
+              "kanaele": 21,
+              "ausreisser": 0.9940688018979834,
+              "likes": 0.01818181818181818
+            },
+            {
+              "wert": "21–05 Uhr",
+              "videos": 34,
+              "kanaele": 9,
+              "ausreisser": 0.9718384384737492,
+              "likes": 0.0189734515391477
+            },
+            {
+              "wert": "06–09 Uhr",
+              "videos": 158,
+              "kanaele": 16,
+              "ausreisser": 0.8866573614557485,
+              "likes": 0.017690487818525447
+            }
+          ]
+        },
+        {
+          "merkmal": "hashtags",
+          "rows": [
+            {
+              "wert": "4–6",
+              "videos": 147,
+              "kanaele": 17,
+              "ausreisser": 1.154692253685935,
+              "likes": 0.017111022682053324
+            },
+            {
+              "wert": "keine",
+              "videos": 111,
+              "kanaele": 13,
+              "ausreisser": 0.9943910256410257,
+              "likes": 0.01867219917012448
+            },
+            {
+              "wert": "1–3",
+              "videos": 129,
+              "kanaele": 14,
+              "ausreisser": 0.9642857142857143,
+              "likes": 0.025766609880749573
+            },
+            {
+              "wert": "über 6",
+              "videos": 185,
+              "kanaele": 16,
+              "ausreisser": 0.931940102024025,
+              "likes": 0.015790736741060716
+            }
+          ]
+        },
+        {
+          "merkmal": "titellaenge",
+          "rows": [
+            {
+              "wert": "mittel (41–70)",
+              "videos": 266,
+              "kanaele": 21,
+              "ausreisser": 1.0318038935221734,
+              "likes": 0.02097502216542731
+            },
+            {
+              "wert": "lang (>70)",
+              "videos": 217,
+              "kanaele": 16,
+              "ausreisser": 1,
+              "likes": 0.016776075857038657
+            },
+            {
+              "wert": "kurz (≤40)",
+              "videos": 89,
+              "kanaele": 17,
+              "ausreisser": 0.9046474358974359,
+              "likes": 0.012976573265962334
+            }
+          ]
+        },
+        {
+          "merkmal": "laenge",
+          "rows": [
+            {
+              "wert": "16–30 s",
+              "videos": 173,
+              "kanaele": 13,
+              "ausreisser": 1.053615526734593,
+              "likes": 0.014285714285714285
+            },
+            {
+              "wert": "61–180 s",
+              "videos": 175,
+              "kanaele": 16,
+              "ausreisser": 1,
+              "likes": 0.023647225313009754
+            },
+            {
+              "wert": "bis 15 s",
+              "videos": 22,
+              "kanaele": 4,
+              "ausreisser": 0.9729141953341242,
+              "likes": 0.012175250683682772
+            },
+            {
+              "wert": "31–60 s",
+              "videos": 202,
+              "kanaele": 19,
+              "ausreisser": 0.9595481049562682,
+              "likes": 0.019087530900149974
+            }
+          ]
+        },
+        {
+          "merkmal": "du_ansprache",
+          "rows": [
+            {
+              "wert": "spricht mit „du“ an",
+              "videos": 96,
+              "kanaele": 14,
+              "ausreisser": 1.0525136884021902,
+              "likes": 0.020399723002346784
+            },
+            {
+              "wert": "ohne „du“",
+              "videos": 476,
+              "kanaele": 22,
+              "ausreisser": 0.9861662337464194,
+              "likes": 0.017922717206693896
+            }
+          ]
+        },
+        {
+          "merkmal": "emoji_im_titel",
+          "rows": [
+            {
+              "wert": "mit Emoji",
+              "videos": 373,
+              "kanaele": 19,
+              "ausreisser": 1.017914267434421,
+              "likes": 0.0193621867881549
+            },
+            {
+              "wert": "ohne Emoji",
+              "videos": 199,
+              "kanaele": 15,
+              "ausreisser": 0.9615728328865059,
+              "likes": 0.017398305054556723
+            }
+          ]
+        },
+        {
+          "merkmal": "frage_im_titel",
+          "rows": [
+            {
+              "wert": "keine Frage",
+              "videos": 386,
+              "kanaele": 22,
+              "ausreisser": 1.0183182383275544,
+              "likes": 0.017501933449269078
+            },
+            {
+              "wert": "Frage",
+              "videos": 186,
+              "kanaele": 20,
+              "ausreisser": 0.969124608863078,
+              "likes": 0.02018092595795019
+            }
+          ]
+        },
+        {
+          "merkmal": "grossbuchstaben",
+          "rows": [
+            {
+              "wert": "normal geschrieben",
+              "videos": 501,
+              "kanaele": 21,
+              "ausreisser": 1,
+              "likes": 0.01818181818181818
+            },
+            {
+              "wert": "Wort in GROSSBUCHSTABEN",
+              "videos": 71,
+              "kanaele": 12,
+              "ausreisser": 0.9615728328865059,
+              "likes": 0.020274689339437543
+            }
+          ]
+        },
+        {
+          "merkmal": "zahl_im_titel",
+          "rows": [
+            {
+              "wert": "ohne Zahl",
+              "videos": 483,
+              "kanaele": 22,
+              "ausreisser": 1,
+              "likes": 0.018484288354898338
+            },
+            {
+              "wert": "mit Zahl",
+              "videos": 89,
+              "kanaele": 19,
+              "ausreisser": 1,
+              "likes": 0.018656716417910446
+            }
+          ]
+        },
+        {
+          "merkmal": "ausruf_im_titel",
+          "rows": [
+            {
+              "wert": "ohne !",
+              "videos": 350,
+              "kanaele": 21,
+              "ausreisser": 1,
+              "likes": 0.019726383143870457
+            },
+            {
+              "wert": "mit !",
+              "videos": 222,
+              "kanaele": 17,
+              "ausreisser": 1,
+              "likes": 0.01718442057062239
+            }
+          ]
+        }
+      ],
+      "top": [
+        {
+          "id": "9kUbs0-noCk",
+          "kanal": "Story Kino DE",
+          "titel": "Dieses Kind wurde mit echten Flügeln geboren! 😱🪽#shorts #shortsfeed",
+          "dauer": 46,
+          "aufrufe": 2606626,
+          "wert": 85.78660523284515
+        },
+        {
+          "id": "G5g9Xq8TGn8",
+          "kanal": "Angenommen",
+          "titel": "Angenommen, ein Tsunami kommt. Überlebst du? 🌊⏱️",
+          "dauer": 70,
+          "aufrufe": 157641,
+          "wert": 49.854838709677416
+        },
+        {
+          "id": "D1fvH9oZn50",
+          "kanal": "Fakten Duell",
+          "titel": "Warum dein Regenschirm plötzlich ein HOTEL wird! ☂️",
+          "dauer": 61,
+          "aufrufe": 122105,
+          "wert": 49.018466479325575
+        },
+        {
+          "id": "yttwEtoqnlk",
+          "kanal": "Breaking Lab",
+          "titel": "Das weltweit erste genehmigte Schwarmkraftwerk ist im Rhein! #Innovation #madeingermany",
+          "dauer": 43,
+          "aufrufe": 680901,
+          "wert": 45.149592202108614
+        },
+        {
+          "id": "FNrU7Vj2-m4",
+          "kanal": "Tierisch Verrückt",
+          "titel": "🤯 3 Unglaubliche Tier-Fakten, die du kaum glauben wirst! 🐾 #Shorts",
+          "dauer": 46,
+          "aufrufe": 53621,
+          "wert": 42.573243350535925
+        },
+        {
+          "id": "LhrIp4JIv6g",
+          "kanal": "Breaking Lab",
+          "titel": "Diese 50 Jahre alte deutsche Technik rettet das Stromnetz? ⚡️#Energiewende #MadeinGermany #Zukunft",
+          "dauer": 57,
+          "aufrufe": 354138,
+          "wert": 23.482395066640144
+        },
+        {
+          "id": "BgRvMOHRSNs",
+          "kanal": "Fakten Duell",
+          "titel": "Du wachst als Waschmaschinen-Socke auf!",
+          "dauer": 70,
+          "aufrufe": 47061,
+          "wert": 18.892412685668408
+        },
+        {
+          "id": "RuB0vAHbY04",
+          "kanal": "Pet Diary",
+          "titel": "Every Rock They Turned Over Revealed Another Surprise! #fish #amazing #shorts #fishing #seafishing",
+          "dauer": 68,
+          "aufrufe": 626688,
+          "wert": 18.33278726889773
+        },
+        {
+          "id": "Lv7xPvqM-1k",
+          "kanal": "WOW BLITZ",
+          "titel": "Er ignorierte diese Warnung und zerstörte sein Handy! 😂📱#viral #viralvideo #trending",
+          "dauer": 23,
+          "aufrufe": 45199,
+          "wert": 13.123983739837398
+        },
+        {
+          "id": "3hjKdepY78Q",
+          "kanal": "Breaking Lab",
+          "titel": "Sie löste das Rätsel der Kernspaltung, er bekam den Nobelpreis ⚛️",
+          "dauer": 107,
+          "aufrufe": 190043,
+          "wert": 12.60148531264505
+        },
+        {
+          "id": "BLRfyzBx7aY",
+          "kanal": "Breaking Lab",
+          "titel": "Dieses Metall leitet Wärme 3x besser als Kupfer! #wissenschaft #Wärmeleitung #forschung",
+          "dauer": 40,
+          "aufrufe": 182856,
+          "wert": 12.124925402824747
+        },
+        {
+          "id": "n0lDg3jlG-w",
+          "kanal": "Fakten Duell",
+          "titel": "Das Ende 💀 Wann hast du gecheckt, was wir da bauen? #Shorts",
+          "dauer": 78,
+          "aufrufe": 29135,
+          "wert": 11.69610598153352
+        },
+        {
+          "id": "8yc_M6giZzo",
+          "kanal": "WOW BLITZ",
+          "titel": "Er muss das Glücksrad exakt auf 1.000 stoppen! 😱💰#viral #viralvideo #trending",
+          "dauer": 22,
+          "aufrufe": 39689,
+          "wert": 11.524099883855982
+        },
+        {
+          "id": "FL7RtmN0GJ8",
+          "kanal": "Quarks",
+          "titel": "🤕🔍 Sepsis - Erst Bauchschmerzen dann Amputation! | Quarks Doku",
+          "dauer": 120,
+          "aufrufe": 168623,
+          "wert": 10.843922829581993
+        },
+        {
+          "id": "alNgBLf2kbo",
+          "kanal": "Strambix",
+          "titel": "Wer das nicht glaubt, hat Pokémon nie richtig gespielt.",
+          "dauer": 26,
+          "aufrufe": 425343,
+          "wert": 10.674940394026853
+        }
+      ]
+    },
+    {
+      "datum": "2026-11-12",
+      "kanaele": [
+        {
+          "id": "UChUWfBgECQB00mikCOVCc4A",
+          "name": "Humanlab",
+          "abonnenten": 24000,
+          "medianAufrufe": 27333.5,
+          "likeRate": 0.00920510576533117,
+          "shorts": 30,
+          "echt": true
+        },
+        {
+          "id": "UCs4va-N7qZWy7-17mBlg9Qw",
+          "name": "Pet Diary",
+          "abonnenten": 26000,
+          "medianAufrufe": 34187,
+          "likeRate": 0.012206396860748467,
+          "shorts": 47,
+          "echt": true
+        },
+        {
+          "id": "UCSiXByJeZbd7_qtbSa99wMA",
+          "name": "Strambix",
+          "abonnenten": 1130,
+          "medianAufrufe": 39845,
+          "likeRate": 0.011159815259203879,
+          "shorts": 18,
+          "echt": true
+        },
+        {
+          "id": "UCer23n8imlicJDyAn3LWcTg",
+          "name": "Story Kino DE",
+          "abonnenten": 53400,
+          "medianAufrufe": 30385,
+          "likeRate": 0.009478543345458022,
+          "shorts": 39,
+          "echt": true
+        },
+        {
+          "id": "UCYpxSQYuyoC9lcAYGmkJLUw",
+          "name": "Angenommen",
+          "abonnenten": 356,
+          "medianAufrufe": 3162,
+          "likeRate": 0.01857646560197668,
+          "shorts": 17,
+          "echt": true
+        },
+        {
+          "id": "UCdWtYXyN3FVmR2_tuAQJ1Og",
+          "name": "WOW BLITZ",
+          "abonnenten": 83200,
+          "medianAufrufe": 3444,
+          "likeRate": 0.018575212871671663,
+          "shorts": 50,
+          "echt": true
+        },
+        {
+          "id": "UCNOR7-LVdPzOAp5IoJaeU-A",
+          "name": "Fakten Duell",
+          "abonnenten": 888,
+          "medianAufrufe": 2491,
+          "likeRate": 0.01814744582938279,
+          "shorts": 47,
+          "echt": true
+        },
+        {
+          "id": "UCbg2Lb0KkPo6BEiq9Q39BtQ",
+          "name": "Merxy yt ",
+          "abonnenten": 5860,
+          "medianAufrufe": 1248,
+          "likeRate": 0.020820522911183807,
+          "shorts": 47,
+          "echt": true
+        },
+        {
+          "id": "UC7xbGUpFm6d7HIYzhb8o5Sg",
+          "name": "Wissen mit Biss",
+          "abonnenten": 107,
+          "medianAufrufe": 1372,
+          "likeRate": 0.016134312304166863,
+          "shorts": 32,
+          "echt": true
+        },
+        {
+          "id": "UCoemEmIeKQI9DP1imt_JSoQ",
+          "name": "FaktenMatrix",
+          "abonnenten": 15,
+          "medianAufrufe": 1178,
+          "likeRate": 0.019269307846462157,
+          "shorts": 6,
+          "echt": true
+        },
+        {
+          "id": "UCX-S3LXwWzI3uHKgp4DY2nQ",
+          "name": "Elysium",
+          "abonnenten": 20,
+          "medianAufrufe": 1217,
+          "likeRate": 0.018344352360554986,
+          "shorts": 7,
+          "echt": true
+        },
+        {
+          "id": "UCNjgbp--CJTN1RmscYHuz3A",
+          "name": "Warum eigentlich?",
+          "abonnenten": 69,
+          "medianAufrufe": 1119,
+          "likeRate": 0.018956026965180284,
+          "shorts": 32,
+          "echt": true
+        },
+        {
+          "id": "UCgjbpO87-JWeXDUPCLvB7JA",
+          "name": "Crazy.Theorien",
+          "abonnenten": 47600,
+          "medianAufrufe": 3126,
+          "likeRate": 0.033880312710821855,
+          "shorts": 37,
+          "echt": true
+        },
+        {
+          "id": "UCs2zJnk5MuLy2KeXFjwPqIw",
+          "name": "Tierisch Verrückt",
+          "abonnenten": 943,
+          "medianAufrufe": 1259.5,
+          "likeRate": 0.0339051841213843,
+          "shorts": 10,
+          "echt": true
+        },
+        {
+          "id": "UCL6zuDnBHUgiSFokVgtgW1g",
+          "name": "WissensRausch",
+          "abonnenten": 534,
+          "medianAufrufe": 1264.5,
+          "likeRate": 0.0161260373369899,
+          "shorts": 50,
+          "echt": true
+        },
+        {
+          "id": "UC0PEtxzPJQQe-QyBHuzRunA",
+          "name": "Einfach tierisch ",
+          "abonnenten": 57,
+          "medianAufrufe": 1871,
+          "likeRate": 0.022503073799788408,
+          "shorts": 15,
+          "echt": true
+        },
+        {
+          "id": "UCZHpIFMfoJJ_1QxNGLJTzyA",
+          "name": "MrWissen2go",
+          "abonnenten": 2410000,
+          "medianAufrufe": 392928,
+          "likeRate": 0.024651024385623305,
+          "shorts": 5,
+          "echt": true
+        },
+        {
+          "id": "UCE2hJ9CYR57BYhk3TjGVG6w",
+          "name": "Breaking Lab",
+          "abonnenten": 757000,
+          "medianAufrufe": 15081,
+          "likeRate": 0.026760528491409072,
+          "shorts": 27,
+          "echt": true
+        },
+        {
+          "id": "UC1Y7onDsPyfP-lu--SXF-ew",
+          "name": "Quarks",
+          "abonnenten": 867000,
+          "medianAufrufe": 15550,
+          "likeRate": 0.02398281191396904,
+          "shorts": 21,
+          "echt": true
+        },
+        {
+          "id": "UCA3mpqm67CpJ13YfA8qAnow",
+          "name": "Terra X History",
+          "abonnenten": 1430000,
+          "medianAufrufe": 209331,
+          "likeRate": 0.017046393886406996,
+          "shorts": 13,
+          "echt": true
+        },
+        {
+          "id": "UC5E9-r42JlymhLPnDv2wHuA",
+          "name": "Terra X Lesch & Co",
+          "abonnenten": 1270000,
+          "medianAufrufe": 68036,
+          "likeRate": 0.03566607084576394,
+          "shorts": 15,
+          "echt": true
+        },
+        {
+          "id": "UCLLibJTCy3sXjHLVaDimnpQ",
+          "name": "ARTEde",
+          "abonnenten": 2770000,
+          "medianAufrufe": 42352,
+          "likeRate": 0.023942304172208866,
+          "shorts": 7,
+          "echt": true
+        }
+      ],
+      "vergleich": [
+        {
+          "merkmal": "wochentag",
+          "rows": [
+            {
+              "wert": "Mi",
+              "videos": 62,
+              "kanaele": 20,
+              "ausreisser": 1.0626595393562597,
+              "likes": 0.015853044324506294
+            },
+            {
+              "wert": "Fr",
+              "videos": 87,
+              "kanaele": 19,
+              "ausreisser": 1.0462633451957295,
+              "likes": 0.018731988472622477
+            },
+            {
+              "wert": "So",
+              "videos": 100,
+              "kanaele": 19,
+              "ausreisser": 1.0146274066311833,
+              "likes": 0.01777677327842969
+            },
+            {
+              "wert": "Do",
+              "videos": 87,
+              "kanaele": 19,
+              "ausreisser": 1.0089365504915102,
+              "likes": 0.018484288354898338
+            },
+            {
+              "wert": "Mo",
+              "videos": 69,
+              "kanaele": 15,
+              "ausreisser": 0.9766763848396501,
+              "likes": 0.01803968731208659
+            },
+            {
+              "wert": "Sa",
+              "videos": 90,
+              "kanaele": 19,
+              "ausreisser": 0.9665370806108388,
+              "likes": 0.018447716897135133
+            },
+            {
+              "wert": "Di",
+              "videos": 77,
+              "kanaele": 19,
+              "ausreisser": 0.6904857486953031,
+              "likes": 0.023647225313009754
+            }
+          ]
+        },
+        {
+          "merkmal": "uhrzeit",
+          "rows": [
+            {
+              "wert": "10–13 Uhr",
+              "videos": 117,
+              "kanaele": 17,
+              "ausreisser": 1.1793002915451896,
+              "likes": 0.02111302352266208
+            },
+            {
+              "wert": "18–20 Uhr",
+              "videos": 90,
+              "kanaele": 16,
+              "ausreisser": 1.018669693833599,
+              "likes": 0.018764988146822224
+            },
+            {
+              "wert": "14–17 Uhr",
+              "videos": 173,
+              "kanaele": 21,
+              "ausreisser": 0.9940688018979834,
+              "likes": 0.01818181818181818
+            },
+            {
+              "wert": "21–05 Uhr",
+              "videos": 34,
+              "kanaele": 9,
+              "ausreisser": 0.9718384384737492,
+              "likes": 0.0189734515391477
+            },
+            {
+              "wert": "06–09 Uhr",
+              "videos": 158,
+              "kanaele": 16,
+              "ausreisser": 0.8866573614557485,
+              "likes": 0.017690487818525447
+            }
+          ]
+        },
+        {
+          "merkmal": "hook",
+          "rows": [
+            {
+              "wert": "Zeigt auf etwas („Dieses …“, „Das ist …“)",
+              "videos": 52,
+              "kanaele": 11,
+              "ausreisser": 1.1382113821138211,
+              "likes": 0.015064755591093262
+            },
+            {
+              "wert": "anderer Anfang",
+              "videos": 393,
+              "kanaele": 21,
+              "ausreisser": 1,
+              "likes": 0.018253968253968255
+            },
+            {
+              "wert": "W-Frage („Warum …“)",
+              "videos": 65,
+              "kanaele": 14,
+              "ausreisser": 0.9472743521000894,
+              "likes": 0.016649211643009178
+            },
+            {
+              "wert": "Spricht direkt an („Du …“)",
+              "videos": 22,
+              "kanaele": 9,
+              "ausreisser": 0.9337747546356727,
+              "likes": 0.02262514583285044
+            },
+            {
+              "wert": "Gedankenspiel („Angenommen …“, „Was wäre, wenn …“)",
+              "videos": 40,
+              "kanaele": 5,
+              "ausreisser": 0.9041545189504374,
+              "likes": 0.020618556701030927
+            }
+          ]
+        },
+        {
+          "merkmal": "hashtags",
+          "rows": [
+            {
+              "wert": "4–6",
+              "videos": 147,
+              "kanaele": 17,
+              "ausreisser": 1.154737180799719,
+              "likes": 0.017111022682053324
+            },
+            {
+              "wert": "keine",
+              "videos": 111,
+              "kanaele": 13,
+              "ausreisser": 0.9943910256410257,
+              "likes": 0.01867219917012448
+            },
+            {
+              "wert": "1–3",
+              "videos": 129,
+              "kanaele": 14,
+              "ausreisser": 0.9642857142857143,
+              "likes": 0.025766609880749573
+            },
+            {
+              "wert": "über 6",
+              "videos": 185,
+              "kanaele": 16,
+              "ausreisser": 0.9320059239756459,
+              "likes": 0.015790736741060716
+            }
+          ]
+        },
+        {
+          "merkmal": "titellaenge",
+          "rows": [
+            {
+              "wert": "mittel (41–70)",
+              "videos": 266,
+              "kanaele": 21,
+              "ausreisser": 1.0318038935221734,
+              "likes": 0.02097502216542731
+            },
+            {
+              "wert": "lang (>70)",
+              "videos": 217,
+              "kanaele": 16,
+              "ausreisser": 1,
+              "likes": 0.016776075857038657
+            },
+            {
+              "wert": "kurz (≤40)",
+              "videos": 89,
+              "kanaele": 17,
+              "ausreisser": 0.9046474358974359,
+              "likes": 0.012976573265962334
+            }
+          ]
+        },
+        {
+          "merkmal": "laenge",
+          "rows": [
+            {
+              "wert": "16–30 s",
+              "videos": 173,
+              "kanaele": 13,
+              "ausreisser": 1.053615526734593,
+              "likes": 0.014285714285714285
+            },
+            {
+              "wert": "61–180 s",
+              "videos": 175,
+              "kanaele": 16,
+              "ausreisser": 1,
+              "likes": 0.023647225313009754
+            },
+            {
+              "wert": "bis 15 s",
+              "videos": 22,
+              "kanaele": 4,
+              "ausreisser": 0.9729141953341242,
+              "likes": 0.012175250683682772
+            },
+            {
+              "wert": "31–60 s",
+              "videos": 202,
+              "kanaele": 19,
+              "ausreisser": 0.9595481049562682,
+              "likes": 0.019083373794825553
+            }
+          ]
+        },
+        {
+          "merkmal": "du_ansprache",
+          "rows": [
+            {
+              "wert": "spricht mit „du“ an",
+              "videos": 96,
+              "kanaele": 14,
+              "ausreisser": 1.0525136884021902,
+              "likes": 0.020399723002346784
+            },
+            {
+              "wert": "ohne „du“",
+              "videos": 476,
+              "kanaele": 22,
+              "ausreisser": 0.9861662337464194,
+              "likes": 0.017922717206693896
+            }
+          ]
+        },
+        {
+          "merkmal": "emoji_im_titel",
+          "rows": [
+            {
+              "wert": "mit Emoji",
+              "videos": 373,
+              "kanaele": 19,
+              "ausreisser": 1.017914267434421,
+              "likes": 0.0193621867881549
+            },
+            {
+              "wert": "ohne Emoji",
+              "videos": 199,
+              "kanaele": 15,
+              "ausreisser": 0.9615728328865059,
+              "likes": 0.017398305054556723
+            }
+          ]
+        },
+        {
+          "merkmal": "frage_im_titel",
+          "rows": [
+            {
+              "wert": "keine Frage",
+              "videos": 386,
+              "kanaele": 22,
+              "ausreisser": 1.0182735405385168,
+              "likes": 0.017501933449269078
+            },
+            {
+              "wert": "Frage",
+              "videos": 186,
+              "kanaele": 20,
+              "ausreisser": 0.969124608863078,
+              "likes": 0.02018092595795019
+            }
+          ]
+        },
+        {
+          "merkmal": "grossbuchstaben",
+          "rows": [
+            {
+              "wert": "normal geschrieben",
+              "videos": 501,
+              "kanaele": 21,
+              "ausreisser": 1,
+              "likes": 0.01818181818181818
+            },
+            {
+              "wert": "Wort in GROSSBUCHSTABEN",
+              "videos": 71,
+              "kanaele": 12,
+              "ausreisser": 0.9615728328865059,
+              "likes": 0.020274689339437543
+            }
+          ]
+        },
+        {
+          "merkmal": "zahl_im_titel",
+          "rows": [
+            {
+              "wert": "ohne Zahl",
+              "videos": 483,
+              "kanaele": 22,
+              "ausreisser": 1,
+              "likes": 0.018484288354898338
+            },
+            {
+              "wert": "mit Zahl",
+              "videos": 89,
+              "kanaele": 19,
+              "ausreisser": 1,
+              "likes": 0.018656716417910446
+            }
+          ]
+        },
+        {
+          "merkmal": "ausruf_im_titel",
+          "rows": [
+            {
+              "wert": "ohne !",
+              "videos": 350,
+              "kanaele": 21,
+              "ausreisser": 1,
+              "likes": 0.019726383143870457
+            },
+            {
+              "wert": "mit !",
+              "videos": 222,
+              "kanaele": 17,
+              "ausreisser": 1,
+              "likes": 0.01718442057062239
+            }
+          ]
+        }
+      ],
+      "top": [
+        {
+          "id": "9kUbs0-noCk",
+          "kanal": "Story Kino DE",
+          "titel": "Dieses Kind wurde mit echten Flügeln geboren! 😱🪽#shorts #shortsfeed",
+          "dauer": 46,
+          "aufrufe": 2606626,
+          "wert": 85.78660523284515
+        },
+        {
+          "id": "G5g9Xq8TGn8",
+          "kanal": "Angenommen",
+          "titel": "Angenommen, ein Tsunami kommt. Überlebst du? 🌊⏱️",
+          "dauer": 70,
+          "aufrufe": 157641,
+          "wert": 49.854838709677416
+        },
+        {
+          "id": "D1fvH9oZn50",
+          "kanal": "Fakten Duell",
+          "titel": "Warum dein Regenschirm plötzlich ein HOTEL wird! ☂️",
+          "dauer": 61,
+          "aufrufe": 122105,
+          "wert": 49.018466479325575
+        },
+        {
+          "id": "yttwEtoqnlk",
+          "kanal": "Breaking Lab",
+          "titel": "Das weltweit erste genehmigte Schwarmkraftwerk ist im Rhein! #Innovation #madeingermany",
+          "dauer": 43,
+          "aufrufe": 680901,
+          "wert": 45.149592202108614
+        },
+        {
+          "id": "FNrU7Vj2-m4",
+          "kanal": "Tierisch Verrückt",
+          "titel": "🤯 3 Unglaubliche Tier-Fakten, die du kaum glauben wirst! 🐾 #Shorts",
+          "dauer": 46,
+          "aufrufe": 53621,
+          "wert": 42.573243350535925
+        },
+        {
+          "id": "LhrIp4JIv6g",
+          "kanal": "Breaking Lab",
+          "titel": "Diese 50 Jahre alte deutsche Technik rettet das Stromnetz? ⚡️#Energiewende #MadeinGermany #Zukunft",
+          "dauer": 57,
+          "aufrufe": 354138,
+          "wert": 23.482395066640144
+        },
+        {
+          "id": "BgRvMOHRSNs",
+          "kanal": "Fakten Duell",
+          "titel": "Du wachst als Waschmaschinen-Socke auf!",
+          "dauer": 70,
+          "aufrufe": 47061,
+          "wert": 18.892412685668408
+        },
+        {
+          "id": "RuB0vAHbY04",
+          "kanal": "Pet Diary",
+          "titel": "Every Rock They Turned Over Revealed Another Surprise! #fish #amazing #shorts #fishing #seafishing",
+          "dauer": 68,
+          "aufrufe": 626688,
+          "wert": 18.331178518150175
+        },
+        {
+          "id": "Lv7xPvqM-1k",
+          "kanal": "WOW BLITZ",
+          "titel": "Er ignorierte diese Warnung und zerstörte sein Handy! 😂📱#viral #viralvideo #trending",
+          "dauer": 23,
+          "aufrufe": 45199,
+          "wert": 13.123983739837398
+        },
+        {
+          "id": "3hjKdepY78Q",
+          "kanal": "Breaking Lab",
+          "titel": "Sie löste das Rätsel der Kernspaltung, er bekam den Nobelpreis ⚛️",
+          "dauer": 107,
+          "aufrufe": 190043,
+          "wert": 12.60148531264505
+        },
+        {
+          "id": "BLRfyzBx7aY",
+          "kanal": "Breaking Lab",
+          "titel": "Dieses Metall leitet Wärme 3x besser als Kupfer! #wissenschaft #Wärmeleitung #forschung",
+          "dauer": 40,
+          "aufrufe": 182856,
+          "wert": 12.124925402824747
+        },
+        {
+          "id": "n0lDg3jlG-w",
+          "kanal": "Fakten Duell",
+          "titel": "Das Ende 💀 Wann hast du gecheckt, was wir da bauen? #Shorts",
+          "dauer": 78,
+          "aufrufe": 29135,
+          "wert": 11.69610598153352
+        },
+        {
+          "id": "8yc_M6giZzo",
+          "kanal": "WOW BLITZ",
+          "titel": "Er muss das Glücksrad exakt auf 1.000 stoppen! 😱💰#viral #viralvideo #trending",
+          "dauer": 22,
+          "aufrufe": 39689,
+          "wert": 11.524099883855982
+        },
+        {
+          "id": "FL7RtmN0GJ8",
+          "kanal": "Quarks",
+          "titel": "🤕🔍 Sepsis - Erst Bauchschmerzen dann Amputation! | Quarks Doku",
+          "dauer": 120,
+          "aufrufe": 168623,
+          "wert": 10.843922829581993
+        },
+        {
+          "id": "alNgBLf2kbo",
+          "kanal": "Strambix",
+          "titel": "Wer das nicht glaubt, hat Pokémon nie richtig gespielt.",
+          "dauer": 26,
+          "aufrufe": 425343,
+          "wert": 10.674940394026853
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "wissen": {
+    "suche": [
+      "wissenschaft fakten shorts",
+      "krasse fakten tiere",
+      "weltraum fakten",
+      "wusstest du schon wissenschaft",
+      "physik experiment shorts"
+    ],
+    "kanaele": [
+      {
+        "id": "UChUWfBgECQB00mikCOVCc4A",
+        "name": "Humanlab",
+        "handle": "@humanlabz",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCs4va-N7qZWy7-17mBlg9Qw",
+        "name": "Pet Diary",
+        "handle": "@petdiary-c3f",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCSiXByJeZbd7_qtbSa99wMA",
+        "name": "Strambix",
+        "handle": "@strambix",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCer23n8imlicJDyAn3LWcTg",
+        "name": "Story Kino DE",
+        "handle": "@ryatstar",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCYpxSQYuyoC9lcAYGmkJLUw",
+        "name": "Angenommen",
+        "handle": "@einfachangenommen",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCdWtYXyN3FVmR2_tuAQJ1Og",
+        "name": "WOW BLITZ",
+        "handle": "@огомомент",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCNOR7-LVdPzOAp5IoJaeU-A",
+        "name": "Fakten Duell",
+        "handle": "@faktenduellde",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCbg2Lb0KkPo6BEiq9Q39BtQ",
+        "name": "Merxy yt ",
+        "handle": "@merxyytt",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UC7xbGUpFm6d7HIYzhb8o5Sg",
+        "name": "Wissen mit Biss",
+        "handle": "@wissenmitbisss",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCoemEmIeKQI9DP1imt_JSoQ",
+        "name": "FaktenMatrix",
+        "handle": "@faktenmatrixx",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCX-S3LXwWzI3uHKgp4DY2nQ",
+        "name": "Elysium",
+        "handle": "@elysiumde",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCNjgbp--CJTN1RmscYHuz3A",
+        "name": "Warum eigentlich?",
+        "handle": "@warumeigentlich_de",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCgjbpO87-JWeXDUPCLvB7JA",
+        "name": "Crazy.Theorien",
+        "handle": "@crazy.theorien",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCs2zJnk5MuLy2KeXFjwPqIw",
+        "name": "Tierisch Verrückt",
+        "handle": "@tierischverruckt4u",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCL6zuDnBHUgiSFokVgtgW1g",
+        "name": "WissensRausch",
+        "handle": "@wissensrauschyt",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UC0PEtxzPJQQe-QyBHuzRunA",
+        "name": "Einfach tierisch ",
+        "handle": "@tierischkurios",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCZHpIFMfoJJ_1QxNGLJTzyA",
+        "name": "MrWissen2go",
+        "handle": "@mrwissen2go",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCE2hJ9CYR57BYhk3TjGVG6w",
+        "name": "Breaking Lab",
+        "handle": "@breakinglab",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UC1Y7onDsPyfP-lu--SXF-ew",
+        "name": "Quarks",
+        "handle": "@quarks",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCA3mpqm67CpJ13YfA8qAnow",
+        "name": "Terra X History",
+        "handle": "@terraxhistory",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UC5E9-r42JlymhLPnDv2wHuA",
+        "name": "Terra X Lesch & Co",
+        "handle": "@terraxleschundco",
+        "seit": "2026-11-12"
+      },
+      {
+        "id": "UCLLibJTCy3sXjHLVaDimnpQ",
+        "name": "ARTEde",
+        "handle": "@artede",
+        "seit": "2026-11-12"
+      }
+    ],
+    "abgelehnt": [
+      {
+        "id": "UCUrYLZ8iFSYxLT1oDVGDfPw",
+        "name": "Curiotomy",
+        "grund": "Land US"
+      },
+      {
+        "id": "UCbfKNEb3ud6FuNRzFwSQ3QA",
+        "name": "RätselWelt",
+        "grund": "kaum Likes (0 % der Aufrufe) – Hinweis auf gekaufte Aufrufe"
+      },
+      {
+        "id": "UCH0ZPvSYdg21pgfPH67kQiw",
+        "name": "SciX·Tech",
+        "grund": "Land US"
+      },
+      {
+        "id": "UCNEjunU056uZkrZSNL9GUsw",
+        "name": "Happenstance",
+        "grund": "kaum Likes (0 % der Aufrufe) – Hinweis auf gekaufte Aufrufe"
+      },
+      {
+        "id": "UCxjXK94yW7O_YWGlRgAwB9A",
+        "name": "Unsere Welt mit Katharina",
+        "grund": "Land KZ"
+      },
+      {
+        "id": "UClBEwpFeJpIsAgRCsAj5tng",
+        "name": "TierWow",
+        "grund": "Land FR"
+      },
+      {
+        "id": "UCaQJ2IDpHEkypBq5SAm6SFg",
+        "name": "Nadeem SHORTZ",
+        "grund": "nur 1 Shorts in 90 Tagen; kaum Likes (0 % der Aufrufe) – Hinweis auf gekaufte Aufrufe"
+      },
+      {
+        "id": "UC75bAk39DfQ4EmApnigQjyA",
+        "name": "Loop Fakten",
+        "grund": "kaum Likes (0,5 % der Aufrufe) – Hinweis auf gekaufte Aufrufe"
+      }
+    ]
+  },
+  "nachrichten": {
+    "suche": [
+      "nachrichten kurz erklärt",
+      "news in 60 sekunden",
+      "was heißt das für dich nachrichten",
+      "wirtschaft einfach erklärt shorts"
+    ],
+    "kanaele": []
+  }
+}

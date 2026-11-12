@@ -29,6 +29,21 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Die Empfehlung nennt Thema und Ton für heute. Möglichst eine Meldung dazu nehmen; gibt es keine gute (oder wäre sie nach den
    Sicherheitsregeln tabu, z. B. Gesundheitstipps beim Thema „koerper“), das nächstbeste Thema aus der Liste nehmen.
    Eine richtig spannende Meldung schlägt die Empfehlung – Reichweite entsteht vor allem durch gute Geschichten.
+2b. **Von Vorbildern lernen (Wunsch des Nutzers: bei jedem Post ca. 30 Minuten):** Was machen erfolgreiche, echte Kanäle anders als wir?
+   - `node vorbilder.js youtube wissen` (nur mit `YT_REFRESH_TOKEN`), dann `data/vorbilder.md` lesen. Der „Ausreißer-Wert“ zeigt, welche Videos weit besser liefen als sonst beim selben Kanal,
+     und welche Merkmale (Länge, Uhrzeit, Hook-Art, Titel) das gemeinsam haben.
+   - Die 3–5 stärksten Ausreißer genau ansehen: Titel, Beschreibung, Länge, Vorschaubild (`https://i.ytimg.com/vi/<id>/hqdefault.jpg`, nur zum Anschauen).
+     Fragen: Welcher Hook im ersten Satz? Welche Themenart? Warum klickt man? Was davon passt zu uns?
+   - Ergebnis mit Datum kurz in `data/vorbilder-notizen.md` (3–5 Stichpunkte, älteste Einträge nach 30 Tagen zusammenfassen).
+   - Was bei **mehreren verschiedenen Kanälen** auffällt, als Regel „im Test“ übernehmen (Herkunft „Vorbilder“). Bestätigt wird sie nur mit **unseren eigenen** Zahlen.
+     Die Idee beim heutigen Post ausprobieren, wenn sie passt.
+   - **Ideen übernehmen, nie Inhalte:** keine Titel, Texte, Bilder oder Videos kopieren. Reißerisches oder Erfundenes (z. B. „Kind mit echten Flügeln“) nicht nachahmen,
+     unsere Fakten bleiben echt und geprüft. Sicherheitsregeln gelten auch hier (keine Parteipolitik-Kanäle als Vorbild).
+   - **Gekaufte Follower/Aufrufe:** `vorbilder.js` prüft jeden Kanal (Likes pro Aufruf 0,5–15 %, Kommentare vorhanden, Abos schauen auch). Fällt ein Kanal durch, zählt er nicht.
+   - **Montags** zusätzlich `node vorbilder.js entdecken <gruppe>` (neue Kanäle finden; die Suche kostet viel YouTube-Kontingent, daher nur einmal pro Woche).
+     Kanäle, die nicht passen (fremdsprachig, Politik, kein Bezug), mit Grund unter `abgelehnt` in `data/vorbilder-kanaele.json` verschieben, höchstens 25 Kanäle.
+     Bestimmte Kanäle aufnehmen: `node vorbilder.js hinzufuegen <gruppe> @handle`.
+   - Sobald ein Instagram-Zugang mit Facebook-Login da ist (`data/offene-bitten.md`), kommen Instagram-Vorbilder genauso dazu.
 3. **News sammeln:** `node fetch-news.js > data/candidates.json`
 4. **Meldung auswählen:** die überraschendste, leicht verständliche Meldung, die in `data/posted.json` noch nicht vorkommt.
    Achtung: Spektrum.de-Artikel lassen sich von hier aus nicht abrufen (Fehler 403), der Feed liefert nur einen kurzen Anreißer.
