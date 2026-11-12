@@ -62,11 +62,25 @@ function logPost(post, fields) {
 }
 
 // Reel veröffentlichen: das Folien-Reel nur im Reels-Tab, das Video-Reel auch im Feed
+// Die Videodatei vorher einmal beim CDN abrufen, damit sie dort bereitliegt, wenn Instagram sie holt
+async function warmUp(url) { try { await fetch(url, { method: 'HEAD' }); } catch {} }
+
 async function publishReel(post, { file, musicFile, feed }) {
-  const container = await call(`${IG_USER_ID}/media`, { media_type: 'REELS', video_url: cdnUrl(post, file), caption: fullCaption(post, musicFile), share_to_feed: String(feed) });
-  await waitReady(container.id);
-  const { id } = await call(`${IG_USER_ID}/media_publish`, { creation_id: container.id });
-  return id;
+  const url = cdnUrl(post, file);
+  await warmUp(url);
+  // Ein Verarbeitungsfehler bei Instagram ist oft nur vorübergehend (am 12.11. klappte der zweite Versuch) – einmal neu versuchen
+  for (let attempt = 1; ; attempt++) {
+    const container = await call(`${IG_USER_ID}/media`, { media_type: 'REELS', video_url: url, caption: fullCaption(post, musicFile), share_to_feed: String(feed) });
+    try {
+      await waitReady(container.id);
+      const { id } = await call(`${IG_USER_ID}/media_publish`, { creation_id: container.id });
+      return id;
+    } catch (e) {
+      if (attempt >= 2 || !/Video-Verarbeitung: ERROR/.test(e.message)) throw e;
+      console.error(`${e.message} – neuer Versuch in 30 Sekunden`);
+      await sleep(30000);
+    }
+  }
 }
 
 // Karussell aus den Folien; mit videoSlide wird das 4:5-Video als zweite Folie eingefügt

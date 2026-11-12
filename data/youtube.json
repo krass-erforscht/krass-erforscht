@@ -319,5 +319,45 @@
       "comments": 0
     },
     "statsAt": "2026-11-12T17:16:36.697Z"
+  },
+  {
+    "id": "2026-11-12-asteroiden-platin",
+    "type": "short",
+    "videoId": "Lvw0Fo2zvQE",
+    "privacy": "private",
+    "publishAt": "2026-11-13T06:00:00.000Z",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "ytSlot": "morgens",
+    "uploadedAt": "2026-11-12T19:48:10.665Z"
+  },
+  {
+    "id": "2026-11-02-vega-schaedel",
+    "type": "short",
+    "videoId": "Pn75Vbutqf4",
+    "privacy": "private",
+    "publishAt": "2026-11-14T11:00:00.000Z",
+    "publishedAt": "2026-11-14T11:00:00.000Z",
+    "ytSlot": "mittags",
+    "uploadedAt": "2026-11-12T19:48:13.898Z"
+  },
+  {
+    "id": "2026-11-01-baum-muskeln",
+    "type": "short",
+    "videoId": "tS1xv250T5c",
+    "privacy": "private",
+    "publishAt": "2026-11-15T11:00:00.000Z",
+    "publishedAt": "2026-11-15T11:00:00.000Z",
+    "ytSlot": "mittags",
+    "uploadedAt": "2026-11-12T19:48:16.190Z"
+  },
+  {
+    "id": "2026-10-31-gluehwuermchen-aliens",
+    "type": "short",
+    "videoId": "YP91oqoWnPU",
+    "privacy": "private",
+    "publishAt": "2026-11-16T06:00:00.000Z",
+    "publishedAt": "2026-11-16T06:00:00.000Z",
+    "ytSlot": "morgens",
+    "uploadedAt": "2026-11-12T19:48:19.813Z"
   }
 ]

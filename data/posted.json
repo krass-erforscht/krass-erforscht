@@ -393,5 +393,14 @@
       "ig_reels_video_view_total_time": 328289
     },
     "statsAt": "2026-11-12T17:16:35.400Z"
+  },
+  {
+    "id": "2026-11-12-asteroiden-platin",
+    "postedAt": "2026-11-12T19:47:49.833Z",
+    "topic": "technik",
+    "tone": "nuetzlich",
+    "sourceUrl": "https://www.scinexx.de/news/kosmos/asteroidenbergbau-kann-den-platinmarkt-zum-absturz-bringen/",
+    "mediaId": "18376839529208264",
+    "format": "video"
   }
 ]
