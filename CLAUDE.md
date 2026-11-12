@@ -11,7 +11,10 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    `node comments.js list` zeigt offene Kommentare. Für jeden Kommentar entscheiden (Regeln siehe „Kommentare“ unten):
    antworten mit `node comments.js reply <id> "<text>"` oder auslassen mit `node comments.js skip <id>`.
    Danach `data/answered.json` committen und pushen.
-0. **Zeitfenster prüfen:** `node slot.js <morgens|mittags|abends>` (das Fenster steht in der Aufgabe). Bei „NEIN“ hier aufhören.
+0. **Zeitfenster prüfen:** `node slot.js <morgens|mittags|abends|spaet>` (das Fenster steht in der Aufgabe). Bei „NEIN“ hier aufhören –
+   **außer** heute ist ein späteres Fenster dran und es gibt noch keine vorbereitete Post-Datei von heute: dann den Post jetzt schon fertig
+   vorbereiten (Schritte 1–9, aber nicht veröffentlichen), damit er im richtigen Fenster pünktlich erscheint (Herstellung dauert ~45 Minuten).
+   Liegt im posting-Fenster schon eine fertige, gerenderte Post-Datei von heute vor: direkt mit Schritt 10 veröffentlichen.
    Nur wenn Kommentare beantwortet wurden, dem Nutzer kurz schreiben, wie viele; sonst keine Nachricht.
    Gepostet wird einmal pro Tag (7:45, 12:15, 18:15 oder 20:45 Uhr). Die Uhrzeit richtet sich nach der besten Reichweite
    (siehe „Immer nach der besten Reichweite“ unten). Verglichen wird die Reichweite im Verhältnis zum Median des jeweiligen Formats.
