@@ -1,18 +1,11 @@
 {
-  "aktualisiert": "2026-11-11T19:46:32.817Z",
+  "aktualisiert": "2026-11-12T17:16:35.555Z",
   "ranking": [
     {
       "gruppe": "uhrzeit:7",
       "posts": 2,
-      "punkte": 4.28,
-      "reichweite": 1854,
-      "follower": 0
-    },
-    {
-      "gruppe": "thema:kurios",
-      "posts": 1,
-      "punkte": 4.03,
-      "reichweite": 124,
+      "punkte": 4.27,
+      "reichweite": 1876,
       "follower": 0
     },
     {
@@ -25,8 +18,8 @@
     {
       "gruppe": "ton:staunen",
       "posts": 4,
-      "punkte": 3.17,
-      "reichweite": 1012,
+      "punkte": 3.16,
+      "reichweite": 1023,
       "follower": 0
     },
     {
@@ -34,13 +27,6 @@
       "posts": 4,
       "punkte": 3.15,
       "reichweite": 140,
-      "follower": 0
-    },
-    {
-      "gruppe": "ton:witzig",
-      "posts": 3,
-      "punkte": 2.91,
-      "reichweite": 112,
       "follower": 0
     },
     {
@@ -65,10 +51,24 @@
       "follower": 0
     },
     {
+      "gruppe": "thema:kurios",
+      "posts": 2,
+      "punkte": 2.41,
+      "reichweite": 125,
+      "follower": 0
+    },
+    {
       "gruppe": "thema:koerper",
       "posts": 2,
       "punkte": 2.39,
       "reichweite": 105,
+      "follower": 0
+    },
+    {
+      "gruppe": "ton:witzig",
+      "posts": 4,
+      "punkte": 2.38,
+      "reichweite": 116,
       "follower": 0
     },
     {
@@ -87,9 +87,9 @@
     },
     {
       "gruppe": "format:video",
-      "posts": 7,
-      "punkte": 2.15,
-      "reichweite": 659,
+      "posts": 8,
+      "punkte": 1.98,
+      "reichweite": 598,
       "follower": 0
     },
     {
@@ -102,8 +102,15 @@
     {
       "gruppe": "thema:geschichte",
       "posts": 1,
-      "punkte": 1.75,
-      "reichweite": 3663,
+      "punkte": 1.73,
+      "reichweite": 3708,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:20",
+      "posts": 1,
+      "punkte": 0.79,
+      "reichweite": 126,
       "follower": 0
     }
   ]

@@ -21,12 +21,12 @@
     "privacy": "public",
     "uploadedAt": "2026-11-09T17:33:22.379Z",
     "stats": {
-      "views": 1203,
+      "views": 1204,
       "likes": 2,
       "comments": 0
     },
     "publishedAt": "2026-11-09T17:33:52Z",
-    "statsAt": "2026-11-11T19:46:33.735Z"
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
@@ -70,7 +70,7 @@
       "comments": 0
     },
     "publishedAt": "2026-11-09T20:53:37Z",
-    "statsAt": "2026-11-11T19:46:33.735Z"
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -187,11 +187,11 @@
     "ytSlot": "nachmittags",
     "uploadedAt": "2026-11-10T11:44:21.414Z",
     "stats": {
-      "views": 634,
+      "views": 646,
       "likes": 2,
       "comments": 0
     },
-    "statsAt": "2026-11-11T19:46:33.735Z"
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "2026-11-08-asteroid-atombombe",
@@ -203,11 +203,11 @@
     "ytSlot": "nachmittags",
     "uploadedAt": "2026-11-10T11:44:23.303Z",
     "stats": {
-      "views": 232,
+      "views": 428,
       "likes": 1,
       "comments": 0
     },
-    "statsAt": "2026-11-11T19:46:33.735Z"
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "2026-11-07-dino-blut",
@@ -219,27 +219,27 @@
     "ytSlot": "morgens",
     "uploadedAt": "2026-11-10T11:44:25.224Z",
     "stats": {
-      "views": 1223,
+      "views": 1286,
       "likes": 9,
       "comments": 0
     },
-    "statsAt": "2026-11-11T19:46:33.735Z"
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "2026-11-06-satelliten-stau",
     "type": "short",
     "videoId": "Bz6kea_1BZc",
-    "privacy": "private",
+    "privacy": "public",
     "publishAt": "2026-11-12T15:00:00.000Z",
-    "publishedAt": "2026-11-10T11:44:25Z",
+    "publishedAt": "2026-11-12T15:00:02Z",
     "ytSlot": "nachmittags",
     "uploadedAt": "2026-11-10T11:44:27.589Z",
     "stats": {
-      "views": 1,
+      "views": 0,
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-11T19:46:33.735Z"
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "dino-blut",
@@ -250,21 +250,27 @@
     "publishedAt": "2026-11-11T17:30:14Z",
     "uploadedAt": "2026-11-11T09:31:37.348Z",
     "stats": {
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-11T19:46:33.735Z"
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "2026-11-11-katzen-miauen",
     "type": "short",
     "videoId": "SPrC8Wb-Mf4",
-    "privacy": "private",
+    "privacy": "public",
     "publishAt": "2026-11-12T06:00:00.000Z",
-    "publishedAt": "2026-11-12T06:00:00.000Z",
+    "publishedAt": "2026-11-12T06:00:25Z",
     "ytSlot": "morgens",
-    "uploadedAt": "2026-11-11T19:58:32.770Z"
+    "uploadedAt": "2026-11-11T19:58:32.770Z",
+    "stats": {
+      "views": 10,
+      "likes": 0,
+      "comments": 0
+    },
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "2026-11-05-ueberkreuz-gehirn",
@@ -272,9 +278,15 @@
     "videoId": "_Q1hyThjvTk",
     "privacy": "private",
     "publishAt": "2026-11-13T11:00:00.000Z",
-    "publishedAt": "2026-11-13T11:00:00.000Z",
+    "publishedAt": "2026-11-11T19:58:34Z",
     "ytSlot": "mittags",
-    "uploadedAt": "2026-11-11T19:58:36.216Z"
+    "uploadedAt": "2026-11-11T19:58:36.216Z",
+    "stats": {
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -282,9 +294,15 @@
     "videoId": "PgCCJ_T-I5g",
     "privacy": "private",
     "publishAt": "2026-11-14T15:00:00.000Z",
-    "publishedAt": "2026-11-14T15:00:00.000Z",
+    "publishedAt": "2026-11-11T19:58:36Z",
     "ytSlot": "nachmittags",
-    "uploadedAt": "2026-11-11T19:58:38.000Z"
+    "uploadedAt": "2026-11-11T19:58:38.000Z",
+    "stats": {
+      "views": 1,
+      "likes": 0,
+      "comments": 0
+    },
+    "statsAt": "2026-11-12T17:16:36.697Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -292,8 +310,14 @@
     "videoId": "VHZlNBMAAgM",
     "privacy": "private",
     "publishAt": "2026-11-15T15:00:00.000Z",
-    "publishedAt": "2026-11-15T15:00:00.000Z",
+    "publishedAt": "2026-11-11T19:58:38Z",
     "ytSlot": "nachmittags",
-    "uploadedAt": "2026-11-11T19:58:40.583Z"
+    "uploadedAt": "2026-11-11T19:58:40.583Z",
+    "stats": {
+      "views": 2,
+      "likes": 0,
+      "comments": 0
+    },
+    "statsAt": "2026-11-12T17:16:36.697Z"
   }
 ]

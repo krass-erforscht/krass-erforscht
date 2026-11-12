@@ -1,0 +1,30 @@
+{
+  "id": "2026-11-12-asteroiden-platin",
+  "category": "Technik",
+  "topic": "technik",
+  "tone": "nuetzlich",
+  "format": "video",
+  "test": "zahl-im-titel",
+  "source": { "name": "scinexx, Preprint der MIT Sloan School of Management (arXiv)", "url": "https://www.scinexx.de/news/kosmos/asteroidenbergbau-kann-den-platinmarkt-zum-absturz-bringen/" },
+  "image": { "file": "images/2026-11-12-asteroiden-platin.jpg", "credit": "NASA/JPL-Caltech/ASU", "short": "Illustration: NASA/JPL-Caltech/ASU", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/PIA24471", "position": "center 35%" },
+  "video": {
+    "file": "videos/2026-11-12-asteroiden-platin.mp4", "start": 0, "duration": 11,
+    "credit": "NASA/JPL-Caltech (Animation der Psyche-Mission)", "short": "Symbolvideo: NASA-Animation zum Metall-Asteroiden Psyche (gemeinfrei)", "license": "Public Domain (NASA)",
+    "page": "https://images.nasa.gov/details/JPL-20230929-PSYCHEf-0004-Hype", "symbolisch": true,
+    "headline": "Platin aus dem All: Preis könnte um **80 %** fallen",
+    "captions": ["Modellrechnung: erst **Riesengewinne**, dann Preissturz", "Nach ~**15 Jahren** käme fast alles aus dem All", "Aber: Die Technik dafür gibt es **noch nicht**"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Technik", "title": "Platin vom Asteroiden: Preis könnte um **80 %** fallen" },
+    { "label": "Worum geht's?", "title": "Wertvolle **Platinmetalle**", "text": ["Platin, Palladium & Co. stecken in Katalysatoren, Elektronik und Wasserstofftechnik.", "Gefördert werden sie vor allem in **Südafrika und Russland** – oft teuer."],
+      "image": { "file": "images/2026-11-12-asteroiden-platin-2.jpg", "credit": "Library of Congress", "short": "Foto: Library of Congress, gemeinfrei (Bergwerk, USA)", "license": "Public domain", "page": "http://www.loc.gov/item/2017813024/", "position": "center 30%" } },
+    { "label": "Die Rechnung", "big": "60 → 11", "title": "Millionen Dollar pro Tonne", "text": ["So könnte der Preis laut Modell fallen, wenn Asteroiden-Bergbau viel billiger wäre – **gut 80 %** weniger.", "Vorher stiege der Jahresgewinn der Anbieter zeitweise aufs **Achtfache**."],
+      "image": { "file": "images/2026-11-12-asteroiden-platin-3.jpg", "credit": "NASA/JPL-Caltech/ASU", "short": "Illustration: NASA/JPL-Caltech/ASU", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/PIA24472", "position": "center 30%" } },
+    { "label": "Das Paradox", "title": "Erfolg frisst den **Gewinn**", "text": ["Je mehr Platin aus dem All kommt, desto billiger wird es – und desto kleiner die Gewinne, die den Weltraumbergbau erst attraktiv machen."],
+      "image": { "file": "images/2026-11-12-asteroiden-platin-5.jpg", "credit": "NASA/JPL-Caltech", "short": "Animation: NASA/JPL-Caltech (Psyche), gemeinfrei", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/JPL-20230929-PSYCHEf-0004-Hype", "position": "center 40%" } },
+    { "label": "Aber Vorsicht", "title": "Noch **Science-Fiction**", "text": ["Bisher holt niemand Platin im großen Stil von Asteroiden. Die Studie ist ein **Preprint**, noch nicht unabhängig begutachtet.", "Im Bild: NASA-Sonde Psyche (Animation) – sie erforscht einen Metall-Asteroiden, baut aber nichts ab."],
+      "image": { "file": "images/2026-11-12-asteroiden-platin-4.jpg", "credit": "NASA/JPL-Caltech", "short": "Animation: NASA/JPL-Caltech (Psyche), gemeinfrei", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/JPL-20230929-PSYCHEf-0004-Hype", "position": "center 40%" } },
+    { "type": "cta", "label": "Mehr davon?", "title": "Schick das jemandem, der von Weltraum-Bergbau träumt." }
+  ],
+  "caption": "Asteroiden-Bergbau könnte den Platinpreis um gut 80 % abstürzen lassen 🪐💰 Das zeigt eine Modellrechnung von Forschern der MIT Sloan School of Management: Wäre Platin aus dem All viel billiger, gäbe es erst riesige Gewinne – dann fiele der Preis von 60 auf etwa 11 Millionen Dollar pro Tonne. Nach rund 15 Jahren käme im Rechenbeispiel fast alles aus dem All. Aber: Die Technik dafür gibt es noch nicht, und die Studie ist ein noch nicht begutachteter Preprint.\n\nSollten wir Rohstoffe lieber im All abbauen als auf der Erde? 👇\n\nQuelle: scinexx, Preprint der MIT Sloan School of Management auf arXiv · Text mit KI erstellt\nBilder: NASA/JPL-Caltech/ASU (gemeinfrei), Library of Congress (gemeinfrei) · Symbolvideo: NASA/JPL-Caltech (gemeinfrei)\n#asteroid #weltraum #platin #raumfahrt #wissenschaft"
+}
