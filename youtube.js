@@ -170,6 +170,14 @@ async function uploadPost(token, post, types, done, maxPerDay) {
   for (const u of uploadsFor(post).filter(u => types.includes(u.type))) {
     if (done.some(d => d.id === post.id && d.type === u.type && !d.deleted)) { console.log(`${post.id} (${u.type}): schon hochgeladen`); continue; }
     const when = nextFreeTime(done, maxPerDay);
+    // Ältere Video-Reels haben Text im unteren Drittel, wo YouTube Titel und Buttons darüberlegt → vorher im neuen Layout bauen
+    if (u.type === 'short' && when) {
+      const lay = `out/${post.id}/video-layout.json`;
+      if (!fs.existsSync(lay) || JSON.parse(fs.readFileSync(lay)).version < 2) {
+        require('child_process').execFileSync('node', ['video-reel.js', `posts/${post.id}.json`], { stdio: ['ignore', 'ignore', 'inherit'] });
+        Object.assign(u, uploadsFor(post).find(x => x.type === 'short')); // Beschreibung mit neuem Musiknachweis
+      }
+    }
     if (!when) { console.log(`${post.id} (${u.type}): alle Plätze der nächsten ${DAYS_AHEAD} Tage belegt – später`); return false; }
     const tags = [...new Set([...tagsFrom(post.caption), 'Wissenschaft', 'Shorts'])];
     const v = await upload(token, u.file, meta({ title: u.title, description: u.description, tags, publishAt: when.publishAt }));

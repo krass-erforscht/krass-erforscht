@@ -8,12 +8,16 @@ const { execFileSync } = require('child_process');
 const { chromium } = require('playwright-core');
 
 const FPS = 30;
+// Version des Layouts: ältere Reels (Text zu tief, von YouTube/Instagram-Bedienelementen verdeckt) werden vor einem YouTube-Upload neu gebaut
+const LAYOUT_VERSION = 2;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const mark = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<span class="hl">$1</span>');
 
 // Layout je Format: wo die Überschrift steht, wo das Video sitzt und wo die Fakten erscheinen
 const LAYOUTS = {
-  reel: { W: 1080, H: 1920, head: [200, 470], caption: [1250, 1640], headSize: 76, capSize: 58 },
+  // 9:16: Instagram und YouTube legen unten (ca. das letzte Drittel) Titel, Kanalname und Buttons und rechts die Like-Leiste über das Video.
+  // Deshalb stehen Fakten und Nachweis oberhalb davon und halten rechts Abstand (sichere Zone).
+  reel: { W: 1080, H: 1920, head: [170, 430], caption: [1010, 1270], headSize: 72, capSize: 54, padRight: 180, footTop: 1290 },
   '45': { W: 1080, H: 1350, head: [40, 300], caption: [930, 1230], headSize: 64, capSize: 48 },
 };
 
@@ -21,10 +25,10 @@ const css = (L) => `*{box-sizing:border-box}html,body{margin:0;width:${L.W}px;he
 .head{position:absolute;left:0;right:0;top:${L.head[0]}px;height:${L.head[1] - L.head[0]}px;background:rgba(10,14,40,.92);display:flex;align-items:center;padding:0 64px}
 .head h1{margin:0;color:#fff;font-size:${L.headSize}px;line-height:1.08;font-weight:800;letter-spacing:-.01em}
 .hl{color:#ffe14d}
-.cap{position:absolute;left:64px;right:64px;top:${L.caption[0]}px;height:${L.caption[1] - L.caption[0]}px;display:flex;align-items:center}
+.cap{position:absolute;left:64px;right:${L.padRight || 64}px;top:${L.caption[0]}px;height:${L.caption[1] - L.caption[0]}px;display:flex;align-items:center}
 .cap p{margin:0;color:#fff;font-size:${L.capSize}px;line-height:1.25;font-weight:700;text-shadow:0 3px 16px rgba(0,0,0,.8)}
 .cap .hl{background:#ffe14d;color:#141a2e;padding:0 .12em;text-shadow:none;box-decoration-break:clone;-webkit-box-decoration-break:clone}
-.foot{position:absolute;left:64px;right:64px;bottom:${L.H === 1920 ? 150 : 28}px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
+.foot{position:absolute;left:64px;right:${L.padRight || 64}px;${L.footTop ? `top:${L.footTop}px` : 'bottom:28px'};display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
  font-family:"DejaVu Sans Mono",monospace;color:rgba(255,255,255,.85);font-size:${L.H === 1920 ? 30 : 24}px;text-shadow:0 2px 8px rgba(0,0,0,.8)}
 .foot .credit{font-family:"DejaVu Sans",sans-serif;font-size:${L.H === 1920 ? 22 : 20}px;text-align:right;max-width:60%}`;
 
@@ -77,7 +81,7 @@ function render(L, post, captions, music, tmp, tag, out) {
   let last = 'o0';
   captions.forEach((_, i) => {
     const from = (i * per).toFixed(2), to = ((i + 1) * per).toFixed(2);
-    f.push(`[${last}][${2 + i}:v]overlay=0:0:enable='between(t,${from},${to})'[o${i + 1}]`);
+    f.push(`[${last}][${2 + i}:v]overlay=0:0:enable='gte(t,${from})*lt(t,${to})'[o${i + 1}]`);
     last = `o${i + 1}`;
   });
   f.push(`[${last}]format=yuv420p[v]`);
@@ -113,5 +117,6 @@ function render(L, post, captions, music, tmp, tag, out) {
   render(LAYOUTS.reel, post, captions, music, tmp, 'reel', path.join(dir, 'video-reel.mp4'));
   render(LAYOUTS['45'], post, captions, music, tmp, '45', path.join(dir, 'video-45.mp4'));
   fs.rmSync(tmp, { recursive: true, force: true });
+  fs.writeFileSync(path.join(dir, 'video-layout.json'), JSON.stringify({ version: LAYOUT_VERSION }));
   console.log(`Video-Reel (${v.duration.toFixed(1)} s, ${m.credit || 'eigene Klangfläche'}) -> ${dir}/video-reel.mp4 und video-45.mp4`);
 })().catch(e => { console.error(e.message); process.exit(1); });
