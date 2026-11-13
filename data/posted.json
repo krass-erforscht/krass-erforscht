@@ -413,5 +413,14 @@
       "ig_reels_video_view_total_time": 1262758
     },
     "statsAt": "2026-11-13T17:16:17.294Z"
+  },
+  {
+    "id": "2026-11-13-kraehen-schnell",
+    "postedAt": "2026-11-13T19:46:29.547Z",
+    "topic": "tiere",
+    "tone": "staunen",
+    "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261111005850.htm",
+    "mediaId": "18005046435002132",
+    "format": "video"
   }
 ]
