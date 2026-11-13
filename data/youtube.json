@@ -26,7 +26,7 @@
       "comments": 0
     },
     "publishedAt": "2026-11-09T17:33:52Z",
-    "statsAt": "2026-11-13T07:13:21.755Z"
+    "statsAt": "2026-11-13T17:16:19.633Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
@@ -65,12 +65,12 @@
     "privacy": "public",
     "uploadedAt": "2026-11-09T20:53:16.738Z",
     "stats": {
-      "views": 1193,
+      "views": 1197,
       "likes": 9,
       "comments": 0
     },
     "publishedAt": "2026-11-09T20:53:37Z",
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -191,7 +191,7 @@
       "likes": 2,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-08-asteroid-atombombe",
@@ -203,11 +203,11 @@
     "ytSlot": "nachmittags",
     "uploadedAt": "2026-11-10T11:44:23.303Z",
     "stats": {
-      "views": 735,
+      "views": 975,
       "likes": 3,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-07-dino-blut",
@@ -219,11 +219,11 @@
     "ytSlot": "morgens",
     "uploadedAt": "2026-11-10T11:44:25.224Z",
     "stats": {
-      "views": 1314,
+      "views": 1389,
       "likes": 9,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-06-satelliten-stau",
@@ -235,11 +235,11 @@
     "ytSlot": "nachmittags",
     "uploadedAt": "2026-11-10T11:44:27.589Z",
     "stats": {
-      "views": 868,
+      "views": 1161,
       "likes": 5,
       "comments": 1
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "dino-blut",
@@ -254,7 +254,7 @@
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-11-katzen-miauen",
@@ -266,27 +266,27 @@
     "ytSlot": "morgens",
     "uploadedAt": "2026-11-11T19:58:32.770Z",
     "stats": {
-      "views": 19,
+      "views": 26,
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-05-ueberkreuz-gehirn",
     "type": "short",
     "videoId": "_Q1hyThjvTk",
-    "privacy": "private",
+    "privacy": "public",
     "publishAt": "2026-11-13T11:00:00.000Z",
-    "publishedAt": "2026-11-11T19:58:34Z",
+    "publishedAt": "2026-11-13T11:00:30Z",
     "ytSlot": "mittags",
     "uploadedAt": "2026-11-11T19:58:36.216Z",
     "stats": {
-      "views": 0,
+      "views": 172,
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -302,7 +302,7 @@
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -314,11 +314,11 @@
     "ytSlot": "nachmittags",
     "uploadedAt": "2026-11-11T19:58:40.583Z",
     "stats": {
-      "views": 2,
+      "views": 3,
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-12-asteroiden-platin",
@@ -330,11 +330,11 @@
     "ytSlot": "morgens",
     "uploadedAt": "2026-11-12T19:48:10.665Z",
     "stats": {
-      "views": 0,
+      "views": 52,
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -350,7 +350,7 @@
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -366,7 +366,7 @@
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -378,10 +378,10 @@
     "ytSlot": "morgens",
     "uploadedAt": "2026-11-12T19:48:19.813Z",
     "stats": {
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "comments": 0
     },
-    "statsAt": "2026-11-13T07:13:21.756Z"
+    "statsAt": "2026-11-13T17:16:19.634Z"
   }
 ]

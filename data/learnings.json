@@ -1,11 +1,11 @@
 {
-  "aktualisiert": "2026-11-12T17:16:35.555Z",
+  "aktualisiert": "2026-11-13T17:16:17.461Z",
   "ranking": [
     {
       "gruppe": "uhrzeit:7",
       "posts": 2,
-      "punkte": 4.27,
-      "reichweite": 1876,
+      "punkte": 4.26,
+      "reichweite": 1899,
       "follower": 0
     },
     {
@@ -19,7 +19,7 @@
       "gruppe": "ton:staunen",
       "posts": 4,
       "punkte": 3.16,
-      "reichweite": 1023,
+      "reichweite": 1035,
       "follower": 0
     },
     {
@@ -54,7 +54,7 @@
       "gruppe": "thema:kurios",
       "posts": 2,
       "punkte": 2.41,
-      "reichweite": 125,
+      "reichweite": 126,
       "follower": 0
     },
     {
@@ -72,13 +72,6 @@
       "follower": 0
     },
     {
-      "gruppe": "ton:nuetzlich",
-      "posts": 4,
-      "punkte": 2.29,
-      "reichweite": 153,
-      "follower": 0
-    },
-    {
       "gruppe": "uhrzeit:12",
       "posts": 6,
       "punkte": 2.21,
@@ -86,31 +79,38 @@
       "follower": 0
     },
     {
-      "gruppe": "format:video",
-      "posts": 8,
-      "punkte": 1.98,
-      "reichweite": 598,
+      "gruppe": "ton:nuetzlich",
+      "posts": 5,
+      "punkte": 1.83,
+      "reichweite": 161,
       "follower": 0
     },
     {
-      "gruppe": "thema:technik",
-      "posts": 1,
-      "punkte": 1.77,
-      "reichweite": 226,
+      "gruppe": "format:video",
+      "posts": 9,
+      "punkte": 1.75,
+      "reichweite": 558,
       "follower": 0
     },
     {
       "gruppe": "thema:geschichte",
       "posts": 1,
-      "punkte": 1.73,
-      "reichweite": 3708,
+      "punkte": 1.7,
+      "reichweite": 3754,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:technik",
+      "posts": 2,
+      "punkte": 0.88,
+      "reichweite": 209,
       "follower": 0
     },
     {
       "gruppe": "uhrzeit:20",
-      "posts": 1,
-      "punkte": 0.79,
-      "reichweite": 126,
+      "posts": 2,
+      "punkte": 0.39,
+      "reichweite": 159,
       "follower": 0
     }
   ]
