@@ -33,6 +33,10 @@ Höchstens 6 Regeln. Eine Regel gilt erst als bestätigt, wenn sie in mindestens
   → Folien-Reels werden auf YouTube nicht mehr hochgeladen (Nutzer hat die schwachen gelöscht, 2026-11-10).
 - Abstand: Die ersten Shorts kamen einzeln und liefen gut, 6 Uploads direkt hintereinander (9./10.11.) kaum.
   → Höchstens 2 Shorts pro Tag, mind. 6 Stunden Abstand, per Zeitplan. Später testen, ob 1 pro Tag besser ist als 2.
+- Echte Videos schlagen Videos aus Fotos deutlich: Katzen-Short (aus 2 Fotos) 19 Aufrufe, echte Video-Shorts 646–1.314 (Stand 2026-11-13).
+  → Für YouTube möglichst echte Videos; Foto-Videos nur als Notlösung.
+- Seit Shorts einzeln mit Abstand erscheinen: 646–1.314 Aufrufe pro Short (vorher im Block 1–22).
+- Layout ab 2026-11-13: Texte in der sicheren Zone (oberhalb des unteren Drittels, rechts Abstand), weil YouTube dort Titel/Buttons überlagert.
 - Uhrzeit: wird ab jetzt gelernt (Fenster 7, 12, 16, 19, 21 Uhr; Videos erscheinen per Zeitplan zur gewählten Stunde).
 
 ## Verlauf
