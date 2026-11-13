@@ -1,7 +1,9 @@
 // Baut das HTML für eine einzelne Folie (1080x1350, Instagram-Hochformat 4:5)
 // Jede Folie bekommt ein Foto als Hintergrund: ihr eigenes ("image" in der Folie) oder sonst das Titelbild des Posts,
 // dann mit wechselndem Bildausschnitt. Ohne Foto bleibt es beim Karopapier-Look mit blauer Titelfolie.
-const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+// Zahl und Einheit nie trennen („100 %“, „235 ms“, „15 Jahre“ bleiben in einer Zeile)
+const keep = s => String(s).replace(/(\d) (%|‰|°C|ms|s|km|m|cm|mm|kg|g|t|Mio\.|Mrd\.)(?=[\s.,;:!?)*]|$)/g, '$1\u00a0$2');
+const esc = s => keep(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 // **Wort** im Text wird als Textmarker dargestellt
 const mark = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<span class="hl">$1</span>');
 

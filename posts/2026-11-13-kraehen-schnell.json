@@ -5,26 +5,108 @@
   "tone": "staunen",
   "format": "video",
   "test": "teilen-anreiz",
-  "source": { "name": "Universität Tübingen, Fachjournal Science via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261111005850.htm" },
-  "image": { "file": "images/2026-11-13-kraehen-schnell.jpg", "credit": "Alexis Lours / Wikimedia Commons", "short": "Foto: Alexis Lours, CC BY 4.0", "license": "CC BY 4.0", "page": "https://commons.wikimedia.org/wiki/File:Carrion_crow_(Corvus_corone)_head.jpg", "position": "35% center" },
+  "source": {
+    "name": "Universität Tübingen, Fachjournal Science via ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261111005850.htm"
+  },
+  "image": {
+    "file": "images/2026-11-13-kraehen-schnell.jpg",
+    "credit": "Alexis Lours / Wikimedia Commons",
+    "short": "Foto: Alexis Lours, CC BY 4.0",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Carrion_crow_(Corvus_corone)_head.jpg",
+    "position": "35% center"
+  },
   "video": {
-    "file": "videos/2026-11-13-kraehen-schnell.mp4", "start": 4, "duration": 15,
-    "credit": "The Nature Box / Wikimedia Commons", "short": "Video: Rabenkrähen (The Nature Box, CC BY-SA 4.0)", "license": "CC BY-SA 4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Flock_of_carrion_crows_(Corvus_corone).webm", "symbolisch": false,
+    "file": "videos/2026-11-13-kraehen-schnell.mp4",
+    "start": 4,
+    "duration": 15,
+    "credit": "The Nature Box / Wikimedia Commons",
+    "short": "Video: Rabenkrähen (The Nature Box, CC BY-SA 4.0)",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Flock_of_carrion_crows_(Corvus_corone).webm",
+    "symbolisch": false,
     "headline": "Krähen entscheiden **doppelt so schnell** wie wir",
-    "captions": ["Im Test: im Schnitt nur **0,235 Sekunden**", "Ihr Gehirn legt schon nach **70 Millisekunden** los", "Bei klaren Signalen: fast **100 %** richtig"]
+    "captions": [
+      "Im Test: im Schnitt nur **0,235 Sekunden**",
+      "Ihr Gehirn legt schon nach **70 Millisekunden** los",
+      "Bei klaren Signalen: fast **100 %** richtig"
+    ]
   },
   "slides": [
-    { "type": "cover", "label": "Tiere", "title": "Krähen entscheiden **doppelt so schnell** wie Menschen" },
-    { "label": "Der Test", "title": "Punkte auf dem **Bildschirm**", "text": ["Zwei Rabenkrähen sahen auf einem Touchscreen bewegte Punkte und mussten picken: Laufen die meisten **nach links oder rechts**?"],
-      "image": { "file": "images/2026-11-13-kraehen-schnell-2.jpg", "credit": "Priya Sandhu / iNaturalist", "short": "Foto: Priya Sandhu, CC BY, iNaturalist", "license": "CC BY", "page": "https://www.inaturalist.org/observations/263296471", "position": "20% center" } },
-    { "label": "Das Ergebnis", "big": "235 ms", "title": "im Schnitt pro Entscheidung (0,235 Sekunden)", "text": ["Doppelt so schnell wie Menschen und Affen bei dieser Aufgabe – und bei klaren Signalen **fast 100 %** richtig."],
-      "image": { "file": "images/2026-11-13-kraehen-schnell-3.jpg", "credit": "Marie-Lan Taÿ Pamart / Wikimedia Commons", "short": "Foto: Marie-Lan Taÿ Pamart, CC BY 4.0", "license": "CC BY 4.0", "page": "https://commons.wikimedia.org/wiki/File:Corvus_corone_Bob_20190916_t170115.jpg", "position": "60% center" } },
-    { "label": "Im Gehirn", "title": "Nach **70 Millisekunden**", "text": ["So schnell zeigten Nervenzellen schon, welche Richtung die Krähe wählen würde – lange bevor sie pickte.", "Das Prinzip ähnelt dem bei Menschen, obwohl Vogelgehirne ganz anders gebaut sind."],
-      "image": { "file": "images/2026-11-13-kraehen-schnell.jpg", "credit": "Alexis Lours / Wikimedia Commons", "short": "Foto: Alexis Lours, CC BY 4.0", "license": "CC BY 4.0", "page": "https://commons.wikimedia.org/wiki/File:Carrion_crow_(Corvus_corone)_head.jpg", "position": "20% center" } },
-    { "label": "Warum so schnell?", "title": "Fliegen braucht **Tempo**", "text": ["Die Forschenden vermuten: Vögel müssen im Flug und beim Picken blitzschnell sehen und reagieren.", "Wie genau ihr Gehirn das schafft, ist noch offen."],
-      "image": { "file": "images/2026-11-13-kraehen-schnell-4.jpg", "credit": "Wikimedia Commons (Nutzer „Self“)", "short": "Foto: Wikimedia Commons, CC BY-SA 3.0", "license": "CC BY-SA 3.0", "page": "https://commons.wikimedia.org/wiki/File:Flying_Crow.jpg", "position": "center 30%" } },
-    { "type": "cta", "label": "Teilen?", "title": "Schick das jemandem, der beim Bestellen **ewig** überlegt 😄" }
+    {
+      "type": "cover",
+      "label": "Tiere",
+      "title": "Krähen entscheiden **doppelt so schnell** wie Menschen"
+    },
+    {
+      "label": "Der Test",
+      "title": "Punkte auf dem **Bildschirm**",
+      "text": [
+        "Zwei Rabenkrähen sahen auf einem Touchscreen bewegte Punkte und mussten picken: Laufen die meisten **nach links oder rechts**?"
+      ],
+      "image": {
+        "file": "images/2026-11-13-kraehen-schnell-2.jpg",
+        "credit": "Priya Sandhu / iNaturalist",
+        "short": "Foto: Priya Sandhu, CC BY, iNaturalist",
+        "license": "CC BY",
+        "page": "https://www.inaturalist.org/observations/263296471",
+        "position": "20% center"
+      }
+    },
+    {
+      "label": "Das Ergebnis",
+      "big": "235 ms",
+      "title": "im Schnitt pro Entscheidung (0,235 Sekunden)",
+      "text": [
+        "Doppelt so schnell wie Menschen und Affen bei dieser Aufgabe – und bei klaren Signalen **fast 100 %** richtig."
+      ],
+      "image": {
+        "file": "images/2026-11-13-kraehen-schnell-3.jpg",
+        "credit": "Marie-Lan Taÿ Pamart / Wikimedia Commons",
+        "short": "Foto: Marie-Lan Taÿ Pamart, CC BY 4.0",
+        "license": "CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Corvus_corone_Bob_20190916_t170115.jpg",
+        "position": "60% center"
+      }
+    },
+    {
+      "label": "Im Gehirn",
+      "title": "Nach **70 Millisekunden**",
+      "text": [
+        "So schnell zeigten Nervenzellen schon, welche Richtung die Krähe wählen würde – lange bevor sie pickte.",
+        "Das Prinzip ähnelt dem bei Menschen, obwohl Vogelgehirne ganz anders gebaut sind."
+      ],
+      "image": {
+        "file": "images/2026-11-13-kraehen-schnell.jpg",
+        "credit": "Alexis Lours / Wikimedia Commons",
+        "short": "Foto: Alexis Lours, CC BY 4.0",
+        "license": "CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Carrion_crow_(Corvus_corone)_head.jpg",
+        "position": "20% center"
+      }
+    },
+    {
+      "label": "Warum so schnell?",
+      "title": "Fliegen braucht **Tempo**",
+      "text": [
+        "Die Forschenden vermuten: Vögel müssen im Flug und beim Picken blitzschnell sehen und reagieren.",
+        "Wie genau ihr Gehirn das schafft, ist noch offen."
+      ],
+      "image": {
+        "file": "images/2026-11-13-kraehen-schnell-4.jpg",
+        "credit": "Wikimedia Commons (Nutzer „Self“)",
+        "short": "Foto: Wikimedia Commons, CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Flying_Crow.jpg",
+        "position": "center 30%"
+      }
+    },
+    {
+      "type": "cta",
+      "label": "Teilen?",
+      "title": "Schick das jemandem, der beim Bestellen **ewig** überlegt 😄"
+    }
   ],
   "caption": "Krähen sind schneller als du: Im Test entschieden Rabenkrähen doppelt so schnell wie Menschen und Affen – im Schnitt in nur 0,235 Sekunden! 🐦‍⬛⚡ Forschende der Universität Tübingen ließen zwei Krähen auf einem Touchscreen erkennen, in welche Richtung bewegte Punkte laufen. Schon 70 Millisekunden nach dem Start zeigten ihre Nervenzellen die Entscheidung an – und bei klaren Signalen lagen sie fast immer richtig.\n\nWer braucht bei dir am längsten für Entscheidungen? Markier die Person 👇\n\nQuelle: Universität Tübingen, Fachjournal Science via ScienceDaily · Text mit KI erstellt\nFotos: Alexis Lours (CC BY 4.0), Marie-Lan Taÿ Pamart (CC BY 4.0), „Self“ (CC BY-SA 3.0) via Wikimedia Commons; Priya Sandhu (CC BY) via iNaturalist\nVideo: The Nature Box, CC BY-SA 4.0, via Wikimedia Commons\n#krähen #vögel #tiere #gehirn #wissenschaft"
 }
