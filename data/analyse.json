@@ -1,14 +1,14 @@
 {
-  "datum": "2026-11-13T17:16:19.774Z",
+  "datum": "2026-11-14T11:16:03.025Z",
   "hinweise": [
-    "Format: „video“ erreicht im Mittel 151 Konten, „bilder“ nur 13 (8 bzw. 3 Posts).",
-    "Thema: „geschichte“ erreicht im Mittel 1.883,5 Konten, „tiere“ nur 56 (2 bzw. 2 Posts).",
-    "Ton: „nuetzlich“ erreicht im Mittel 141 Konten, „staunen“ nur 75 (4 bzw. 6 Posts).",
-    "Uhrzeit: „12 Uhr“ erreicht im Mittel 141 Konten, „7 Uhr“ nur 31,5 (6 bzw. 4 Posts).",
-    "Wochentag: „Sa“ erreicht im Mittel 1.899 Konten, „Di“ nur 8 (2 bzw. 3 Posts).",
-    "Zuschau-Anteil und Reichweite: Rangkorrelation 0,6 (deutlicher Zusammenhang – Videos, die bis zum Ende geschaut werden, verbreiten sich weiter)."
+    "Format: „video“ erreicht im Mittel 175 Konten, „bilder“ nur 13 (9 bzw. 3 Posts).",
+    "Thema: „geschichte“ erreicht im Mittel 1.892 Konten, „tiere“ nur 56 (2 bzw. 2 Posts).",
+    "Ton: „nuetzlich“ erreicht im Mittel 175 Konten, „staunen“ nur 75 (5 bzw. 6 Posts).",
+    "Uhrzeit: „20 Uhr“ erreicht im Mittel 161,5 Konten, „7 Uhr“ nur 31,5 (2 bzw. 4 Posts).",
+    "Wochentag: „Sa“ erreicht im Mittel 1.907,5 Konten, „Di“ nur 8 (2 bzw. 3 Posts).",
+    "Zuschau-Anteil und Reichweite: Rangkorrelation 0,7 (deutlicher Zusammenhang – Videos, die bis zum Ende geschaut werden, verbreiten sich weiter)."
   ],
-  "watchCorr": 0.6190476190476191,
+  "watchCorr": 0.65,
   "vergleich": [
     {
       "merkmal": "format",
@@ -16,11 +16,11 @@
       "gruppen": [
         {
           "wert": "video",
-          "posts": 8,
-          "reichweite": 151,
-          "likes_pro_1000": 10.759362714669978,
-          "teilen_speichern_pro_1000": 1.2414649286157666,
-          "wiedergabe_s": 4.8285
+          "posts": 9,
+          "reichweite": 175,
+          "likes_pro_1000": 10.305192231470473,
+          "teilen_speichern_pro_1000": 1.1890606420927465,
+          "wiedergabe_s": 5.193
         },
         {
           "wert": "zusammen",
@@ -47,18 +47,18 @@
         {
           "wert": "geschichte",
           "posts": 2,
-          "reichweite": 1883.5,
-          "likes_pro_1000": 9.556676400318556,
-          "teilen_speichern_pro_1000": 1.5927794000530926,
-          "wiedergabe_s": 6.41
+          "reichweite": 1892,
+          "likes_pro_1000": 9.513742071881607,
+          "teilen_speichern_pro_1000": 1.5856236786469344,
+          "wiedergabe_s": 6.4115
         },
         {
           "wert": "technik",
-          "posts": 1,
-          "reichweite": 226,
-          "likes_pro_1000": 17.699115044247787,
+          "posts": 2,
+          "reichweite": 211,
+          "likes_pro_1000": 9.47867298578199,
           "teilen_speichern_pro_1000": 0,
-          "wiedergabe_s": 7.119
+          "wiedergabe_s": 6.82
         },
         {
           "wert": "kurios",
@@ -66,7 +66,7 @@
           "reichweite": 125.5,
           "likes_pro_1000": 23.904382470119522,
           "teilen_speichern_pro_1000": 0,
-          "wiedergabe_s": 3.7
+          "wiedergabe_s": 3.6895000000000002
         },
         {
           "wert": "weltraum",
@@ -108,11 +108,11 @@
       "gruppen": [
         {
           "wert": "nuetzlich",
-          "posts": 4,
-          "reichweite": 141,
-          "likes_pro_1000": 21.241830065359476,
+          "posts": 5,
+          "reichweite": 175,
+          "likes_pro_1000": 16.08910891089109,
           "teilen_speichern_pro_1000": 0,
-          "wiedergabe_s": 4.508
+          "wiedergabe_s": 4.552
         },
         {
           "wert": "witzig",
@@ -126,8 +126,8 @@
           "wert": "staunen",
           "posts": 6,
           "reichweite": 75,
-          "likes_pro_1000": 10.56422569027611,
-          "teilen_speichern_pro_1000": 1.4405762304921967,
+          "likes_pro_1000": 10.52128168340507,
+          "teilen_speichern_pro_1000": 1.4347202295552368,
           "wiedergabe_s": 4.425
         }
       ]
@@ -137,20 +137,20 @@
       "name": "Uhrzeit",
       "gruppen": [
         {
+          "wert": "20 Uhr",
+          "posts": 2,
+          "reichweite": 161.5,
+          "likes_pro_1000": 3.0959752321981426,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 4.536
+        },
+        {
           "wert": "12 Uhr",
           "posts": 6,
           "reichweite": 141,
           "likes_pro_1000": 19.95798319327731,
           "teilen_speichern_pro_1000": 0,
           "wiedergabe_s": 4.8285
-        },
-        {
-          "wert": "20 Uhr",
-          "posts": 1,
-          "reichweite": 127,
-          "likes_pro_1000": 7.874015748031496,
-          "teilen_speichern_pro_1000": 0,
-          "wiedergabe_s": 2.572
         },
         {
           "wert": "18 Uhr",
@@ -164,8 +164,8 @@
           "wert": "7 Uhr",
           "posts": 4,
           "reichweite": 31.5,
-          "likes_pro_1000": 9.934640522875817,
-          "teilen_speichern_pro_1000": 1.5686274509803921,
+          "likes_pro_1000": 9.890681936491411,
+          "teilen_speichern_pro_1000": 1.5616866215512752,
           "wiedergabe_s": 3.0745
         },
         {
@@ -185,10 +185,10 @@
         {
           "wert": "Sa",
           "posts": 2,
-          "reichweite": 1899,
-          "likes_pro_1000": 9.215376513954713,
-          "teilen_speichern_pro_1000": 1.5797788309636651,
-          "wiedergabe_s": 5.7935
+          "reichweite": 1907.5,
+          "likes_pro_1000": 9.174311926605505,
+          "teilen_speichern_pro_1000": 1.5727391874180865,
+          "wiedergabe_s": 5.795
         },
         {
           "wert": "So",
@@ -224,11 +224,11 @@
         },
         {
           "wert": "Do",
-          "posts": 2,
-          "reichweite": 105,
-          "likes_pro_1000": 28.57142857142857,
+          "posts": 3,
+          "reichweite": 106,
+          "likes_pro_1000": 14.778325123152708,
           "teilen_speichern_pro_1000": 0,
-          "wiedergabe_s": 4.8285
+          "wiedergabe_s": 5.193
         },
         {
           "wert": "Di",
@@ -254,11 +254,11 @@
         },
         {
           "wert": "lang (>45 Zeichen)",
-          "posts": 10,
+          "posts": 11,
           "reichweite": 106,
-          "likes_pro_1000": 12.842838484980408,
-          "teilen_speichern_pro_1000": 1.30605137135394,
-          "wiedergabe_s": 4.0945
+          "likes_pro_1000": 12.273767422508842,
+          "teilen_speichern_pro_1000": 1.248179737882255,
+          "wiedergabe_s": 4.464
         }
       ]
     },
@@ -268,11 +268,11 @@
       "gruppen": [
         {
           "wert": "mit Zahl",
-          "posts": 3,
-          "reichweite": 107,
-          "likes_pro_1000": 9.326947315351651,
-          "teilen_speichern_pro_1000": 1.5124779430299975,
-          "wiedergabe_s": 4.552
+          "posts": 4,
+          "reichweite": 151.5,
+          "likes_pro_1000": 8.851674641148326,
+          "teilen_speichern_pro_1000": 1.4354066985645932,
+          "wiedergabe_s": 5.5365
         },
         {
           "wert": "ohne Zahl",
@@ -290,11 +290,11 @@
       "gruppen": [
         {
           "wert": "Aussage",
-          "posts": 13,
+          "posts": 14,
           "reichweite": 107,
-          "likes_pro_1000": 13.444693420248523,
-          "teilen_speichern_pro_1000": 1.2222448563862294,
-          "wiedergabe_s": 3.896
+          "likes_pro_1000": 12.885591565794611,
+          "teilen_speichern_pro_1000": 1.1714174150722374,
+          "wiedergabe_s": 4.135
         },
         {
           "wert": "Frage",
@@ -312,11 +312,11 @@
       "gruppen": [
         {
           "wert": "bis 15 s",
-          "posts": 5,
-          "reichweite": 127,
-          "likes_pro_1000": 10.26598226784881,
-          "teilen_speichern_pro_1000": 1.3999066728884741,
-          "wiedergabe_s": 4.828
+          "posts": 6,
+          "reichweite": 151,
+          "likes_pro_1000": 9.7799511002445,
+          "teilen_speichern_pro_1000": 1.3336296954878863,
+          "wiedergabe_s": 5.0105
         },
         {
           "wert": "16–25 s",
@@ -336,17 +336,39 @@
           "wert": "echtes Video",
           "posts": 9,
           "reichweite": 127,
-          "likes_pro_1000": 11.639779456810292,
-          "teilen_speichern_pro_1000": 1.225239942822136,
+          "likes_pro_1000": 11.5995115995116,
+          "teilen_speichern_pro_1000": 1.221001221001221,
           "wiedergabe_s": 4.828
         },
         {
           "wert": "Symbolvideo",
-          "posts": 4,
-          "reichweite": 105,
-          "likes_pro_1000": 24.615384615384617,
+          "posts": 5,
+          "reichweite": 106,
+          "likes_pro_1000": 15.355086372360844,
           "teilen_speichern_pro_1000": 0,
-          "wiedergabe_s": 3.742
+          "wiedergabe_s": 4.464
+        }
+      ]
+    },
+    {
+      "merkmal": "test",
+      "name": "Getestete Regel (Feld „test“ im Post)",
+      "gruppen": [
+        {
+          "wert": "zahl-im-titel",
+          "posts": 1,
+          "reichweite": 196,
+          "likes_pro_1000": 0,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 6.521
+        },
+        {
+          "wert": "kurzes-video",
+          "posts": 1,
+          "reichweite": 127,
+          "likes_pro_1000": 7.874015748031496,
+          "teilen_speichern_pro_1000": 0,
+          "wiedergabe_s": 2.551
         }
       ]
     }
@@ -675,18 +697,18 @@
       "videolaenge": "bis 15 s",
       "test": null,
       "symbolvideo": "echtes Video",
-      "reichweite": 3754,
-      "aufrufe": 5059,
+      "reichweite": 3771,
+      "aufrufe": 5081,
       "likes": 32,
       "kommentare": 2,
       "shares": 4,
       "saves": 2,
       "follows": null,
       "profilbesuche": null,
-      "wiedergabe_s": 9.095,
-      "wiedergabe_anteil": 0.6272413793103448,
-      "likes_pro_1000": 8.524240809802876,
-      "teilen_speichern_pro_1000": 1.5982951518380393
+      "wiedergabe_s": 9.098,
+      "wiedergabe_anteil": 0.627448275862069,
+      "likes_pro_1000": 8.485812781755502,
+      "teilen_speichern_pro_1000": 1.591089896579157
     },
     {
       "id": "2026-11-08-asteroid-atombombe",
@@ -795,9 +817,37 @@
       "saves": 0,
       "follows": null,
       "profilbesuche": null,
-      "wiedergabe_s": 2.572,
-      "wiedergabe_anteil": 0.24495238095238095,
+      "wiedergabe_s": 2.551,
+      "wiedergabe_anteil": 0.24295238095238098,
       "likes_pro_1000": 7.874015748031496,
+      "teilen_speichern_pro_1000": 0
+    },
+    {
+      "id": "2026-11-12-asteroiden-platin",
+      "datum": "2026-11-12",
+      "titel": "Platin aus dem All: Preis könnte um 80 % fallen",
+      "format": "video",
+      "thema": "technik",
+      "ton": "nuetzlich",
+      "uhrzeit": "20 Uhr",
+      "wochentag": "Do",
+      "ueberschrift": "lang (>45 Zeichen)",
+      "zahl_im_titel": "mit Zahl",
+      "frage_im_titel": "Aussage",
+      "videolaenge": "bis 15 s",
+      "test": "zahl-im-titel",
+      "symbolvideo": "Symbolvideo",
+      "reichweite": 196,
+      "aufrufe": 255,
+      "likes": 0,
+      "kommentare": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": null,
+      "profilbesuche": null,
+      "wiedergabe_s": 6.521,
+      "wiedergabe_anteil": 0.5928181818181818,
+      "likes_pro_1000": 0,
       "teilen_speichern_pro_1000": 0
     }
   ]

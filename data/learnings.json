@@ -1,11 +1,11 @@
 {
-  "aktualisiert": "2026-11-13T17:16:17.461Z",
+  "aktualisiert": "2026-11-14T11:16:01.786Z",
   "ranking": [
     {
       "gruppe": "uhrzeit:7",
       "posts": 2,
       "punkte": 4.26,
-      "reichweite": 1899,
+      "reichweite": 1908,
       "follower": 0
     },
     {
@@ -13,13 +13,6 @@
       "posts": 4,
       "punkte": 3.89,
       "reichweite": 95,
-      "follower": 0
-    },
-    {
-      "gruppe": "ton:staunen",
-      "posts": 4,
-      "punkte": 3.16,
-      "reichweite": 1035,
       "follower": 0
     },
     {
@@ -37,17 +30,17 @@
       "follower": 0
     },
     {
-      "gruppe": "thema:tiere",
-      "posts": 1,
-      "punkte": 2.83,
-      "reichweite": 106,
-      "follower": 0
-    },
-    {
       "gruppe": "thema:natur",
       "posts": 1,
       "punkte": 2.8,
       "reichweite": 107,
+      "follower": 0
+    },
+    {
+      "gruppe": "ton:staunen",
+      "posts": 5,
+      "punkte": 2.53,
+      "reichweite": 868,
       "follower": 0
     },
     {
@@ -82,35 +75,42 @@
       "gruppe": "ton:nuetzlich",
       "posts": 5,
       "punkte": 1.83,
-      "reichweite": 161,
-      "follower": 0
-    },
-    {
-      "gruppe": "format:video",
-      "posts": 9,
-      "punkte": 1.75,
-      "reichweite": 558,
+      "reichweite": 162,
       "follower": 0
     },
     {
       "gruppe": "thema:geschichte",
       "posts": 1,
       "punkte": 1.7,
-      "reichweite": 3754,
+      "reichweite": 3771,
+      "follower": 0
+    },
+    {
+      "gruppe": "format:video",
+      "posts": 10,
+      "punkte": 1.58,
+      "reichweite": 523,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:tiere",
+      "posts": 2,
+      "punkte": 1.42,
+      "reichweite": 145,
       "follower": 0
     },
     {
       "gruppe": "thema:technik",
       "posts": 2,
       "punkte": 0.88,
-      "reichweite": 209,
+      "reichweite": 211,
       "follower": 0
     },
     {
       "gruppe": "uhrzeit:20",
-      "posts": 2,
-      "punkte": 0.39,
-      "reichweite": 159,
+      "posts": 3,
+      "punkte": 0.26,
+      "reichweite": 169,
       "follower": 0
     }
   ]

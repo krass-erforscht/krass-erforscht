@@ -1,0 +1,30 @@
+{
+  "id": "2026-11-14-mars-kohlenstoff",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "staunen",
+  "format": "video",
+  "test": "kurzes-video",
+  "source": { "name": "Planetary Science Institute / NASA, Science Advances via ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/11/261111005908.htm" },
+  "image": { "file": "images/2026-11-14-mars-kohlenstoff.jpg", "credit": "NASA/JPL-Caltech/MSSS", "short": "Foto: NASA/JPL-Caltech (Perseverance-Selfie)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/PIA26344", "position": "65% center" },
+  "video": {
+    "file": "videos/2026-11-14-mars-kohlenstoff.mp4", "start": 2, "duration": 12,
+    "credit": "ESA/DLR/FU Berlin (Flug über den Jezero-Krater, aus Mars-Express-Daten)", "short": "Flug über den Jezero-Krater: ESA/DLR/FU Berlin, CC BY-SA 3.0 IGO", "license": "CC BY-SA 3.0 IGO",
+    "page": "https://commons.wikimedia.org/wiki/File:Flight_over_the_Mars_2020_Perseverance_rover_landing_site_ESA441709.webm", "symbolisch": false,
+    "headline": "Zutat fürs Leben: **Kohlenstoff** im Marsgestein",
+    "captions": ["Nur wenige **Mikrometer** unter der Oberfläche", "Dünner als ein **Blatt Papier** – Rekord auf dem Mars", "Beweis für Leben? **Noch nicht** – geht auch ohne"]
+  },
+  "slides": [
+    { "type": "cover", "label": "Weltraum", "title": "Perseverance bestätigt **Kohlenstoff** in uralten Marsgesteinen" },
+    { "label": "Der Fund", "title": "Zwei Steine im **Jezero-Krater**", "text": ["Der NASA-Rover fand organischen Kohlenstoff – einen wichtigen Baustein des Lebens – in zwei uralten Gesteinen.", "Darunter der Fels **„Cheyava Falls“**."],
+      "image": { "file": "images/2026-11-14-mars-kohlenstoff-2.jpg", "credit": "NASA/JPL-Caltech/ASU/MSSS", "short": "Foto: NASA/JPL-Caltech (Cheyava Falls)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/PIA26401", "position": "center 40%" } },
+    { "label": "Das Kuriose", "title": "Dünner als ein **Blatt Papier**", "text": ["Der Kohlenstoff steckte nur wenige Mikrometer unter der Oberfläche – so flach wie noch nie auf dem Mars.", "Dabei zerstören Strahlung und aggressive Stoffe dort eigentlich **organische Moleküle**."],
+      "image": { "file": "images/2026-11-14-mars-kohlenstoff-3.jpg", "credit": "NASA/JPL-Caltech", "short": "Foto: NASA/JPL-Caltech (Instrument SHERLOC)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/PIA23894", "position": "40% center" } },
+    { "label": "Wie gemessen?", "title": "Mit **Laserlicht**", "text": ["Das Instrument SHERLOC am Roboterarm leuchtet mit einem Laser auf den Stein und erkennt so Minerale und organische Stoffe – ohne ihn zu beschädigen."],
+      "image": { "file": "images/2026-11-14-mars-kohlenstoff-3.jpg", "credit": "NASA/JPL-Caltech", "short": "Foto: NASA/JPL-Caltech (Instrument SHERLOC)", "license": "Public Domain (NASA)", "page": "https://images.nasa.gov/details/PIA23894", "position": "70% center" } },
+    { "label": "Was heißt das?", "title": "Leben? **Noch offen**", "text": ["Solcher Kohlenstoff kann durch Lebewesen entstehen – aber auch ganz ohne. Ein Beweis für Leben ist es also nicht.", "Doch er wurde auch weit entfernt schon gefunden: Die Zutaten waren auf dem alten Mars vielleicht **weit verbreitet**."],
+      "image": { "file": "images/2026-11-14-mars-kohlenstoff-4.jpg", "credit": "ESA/DLR/FU Berlin", "short": "Bild: ESA/DLR/FU Berlin, CC BY-SA 3.0 IGO (Jezero-Delta)", "license": "CC BY-SA 3.0 IGO", "page": "https://commons.wikimedia.org/wiki/File:Jezero_Crater_delta_ESA23163264.jpeg", "position": "center center" } },
+    { "type": "cta", "label": "Teilen?", "title": "Schick das jemandem, der an Leben auf dem Mars glaubt." }
+  ],
+  "caption": "Mars: Der NASA-Rover Perseverance hat organischen Kohlenstoff in zwei uralten Marsgesteinen bestätigt – eine wichtige Zutat für Leben. 🔴🔬 Das Überraschende: Der Kohlenstoff steckte nur wenige Mikrometer unter der Oberfläche, dünner als ein Blatt Papier. Dort zerstören Strahlung und aggressive Stoffe solche Moleküle eigentlich. Ein Beweis für Leben ist es aber nicht – der Kohlenstoff kann auch ohne Lebewesen entstehen.\n\nGlaubst du, auf dem Mars gab es mal Leben? 👇\n\nQuelle: Planetary Science Institute / NASA, Fachjournal Science Advances via ScienceDaily · Text mit KI erstellt\nBilder: NASA/JPL-Caltech (gemeinfrei); Jezero-Delta: ESA/DLR/FU Berlin, CC BY-SA 3.0 IGO, via Wikimedia Commons\n#mars #perseverance #nasa #weltraum #wissenschaft"
+}
