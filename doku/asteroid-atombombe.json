@@ -3,20 +3,175 @@
   "title": "Asteroid auf Kollisionskurs: Könnte eine Atomexplosion die Erde retten? | Kurz-Doku",
   "thumbText": "Atombombe gegen Asteroiden?\nEs kommt auf die Seite an",
   "description": "Ein Asteroid rast auf die Erde zu – könnte eine Atomexplosion ihn ablenken? Forschende der Sandia National Laboratories haben das mit dem bisher genauesten Computermodell durchgerechnet. Das Ergebnis: Es kommt extrem darauf an, von welcher Seite die Röntgenstrahlen den Asteroiden treffen.\n\nWelche Methode würdest du wählen: rammen wie bei DART oder Röntgen-Schubs? Schreib's in die Kommentare!",
-  "tags": ["Asteroid", "Planetenschutz", "DART", "Weltraum", "Doku", "Atomexplosion", "NASA", "Wissenschaft"],
-  "hashtags": ["#asteroid", "#weltraum", "#planetenschutz", "#wissenschaft", "#doku"],
+  "tags": [
+    "Asteroid",
+    "Planetenschutz",
+    "DART",
+    "Weltraum",
+    "Doku",
+    "Atomexplosion",
+    "NASA",
+    "Wissenschaft"
+  ],
+  "hashtags": [
+    "#asteroid",
+    "#weltraum",
+    "#planetenschutz",
+    "#wissenschaft",
+    "#doku"
+  ],
   "mood": "staunen",
-  "sources": ["Sandia National Laboratories / ScienceDaily (Nov. 2026)", "Moore et al., Fachjournal Icarus (2026)"],
+  "sources": [
+    "Sandia National Laboratories / ScienceDaily (Nov. 2026)",
+    "Moore et al., Fachjournal Icarus (2026)"
+  ],
   "segments": [
-    { "kapitel": "Ein Asteroid auf Kollisionskurs", "text": "Stell dir vor, ein Asteroid rast auf die Erde zu, und die Zeit wird knapp.\nEine Idee, die Forschende ernsthaft untersuchen: eine Atomexplosion, nicht auf dem Asteroiden, sondern daneben.", "visual": { "file": "TODO" } },
-    { "text": "Die Explosion würde starke Röntgenstrahlen aussenden.\nSie erhitzen eine Seite des Asteroiden so stark, dass dort Gestein verdampft.\nDas verdampfte Material schießt ins All und gibt dem Asteroiden einen Schubs, weg von seiner gefährlichen Bahn.", "visual": { "file": "TODO" } },
-    { "kapitel": "Das Problem mit den Kugeln", "text": "Bisher rechneten viele Computermodelle mit einer einfachen Vereinfachung: Asteroiden als glatte Kugeln.\nDoch echte Asteroiden sind uneben, mit Graten, Mulden und seltsamen Formen.", "visual": { "file": "TODO" } },
-    { "text": "Ein Team um den Physiker Nathan Moore von den Sandia National Laboratories in den USA hat deshalb ein neues Modell entwickelt.\nEs verbindet zwei Simulationsprogramme, die sonst für ganz andere Aufgaben genutzt werden.\nUnd es ist laut den Forschenden über sechzehnhundert Mal schneller als frühere Berechnungen.", "visual": { "file": "TODO" } },
-    { "kapitel": "Die überraschende Entdeckung", "text": "Das Ergebnis hat selbst die Forschenden überrascht.\nBei einem simulierten Asteroiden änderte sich die Geschwindigkeit um drei Komma neun Millimeter pro Sekunde, wenn die Röntgenstrahlen von einer Seite kamen.\nVon einer anderen Seite waren es nur null Komma acht Millimeter pro Sekunde, fast fünfmal weniger.", "visual": { "file": "TODO" } },
-    { "text": "Bei einem anderen simulierten Asteroiden war der Effekt auf die Drehung noch größer: Er unterschied sich je nach Richtung um das Siebzehnfache.\nNathan Moore fasst es so zusammen: Wähle die richtige Seite und du gewinnst. Rate falsch, und es könnte ein schlechter Tag werden.", "visual": { "file": "TODO" } },
-    { "kapitel": "Warum es noch schwierig ist", "text": "Für eine echte Mission bräuchte man die Form des Asteroiden genau, von allen Seiten.\nWird ein Asteroid erst spät entdeckt, fehlt dafür vielleicht die Zeit.\nUnd die Sprengladung müsste im All extrem genau platziert werden.", "visual": { "file": "TODO" } },
-    { "text": "Außerdem kann das Modell bisher nur vorhersagen, ob Gestein an der Oberfläche zerbricht, nicht, ob der ganze Asteroid auseinanderbricht.\nDabei wäre es wichtig, ihn in einem Stück abzulenken, statt viele gefährliche Bruchstücke zu erzeugen.", "visual": { "file": "TODO" } },
-    { "kapitel": "Ein anderer Weg: DART", "text": "Einen anderen Weg hat die NASA schon getestet.\nIm Jahr zweitausendzweiundzwanzig ließ sie die Sonde DART absichtlich in den kleinen Asteroiden Dimorphos krachen.\nDie Bilder zeigen die letzten Sekunden vor dem Einschlag.", "visual": { "file": "TODO" } },
-    { "text": "Ob rammen oder Röntgen-Schubs: Die neue Studie zeigt, wie wichtig es ist, Asteroiden genau zu kennen, bevor man sie ablenkt.\nWas meinst du: Welche Methode sollte die Menschheit im Ernstfall wählen?", "visual": { "file": "TODO" } }
+    {
+      "kapitel": "Ein Asteroid auf Kollisionskurs",
+      "text": "Stell dir vor, ein Asteroid rast auf die Erde zu, und die Zeit wird knapp.\nEine Idee, die Forschende ernsthaft untersuchen: eine Atomexplosion, nicht auf dem Asteroiden, sondern daneben.",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-anflug-v1.mp4",
+          "start": 0,
+          "label": "Animation",
+          "credit": "Video: ESO, CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "text": "Die Explosion würde starke Röntgenstrahlen aussenden.\nSie erhitzen eine Seite des Asteroiden so stark, dass dort Gestein verdampft.\nDas verdampfte Material schießt ins All und gibt dem Asteroiden einen Schubs, weg von seiner gefährlichen Bahn.",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-bennu-v1.mp4",
+          "start": 5,
+          "label": "Symbolbild: Wärme erzeugt Schub",
+          "credit": "Video: NASA/GSFC (Animation), gemeinfrei"
+        }
+      ]
+    },
+    {
+      "kapitel": "Das Problem mit den Kugeln",
+      "text": "Bisher rechneten viele Computermodelle mit einer einfachen Vereinfachung: Asteroiden als glatte Kugeln.\nDoch echte Asteroiden sind uneben, mit Graten, Mulden und seltsamen Formen.",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-bennu-v2.mp4",
+          "start": 0,
+          "label": "Echter Asteroid: Bennu (3D-Modell)",
+          "credit": "Video: NASA/GSFC (Bennu-Modell), gemeinfrei"
+        },
+        {
+          "file": "videos/doku/ast-itokawa-v1.mp4",
+          "start": 22,
+          "label": "Asteroid Itokawa (Animation)",
+          "credit": "Video: JAXA, ESO/L. Calçada/M. Kornmesser, CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "text": "Ein Team um den Physiker Nathan Moore von den Sandia National Laboratories in den USA hat deshalb ein neues Modell entwickelt.\nEs verbindet zwei Simulationsprogramme, die sonst für ganz andere Aufgaben genutzt werden.\nUnd es ist laut den Forschenden über sechzehnhundert Mal schneller als frühere Berechnungen.",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-bennu-v1.mp4",
+          "start": 27,
+          "label": "Symbolbild: Computermodell",
+          "credit": "Video: NASA/GSFC (Animation), gemeinfrei"
+        },
+        {
+          "file": "videos/doku/ast-bennu-v2.mp4",
+          "start": 30,
+          "credit": "Video: NASA/GSFC (Bennu-Modell), gemeinfrei"
+        }
+      ]
+    },
+    {
+      "kapitel": "Die überraschende Entdeckung",
+      "text": "Das Ergebnis hat selbst die Forschenden überrascht.\nBei einem simulierten Asteroiden änderte sich die Geschwindigkeit um drei Komma neun Millimeter pro Sekunde, wenn die Röntgenstrahlen von einer Seite kamen.\nVon einer anderen Seite waren es nur null Komma acht Millimeter pro Sekunde, fast fünfmal weniger.",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-anflug-v3.mp4",
+          "start": 3,
+          "label": "Echte Aufnahmen: Asteroid Bennu",
+          "credit": "Video: NASA/Goddard/Univ. of Arizona (OSIRIS-REx), gemeinfrei"
+        },
+        {
+          "file": "videos/doku/ast-bennu-v2.mp4",
+          "start": 15,
+          "credit": "Video: NASA/GSFC (Bennu-Modell), gemeinfrei"
+        }
+      ]
+    },
+    {
+      "text": "Bei einem anderen simulierten Asteroiden war der Effekt auf die Drehung noch größer: Er unterschied sich je nach Richtung um das Siebzehnfache.\nNathan Moore fasst es so zusammen: Wähle die richtige Seite und du gewinnst. Rate falsch, und es könnte ein schlechter Tag werden.",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-itokawa-v1.mp4",
+          "start": 24,
+          "credit": "Video: JAXA, ESO/L. Calçada/M. Kornmesser, CC BY 4.0"
+        },
+        {
+          "file": "videos/doku/ast-bennu-v2.mp4",
+          "start": 45,
+          "credit": "Video: NASA/GSFC (Bennu-Modell), gemeinfrei"
+        }
+      ]
+    },
+    {
+      "kapitel": "Warum es noch schwierig ist",
+      "text": "Für eine echte Mission bräuchte man die Form des Asteroiden genau, von allen Seiten.\nWird ein Asteroid erst spät entdeckt, fehlt dafür vielleicht die Zeit.\nUnd die Sprengladung müsste im All extrem genau platziert werden.",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-anflug-v1.mp4",
+          "start": 8,
+          "label": "Animation",
+          "credit": "Video: ESO, CC BY 4.0"
+        },
+        {
+          "file": "videos/doku/ast-erde-v5.mp4",
+          "start": 0,
+          "label": "Echte Aufnahmen: Erde (Galileo-Sonde)",
+          "credit": "Video: NASA/JPL (Galileo), gemeinfrei"
+        }
+      ]
+    },
+    {
+      "text": "Außerdem kann das Modell bisher nur vorhersagen, ob Gestein an der Oberfläche zerbricht, nicht, ob der ganze Asteroid auseinanderbricht.\nDabei wäre es wichtig, ihn in einem Stück abzulenken, statt viele gefährliche Bruchstücke zu erzeugen.",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-anflug-v3.mp4",
+          "start": 16,
+          "label": "Echte Aufnahmen: Geröll auf Bennu",
+          "credit": "Video: NASA/Goddard/Univ. of Arizona (OSIRIS-REx), gemeinfrei"
+        }
+      ]
+    },
+    {
+      "kapitel": "Ein anderer Weg: DART",
+      "text": "Einen anderen Weg hat die NASA schon getestet.\nIm Jahr zweitausendzweiundzwanzig ließ sie die Sonde DART absichtlich in den kleinen Asteroiden Dimorphos krachen.\nDie Bilder zeigen die letzten Sekunden vor dem Einschlag.",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-dart-v2.mp4",
+          "start": 150,
+          "label": "DART (Animation)",
+          "credit": "Video: NASA/Johns Hopkins APL (Animation), gemeinfrei"
+        },
+        {
+          "file": "videos/2026-11-08-asteroid-atombombe.mp4",
+          "start": 0,
+          "label": "Echte Aufnahmen: DART 2022",
+          "credit": "Echte Aufnahmen: NASA/Johns Hopkins APL, gemeinfrei"
+        }
+      ]
+    },
+    {
+      "text": "Ob rammen oder Röntgen-Schubs: Die neue Studie zeigt, wie wichtig es ist, Asteroiden genau zu kennen, bevor man sie ablenkt.\nWas meinst du: Welche Methode sollte die Menschheit im Ernstfall wählen?",
+      "visuals": [
+        {
+          "file": "videos/doku/ast-dart-v1.mp4",
+          "start": 6,
+          "label": "Animation",
+          "credit": "Video: NASA/Johns Hopkins APL (Animation), gemeinfrei"
+        }
+      ]
+    }
   ]
 }
