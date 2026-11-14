@@ -1,0 +1,22 @@
+{
+  "id": "asteroid-atombombe",
+  "title": "Asteroid auf Kollisionskurs: Könnte eine Atomexplosion die Erde retten? | Kurz-Doku",
+  "thumbText": "Atombombe gegen Asteroiden?\nEs kommt auf die Seite an",
+  "description": "Ein Asteroid rast auf die Erde zu – könnte eine Atomexplosion ihn ablenken? Forschende der Sandia National Laboratories haben das mit dem bisher genauesten Computermodell durchgerechnet. Das Ergebnis: Es kommt extrem darauf an, von welcher Seite die Röntgenstrahlen den Asteroiden treffen.\n\nWelche Methode würdest du wählen: rammen wie bei DART oder Röntgen-Schubs? Schreib's in die Kommentare!",
+  "tags": ["Asteroid", "Planetenschutz", "DART", "Weltraum", "Doku", "Atomexplosion", "NASA", "Wissenschaft"],
+  "hashtags": ["#asteroid", "#weltraum", "#planetenschutz", "#wissenschaft", "#doku"],
+  "mood": "staunen",
+  "sources": ["Sandia National Laboratories / ScienceDaily (Nov. 2026)", "Moore et al., Fachjournal Icarus (2026)"],
+  "segments": [
+    { "kapitel": "Ein Asteroid auf Kollisionskurs", "text": "Stell dir vor, ein Asteroid rast auf die Erde zu, und die Zeit wird knapp.\nEine Idee, die Forschende ernsthaft untersuchen: eine Atomexplosion, nicht auf dem Asteroiden, sondern daneben.", "visual": { "file": "TODO" } },
+    { "text": "Die Explosion würde starke Röntgenstrahlen aussenden.\nSie erhitzen eine Seite des Asteroiden so stark, dass dort Gestein verdampft.\nDas verdampfte Material schießt ins All und gibt dem Asteroiden einen Schubs, weg von seiner gefährlichen Bahn.", "visual": { "file": "TODO" } },
+    { "kapitel": "Das Problem mit den Kugeln", "text": "Bisher rechneten viele Computermodelle mit einer einfachen Vereinfachung: Asteroiden als glatte Kugeln.\nDoch echte Asteroiden sind uneben, mit Graten, Mulden und seltsamen Formen.", "visual": { "file": "TODO" } },
+    { "text": "Ein Team um den Physiker Nathan Moore von den Sandia National Laboratories in den USA hat deshalb ein neues Modell entwickelt.\nEs verbindet zwei Simulationsprogramme, die sonst für ganz andere Aufgaben genutzt werden.\nUnd es ist laut den Forschenden über sechzehnhundert Mal schneller als frühere Berechnungen.", "visual": { "file": "TODO" } },
+    { "kapitel": "Die überraschende Entdeckung", "text": "Das Ergebnis hat selbst die Forschenden überrascht.\nBei einem simulierten Asteroiden änderte sich die Geschwindigkeit um drei Komma neun Millimeter pro Sekunde, wenn die Röntgenstrahlen von einer Seite kamen.\nVon einer anderen Seite waren es nur null Komma acht Millimeter pro Sekunde, fast fünfmal weniger.", "visual": { "file": "TODO" } },
+    { "text": "Bei einem anderen simulierten Asteroiden war der Effekt auf die Drehung noch größer: Er unterschied sich je nach Richtung um das Siebzehnfache.\nNathan Moore fasst es so zusammen: Wähle die richtige Seite und du gewinnst. Rate falsch, und es könnte ein schlechter Tag werden.", "visual": { "file": "TODO" } },
+    { "kapitel": "Warum es noch schwierig ist", "text": "Für eine echte Mission bräuchte man die Form des Asteroiden genau, von allen Seiten.\nWird ein Asteroid erst spät entdeckt, fehlt dafür vielleicht die Zeit.\nUnd die Sprengladung müsste im All extrem genau platziert werden.", "visual": { "file": "TODO" } },
+    { "text": "Außerdem kann das Modell bisher nur vorhersagen, ob Gestein an der Oberfläche zerbricht, nicht, ob der ganze Asteroid auseinanderbricht.\nDabei wäre es wichtig, ihn in einem Stück abzulenken, statt viele gefährliche Bruchstücke zu erzeugen.", "visual": { "file": "TODO" } },
+    { "kapitel": "Ein anderer Weg: DART", "text": "Einen anderen Weg hat die NASA schon getestet.\nIm Jahr zweitausendzweiundzwanzig ließ sie die Sonde DART absichtlich in den kleinen Asteroiden Dimorphos krachen.\nDie Bilder zeigen die letzten Sekunden vor dem Einschlag.", "visual": { "file": "TODO" } },
+    { "text": "Ob rammen oder Röntgen-Schubs: Die neue Studie zeigt, wie wichtig es ist, Asteroiden genau zu kennen, bevor man sie ablenkt.\nWas meinst du: Welche Methode sollte die Menschheit im Ernstfall wählen?", "visual": { "file": "TODO" } }
+  ]
+}
