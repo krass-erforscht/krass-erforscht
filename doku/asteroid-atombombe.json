@@ -32,7 +32,7 @@
       "visuals": [
         {
           "file": "videos/doku/ast-anflug-v1.mp4",
-          "start": 0,
+          "start": 5,
           "label": "Animation",
           "credit": "Video: ESO, CC BY 4.0"
         }
@@ -89,7 +89,7 @@
       "visuals": [
         {
           "file": "videos/doku/ast-anflug-v3.mp4",
-          "start": 3,
+          "start": 7,
           "label": "Echte Aufnahmen: Asteroid Bennu",
           "credit": "Video: NASA/Goddard/Univ. of Arizona (OSIRIS-REx), gemeinfrei"
         },
@@ -121,7 +121,7 @@
       "visuals": [
         {
           "file": "videos/doku/ast-anflug-v1.mp4",
-          "start": 8,
+          "start": 10,
           "label": "Animation",
           "credit": "Video: ESO, CC BY 4.0"
         },

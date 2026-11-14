@@ -393,5 +393,14 @@
     "publishedAt": "2026-11-14T11:00:00.000Z",
     "ytSlot": "mittags",
     "uploadedAt": "2026-11-13T19:46:33.492Z"
+  },
+  {
+    "id": "asteroid-atombombe",
+    "type": "doku",
+    "videoId": "ABow7Ct-6Bc",
+    "privacy": "private",
+    "publishAt": "2026-11-14T18:30:00.000Z",
+    "publishedAt": "2026-11-14T18:30:00.000Z",
+    "uploadedAt": "2026-11-14T07:18:11.868Z"
   }
 ]
