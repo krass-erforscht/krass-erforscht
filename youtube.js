@@ -158,7 +158,8 @@ const plain = s => s.replace(/\*\*/g, '');
 // Was zu einem Post hochgeladen werden kann: das Video-Reel (echtes Video) und das Folien-Reel
 function uploadsFor(post) {
   const out = [];
-  if (fs.existsSync(`out/${post.id}/video-reel.mp4`)) out.push({ type: 'short', file: `out/${post.id}/video-reel.mp4`,
+  const shortFile = fs.existsSync(`out/${post.id}/video-short.mp4`) ? `out/${post.id}/video-short.mp4` : `out/${post.id}/video-reel.mp4`;
+  if (fs.existsSync(shortFile)) out.push({ type: 'short', file: shortFile,
     title: plain(post.video?.headline || post.slides[0].title), description: shortDescription(post, { musicFile: `out/${post.id}/video-music.json`, withVideo: true }) });
   if (fs.existsSync(`out/${post.id}/reel.mp4`)) out.push({ type: 'reel', file: `out/${post.id}/reel.mp4`,
     title: plain(post.slides[0].title), description: shortDescription(post, { musicFile: `out/${post.id}/music.json`, withVideo: false }) });
@@ -174,7 +175,7 @@ async function uploadPost(token, post, types, done, maxPerDay) {
     // Ältere Video-Reels haben Text im unteren Drittel, wo YouTube Titel und Buttons darüberlegt → vorher im neuen Layout bauen
     if (u.type === 'short' && when) {
       const lay = `out/${post.id}/video-layout.json`;
-      if (!fs.existsSync(lay) || JSON.parse(fs.readFileSync(lay)).version < 2) {
+      if (!fs.existsSync(lay) || JSON.parse(fs.readFileSync(lay)).version < 3) {
         require('child_process').execFileSync('node', ['video-reel.js', `posts/${post.id}.json`], { stdio: ['ignore', 'ignore', 'inherit'] });
         Object.assign(u, uploadsFor(post).find(x => x.type === 'short')); // Beschreibung mit neuem Musiknachweis
       }

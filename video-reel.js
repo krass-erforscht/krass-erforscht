@@ -2,22 +2,24 @@
 //   node video-reel.js posts/<datei>.json
 // Erwartet in der Post-Datei: "video": { "file", "start", "duration", "credit", "short", "license", "page", "symbolisch",
 //   optional "headline" (sonst Titel der ersten Folie) und "captions" (sonst Überschriften der Inhaltsfolien) }.
-// Ergebnis: out/<id>/video-reel.mp4 (9:16, für den Feed) und out/<id>/video-45.mp4 (4:5, als Folie im Karussell).
+// Ergebnis: out/<id>/video-reel.mp4 (9:16, Instagram), video-short.mp4 (9:16 mit sicherer Zone, YouTube) und video-45.mp4 (4:5, Karussell).
 const fs = require('fs'), path = require('path');
 const { execFileSync } = require('child_process');
 const { chromium } = require('playwright-core');
 
 const FPS = 30;
 // Version des Layouts: ältere Reels (Text zu tief, von YouTube/Instagram-Bedienelementen verdeckt) werden vor einem YouTube-Upload neu gebaut
-const LAYOUT_VERSION = 2;
+const LAYOUT_VERSION = 3; // 3: getrennte Fassungen für Instagram (video-reel.mp4) und YouTube (video-short.mp4)
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const mark = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<span class="hl">$1</span>');
 
 // Layout je Format: wo die Überschrift steht, wo das Video sitzt und wo die Fakten erscheinen
 const LAYOUTS = {
-  // 9:16: Instagram und YouTube legen unten (ca. das letzte Drittel) Titel, Kanalname und Buttons und rechts die Like-Leiste über das Video.
+  // Instagram (Wunsch des Nutzers): Video groß, Texte darf weiter unten stehen.
+  reel: { W: 1080, H: 1920, head: [200, 470], caption: [1250, 1640], headSize: 76, capSize: 58 },
+  // YouTube Shorts: YouTube legt unten (ca. das letzte Drittel) Titel, Kanalname und Buttons und rechts die Like-Leiste über das Video.
   // Deshalb stehen Fakten und Nachweis oberhalb davon und halten rechts Abstand (sichere Zone).
-  reel: { W: 1080, H: 1920, head: [170, 430], caption: [1010, 1270], headSize: 72, capSize: 54, padRight: 180, footTop: 1290 },
+  short: { W: 1080, H: 1920, head: [170, 430], caption: [1010, 1270], headSize: 72, capSize: 54, padRight: 180, footTop: 1290 },
   '45': { W: 1080, H: 1350, head: [40, 300], caption: [930, 1230], headSize: 64, capSize: 48 },
 };
 
@@ -159,7 +161,7 @@ function render(L, post, captions, music, tmp, tag, out, voice) {
   const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
   const page = await browser.newPage();
   // Untertitel zur Stimme größer und mittig, damit man sie auch ohne Ton gut mitlesen kann
-  if (voice) { LAYOUTS.reel.capSize = 78; LAYOUTS['45'].capSize = 62; LAYOUTS.reel.center = LAYOUTS['45'].center = true; }
+  if (voice) { LAYOUTS.reel.capSize = 80; LAYOUTS.short.capSize = 78; LAYOUTS['45'].capSize = 62; LAYOUTS.reel.center = LAYOUTS.short.center = LAYOUTS['45'].center = true; }
   for (const [tag, L] of Object.entries(LAYOUTS)) await overlays(page, L, post, captions, tmp, tag);
   await browser.close();
 
@@ -169,8 +171,9 @@ function render(L, post, captions, music, tmp, tag, out, voice) {
   fs.writeFileSync(path.join(dir, 'video-music.json'), JSON.stringify({ title: m.title, artist: m.artist, source: m.source, license: m.license, credit: m.credit }, null, 2));
 
   render(LAYOUTS.reel, post, captions, music, tmp, 'reel', path.join(dir, 'video-reel.mp4'), voice);
+  render(LAYOUTS.short, post, captions, music, tmp, 'short', path.join(dir, 'video-short.mp4'), voice);
   render(LAYOUTS['45'], post, captions, music, tmp, '45', path.join(dir, 'video-45.mp4'), voice);
   fs.rmSync(tmp, { recursive: true, force: true });
   fs.writeFileSync(path.join(dir, 'video-layout.json'), JSON.stringify({ version: LAYOUT_VERSION }));
-  console.log(`Video-Reel (${v.duration.toFixed(1)} s${voice ? ', mit Sprecherstimme' : ''}, ${m.credit || 'eigene Klangfläche'}) -> ${dir}/video-reel.mp4 und video-45.mp4`);
+  console.log(`Video-Reel (${v.duration.toFixed(1)} s${voice ? ', mit Sprecherstimme' : ''}, ${m.credit || 'eigene Klangfläche'}) -> ${dir}/video-reel.mp4 (Instagram), video-short.mp4 (YouTube) und video-45.mp4`);
 })().catch(e => { console.error(e.message); process.exit(1); });

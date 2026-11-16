@@ -122,7 +122,8 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Danach das Reel mit Musik: `node reel.js posts/<datei>.json` (1–3 Minuten). Die Musik passt sich dem `tone` an
    (incompetech, ccMixter, notfalls Internet Archive oder selbst erzeugte Klangfläche) und steht in `out/<id>/music.json`.
    Zwei, drei Standbilder prüfen, z. B. `ffmpeg -ss 5 -i out/<id>/reel.mp4 -frames:v 1 <scratchpad>/frame.jpg`.
-   Bei Format `video` oder `zusammen` außerdem: `node video-reel.js posts/<datei>.json` (macht `video-reel.mp4` und `video-45.mp4`)
+   Bei Format `video` oder `zusammen` außerdem: `node video-reel.js posts/<datei>.json` (macht `video-reel.mp4` für Instagram mit großem Video,
+   `video-short.mp4` für YouTube mit Texten in der sicheren Zone und `video-45.mp4`)
    und auch davon Standbilder prüfen (Überschrift lesbar, Fakten nicht abgeschnitten, Video zeigt das Thema).
 9. **Speichern:** Post, Bilder, Videos unter `out/`, `videos/<post-id>.mp4`, `data/` und `music/library.json` committen und pushen.
 10. **Posten** (nur wenn `IG_TOKEN` gesetzt ist), je nach Format:
