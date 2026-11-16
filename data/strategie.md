@@ -9,6 +9,17 @@ Höchstens 6 Regeln. Eine Regel gilt erst als bestätigt, wenn sie in mindestens
 - Bei Reels entscheidet der Anfang: Wer in den ersten Sekunden wegwischt, senkt die Verbreitung.
 - Nicht-Follower sehen vor allem Reels; Karussells erreichen eher bestehende Follower.
 
+## Vorbilder: erfolgreiche deutsche Wissens-Shorts (YouTube-Auswertung 2026-11-16)
+240 Shorts mit den meisten Aufrufen seit Mai 2026 zu „Wissenschaft/Tiere/Weltall/Physik“, davon 153 deutschsprachig, 151 Kanäle.
+- Auch kleine Kanäle (1.900–17.000 Abos) holen 0,5–2 Mio. Aufrufe pro Short → Reichweite hängt am Video, nicht an der Größe des Kanals.
+- Länge: Median 52 s (meist 25–90 s), fast immer mit Sprecherstimme. Unsere stummen 10–15-s-Videos sind eine andere Klasse.
+- Themen: Tiere klar vorn, dann Physik-/Mathe-Rätsel und Weltall. Fast alles **zeitlose Wow-Fakten**, kaum Nachrichten.
+- Formate: Listen („5 traurige Fakten über …“, „7 unglaubliche Tiermomente“), Rätsel/Paradox („Ein Dreieck mit 3 rechten Winkeln?!“),
+  Superlative („Dieses Tier lässt sogar Löwen zittern“), „Danach siehst du die Welt anders“.
+- Titel: emotional, ~70 Zeichen, 62 % mit Emoji (😳🤯😱), 18 % Frage, 22 % Zahl.
+Folgerungen (als Tests übernommen): Stimme + 25–45 s erzählte Geschichte testen; Titel/Überschrift emotionaler mit 1 Emoji (aber wahr);
+neues Format „Wow-Liste“ (zeitlose Fakten aus seriösen Quellen, v. a. Tiere/Weltall) im Wechsel mit den News.
+
 ## Forschung: Was Leute am Video hält (Recherche 2026-11-16)
 Belastbar: Guo/Kim/Rubin 2014 (6,9 Mio. Lernvideo-Sitzungen): schnelleres Sprechen (bis ~250 Wörter/Min.) hielt doppelt so lange wie langsames (<166).
 Ling et al. 2021 (TikTok, Preprint): Nahaufnahmen/Halbnahe und Text im Bild gehören zu den Merkmalen viraler Clips.
@@ -63,6 +74,7 @@ Zusatz zu Regel 2 (2026-11-16): Videos bis 15 s erreichen im Mittel 175 Konten, 
 - Uhrzeit: wird ab jetzt gelernt (Fenster 7, 12, 16, 19, 21 Uhr; Videos erscheinen per Zeitplan zur gewählten Stunde).
 
 ## Verlauf
+- 2026-11-16: Vorbilder-Auswertung (YouTube-API): erfolgreiche Wissens-Shorts sind länger (Median 52 s), erzählt, emotional betitelt, oft zeitlose Listen/Rätsel zu Tieren.
 - 2026-11-16: Nutzer findet Stimme gut, wünscht schneller → Tempo 1,2 und Einsatz ab Sekunde 0,15. Forschungs-Plan (5 Schritte) aufgenommen.
 - 2026-11-16: Zwischenbilanz mit Nutzer: Reichweite wächst (100–300 je Video-Post, YouTube ~7.000 Aufrufe), aber Follower stagnieren (IG 5, YT 1). Neue Tests: Sprecherstimme (5), Grund zum Folgen/Serie (6). Nutzer pinnt den Dino-Post an.
 - 2026-11-11: Format bewusst „video“ statt der Zufalls-Testvariante „zusammen“ (Video 175 vs. zusammen 105 Konten bei 7/5 Posts – Regel 1). Erster Post um 20:45 (spät). Test: kurzes-video (10,5 s).
