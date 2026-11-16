@@ -63,7 +63,15 @@ function logPost(post, fields) {
 
 // Reel veröffentlichen: das Folien-Reel nur im Reels-Tab, das Video-Reel auch im Feed
 // Die Videodatei vorher einmal beim CDN abrufen, damit sie dort bereitliegt, wenn Instagram sie holt
-async function warmUp(url) { try { await fetch(url, { method: 'HEAD' }); } catch {} }
+// jsDelivr kennt einen frischen Commit manchmal erst nach einigen Minuten (sonst 404 → Instagram meldet ERROR):
+// bis zu 6 Minuten warten, bis die Datei wirklich abrufbar ist
+async function warmUp(url) {
+  for (let i = 0; i < 36; i++) {
+    try { const r = await fetch(url, { method: 'HEAD' }); if (r.ok) return; } catch {}
+    await sleep(10000);
+  }
+  console.error('Warnung: Videodatei beim CDN noch nicht erreichbar – versuche es trotzdem');
+}
 
 async function publishReel(post, { file, musicFile, feed }) {
   const url = cdnUrl(post, file);
