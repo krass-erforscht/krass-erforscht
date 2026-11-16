@@ -17,7 +17,7 @@ deutschen Wissens-Shorts (siehe `data/strategie.md`, Abschnitt „Vorbilder“, 
 - **Formate der Vorbilder:** Rätsel/Frage („Warum fällt eine 500-Tonnen-Wolke nicht runter?“), Liste („3 Tiere, die …“), Superlativ, „Was wäre wenn …?“.
 - **Überschrift emotional mit genau einem passenden Emoji** (😳🤯😱🌌), ca. 50–70 Zeichen, trotzdem wahr.
 - **Erster gesprochener Satz = Neugier-Frage oder stärkste Aussage**, Auflösung im Video; letzter Satz = leichte A-oder-B-Frage
-  oder „Folge für täglich ein Wow aus der Wissenschaft“.
+  oder „Folge für mehr verrückte Fakten aus der Wissenschaft“ (das Wort „Wow“ nicht sprechen lassen – die Stimme sagt „Bau“).
 - Getestet wird nur noch **innerhalb** dieser Richtung (z. B. 25 vs. 45 s, Frage- vs. Listen-Titel, Thema), immer eine Sache pro Post.
 
 ## Ablauf
