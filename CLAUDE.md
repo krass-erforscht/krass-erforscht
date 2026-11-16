@@ -78,6 +78,9 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    - Gefunden: Video nach `videos/<post-id>.mp4` kopieren (`.webm` vorher mit `ffmpeg -i in.webm -c:v libx264 -an videos/<post-id>.mp4` umwandeln)
      und in die Post-Datei eintragen: `"video": { "file", "start", "duration", "credit", "short", "license", "page", "symbolisch", "headline", "captions" }`.
      `headline` = große Überschrift oben (mit `**Textmarker**`), `captions` = 2–4 kurze Fakten, die nacheinander eingeblendet werden.
+     Optional `"voice": ["Satz 1", …]` = Sprechertext mit Stimme C (Test „stimme“): genau ein Satz pro Caption, Zahlen ausschreiben,
+     erster Satz = stärkste Aussage. Das Reel wird dann so lang wie der gesprochene Text; in der Caption „Stimme mit KI erstellt“ ergänzen.
+     Stimme vorher einrichten (siehe `stimme/sprechen.py`, Python-Umgebung unter /tmp/cb).
    - **Kein passendes Video, aber gute Bilder?** Daraus ein Video machen: `node bilder-video.js videos/<post-id>.mp4 "<bild1>|<beschriftung>" "<bild2>|<beschriftung>"`
      (1–4 Bilder, je ca. 6 Sekunden mit Zoom und Überblendung; z. B. Satellitenbild vorher/nachher, Fossil + Vergleichsbild).
      Vergleichsbilder, die nicht das Objekt aus der Meldung zeigen, in der Beschriftung klar kennzeichnen („Zum Vergleich: … heute“).

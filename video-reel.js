@@ -36,7 +36,9 @@ async function overlays(page, L, post, captions, tmp, tag) {
   await page.setViewportSize({ width: L.W, height: L.H });
   const headline = post.video.headline || post.slides[0].title;
   // Videos, die nur das Prinzip zeigen (nicht genau das Objekt aus dem Post), werden sichtbar als Symbolvideo gekennzeichnet
-  const credit = post.video.short || `${post.video.symbolisch ? 'Symbolvideo' : 'Video'}: ${post.video.credit}`;
+  const credit = post.video.short
+    ? `${post.video.symbolisch && !/symbol/i.test(post.video.short) ? 'Symbolvideo · ' : ''}${post.video.short}`
+    : `${post.video.symbolisch ? 'Symbolvideo' : 'Video'}: ${post.video.credit}`;
   await page.setContent(`<style>${css(L)}</style><div class="head"><h1>${mark(headline)}</h1></div>
     <div class="foot"><span>@krass.erforscht</span><span class="credit">${esc(credit)}</span></div>`);
   // Überschrift verkleinern, falls sie nicht ins Band passt
