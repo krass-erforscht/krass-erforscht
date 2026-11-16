@@ -5,6 +5,7 @@ Status: **bestätigt** (immer anwenden) · **im Test** (abwechselnd anwenden und
 Höchstens 6 Regeln. Eine Regel gilt erst als bestätigt, wenn sie in mindestens 3 Posts mit und 3 ohne getestet wurde und klar besser ist.
 
 ## Was Instagram laut Fachseiten 2026 belohnt (Montags-Recherche)
+- 2026-11-16: Keine bestätigte Änderung im November. Mosseri nennt für 2026 „Originalität“ als Ranking-Ziel; Aggregatoren (nur fremde Clips) werden abgewertet, Wasserzeichen anderer Apps schaden. → Unsere erzählten, selbst geschnittenen Videos passen; keine fremden Wasserzeichen.
 - Teilen per Direktnachricht, Speichern und Wiedergabezeit zählen mehr als Likes.
 - Bei Reels entscheidet der Anfang: Wer in den ersten Sekunden wegwischt, senkt die Verbreitung.
 - Nicht-Follower sehen vor allem Reels; Karussells erreichen eher bestehende Follower.
