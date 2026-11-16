@@ -1,9 +1,24 @@
 # krass.erforscht – tägliche Aufgabe
 
-Instagram-Account mit kuriosen, echten Wissenschafts-News auf Deutsch. Jeden Tag ein Karussell-Post.
+Instagram- und YouTube-Account mit kuriosen, echten Wissens-Fakten auf Deutsch. Jeden Tag ein **erzähltes Wow-Video** (Reel/Short).
 Grundregel: **Es darf nichts kosten.** Keine kostenpflichtigen APIs, keine bezahlten Bilder.
 
 Vor jedem `node`-Befehl: `export NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt NODE_NO_WARNINGS=1`
+
+## Richtung (vom Nutzer festgelegt, 2026-11-16) – gilt für jeden Post
+
+Ziel ist und bleibt **Reichweite, Likes und Follower** – Scheitern ist keine Option. Wir gehen **komplett** in die Richtung der erfolgreichen
+deutschen Wissens-Shorts (siehe `data/strategie.md`, Abschnitt „Vorbilder“, und täglich `data/trends.md`), nicht im Wechsel:
+- **Immer ein Video mit Sprecherstimme** (Format `video`, Feld `video.voice`), **25–45 Sekunden**, Stimme ab Sekunde 0, Tempo 1,2.
+  Mehrere Szenen mit `node clips.js videos/<id>.mp4 "<datei>|<start>|<dauer>" …` zusammensetzen (Videos und Fotos gemischt möglich).
+- **Thema nach Trend:** was laut `data/trends.md` gerade die meisten Aufrufe holt (oft Tiere, Physik-Rätsel, Weltall, „Was wäre wenn …?“).
+  Neben aktuellen News sind **zeitlose Wow-Fakten** ausdrücklich erlaubt und erwünscht – aber immer aus einer seriösen Quelle
+  (Uni, Forschungsinstitut, Museum, NASA/ESA, Wissenschaftsmagazin), nichts erfinden, nichts übertreiben.
+- **Formate der Vorbilder:** Rätsel/Frage („Warum fällt eine 500-Tonnen-Wolke nicht runter?“), Liste („3 Tiere, die …“), Superlativ, „Was wäre wenn …?“.
+- **Überschrift emotional mit genau einem passenden Emoji** (😳🤯😱🌌), ca. 50–70 Zeichen, trotzdem wahr.
+- **Erster gesprochener Satz = Neugier-Frage oder stärkste Aussage**, Auflösung im Video; letzter Satz = leichte A-oder-B-Frage
+  oder „Folge für täglich ein Wow aus der Wissenschaft“.
+- Getestet wird nur noch **innerhalb** dieser Richtung (z. B. 25 vs. 45 s, Frage- vs. Listen-Titel, Thema), immer eine Sache pro Post.
 
 ## Ablauf
 
@@ -25,7 +40,8 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    und `SLOTS` in `slot.js` anpassen. Höchstens eine Zeitänderung pro Woche, damit genug Daten entstehen; in `data/strategie.md` begründen.
 1. `npm ci`
 2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist), `node youtube.js statistik` (nur wenn `YT_REFRESH_TOKEN` gesetzt ist),
-   dann `node analyse.js` und danach `node choose.js empfehlung`.
+   `node trends.js` (Trend-Auswertung deutscher Wissens-Shorts der letzten 7 Tage → `data/trends.md`, lesen!),
+   dann `node analyse.js` und danach `node choose.js empfehlung` (Trends und gute Geschichten haben Vorrang vor der Empfehlung).
    **Algorithmus-Analyse:** `data/analyse.md` lesen (Vergleich aller Posts nach Format, Thema, Uhrzeit, Überschrift, Videolänge, Wiedergabezeit usw.)
    und `data/strategie.md` aktualisieren (Instagram **und** YouTube, getrennte Abschnitte): neue deutliche Unterschiede als Regel „im Test“ aufnehmen, Regeln mit genug Daten (je 3 Posts mit/ohne)
    auf „bestätigt“ oder „verworfen“ setzen, mit Datum und Zahlen begründen, Verlauf ergänzen. Höchstens 6 Regeln; wenig Daten vorsichtig deuten.
@@ -35,7 +51,8 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Sicherheitsregeln tabu, z. B. Gesundheitstipps beim Thema „koerper“), das nächstbeste Thema aus der Liste nehmen.
    Eine richtig spannende Meldung schlägt die Empfehlung – Reichweite entsteht vor allem durch gute Geschichten.
 3. **News sammeln:** `node fetch-news.js > data/candidates.json`
-4. **Meldung auswählen:** die überraschendste, leicht verständliche Meldung, die in `data/posted.json` noch nicht vorkommt.
+4. **Meldung auswählen:** die überraschendste, leicht verständliche Meldung, die in `data/posted.json` noch nicht vorkommt –
+   **oder** ein zeitloser Wow-Fakt passend zu den Trends (per Websuche eine seriöse Quelle finden und ganz lesen).
    Achtung: Spektrum.de-Artikel lassen sich von hier aus nicht abrufen (Fehler 403), der Feed liefert nur einen kurzen Anreißer.
    Eine Spektrum-Meldung nur nehmen, wenn sich dieselbe Nachricht in einer lesbaren Quelle findet (ScienceDaily, scinexx mit vollem Text im Feed,
    Pressemitteilung der Forschungseinrichtung). Bei scinexx steht der ganze Artikel im Feld `content:encoded` des Feeds.

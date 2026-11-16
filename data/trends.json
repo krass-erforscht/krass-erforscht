@@ -1,0 +1,392 @@
+{
+  "datum": "2026-11-16T14:26:59.408Z",
+  "themen": [
+    {
+      "thema": "physik",
+      "videos": 7,
+      "aufrufe": 734999
+    },
+    {
+      "thema": "sonstiges",
+      "videos": 14,
+      "aufrufe": 513797
+    },
+    {
+      "thema": "tiere",
+      "videos": 16,
+      "aufrufe": 284161
+    },
+    {
+      "thema": "natur",
+      "videos": 2,
+      "aufrufe": 95087
+    },
+    {
+      "thema": "weltraum",
+      "videos": 1,
+      "aufrufe": 4441
+    }
+  ],
+  "top": [
+    {
+      "title": "Ich wette 20 Euro auf euren Geburtstag 😳 #Mathematik #Shorts",
+      "channel": "Bieso- Mathe-Physik",
+      "views": 452492,
+      "likes": 14873,
+      "s": 95,
+      "id": "fImW1dhScdA",
+      "topic": "physik"
+    },
+    {
+      "title": "Was war vor dem Urknall? Die Antwort überrascht 🌌",
+      "channel": "ClipBude",
+      "views": 121269,
+      "likes": 1226,
+      "s": 47,
+      "id": "uy1pFRpuO6E",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Woher kommt der Knall beim Fingerschnippen? 🫰",
+      "channel": "Hans Von Pest",
+      "views": 119117,
+      "likes": 4802,
+      "s": 66,
+      "id": "1qggZVLMeP0",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Du als Wesen der 4. Dimension 🌀 #4D #Hyperwürfel #Physik",
+      "channel": "AntonsFakten",
+      "views": 96865,
+      "likes": 2052,
+      "s": 65,
+      "id": "I5ienrHCoDs",
+      "topic": "physik"
+    },
+    {
+      "title": "Gut gemeinte Fehler, die Wildtiere töten #tiere",
+      "channel": "Tierwissen",
+      "views": 81486,
+      "likes": 1517,
+      "s": 139,
+      "id": "3641N-dTglU",
+      "topic": "tiere"
+    },
+    {
+      "title": "🐢 Diese Schildkröte ist ein echtes Naturwunder! 😍❤️",
+      "channel": "Stories Untold",
+      "views": 74126,
+      "likes": 547,
+      "s": 6,
+      "id": "Asga0c6GfSA",
+      "topic": "natur"
+    },
+    {
+      "title": "Ohne Fallschirm aus dem Flugzeug – kannst du überleben?",
+      "channel": "Rein Theoretisch",
+      "views": 62526,
+      "likes": 193,
+      "s": 68,
+      "id": "59JrSoRxYVk",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Stringtheorie: Der Urknall war vielleicht gar nicht der Anfang 🎸 #urknall #physik #multiversum",
+      "channel": "Kurz durchschaut",
+      "views": 61147,
+      "likes": 970,
+      "s": 143,
+      "id": "wDByb7R-l38",
+      "topic": "physik"
+    },
+    {
+      "title": "Warum finden Männer Füße attraktiv? #fakten #wissenschaft #deutsch",
+      "channel": "MaxWeissDas",
+      "views": 60386,
+      "likes": 1259,
+      "s": 63,
+      "id": "mg4pBH77sYY",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Was, wenn wir bis zum Erdkern bohren? ⛏️ #erde #physik #astronomie",
+      "channel": "AntonsFakten",
+      "views": 52584,
+      "likes": 601,
+      "s": 68,
+      "id": "YVxwZde8Y1A",
+      "topic": "physik"
+    },
+    {
+      "title": "5 Tiere, die mit zunehmendem Alter tödlicher werden! 😨😨",
+      "channel": "Wildes Königreich",
+      "views": 48149,
+      "likes": 0,
+      "s": 132,
+      "id": "LJl5FpGmQcI",
+      "topic": "tiere"
+    },
+    {
+      "title": "Das unglaubliche Leben dieses Lkw-Fahrerpaares! 🚛😱 #shorts",
+      "channel": "Doch die Wahrheit",
+      "views": 32050,
+      "likes": 563,
+      "s": 29,
+      "id": "p5fOGN6NroA",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Warum schäumt dieses Pferd? 🐴 #shorts",
+      "channel": "Humanlab",
+      "views": 31154,
+      "likes": 421,
+      "s": 27,
+      "id": "H7G05WqkLzU",
+      "topic": "tiere"
+    },
+    {
+      "title": "Warum fällt eine 500-Tonnen-Wolke nicht runter? ☁️",
+      "channel": "Hans Von Pest",
+      "views": 29456,
+      "likes": 1862,
+      "s": 64,
+      "id": "CeHu0mMsYxM",
+      "topic": "physik"
+    },
+    {
+      "title": "🤔 Warum Kannst Du MotoGP-Reifen Niemals Kaufen? 🛞😱 #MotoGP #MotorradFakten #RennsportShorts",
+      "channel": "Weltgeheimnisse",
+      "views": 28019,
+      "likes": 139,
+      "s": 24,
+      "id": "c9gUnr9qA3c",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Drei wissenschaftliche Experimente, die man sofort verbieten musste.. #fakten #historischefakten",
+      "channel": "Geschichtsgeheimnisse",
+      "views": 24066,
+      "likes": 468,
+      "s": 114,
+      "id": "jk8Q_mCN9iA",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "😱🐱 Gefährliche Dinge, die Katzen tun! 🐾 #Katzen #KatzenFakten #Tierwissen #Wissenswertes #Shorts",
+      "channel": "Fakten König",
+      "views": 23048,
+      "likes": 373,
+      "s": 28,
+      "id": "j0_F-YoeXnc",
+      "topic": "tiere"
+    },
+    {
+      "title": "Physik",
+      "channel": "Makochako",
+      "views": 21979,
+      "likes": 561,
+      "s": 63,
+      "id": "od-CXE4l7p0",
+      "topic": "physik"
+    },
+    {
+      "title": "Wie viele Luftballons brauchst du, um wegzufliegen? 🎈",
+      "channel": "Wie funktioniert die Welt?",
+      "views": 21762,
+      "likes": 744,
+      "s": 33,
+      "id": "nhJk4nrXgBU",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Dieser historische Bogen bringt selbst starke Männer zum Scheitern! 😳🏹",
+      "channel": "BlitzTore",
+      "views": 21135,
+      "likes": 241,
+      "s": 30,
+      "id": "aua-Mj6CrIg",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Wie eine Kuh aus Gras Milch macht... #gesundheit #naturwunder",
+      "channel": "Gymperium_",
+      "views": 20961,
+      "likes": 765,
+      "s": 146,
+      "id": "7V4PUaRKg9Y",
+      "topic": "natur"
+    },
+    {
+      "title": "Nur gedreht – und das Papier KLAPPT zusammen! 😳 #physik",
+      "channel": "Wissensplattform",
+      "views": 20476,
+      "likes": 133,
+      "s": 13,
+      "id": "T-CFi8ObI5Y",
+      "topic": "physik"
+    },
+    {
+      "title": "Die 3 gefährlichsten Hunde der Welt! 😱 #tier #hund #shorts #animals #fakten",
+      "channel": "Fakten König",
+      "views": 19924,
+      "likes": 344,
+      "s": 39,
+      "id": "Y6uBNg1NKNo",
+      "topic": "tiere"
+    },
+    {
+      "title": "3 Tiere, deren Schicksal dich wirklich traurig macht! 😢",
+      "channel": "KurzFakten",
+      "views": 17480,
+      "likes": 167,
+      "s": 41,
+      "id": "-awoCDcJQbw",
+      "topic": "tiere"
+    },
+    {
+      "title": "Der Vogel, der sogar im Schlaf fliegt! 🐦😴 #Albatros #Tierwelt #NaturWunder",
+      "channel": "Sparkle Vibes",
+      "views": 11939,
+      "likes": 334,
+      "s": 140,
+      "id": "xbJifTa_Et0",
+      "topic": "tiere"
+    },
+    {
+      "title": "#wissen #echte #interessant #fakten #tiere #unglaublich",
+      "channel": "Crazy.Theorien",
+      "views": 11409,
+      "likes": 717,
+      "s": 48,
+      "id": "sw8sOsOKA5Y",
+      "topic": "tiere"
+    },
+    {
+      "title": "🐎✨ Dieses Pferd ist absolut magisch! ✨🐎#Pferde #Naturwunder #HeiligesTier #Pferdeliebe #Unglaublich",
+      "channel": "BRAVO-41",
+      "views": 9626,
+      "likes": 547,
+      "s": 18,
+      "id": "rMqSHOEYqZg",
+      "topic": "tiere"
+    },
+    {
+      "title": "Medizinische Säge 🩺⚡#Medizin#Wissenschaft#Fakten#Gesundheit#Wissen",
+      "channel": "BRAVO-41",
+      "views": 7020,
+      "likes": 70,
+      "s": 31,
+      "id": "0GuUPDS0fIo",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Tiere mit Farben wie ein Grafikfehler #tiere",
+      "channel": "Tierwissen",
+      "views": 6656,
+      "likes": 295,
+      "s": 138,
+      "id": "J6Nt9kpEJ6A",
+      "topic": "tiere"
+    },
+    {
+      "title": "Darum kommst du aus Treibsand nicht raus😳!  #fakten #viral #wissenschaft #viralvideo #Treibsand",
+      "channel": "Knapp Erklärt",
+      "views": 6243,
+      "likes": 74,
+      "s": 39,
+      "id": "Xi77TIIWDWY",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Verborgene Superkräfte von Haustieren #Tiere",
+      "channel": "Tierwissen",
+      "views": 6174,
+      "likes": 308,
+      "s": 131,
+      "id": "iDB4kGa27CI",
+      "topic": "tiere"
+    },
+    {
+      "title": "Vom BLITZ getroffen🌩️⚡️- was jetzt ? #blitz #wissenschaft #fakten #viral #viralvideo",
+      "channel": "Knapp Erklärt",
+      "views": 5180,
+      "likes": 80,
+      "s": 40,
+      "id": "EccNf2Jb8u8",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Die unerwartetsten Tiermomente, die auf Kamera festgehalten wurden. #fakten #tiere #wildtiere #natur",
+      "channel": "A wie Tier",
+      "views": 4643,
+      "likes": 44,
+      "s": 59,
+      "id": "7y-NGjQSzZo",
+      "topic": "tiere"
+    },
+    {
+      "title": "Pfau breitet Schwanz aus & fliegt über Kirschblüten?! Naturwunder haha 🦚🌸✨",
+      "channel": "Freier Geist_Naturleben",
+      "views": 4605,
+      "likes": 95,
+      "s": 29,
+      "id": "qiyhrhG-Cm0",
+      "topic": "tiere"
+    },
+    {
+      "title": "Die Milchstraße ist verbogen",
+      "channel": "unyqoFakten",
+      "views": 4441,
+      "likes": 123,
+      "s": 79,
+      "id": "Qhr9Kv1ebSA",
+      "topic": "weltraum"
+    },
+    {
+      "title": "Schlangen töten JEDES Jahr eine ganze Großstadt 🐍 #shorts #fakten #animation #wissen",
+      "channel": "Simply Animiert",
+      "views": 3130,
+      "likes": 36,
+      "s": 25,
+      "id": "d0sMWjxuRk8",
+      "topic": "tiere"
+    },
+    {
+      "title": "Auto STÜRZT ins Wasser 😱 - was jetzt ❓ #fakten #wissenschaft #animation #3d #viral",
+      "channel": "Knapp Erklärt",
+      "views": 2599,
+      "likes": 106,
+      "s": 51,
+      "id": "hbmUnvNf9NQ",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "#fakten #wissenschaft #wusstestduschon #faktencheck #wissenswertes",
+      "channel": "Die Wissensdatenbank",
+      "views": 2425,
+      "likes": 31,
+      "s": 56,
+      "id": "BPKe4CJftUU",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Dieses Tier wird einfach wieder jung 🪼🤯 #shorts",
+      "channel": "🧠 Hirnfunke ",
+      "views": 2378,
+      "likes": 14,
+      "s": 24,
+      "id": "ced_nVtZKJw",
+      "topic": "tiere"
+    },
+    {
+      "title": "Bengalkatze: 7 faszinierende Fakten über diese Wildkatze! 😱🐆",
+      "channel": "TierWow",
+      "views": 2360,
+      "likes": 108,
+      "s": 75,
+      "id": "JOpI5MbnhvY",
+      "topic": "tiere"
+    }
+  ]
+}

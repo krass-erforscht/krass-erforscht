@@ -48,10 +48,10 @@ Schritt-für-Schritt-Plan (je eine Woche testen, dann bewerten):
    Letzte Folie / Caption mit konkretem Anlass zum Teilen („Schick das jemandem, der …“) und ein Fakt, den man sich merken will.
    Test-Kurzname: `teilen-anreiz`.
 
-5. **Sprecherstimme im Reel** – im Test (seit 2026-11-16): Stumme Videos mit Text werden nach 4–6 s weggewischt, Follower kommen keine.
+5. **Sprecherstimme im Reel** – bestätigt als feste Richtung (Nutzerentscheidung 2026-11-16, kein Wechsel mehr): Stumme Videos mit Text werden nach 4–6 s weggewischt, Follower kommen keine.
    Ein kurz erzählter Fakt (Stimme C, als KI-Stimme gekennzeichnet) soll länger halten. Feld `video.voice` (ein Satz pro Fakt-Einblendung).
    Test-Kurzname: `stimme`.
-6. **Grund zum Folgen** – im Test (seit 2026-11-16): 5 Follower bei bis zu 3.800 erreichten Konten. Feste Serie „Täglich ein Wow aus der
+6. **Grund zum Folgen** – feste Richtung (Nutzerentscheidung 2026-11-16): 5 Follower bei bis zu 3.800 erreichten Konten. Feste Serie „Täglich ein Wow aus der
    Wissenschaft“: erster Satz/Überschrift als klare Behauptung oder Frage in der ersten Sekunde, Abschluss-Frage leicht beantwortbar (A oder B?),
    CTA „Folge für täglich ein Wow“. Test-Kurzname: `serie`.
 
@@ -74,6 +74,7 @@ Zusatz zu Regel 2 (2026-11-16): Videos bis 15 s erreichen im Mittel 175 Konten, 
 - Uhrzeit: wird ab jetzt gelernt (Fenster 7, 12, 16, 19, 21 Uhr; Videos erscheinen per Zeitplan zur gewählten Stunde).
 
 ## Verlauf
+- 2026-11-16: Nutzer: komplett in Richtung der erfolgreichen Wissens-Shorts gehen (nicht im Wechsel). Ab sofort jedes Video erzählt, 25–45 s, emotionale Titel mit Emoji, Trend-Themen inkl. zeitloser Wow-Fakten; tägliche Trend-Auswertung (trends.js). Ziel: Reichweite, Likes, Follower.
 - 2026-11-16: Vorbilder-Auswertung (YouTube-API): erfolgreiche Wissens-Shorts sind länger (Median 52 s), erzählt, emotional betitelt, oft zeitlose Listen/Rätsel zu Tieren.
 - 2026-11-16: Nutzer findet Stimme gut, wünscht schneller → Tempo 1,2 und Einsatz ab Sekunde 0,15. Forschungs-Plan (5 Schritte) aufgenommen.
 - 2026-11-16: Zwischenbilanz mit Nutzer: Reichweite wächst (100–300 je Video-Post, YouTube ~7.000 Aufrufe), aber Follower stagnieren (IG 5, YT 1). Neue Tests: Sprecherstimme (5), Grund zum Folgen/Serie (6). Nutzer pinnt den Dino-Post an.
