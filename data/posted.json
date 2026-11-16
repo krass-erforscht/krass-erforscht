@@ -16,7 +16,7 @@
       "views": 12,
       "profile_visits": 1
     },
-    "statsAt": "2026-11-15T19:47:04.429Z"
+    "statsAt": "2026-11-16T10:42:00.186Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -35,7 +35,7 @@
       "views": 10,
       "profile_visits": 0
     },
-    "statsAt": "2026-11-15T19:47:05.355Z",
+    "statsAt": "2026-11-16T10:42:01.039Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -66,7 +66,7 @@
       "ig_reels_avg_watch_time": 5193,
       "ig_reels_video_view_total_time": 560951
     },
-    "statsAt": "2026-11-15T19:47:05.834Z"
+    "statsAt": "2026-11-16T10:42:01.417Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -97,7 +97,7 @@
       "ig_reels_avg_watch_time": 3725,
       "ig_reels_video_view_total_time": 33526
     },
-    "statsAt": "2026-11-15T19:47:06.753Z"
+    "statsAt": "2026-11-16T10:42:02.632Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -128,7 +128,7 @@
       "ig_reels_avg_watch_time": 2492,
       "ig_reels_video_view_total_time": 99691
     },
-    "statsAt": "2026-11-15T19:47:07.990Z"
+    "statsAt": "2026-11-16T10:42:03.710Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -148,7 +148,7 @@
       "ig_reels_avg_watch_time": 3653,
       "ig_reels_video_view_total_time": 409217
     },
-    "statsAt": "2026-11-15T19:47:08.507Z"
+    "statsAt": "2026-11-16T10:42:04.111Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -179,7 +179,7 @@
       "ig_reels_avg_watch_time": 4828,
       "ig_reels_video_view_total_time": 574570
     },
-    "statsAt": "2026-11-15T19:47:09.748Z"
+    "statsAt": "2026-11-16T10:42:05.044Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -210,7 +210,7 @@
       "ig_reels_avg_watch_time": 4552,
       "ig_reels_video_view_total_time": 473440
     },
-    "statsAt": "2026-11-15T19:47:10.671Z"
+    "statsAt": "2026-11-16T10:42:06.531Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -230,7 +230,7 @@
       "ig_reels_avg_watch_time": 4135,
       "ig_reels_video_view_total_time": 736133
     },
-    "statsAt": "2026-11-15T19:47:11.499Z"
+    "statsAt": "2026-11-16T10:42:06.984Z"
   },
   {
     "id": "2026-11-05-ueberkreuz-gehirn",
@@ -250,7 +250,7 @@
       "ig_reels_avg_watch_time": 4464,
       "ig_reels_video_view_total_time": 477661
     },
-    "statsAt": "2026-11-15T19:47:11.904Z"
+    "statsAt": "2026-11-16T10:42:07.212Z"
   },
   {
     "id": "2026-11-06-satelliten-stau",
@@ -270,7 +270,7 @@
       "ig_reels_avg_watch_time": 7093,
       "ig_reels_video_view_total_time": 1645706
     },
-    "statsAt": "2026-11-15T19:47:12.413Z"
+    "statsAt": "2026-11-16T10:42:07.963Z"
   },
   {
     "id": "2026-11-07-dino-blut",
@@ -281,16 +281,16 @@
     "mediaId": "18169323721488278",
     "format": "video",
     "stats": {
-      "reach": 3807,
+      "reach": 3828,
       "likes": 33,
       "comments": 2,
       "shares": 4,
       "saved": 2,
-      "views": 5127,
-      "ig_reels_avg_watch_time": 9084,
-      "ig_reels_video_view_total_time": 34582999
+      "views": 5155,
+      "ig_reels_avg_watch_time": 9095,
+      "ig_reels_video_view_total_time": 34818979
     },
-    "statsAt": "2026-11-15T19:47:12.804Z"
+    "statsAt": "2026-11-16T10:42:08.613Z"
   },
   {
     "id": "2026-11-08-asteroid-atombombe",
@@ -310,7 +310,7 @@
       "ig_reels_avg_watch_time": 6042,
       "ig_reels_video_view_total_time": 1432113
     },
-    "statsAt": "2026-11-15T19:47:13.307Z"
+    "statsAt": "2026-11-16T10:42:08.987Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
@@ -341,7 +341,7 @@
       "ig_reels_avg_watch_time": 3020,
       "ig_reels_video_view_total_time": 320122
     },
-    "statsAt": "2026-11-15T19:47:14.391Z"
+    "statsAt": "2026-11-16T10:42:10.170Z"
   },
   {
     "id": "2026-11-10-europa-urwald",
@@ -372,7 +372,7 @@
       "ig_reels_avg_watch_time": 1461,
       "ig_reels_video_view_total_time": 11690
     },
-    "statsAt": "2026-11-15T19:47:15.834Z"
+    "statsAt": "2026-11-16T10:42:11.053Z"
   },
   {
     "id": "2026-11-11-katzen-miauen",
@@ -392,7 +392,7 @@
       "ig_reels_avg_watch_time": 2551,
       "ig_reels_video_view_total_time": 331684
     },
-    "statsAt": "2026-11-15T19:47:16.306Z"
+    "statsAt": "2026-11-16T10:42:11.467Z"
   },
   {
     "id": "2026-11-12-asteroiden-platin",
@@ -412,7 +412,7 @@
       "ig_reels_avg_watch_time": 6504,
       "ig_reels_video_view_total_time": 1287935
     },
-    "statsAt": "2026-11-15T19:47:16.815Z"
+    "statsAt": "2026-11-16T10:42:12.183Z"
   },
   {
     "id": "2026-11-13-kraehen-schnell",
@@ -432,7 +432,7 @@
       "ig_reels_avg_watch_time": 6073,
       "ig_reels_video_view_total_time": 1785724
     },
-    "statsAt": "2026-11-15T19:47:17.196Z"
+    "statsAt": "2026-11-16T10:42:12.589Z"
   },
   {
     "id": "2026-11-14-mars-kohlenstoff",
@@ -443,15 +443,15 @@
     "mediaId": "18020117150743302",
     "format": "video",
     "stats": {
-      "reach": 0,
+      "reach": 195,
       "likes": 0,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 0,
-      "ig_reels_avg_watch_time": 0,
-      "ig_reels_video_view_total_time": 0
+      "views": 236,
+      "ig_reels_avg_watch_time": 4953,
+      "ig_reels_video_view_total_time": 965905
     },
-    "statsAt": "2026-11-15T19:47:18.050Z"
+    "statsAt": "2026-11-16T10:42:12.936Z"
   }
 ]
