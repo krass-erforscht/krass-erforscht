@@ -94,7 +94,7 @@ function render(L, post, captions, music, tmp, tag, out, voice) {
   if (voice) {
     // Stimme vorne, Musik leise darunter
     f.push(`[${musicIdx}:a]atrim=0:${dur},volume=0.13,afade=t=in:d=0.6,afade=t=out:st=${(dur - 1.2).toFixed(2)}:d=1.2,aformat=sample_rates=44100:channel_layouts=stereo[mus]`);
-    f.push(`[${musicIdx + 1}:a]adelay=${Math.round(voice.lead * 1000)}|${Math.round(voice.lead * 1000)},aresample=44100,pan=stereo|c0=c0|c1=c0,apad=pad_dur=${dur}[voc]`);
+    f.push(`[${musicIdx + 1}:a]atempo=${voice.speed},adelay=${Math.round(voice.lead * 1000)}|${Math.round(voice.lead * 1000)},aresample=44100,pan=stereo|c0=c0|c1=c0,apad=pad_dur=${dur}[voc]`);
     f.push(`[voc][mus]amix=inputs=2:duration=longest:normalize=0,atrim=0:${dur},loudnorm=I=-15:TP=-1.5:LRA=11,aformat=sample_rates=44100:channel_layouts=stereo[aout]`);
   } else {
     f.push(`[${musicIdx}:a]atrim=0:${dur},afade=t=in:d=0.6,afade=t=out:st=${(dur - 1.2).toFixed(2)}:d=1.2,loudnorm=I=-16:TP=-1.5:LRA=11,aformat=sample_rates=44100:channel_layouts=stereo[aout]`);
@@ -126,8 +126,11 @@ function render(L, post, captions, music, tmp, tag, out, voice) {
       fs.writeFileSync(txt, body);
       execFileSync(process.env.STIMME_PY || '/tmp/cb/bin/python', [path.join(__dirname, 'stimme/sprechen.py'), txt, vf], { stdio: ['ignore', 'ignore', 'inherit'] });
     }
-    const times = JSON.parse(fs.readFileSync(vf.replace(/\.wav$/, '.json')));
-    voice = { file: vf, times, lead: 0.4 };
+    // Tempo: Stimme C spricht ca. 140 Wörter/Min.; schneller (Standard 1,2 → ca. 170 Wörter/Min.) hält Zuschauer laut Studien länger
+    const speed = v.voiceSpeed || 1.2;
+    const times = JSON.parse(fs.readFileSync(vf.replace(/\.wav$/, '.json'))).map(t => ({ ...t, start: t.start / speed, end: t.end / speed }));
+    // Die Stimme setzt fast sofort ein: gesprochene Worte in den ersten Sekunden halten mehr Leute am Video
+    voice = { file: vf, times, lead: 0.15, speed };
     v.duration = Math.min(Math.max(v.duration, times.at(-1).end + voice.lead + 0.8), 45);
   }
   const tmp = fs.mkdtempSync('/tmp/vreel-');

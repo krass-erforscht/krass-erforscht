@@ -9,6 +9,20 @@ Höchstens 6 Regeln. Eine Regel gilt erst als bestätigt, wenn sie in mindestens
 - Bei Reels entscheidet der Anfang: Wer in den ersten Sekunden wegwischt, senkt die Verbreitung.
 - Nicht-Follower sehen vor allem Reels; Karussells erreichen eher bestehende Follower.
 
+## Forschung: Was Leute am Video hält (Recherche 2026-11-16)
+Belastbar: Guo/Kim/Rubin 2014 (6,9 Mio. Lernvideo-Sitzungen): schnelleres Sprechen (bis ~250 Wörter/Min.) hielt doppelt so lange wie langsames (<166).
+Ling et al. 2021 (TikTok, Preprint): Nahaufnahmen/Halbnahe und Text im Bild gehören zu den Merkmalen viraler Clips.
+Loewenstein (Neugier-Lücke): Neugier entsteht durch eine Lücke zwischen „was ich weiß“ und „was ich wissen will“ – aber unaufgelöste Teaser verärgern.
+Nur Hinweise (Firmendaten, ohne Studienqualität): Sprache im Video +11,7 % 3-Sekunden-Halt (Emplifi); Untertitel +10–20 % Wiedergabezeit;
+viele schauen ohne Ton; wer in den ersten 3 Sekunden mehrheitlich wegwischt, wird kaum weiterverteilt.
+
+Schritt-für-Schritt-Plan (je eine Woche testen, dann bewerten):
+1. Stimme ab Sekunde 0, Tempo 1,2 (~170 Wörter/Min.), erster Satz = stärkste überraschende Aussage. (seit 2026-11-16)
+2. Neugier-Lücke: erster Satz stellt eine Frage oder ein Rätsel, das im Video aufgelöst wird (nie offen lassen).
+3. Bildwahl: Nahaufnahme/Detail des Objekts zuerst, keine ruhigen Totalen am Anfang.
+4. Text im Bild bleibt (für Ton-aus-Zuschauer); später testen: Wort-für-Wort-Untertitel statt ganzer Sätze.
+5. Länge 12–20 s mit Stimme; letzter Satz führt zurück zum Anfang (Schleife) oder stellt eine A-oder-B-Frage.
+
 ## Regeln
 
 1. **Video zuerst** – bestätigt (2026-11-10): Video-Posts im Mittel 175 erreichte Konten (7 Posts), reine Bilder 13 (3 Posts).
@@ -49,6 +63,7 @@ Zusatz zu Regel 2 (2026-11-16): Videos bis 15 s erreichen im Mittel 175 Konten, 
 - Uhrzeit: wird ab jetzt gelernt (Fenster 7, 12, 16, 19, 21 Uhr; Videos erscheinen per Zeitplan zur gewählten Stunde).
 
 ## Verlauf
+- 2026-11-16: Nutzer findet Stimme gut, wünscht schneller → Tempo 1,2 und Einsatz ab Sekunde 0,15. Forschungs-Plan (5 Schritte) aufgenommen.
 - 2026-11-16: Zwischenbilanz mit Nutzer: Reichweite wächst (100–300 je Video-Post, YouTube ~7.000 Aufrufe), aber Follower stagnieren (IG 5, YT 1). Neue Tests: Sprecherstimme (5), Grund zum Folgen/Serie (6). Nutzer pinnt den Dino-Post an.
 - 2026-11-11: Format bewusst „video“ statt der Zufalls-Testvariante „zusammen“ (Video 175 vs. zusammen 105 Konten bei 7/5 Posts – Regel 1). Erster Post um 20:45 (spät). Test: kurzes-video (10,5 s).
 - 2026-11-10: Analyse eingeführt, Regeln 1–4 aufgestellt. Vierte Instagram-Uhrzeit (20:45) ergänzt, YouTube-Statistik und -Uhrzeitwahl eingeführt. YouTube: nur noch Video-Shorts, max. 2/Tag mit 6 h Abstand.

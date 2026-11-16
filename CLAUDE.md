@@ -79,7 +79,9 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
      und in die Post-Datei eintragen: `"video": { "file", "start", "duration", "credit", "short", "license", "page", "symbolisch", "headline", "captions" }`.
      `headline` = große Überschrift oben (mit `**Textmarker**`), `captions` = 2–4 kurze Fakten, die nacheinander eingeblendet werden.
      Optional `"voice": ["Satz 1", …]` = Sprechertext mit Stimme C (Test „stimme“): genau ein Satz pro Caption, Zahlen ausschreiben,
-     erster Satz = stärkste Aussage. Das Reel wird dann so lang wie der gesprochene Text; in der Caption „Stimme mit KI erstellt“ ergänzen.
+     erster Satz = stärkste, überraschende Aussage oder Rätselfrage (wird im Video aufgelöst), danach je ein Fakt, letzter Satz A-oder-B-Frage.
+     Tempo automatisch 1,2 (`voiceSpeed` ändert es). Das Reel wird so lang wie der gesprochene Text; in der Caption „Stimme mit KI erstellt“ ergänzen.
+     Den Schritt-für-Schritt-Plan „Forschung: Was Leute am Video hält“ in `data/strategie.md` beachten.
      Stimme vorher einrichten (siehe `stimme/sprechen.py`, Python-Umgebung unter /tmp/cb).
    - **Kein passendes Video, aber gute Bilder?** Daraus ein Video machen: `node bilder-video.js videos/<post-id>.mp4 "<bild1>|<beschriftung>" "<bild2>|<beschriftung>"`
      (1–4 Bilder, je ca. 6 Sekunden mit Zoom und Überblendung; z. B. Satellitenbild vorher/nachher, Fossil + Vergleichsbild).
