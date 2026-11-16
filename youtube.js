@@ -4,6 +4,7 @@
 //   node youtube.js short posts/<datei>.json              → nur das Video-Reel
 //   node youtube.js nachholen [anzahl]                    → ältere Reels nachträglich hochladen (höchstens ~6 Uploads pro Tag)
 //   node youtube.js vorschau posts/<datei>.json           → Titel und Beschreibungen ansehen, ohne hochzuladen
+//   node youtube.js beschreibung <video-id> posts/<datei>.json → Beschreibung eines hochgeladenen Shorts aktualisieren
 //   node youtube.js statistik                             → Aufrufe/Likes aller Videos holen, beste Uhrzeit anzeigen
 // Shorts werden zur gelernten besten Uhrzeit veröffentlicht (publishAt): erst testen, dann die Zeit mit den meisten Aufrufen.
 //   node youtube.js doku out/doku-<id>/meta.json        → fertige Kurz-Doku (doku.js) als normales Video
@@ -239,6 +240,14 @@ const ptDay = t => new Date(t).toLocaleDateString('en-CA', { timeZone: 'America/
     const s = ytSlot(done);
     console.log(`${done.length} Videos, ${done.reduce((a, d) => a + (d.stats?.views || 0), 0)} Aufrufe gesamt. Nächste Uhrzeit: ${s.pick} (${s.why}) – ` +
       s.rows.map(r => `${r.option} ${r.aufrufe}× aus ${r.posts}`).join(', '));
+  } else if (mode === 'beschreibung') {
+    // Titel/Beschreibung/Tags eines schon hochgeladenen Shorts auf den aktuellen Stand bringen (braucht youtube.force-ssl)
+    const post = JSON.parse(fs.readFileSync(arg)), u = uploadsFor(post).find(x => x.type === 'short');
+    const tags = [...new Set([...tagsFrom(post.caption), 'Wissenschaft', 'Shorts'])];
+    const m = meta({ title: u.title, description: u.description, tags });
+    const r = await fetch(`${API}/videos?part=snippet`, { method: 'PUT', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: file, snippet: m.snippet }) });
+    console.log(r.ok ? `Beschreibung aktualisiert: https://youtube.com/shorts/${file}` : `Fehler: ${r.status} ${(await r.text()).slice(0, 200)}`);
   } else if (mode === 'vorschau') {
     // Zeigt Titel und Beschreibung, ohne hochzuladen
     for (const u of uploadsFor(JSON.parse(fs.readFileSync(file)))) console.log(`--- ${u.type}: ${u.title}\n${u.description}\n`);

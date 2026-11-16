@@ -11,6 +11,8 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    `node comments.js list` zeigt offene Kommentare. Für jeden Kommentar entscheiden (Regeln siehe „Kommentare“ unten):
    antworten mit `node comments.js reply <id> "<text>"` oder auslassen mit `node comments.js skip <id>`.
    Danach `data/answered.json` committen und pushen.
+   **YouTube genauso** (nur wenn `YT_REFRESH_TOKEN` gesetzt ist): `node yt-comments.js list`, dann `node yt-comments.js reply <id> "<text>"`
+   (Antwort mit dem @Namen beginnen) oder `node yt-comments.js skip <id>`; danach `data/yt-answered.json` committen und pushen.
 0. **Zeitfenster prüfen:** `node slot.js <morgens|mittags|abends|spaet>` (das Fenster steht in der Aufgabe). Bei „NEIN“ hier aufhören –
    **außer** heute ist ein späteres Fenster dran und es gibt noch keine vorbereitete Post-Datei von heute: dann den Post jetzt schon fertig
    vorbereiten (Schritte 1–9, aber nicht veröffentlichen), damit er im richtigen Fenster pünktlich erscheint (Herstellung dauert ~45 Minuten).
