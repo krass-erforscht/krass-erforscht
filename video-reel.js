@@ -60,15 +60,19 @@ function placement(L, file) {
   return { fw, fh, x: Math.round((L.W - fw) / 2), y: top + Math.round((room - fh) / 2) };
 }
 
-function render(L, post, captions, music, tmp, tag, out) {
+function render(L, post, captions, music, tmp, tag, out, voice) {
   const v = post.video;
   const p = placement(L, v.file);
   const dur = v.duration;
   const per = dur / captions.length;
+  // Mit Sprecherstimme: Fakten genau dann einblenden, wenn der passende Satz gesprochen wird
+  const spans = voice && voice.times.length === captions.length
+    ? voice.times.map((t, i) => [i === 0 ? 0 : t.start + voice.lead - 0.15, i === captions.length - 1 ? dur : voice.times[i + 1].start + voice.lead - 0.15])
+    : captions.map((_, i) => [i * per, (i + 1) * per]);
   const args = ['-y', '-v', 'error',
-    '-ss', String(v.start || 0), '-t', String(dur), '-i', v.file,
+    '-stream_loop', '-1', '-ss', String(v.start || 0), '-t', String(dur), '-i', v.file,
     '-i', path.join(tmp, `${tag}-frame.png`), ...captions.flatMap((_, i) => ['-i', path.join(tmp, `${tag}-cap${i}.png`)]),
-    '-stream_loop', '-1', '-ss', String(music.start), '-i', music.file];
+    '-stream_loop', '-1', '-ss', String(music.start), '-i', music.file, ...(voice ? ['-i', voice.file] : [])];
   const musicIdx = 2 + captions.length;
   // Hintergrund: dasselbe Video vergrößert und unscharf; davor das Video in voller Breite
   const f = [
@@ -80,12 +84,19 @@ function render(L, post, captions, music, tmp, tag, out) {
   ];
   let last = 'o0';
   captions.forEach((_, i) => {
-    const from = (i * per).toFixed(2), to = ((i + 1) * per).toFixed(2);
+    const from = spans[i][0].toFixed(2), to = spans[i][1].toFixed(2);
     f.push(`[${last}][${2 + i}:v]overlay=0:0:enable='gte(t,${from})*lt(t,${to})'[o${i + 1}]`);
     last = `o${i + 1}`;
   });
   f.push(`[${last}]format=yuv420p[v]`);
-  f.push(`[${musicIdx}:a]atrim=0:${dur},afade=t=in:d=0.6,afade=t=out:st=${(dur - 1.2).toFixed(2)}:d=1.2,loudnorm=I=-16:TP=-1.5:LRA=11,aformat=sample_rates=44100:channel_layouts=stereo[aout]`);
+  if (voice) {
+    // Stimme vorne, Musik leise darunter
+    f.push(`[${musicIdx}:a]atrim=0:${dur},volume=0.13,afade=t=in:d=0.6,afade=t=out:st=${(dur - 1.2).toFixed(2)}:d=1.2,aformat=sample_rates=44100:channel_layouts=stereo[mus]`);
+    f.push(`[${musicIdx + 1}:a]adelay=${Math.round(voice.lead * 1000)}|${Math.round(voice.lead * 1000)},aresample=44100,pan=stereo|c0=c0|c1=c0,apad=pad_dur=${dur}[voc]`);
+    f.push(`[voc][mus]amix=inputs=2:duration=longest:normalize=0,atrim=0:${dur},loudnorm=I=-15:TP=-1.5:LRA=11,aformat=sample_rates=44100:channel_layouts=stereo[aout]`);
+  } else {
+    f.push(`[${musicIdx}:a]atrim=0:${dur},afade=t=in:d=0.6,afade=t=out:st=${(dur - 1.2).toFixed(2)}:d=1.2,loudnorm=I=-16:TP=-1.5:LRA=11,aformat=sample_rates=44100:channel_layouts=stereo[aout]`);
+  }
   args.push('-filter_complex', f.join(';'), '-map', '[v]', '-map', '[aout]', '-t', String(dur),
     '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-r', String(FPS), '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', out);
   execFileSync('ffmpeg', args, { stdio: ['ignore', 'ignore', 'inherit'] });
@@ -103,6 +114,20 @@ function render(L, post, captions, music, tmp, tag, out) {
 
   const dir = path.join('out', post.id);
   fs.mkdirSync(dir, { recursive: true });
+  // Sprecherstimme (Test „stimme“): "voice": ["Satz 1", "Satz 2", …] – am besten ein Satz pro eingeblendetem Fakt.
+  // Gesprochen mit Stimme C (stimme/sprechen.py); das Video wird bei Bedarf verlängert (Schleife), damit der Text ganz hineinpasst.
+  let voice = null;
+  if (Array.isArray(v.voice) && v.voice.length) {
+    const vf = path.join(dir, 'voice.wav'), txt = path.join(dir, 'voice.txt'), body = v.voice.join('\n');
+    const cached = fs.existsSync(vf) && fs.existsSync(txt) && fs.readFileSync(txt, 'utf8') === body;
+    if (!cached) {
+      fs.writeFileSync(txt, body);
+      execFileSync(process.env.STIMME_PY || '/tmp/cb/bin/python', [path.join(__dirname, 'stimme/sprechen.py'), txt, vf], { stdio: ['ignore', 'ignore', 'inherit'] });
+    }
+    const times = JSON.parse(fs.readFileSync(vf.replace(/\.wav$/, '.json')));
+    voice = { file: vf, times, lead: 0.4 };
+    v.duration = Math.min(Math.max(v.duration, times.at(-1).end + voice.lead + 0.8), 45);
+  }
   const tmp = fs.mkdtempSync('/tmp/vreel-');
   const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
   const page = await browser.newPage();
@@ -114,9 +139,9 @@ function render(L, post, captions, music, tmp, tag, out) {
   const music = { file: m.file, start: m.seconds > v.duration + 30 ? Math.min(15, Math.round(m.seconds * 0.1)) : 0 };
   fs.writeFileSync(path.join(dir, 'video-music.json'), JSON.stringify({ title: m.title, artist: m.artist, source: m.source, license: m.license, credit: m.credit }, null, 2));
 
-  render(LAYOUTS.reel, post, captions, music, tmp, 'reel', path.join(dir, 'video-reel.mp4'));
-  render(LAYOUTS['45'], post, captions, music, tmp, '45', path.join(dir, 'video-45.mp4'));
+  render(LAYOUTS.reel, post, captions, music, tmp, 'reel', path.join(dir, 'video-reel.mp4'), voice);
+  render(LAYOUTS['45'], post, captions, music, tmp, '45', path.join(dir, 'video-45.mp4'), voice);
   fs.rmSync(tmp, { recursive: true, force: true });
   fs.writeFileSync(path.join(dir, 'video-layout.json'), JSON.stringify({ version: LAYOUT_VERSION }));
-  console.log(`Video-Reel (${v.duration.toFixed(1)} s, ${m.credit || 'eigene Klangfläche'}) -> ${dir}/video-reel.mp4 und video-45.mp4`);
+  console.log(`Video-Reel (${v.duration.toFixed(1)} s${voice ? ', mit Sprecherstimme' : ''}, ${m.credit || 'eigene Klangfläche'}) -> ${dir}/video-reel.mp4 und video-45.mp4`);
 })().catch(e => { console.error(e.message); process.exit(1); });
