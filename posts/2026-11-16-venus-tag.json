@@ -5,26 +5,63 @@
   "tone": "staunen",
   "format": "video",
   "test": "erzaehlt-30s",
-  "source": { "name": "NASA Science: Venus Facts", "url": "https://science.nasa.gov/venus/venus-facts/" },
-  "image": { "file": "images/2026-11-16-venus-tag.jpg", "credit": "NASA/JPL-Caltech (Mariner 10)", "short": "Foto: NASA/JPL-Caltech (Mariner 10)", "license": "Public domain", "page": "https://commons.wikimedia.org/wiki/File:Venus_from_Mariner_10.jpg" },
+  "source": {
+    "name": "NASA Science: Venus Facts",
+    "url": "https://science.nasa.gov/venus/venus-facts/"
+  },
+  "image": {
+    "file": "images/2026-11-16-venus-tag.jpg",
+    "credit": "NASA/JPL-Caltech (Mariner 10)",
+    "short": "Foto: NASA/JPL-Caltech (Mariner 10)",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Venus_from_Mariner_10.jpg"
+  },
   "video": {
-    "file": "videos/2026-11-16-venus-tag.mp4", "start": 0, "duration": 30,
-    "credit": "NASA/JPL-Caltech (Mariner 10, Magellan), NASA (Bahn-Animation Venustransit 2012)", "short": "Bilder & Animation: NASA/JPL-Caltech, gemeinfrei", "license": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Transit_of_Venus,_2012_Orbital_Paths.ogv", "symbolisch": false,
+    "file": "videos/2026-11-16-venus-tag.mp4",
+    "start": 0,
+    "duration": 30,
+    "credit": "NASA/JPL-Caltech (Mariner 10, Magellan), NASA (Bahn-Animation Venustransit 2012)",
+    "short": "Bilder & Animation: NASA/JPL-Caltech, gemeinfrei",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Transit_of_Venus,_2012_Orbital_Paths.ogv",
+    "symbolisch": false,
     "headline": "Auf der Venus ist ein Tag länger als ein Jahr 🤯",
-    "captions": ["Ein Tag länger als ein **Jahr**?", "Eine Drehung: **243 Erdtage**", "Einmal um die Sonne: nur **225 Tage**", "Die Sonne geht im **Westen** auf", "Rund **467 °C** – heiß genug für Blei", "Was ist verrückter? 👇"],
+    "captions": [
+      "Ein Tag länger als ein **Jahr**?",
+      "Eine Drehung: **243 Erdtage**",
+      "Einmal um die Sonne: nur **225 Tage**",
+      "Die Sonne geht im **Westen** auf",
+      "Rund **467 °C** – heiß genug für Blei",
+      "Was ist verrückter? 👇"
+    ],
     "voice": [
       "Auf der Venus dauert ein Tag länger als ein ganzes Jahr. Wie kann das sein?",
       "Die Venus dreht sich extrem langsam: Eine Umdrehung dauert zweihundertdreiundvierzig Erdtage.",
       "Einmal um die Sonne braucht sie aber nur zweihundertfünfundzwanzig Tage.",
       "Und weil sie sich rückwärts dreht, geht die Sonne dort im Westen auf.",
       "Dazu ist sie mit rund vierhundertsiebenundsechzig Grad der heißeste Planet. Heiß genug, um Blei zu schmelzen.",
-      "Was findest du verrückter, den langen Tag oder die Hitze? Folge für täglich ein Wow aus der Wissenschaft."
+      "Was findest du verrückter, den langen Tag oder die Hitze? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ],
+    "voiceText": [
+      "Auf der Venus dauert ein Tag länger als ein ganzes Jahr. Wie kann das sein?",
+      "Die Venus dreht sich extrem langsam: Eine Umdrehung dauert 243 Erdtage.",
+      "Einmal um die Sonne braucht sie aber nur 225 Tage.",
+      "Und weil sie sich rückwärts dreht, geht die Sonne dort im Westen auf.",
+      "Dazu ist sie mit rund 467 Grad der heißeste Planet. Heiß genug, um Blei zu schmelzen.",
+      "Was findest du verrückter, den langen Tag oder die Hitze? Folge für mehr verrückte Fakten aus der Wissenschaft."
     ]
   },
   "slides": [
-    { "type": "cover", "label": "Weltraum", "title": "Auf der Venus ist ein Tag länger als ein **Jahr** 🤯" },
-    { "type": "cta", "label": "Täglich ein Wow", "title": "Folge für täglich ein Wow aus der Wissenschaft." }
+    {
+      "type": "cover",
+      "label": "Weltraum",
+      "title": "Auf der Venus ist ein Tag länger als ein **Jahr** 🤯"
+    },
+    {
+      "type": "cta",
+      "label": "Täglich ein Wow",
+      "title": "Folge für mehr verrückte Fakten aus der Wissenschaft."
+    }
   ],
-  "caption": "Venus: Ein Tag dauert dort länger als ein ganzes Jahr! 🤯 Eine Umdrehung braucht 243 Erdtage, eine Runde um die Sonne nur 225. Weil die Venus sich rückwärts dreht, geht die Sonne im Westen auf – und mit rund 467 °C ist sie der heißeste Planet im Sonnensystem, heiß genug, um Blei zu schmelzen.\n\nWas findest du verrückter: den langen Tag oder die Hitze? 👇\n\nFolge für täglich ein Wow aus der Wissenschaft.\n\nQuelle: NASA Science (Venus Facts) · Text und Stimme mit KI erstellt\nBilder & Animation: NASA/JPL-Caltech (Mariner 10, Magellan), NASA – gemeinfrei, via Wikimedia Commons / NASA Images\n#venus #weltall #planeten #astronomie #wissenschaft"
+  "caption": "Venus: Ein Tag dauert dort länger als ein ganzes Jahr! 🤯 Eine Umdrehung braucht 243 Erdtage, eine Runde um die Sonne nur 225. Weil die Venus sich rückwärts dreht, geht die Sonne im Westen auf – und mit rund 467 °C ist sie der heißeste Planet im Sonnensystem, heiß genug, um Blei zu schmelzen.\n\nWas findest du verrückter: den langen Tag oder die Hitze? 👇\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuelle: NASA Science (Venus Facts) · Text und Stimme mit KI erstellt\nBilder & Animation: NASA/JPL-Caltech (Mariner 10, Magellan), NASA – gemeinfrei, via Wikimedia Commons / NASA Images\n#venus #weltall #planeten #astronomie #wissenschaft"
 }

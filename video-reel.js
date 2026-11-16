@@ -26,7 +26,7 @@ const css = (L) => `*{box-sizing:border-box}html,body{margin:0;width:${L.W}px;he
 .head h1{margin:0;color:#fff;font-size:${L.headSize}px;line-height:1.08;font-weight:800;letter-spacing:-.01em}
 .hl{color:#ffe14d}
 .cap{position:absolute;left:64px;right:${L.padRight || 64}px;top:${L.caption[0]}px;height:${L.caption[1] - L.caption[0]}px;display:flex;align-items:center}
-.cap p{margin:0;color:#fff;font-size:${L.capSize}px;line-height:1.25;font-weight:700;text-shadow:0 3px 16px rgba(0,0,0,.8)}
+.cap p{margin:0;${L.center ? 'width:100%;text-align:center;' : ''}color:#fff;font-size:${L.capSize}px;line-height:1.25;font-weight:700;text-shadow:0 3px 16px rgba(0,0,0,.8)}
 .cap .hl{background:#ffe14d;color:#141a2e;padding:0 .12em;text-shadow:none;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .foot{position:absolute;left:64px;right:${L.padRight || 64}px;${L.footTop ? `top:${L.footTop}px` : 'bottom:28px'};display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
  font-family:"DejaVu Sans Mono",monospace;color:rgba(255,255,255,.85);font-size:${L.H === 1920 ? 30 : 24}px;text-shadow:0 2px 8px rgba(0,0,0,.8)}
@@ -68,7 +68,7 @@ function render(L, post, captions, music, tmp, tag, out, voice) {
   const dur = v.duration;
   const per = dur / captions.length;
   // Mit Sprecherstimme: Fakten genau dann einblenden, wenn der passende Satz gesprochen wird
-  const spans = voice && voice.times.length === captions.length
+  const spans = voice?.spans ? voice.spans : voice && voice.times.length === captions.length
     ? voice.times.map((t, i) => [i === 0 ? 0 : t.start + voice.lead - 0.15, i === captions.length - 1 ? dur : voice.times[i + 1].start + voice.lead - 0.15])
     : captions.map((_, i) => [i * per, (i + 1) * per]);
   const args = ['-y', '-v', 'error',
@@ -93,7 +93,7 @@ function render(L, post, captions, music, tmp, tag, out, voice) {
   f.push(`[${last}]format=yuv420p[v]`);
   if (voice) {
     // Stimme vorne, Musik leise darunter
-    f.push(`[${musicIdx}:a]atrim=0:${dur},volume=0.13,afade=t=in:d=0.6,afade=t=out:st=${(dur - 1.2).toFixed(2)}:d=1.2,aformat=sample_rates=44100:channel_layouts=stereo[mus]`);
+    f.push(`[${musicIdx}:a]atrim=0:${dur},volume=0.07,afade=t=in:d=0.6,afade=t=out:st=${(dur - 1.2).toFixed(2)}:d=1.2,aformat=sample_rates=44100:channel_layouts=stereo[mus]`);
     f.push(`[${musicIdx + 1}:a]atempo=${voice.speed},adelay=${Math.round(voice.lead * 1000)}|${Math.round(voice.lead * 1000)},aresample=44100,pan=stereo|c0=c0|c1=c0,apad=pad_dur=${dur}[voc]`);
     f.push(`[voc][mus]amix=inputs=2:duration=longest:normalize=0,atrim=0:${dur},loudnorm=I=-15:TP=-1.5:LRA=11,aformat=sample_rates=44100:channel_layouts=stereo[aout]`);
   } else {
@@ -112,7 +112,7 @@ function render(L, post, captions, music, tmp, tag, out, voice) {
   v.start = Math.max(0, Math.min(v.start || 0, total - 3));
   // 8 bis 30 Sekunden: lang genug für die Fakten, kurz genug, dass man bis zum Ende schaut
   v.duration = Math.max(8, Math.min(v.duration || 15, 30, total - v.start));
-  const captions = v.captions || post.slides.filter(s => !s.type && s.title).map(s => s.title).slice(0, 4);
+  let captions = v.captions || post.slides.filter(s => !s.type && s.title).map(s => s.title).slice(0, 4);
 
   const dir = path.join('out', post.id);
   fs.mkdirSync(dir, { recursive: true });
@@ -132,10 +132,34 @@ function render(L, post, captions, music, tmp, tag, out, voice) {
     // Die Stimme setzt fast sofort ein: gesprochene Worte in den ersten Sekunden halten mehr Leute am Video
     voice = { file: vf, times, lead: 0.15, speed };
     v.duration = Math.min(Math.max(v.duration, times.at(-1).end + voice.lead + 0.8), 45);
+    // Untertitel zur Stimme: der gesprochene Text in Stücken von 2–3 Wörtern, genau dann, wenn er gesprochen wird
+    // (viele schauen ohne Ton; mitlaufende Untertitel halten laut Plattformdaten länger). Angezeigt wird "voiceText"
+    // (gleicher Satz, aber Zahlen als Ziffern), sonst der Sprechtext. Zahlen werden hervorgehoben.
+    const shows = Array.isArray(v.voiceText) && v.voiceText.length === v.voice.length ? v.voiceText : v.voice;
+    const chunks = [];
+    times.forEach((t, i) => {
+      const words = shows[i].split(/\s+/).filter(Boolean), groups = [];
+      for (const w of words) {
+        const g = groups.at(-1);
+        if (!g || g.length >= 3 || /[.,:;?!]$/.test(g.at(-1))) groups.push([w]); else g.push(w);
+      }
+      const total = groups.reduce((a, g) => a + g.join(' ').length, 0);
+      let at = t.start + voice.lead;
+      for (const g of groups) {
+        const len = (t.end - t.start) * g.join(' ').length / total;
+        chunks.push({ text: g.join(' '), start: at, end: at + len }); at += len;
+      }
+    });
+    chunks.forEach((c, i) => { c.end = i < chunks.length - 1 ? chunks[i + 1].start : v.duration; });
+    chunks[0].start = 0;
+    captions = chunks.map(c => c.text.replace(/(\d[\d.,]*(?:\s?(?:%|°C|Tage|Erdtage|Jahre|Grad|km|Meter|Millionen|Milliarden))?)/g, '**$1**'));
+    voice.spans = chunks.map(c => [c.start, c.end]);
   }
   const tmp = fs.mkdtempSync('/tmp/vreel-');
   const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
   const page = await browser.newPage();
+  // Untertitel zur Stimme größer und mittig, damit man sie auch ohne Ton gut mitlesen kann
+  if (voice) { LAYOUTS.reel.capSize = 78; LAYOUTS['45'].capSize = 62; LAYOUTS.reel.center = LAYOUTS['45'].center = true; }
   for (const [tag, L] of Object.entries(LAYOUTS)) await overlays(page, L, post, captions, tmp, tag);
   await browser.close();
 
