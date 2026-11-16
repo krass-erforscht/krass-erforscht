@@ -34,6 +34,29 @@ function cdnUrl(post, name) {
   return `https://cdn.jsdelivr.net/gh/krass-erforscht/krass-erforscht@${sha}/out/${post.id}/${name}`;
 }
 
+// Seit das Repository zu groß für jsDelivr ist (über 500 MB), liefert GitHub Pages die Videos aus (richtiger Typ video/mp4):
+// Datei nach docs/v/<id>/ kopieren, committen, pushen und warten, bis die Seite sie anbietet. jsDelivr bleibt nur Ersatz.
+async function videoUrl(post, name) {
+  const rel = `docs/v/${post.id}/${name}`;
+  fs.mkdirSync(`docs/v/${post.id}`, { recursive: true });
+  fs.copyFileSync(`out/${post.id}/${name}`, rel);
+  execFileSync('git', ['add', rel]);
+  try {
+    execFileSync('git', ['commit', '-q', '-m', `Video für Instagram bereitstellen: ${post.id}/${name}`]);
+    execFileSync('git', ['push', '-q', '-u', 'origin', 'HEAD']);
+  } catch { /* schon committet */ }
+  const url = `https://krass-erforscht.github.io/krass-erforscht/v/${post.id}/${name}`;
+  for (let i = 0; i < 48; i++) {
+    try {
+      const r = await fetch(url, { method: 'HEAD' });
+      if (r.ok && /video/.test(r.headers.get('content-type') || '')) return url;
+    } catch {}
+    await sleep(10000);
+  }
+  console.error('Warnung: GitHub Pages bietet das Video nach 8 Minuten noch nicht an – nehme jsDelivr');
+  return cdnUrl(post, name);
+}
+
 // Instagram verarbeitet Videos im Hintergrund; bis zu 10 Minuten warten
 async function waitReady(containerId) {
   for (let i = 0; i < 60; i++) {
@@ -74,8 +97,7 @@ async function warmUp(url) {
 }
 
 async function publishReel(post, { file, musicFile, feed }) {
-  const url = cdnUrl(post, file);
-  await warmUp(url);
+  const url = await videoUrl(post, file);
   // Ein Verarbeitungsfehler bei Instagram ist oft nur vorübergehend (am 12.11. klappte der zweite Versuch) – einmal neu versuchen
   for (let attempt = 1; ; attempt++) {
     const container = await call(`${IG_USER_ID}/media`, { media_type: 'REELS', video_url: url, caption: fullCaption(post, musicFile), share_to_feed: String(feed) });
@@ -109,7 +131,7 @@ async function publishCarousel(post, { videoSlide }) {
     }
     children.push(item.id);
     if (videoSlide && i === 1) {
-      const vid = await call(`${IG_USER_ID}/media`, { media_type: 'VIDEO', video_url: cdnUrl(post, 'video-45.mp4'), is_carousel_item: 'true' });
+      const vid = await call(`${IG_USER_ID}/media`, { media_type: 'VIDEO', video_url: await videoUrl(post, 'video-45.mp4'), is_carousel_item: 'true' });
       await waitReady(vid.id);
       children.push(vid.id);
     }
