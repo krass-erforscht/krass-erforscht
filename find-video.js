@@ -113,10 +113,13 @@ async function fetchCandidate(c, file) {
     }
   }
   const result = [];
+  // Weiterzählen statt überschreiben: ein zweiter Aufruf für denselben Post legt v2, v3 … an.
+  const esc = id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const start = Math.max(0, ...fs.readdirSync(DIR).map(f => +(new RegExp(`^${esc}-v(\\d+)\\.(mp4|webm|ogv|mov)$`).exec(f) || [])[1] || 0));
   for (const c of found) {
     if (result.length >= 5) break;
     const ext = (c.url.match(/\.(mp4|webm|ogv|mov)(\?|$)/i) || [, 'mp4'])[1].toLowerCase();
-    try { result.push(await fetchCandidate(c, path.join(DIR, `${id}-v${result.length + 1}.${ext}`))); }
+    try { result.push(await fetchCandidate(c, path.join(DIR, `${id}-v${start + result.length + 1}.${ext}`))); }
     catch (e) { console.error(`${c.url}: ${e.message}`); }
   }
   console.log(JSON.stringify(result, null, 2));
