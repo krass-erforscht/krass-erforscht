@@ -473,5 +473,14 @@
       "ig_reels_video_view_total_time": 1219045
     },
     "statsAt": "2026-11-17T06:48:01.803Z"
+  },
+  {
+    "id": "2026-11-17-schwarzes-loch",
+    "postedAt": "2026-11-17T11:17:51.796Z",
+    "topic": "weltraum",
+    "tone": "staunen",
+    "sourceUrl": "https://science.nasa.gov/universe/black-holes/",
+    "mediaId": "18357986638220796",
+    "format": "video"
   }
 ]
