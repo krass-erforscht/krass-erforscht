@@ -1,0 +1,67 @@
+{
+  "id": "2026-11-17-schwarzes-loch",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "staunen",
+  "format": "video",
+  "test": "frage-titel",
+  "source": {
+    "name": "NASA Science: Black Holes",
+    "url": "https://science.nasa.gov/universe/black-holes/"
+  },
+  "image": {
+    "file": "images/2026-11-17-schwarzes-loch.jpg",
+    "credit": "NASA Goddard Space Flight Center (Simulation)",
+    "short": "Simulation: NASA Goddard, gemeinfrei",
+    "license": "Public domain",
+    "page": "https://images.nasa.gov/details/GSFC_20181002_SMBH_m13043_Simulation"
+  },
+  "video": {
+    "file": "videos/2026-11-17-schwarzes-loch.mp4",
+    "start": 0,
+    "duration": 45,
+    "credit": "NASA Goddard Space Flight Center (Simulation zweier Schwarzer Löcher)",
+    "short": "Simulation: NASA Goddard, gemeinfrei",
+    "license": "Public domain",
+    "page": "https://images.nasa.gov/details/GSFC_20181002_SMBH_m13043_Simulation",
+    "symbolisch": true,
+    "headline": "Was passiert, wenn du in ein **Schwarzes Loch** fällst? 😱",
+    "captions": [
+      "Was passiert mit **dir**?",
+      "Fachwort: **Spaghettifizierung**",
+      "Gequetscht und **lang gezogen**",
+      "Nicht mal **Licht** entkommt",
+      "**66 Milliarden** Sonnenmassen",
+      "Reinschauen oder Abstand? 👇"
+    ],
+    "voice": [
+      "Was passiert mit dir, wenn du einem Schwarzen Loch zu nahe kommst?",
+      "Dafür gibt es ein echtes Fachwort: Spaghettifizierung.",
+      "Du wirst seitlich zusammengequetscht und in die Länge gezogen, wie eine Nudel.",
+      "Und hinter dem Ereignishorizont entkommt nichts mehr, nicht einmal Licht.",
+      "Das größte bekannte Schwarze Loch hat sechsundsechzig Milliarden Mal so viel Masse wie unsere Sonne.",
+      "Würdest du lieber reinschauen oder Abstand halten? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ],
+    "voiceText": [
+      "Was passiert mit dir, wenn du einem Schwarzen Loch zu nahe kommst?",
+      "Dafür gibt es ein echtes Fachwort: Spaghettifizierung.",
+      "Du wirst seitlich zusammengequetscht und in die Länge gezogen, wie eine Nudel.",
+      "Und hinter dem Ereignishorizont entkommt nichts mehr, nicht einmal Licht.",
+      "Das größte bekannte Schwarze Loch hat 66 Milliarden Mal so viel Masse wie unsere Sonne.",
+      "Würdest du lieber reinschauen oder Abstand halten? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ]
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "label": "Weltraum",
+      "title": "Was passiert, wenn du in ein **Schwarzes Loch** fällst? 😱"
+    },
+    {
+      "type": "cta",
+      "label": "Täglich ein Wow",
+      "title": "Folge für mehr verrückte Fakten aus der Wissenschaft."
+    }
+  ],
+  "caption": "Schwarzes Loch: Was passiert, wenn du ihm zu nahe kommst? 😱 Die NASA nennt es Spaghettifizierung: Du wirst seitlich zusammengequetscht und in die Länge gezogen – wie eine Nudel. Hinter dem Ereignishorizont entkommt nichts mehr, nicht einmal Licht. Und das größte bekannte Schwarze Loch, TON 618, hat 66 Milliarden Mal so viel Masse wie die Sonne.\n\nWürdest du lieber reinschauen oder Abstand halten? 👇\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuelle: NASA Science (Black Holes) · Text und Stimme mit KI erstellt\nSymbolvideo: Simulation zweier Schwarzer Löcher, NASA Goddard Space Flight Center – gemeinfrei, via NASA Images\n#schwarzesloch #weltall #astronomie #physik #wissenschaft"
+}
