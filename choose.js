@@ -3,7 +3,7 @@
 // Regeln für jede Auswahl (Uhrzeit, Format, Thema, Ton):
 //   - Gezählt wird die Reichweite (erreichte Konten) aller Posts, die mindestens einen Tag alt sind.
 //   - Optionen mit weniger als 2 solchen Posts sind noch kaum getestet und kommen bevorzugt dran (am wenigsten getestete zuerst).
-//   - Sonst: an 3 von 4 Tagen die Option mit der höchsten mittleren Reichweite (Median), am 4. eine andere zum Weiterlernen.
+//   - Sonst: an 3 von 4 Tagen die Option mit der höchsten mittleren Reichweite (Median), am 4. die am wenigsten erprobte andere.
 // Die Zufallsentscheidung hängt nur vom Datum ab, damit alle Läufe eines Tages dasselbe Ergebnis bekommen.
 const fs = require('fs');
 
@@ -47,8 +47,11 @@ function choose(options, groupOf, kind, valueOf = p => p.stats.reach, filter = (
   } else if (dayRandom(kind) >= EXPLORE) {
     pick = ranked[0].option; why = 'beste Reichweite';
   } else {
-    const others = ranked.slice(1);
-    pick = others[Math.floor(dayRandom(kind + 'x') * others.length)].option; why = 'zum Weiterlernen';
+    // Zum Weiterlernen die am wenigsten erprobte andere Option (bei Gleichstand per Tageszufall):
+    // eine schon oft getestete, schwache Option bringt kaum neues Wissen.
+    const others = ranked.slice(1), least = Math.min(...others.map(r => r.posts));
+    const pool = others.filter(r => r.posts === least);
+    pick = pool[Math.floor(dayRandom(kind + 'x') * pool.length)].option; why = 'zum Weiterlernen';
   }
   return { pick, why, rows: ranked };
 }

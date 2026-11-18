@@ -18,3 +18,4 @@ Hier hält die App fest, was sie selbst verbessert hat (Datum, ein Satz).
 - 2026-11-13: Folien trennen Zahl und Einheit nicht mehr („100 %“, „235 ms“ bleiben zusammen). Reels: Texte in sicherer Zone für YouTube/Instagram.
 - 2026-11-16: Videos für Instagram kommen jetzt über GitHub Pages statt jsDelivr (Hinweis von Tagesbild.kompakt).
 - 2026-11-17: find-video.js zählt Kandidaten weiter (v2, v3 …), statt bei einem zweiten Aufruf für denselben Post das erste Video zu überschreiben.
+- 2026-11-18: choose.js testet „zum Weiterlernen“ jetzt die am wenigsten erprobte Option statt einer zufälligen – vorher kam zweimal hintereinander das schon 7-mal getestete, schwächste Fenster „mittags“ dran.
