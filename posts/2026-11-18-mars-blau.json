@@ -1,0 +1,67 @@
+{
+  "id": "2026-11-18-mars-blau",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "staunen",
+  "format": "video",
+  "test": "frage-titel-ohne",
+  "source": {
+    "name": "NASA/JPL Photojournal: Sunset in Mars' Gale Crater (PIA19400, PIA19401)",
+    "url": "https://images.nasa.gov/details/PIA19401"
+  },
+  "image": {
+    "file": "images/2026-11-18-mars-blau.jpg",
+    "credit": "NASA/JPL-Caltech/MSSS/Texas A&M Univ. (Curiosity, Mastcam)",
+    "short": "Foto: NASA/JPL-Caltech/MSSS, gemeinfrei",
+    "license": "Public domain",
+    "page": "https://images.nasa.gov/details/PIA19400"
+  },
+  "video": {
+    "file": "videos/2026-11-18-mars-blau.mp4",
+    "start": 0,
+    "duration": 42,
+    "credit": "NASA/JPL-Caltech/MSSS (Curiosity-Fotos PIA19400, PIA19401, PIA22486, PIA25739)",
+    "short": "Fotos: NASA/JPL-Caltech/MSSS (Curiosity), gemeinfrei",
+    "license": "Public domain",
+    "page": "https://images.nasa.gov/details/PIA19401",
+    "symbolisch": false,
+    "headline": "Auf dem Mars sind Sonnenuntergänge **blau** 🤯",
+    "captions": [
+      "Ein **blauer** Sonnenuntergang?",
+      "Curiosity, **April 2015**",
+      "Schuld ist der **Staub**",
+      "**Blau** bleibt nah an der Sonne",
+      "Am stärksten bei **Sonnenuntergang**",
+      "Erde oder Mars? 👇"
+    ],
+    "voice": [
+      "Auf dem Mars leuchtet der Sonnenuntergang blau. Wie kann das sein?",
+      "Dieses Foto hat der NASA-Rover Curiosity im April zweitausendfünfzehn gemacht. Es war sein erster Sonnenuntergang in Farbe.",
+      "Schuld ist der Staub. Seine feinen Teilchen lassen blaues Licht besser durch die Atmosphäre als Gelb und Rot.",
+      "Deshalb bleibt das Blau nah an der Sonne, während Gelb und Rot weiter gestreut werden.",
+      "Am stärksten ist das bei Sonnenuntergang, weil das Licht dann den längsten Weg durch die Atmosphäre nimmt.",
+      "Welchen Sonnenuntergang willst du sehen, den roten auf der Erde oder den blauen auf dem Mars? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ],
+    "voiceText": [
+      "Auf dem Mars leuchtet der Sonnenuntergang blau. Wie kann das sein?",
+      "Dieses Foto hat der NASA-Rover Curiosity im April 2015 gemacht. Es war sein erster Sonnenuntergang in Farbe.",
+      "Schuld ist der Staub. Seine feinen Teilchen lassen blaues Licht besser durch die Atmosphäre als Gelb und Rot.",
+      "Deshalb bleibt das Blau nah an der Sonne, während Gelb und Rot weiter gestreut werden.",
+      "Am stärksten ist das bei Sonnenuntergang, weil das Licht dann den längsten Weg durch die Atmosphäre nimmt.",
+      "Welchen Sonnenuntergang willst du sehen, den roten auf der Erde oder den blauen auf dem Mars? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ]
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "label": "Weltraum",
+      "title": "Auf dem Mars sind Sonnenuntergänge **blau** 🤯"
+    },
+    {
+      "type": "cta",
+      "label": "Täglich ein Wow",
+      "title": "Folge für mehr verrückte Fakten aus der Wissenschaft."
+    }
+  ],
+  "caption": "Mars: Hier leuchtet der Sonnenuntergang blau! 🤯 Der NASA-Rover Curiosity hat im April 2015 im Gale-Krater zum ersten Mal einen Sonnenuntergang in Farbe fotografiert. Der Grund ist der feine Staub in der Mars-Atmosphäre: Er lässt blaues Licht besser durch als Gelb und Rot. Deshalb bleibt das Blau nah an der Sonne – am stärksten bei Sonnenuntergang, wenn das Licht den längsten Weg durch die Atmosphäre nimmt.\n\nWelchen Sonnenuntergang willst du sehen: den roten auf der Erde oder den blauen auf dem Mars? 👇\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuelle: NASA/JPL Photojournal (PIA19400, PIA19401) · Text und Stimme mit KI erstellt\nFotos: NASA/JPL-Caltech/MSSS (Curiosity) – gemeinfrei, via NASA Images\n#mars #sonnenuntergang #weltall #physik #wissenschaft"
+}

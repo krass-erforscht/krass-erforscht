@@ -75,6 +75,7 @@ Zusatz zu Regel 2 (2026-11-16): Videos bis 15 s erreichen im Mittel 175 Konten, 
 - Uhrzeit: wird ab jetzt gelernt (Fenster 7, 12, 16, 19, 21 Uhr; Videos erscheinen per Zeitplan zur gewählten Stunde).
 
 ## Verlauf
+- 2026-11-18: Erste erzählte Posts (Venus 152 Konten, Ø 8,3 s geschaut; Schwarzes Loch 122 Konten nach 1 Tag, 6,0 s) – noch unter den stummen Videos der Vorwoche (196–294), aber erst 1–2 Tage alt. Venus hält mit 8,3 s am längsten von allen bisherigen Reels. YouTube: mittags-Shorts nur 0,15× des Medians (4 Shorts) → YouTube-Uhrzeitwahl meidet mittags schon. Test heute: Aussage- statt Frage-Titel (frage-titel-ohne), Fotomontage statt Simulation.
 - 2026-11-16: Nutzer: komplett in Richtung der erfolgreichen Wissens-Shorts gehen (nicht im Wechsel). Ab sofort jedes Video erzählt, 25–45 s, emotionale Titel mit Emoji, Trend-Themen inkl. zeitloser Wow-Fakten; tägliche Trend-Auswertung (trends.js). Ziel: Reichweite, Likes, Follower.
 - 2026-11-16: Vorbilder-Auswertung (YouTube-API): erfolgreiche Wissens-Shorts sind länger (Median 52 s), erzählt, emotional betitelt, oft zeitlose Listen/Rätsel zu Tieren.
 - 2026-11-16: Nutzer findet Stimme gut, wünscht schneller → Tempo 1,2 und Einsatz ab Sekunde 0,15. Forschungs-Plan (5 Schritte) aufgenommen.
