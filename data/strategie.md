@@ -39,9 +39,10 @@ Schritt-für-Schritt-Plan (je eine Woche testen, dann bewerten):
 
 1. **Video zuerst** – bestätigt (2026-11-10): Video-Posts im Mittel 175 erreichte Konten (7 Posts), reine Bilder 13 (3 Posts).
    Immer gründlich nach Video suchen; notfalls `bilder-video.js`.
-2. **Bis zum Ende schauen lassen** – im Test (seit 2026-11-10): Je größer der Anteil, der vom Video geschaut wird, desto mehr Reichweite
-   (Rangkorrelation 0,6). Video-Reel möglichst **10–15 Sekunden**, stärkste Szene zuerst, keine ruhigen Einstiege.
-   Test-Kurzname: `kurzes-video`.
+2. **Schnelle Bildwechsel** – im Test (seit 2026-11-18, ersetzt „kurzes-video“, das durch die 25–45-s-Richtung überholt ist):
+   Anteil geschaut ↔ Reichweite korreliert weiter (0,6), aber unsere erzählten Videos zeigen ein Motiv oft 8–10 s lang (Ø nur 6–8 s geschaut).
+   Neu: **alle 3–5 Sekunden ein neues Motiv** (anderer Ausschnitt, Zoom oder Bild), bevorzugt passend zum gerade gesprochenen Satz; stärkste Szene zuerst.
+   Anregung aus „Claude + Higgsfield bauen einen YouTube-Kanal“ (AI Mentors, 2026-11-10: Bildwechsel alle 5–10 s schon bei Langvideos). Test-Kurzname: `schnelle-schnitte`.
 3. **Konkrete Zahl in der Überschrift** – im Test (seit 2026-11-10): Die zwei Posts mit Zahl im Titel liefen am besten
    („115 Millionen Jahre alt“), aber nur 2 Posts, einer davon viral. Überschrift mit einer überraschenden, echten Zahl aus der Quelle.
    Test-Kurzname: `zahl-im-titel`.
@@ -75,6 +76,7 @@ Zusatz zu Regel 2 (2026-11-16): Videos bis 15 s erreichen im Mittel 175 Konten, 
 - Uhrzeit: wird ab jetzt gelernt (Fenster 7, 12, 16, 19, 21 Uhr; Videos erscheinen per Zeitplan zur gewählten Stunde).
 
 ## Verlauf
+- 2026-11-18: Video „Claude + Higgsfield bauen einen YouTube-Kanal“ (AI Mentors) ausgewertet (Wunsch des Nutzers). Übernommen: Regel 2 neu = schnelle Bildwechsel (3–5 s). Schon erfüllt: KI-Kennzeichnung bei YouTube (containsSyntheticMedia), Formate statt Inhalte von Vorbildern übernehmen, Wissens-Nische, eigenes Skript je Video. Nicht übernommen: Higgsfield/NexLev (kostenpflichtig, Affiliate). Hinweis: YouTube-Partnerprogramm ab 01.02.2027 strenger (Shorts 20 Mio. Aufrufe/90 Tage oder 8.000 Std. Langvideo, je 1.000 Abos).
 - 2026-11-18: Erste erzählte Posts (Venus 152 Konten, Ø 8,3 s geschaut; Schwarzes Loch 122 Konten nach 1 Tag, 6,0 s) – noch unter den stummen Videos der Vorwoche (196–294), aber erst 1–2 Tage alt. Venus hält mit 8,3 s am längsten von allen bisherigen Reels. YouTube: mittags-Shorts nur 0,15× des Medians (4 Shorts) → YouTube-Uhrzeitwahl meidet mittags schon. Test heute: Aussage- statt Frage-Titel (frage-titel-ohne), Fotomontage statt Simulation.
 - 2026-11-16: Nutzer: komplett in Richtung der erfolgreichen Wissens-Shorts gehen (nicht im Wechsel). Ab sofort jedes Video erzählt, 25–45 s, emotionale Titel mit Emoji, Trend-Themen inkl. zeitloser Wow-Fakten; tägliche Trend-Auswertung (trends.js). Ziel: Reichweite, Likes, Follower.
 - 2026-11-16: Vorbilder-Auswertung (YouTube-API): erfolgreiche Wissens-Shorts sind länger (Median 52 s), erzählt, emotional betitelt, oft zeitlose Listen/Rätsel zu Tieren.
