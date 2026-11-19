@@ -8,3 +8,5 @@ Lösung: App Review bei Meta für erweiterten Zugriff auf instagram_business_man
 Zuerst gefragt: 2026-11-08. Nächste Erinnerung frühestens: 2026-11-11.
 Status 2026-11-08: Nutzer will freischalten. Seiten (docs/datenschutz.html, docs/datenloeschung.html), App-Symbol und Anleitung (docs/meta-freischaltung.md) liegen bereit. Wartet auf Nutzer: GitHub Pages, Meta-Einstellungen, App-Prüfung.
 Sobald der Nutzer einen Testkommentar meldet: den Kommentar beantworten. Nach Freigabe + neuem Token: Kommentar unter dem Dino-Post beantworten.
+
+- 2026-11-19: **Neuer Instagram-Token** (alter wurde widerrufen: „user has not authorized application“). Gefragt am 19.11. mittags. Nächste Erinnerung frühestens 22.11.
