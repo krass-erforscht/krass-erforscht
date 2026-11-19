@@ -5,7 +5,7 @@
 // In data/answered.json stehen nur die IDs erledigter Kommentare, keine Namen oder Texte (das Repo ist öffentlich).
 const fs = require('fs');
 const API = 'https://graph.instagram.com/v23.0';
-const { IG_TOKEN } = process.env;
+const IG_TOKEN = process.env.KRASS_IG_TOKEN || process.env.IG_TOKEN;
 const FILE = 'data/answered.json';
 const MAX_AGE_DAYS = 14;
 
@@ -27,7 +27,10 @@ async function list() {
     const post = fs.existsSync(`posts/${p.id}.json`) ? JSON.parse(fs.readFileSync(`posts/${p.id}.json`)) : null;
     for (const [format, mediaId] of [['Karussell', p.mediaId], ['Reel', p.reelMediaId]]) {
       if (!mediaId) continue;
-      const r = await get(`${mediaId}/comments?fields=id,text,username,timestamp,replies{username}&limit=50`);
+      // Gelöschte Posts (z. B. vom Nutzer entfernt) dürfen den ganzen Lauf nicht abbrechen
+      let r;
+      try { r = await get(`${mediaId}/comments?fields=id,text,username,timestamp,replies{username}&limit=50`); }
+      catch (e) { console.error(`${p.id} (${format}) übersprungen: ${e.message.slice(0, 80)}`); continue; }
       for (const c of r.data || []) {
         if (done.includes(c.id) || c.username === me.username) continue;
         if (c.replies?.data?.some(x => x.username === me.username)) continue; // schon von Hand beantwortet
@@ -48,6 +51,7 @@ async function reply(id, text) {
 
 (async () => {
   if (!IG_TOKEN) throw new Error('IG_TOKEN fehlt');
+  await require('./ig-account').assertAccount(IG_TOKEN);
   const [cmd, id, text] = process.argv.slice(2);
   if (cmd === 'list') await list();
   else if (cmd === 'reply' && id && text) await reply(id, text);

@@ -4,7 +4,9 @@
 const fs = require('fs');
 const { execFileSync } = require('child_process');
 const API = 'https://graph.instagram.com/v23.0';
-const { IG_USER_ID = 'me', IG_TOKEN } = process.env;
+const { IG_USER_ID = 'me' } = process.env;
+// Eigene Variable KRASS_IG_TOKEN, damit sich Projekte in derselben Cloud-Umgebung nicht den Token überschreiben
+const IG_TOKEN = process.env.KRASS_IG_TOKEN || process.env.IG_TOKEN;
 const GITHUB_RAW_BASE = process.env.GITHUB_RAW_BASE || 'https://raw.githubusercontent.com/krass-erforscht/krass-erforscht/main';
 
 async function call(path, params) {
@@ -150,6 +152,7 @@ async function publishCarousel(post, { videoSlide }) {
 //   node publish.js posts/<datei>.json --reel     zusätzlich das Folien-Reel (nur Reels-Tab), nach „bilder“ oder „zusammen“
 (async () => {
   if (!IG_TOKEN) throw new Error('IG_TOKEN fehlt');
+  await require('./ig-account').assertAccount(IG_TOKEN);
   const post = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
   const has = flag => process.argv.includes(flag);
   if (has('--reel')) {

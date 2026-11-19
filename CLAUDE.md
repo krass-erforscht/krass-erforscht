@@ -3,6 +3,8 @@
 Instagram- und YouTube-Account mit kuriosen, echten Wissens-Fakten auf Deutsch. Jeden Tag ein **erzähltes Wow-Video** (Reel/Short).
 Grundregel: **Es darf nichts kosten.** Keine kostenpflichtigen APIs, keine bezahlten Bilder.
 
+Instagram-Token: bevorzugt `KRASS_IG_TOKEN` (eigene Variable, weil die Cloud-Umgebung mit Tagesbild.kompakt geteilt wird), sonst `IG_TOKEN`. `ig-account.js` bricht ab, wenn der Token zu einem anderen Konto gehört.
+
 Vor jedem `node`-Befehl: `export NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt NODE_NO_WARNINGS=1`
 
 ## Richtung (vom Nutzer festgelegt, 2026-11-16) – gilt für jeden Post
@@ -22,7 +24,7 @@ deutschen Wissens-Shorts (siehe `data/strategie.md`, Abschnitt „Vorbilder“, 
 
 ## Ablauf
 
-A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wird; nur wenn `IG_TOKEN` gesetzt ist):
+A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wird; nur wenn `KRASS_IG_TOKEN` oder `IG_TOKEN` gesetzt ist):
    `node comments.js list` zeigt offene Kommentare. Für jeden Kommentar entscheiden (Regeln siehe „Kommentare“ unten):
    antworten mit `node comments.js reply <id> "<text>"` oder auslassen mit `node comments.js skip <id>`.
    Danach `data/answered.json` committen und pushen.
@@ -39,7 +41,7 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    vielversprechend ist oder ein Fenster dauerhaft schlecht läuft, die geplanten Aufgaben (update_trigger) verschieben bzw. ergänzen
    und `SLOTS` in `slot.js` anpassen. Höchstens eine Zeitänderung pro Woche, damit genug Daten entstehen; in `data/strategie.md` begründen.
 1. `npm ci`
-2. **Lernen:** `node insights.js` (nur wenn `IG_TOKEN` gesetzt ist), `node youtube.js statistik` (nur wenn `YT_REFRESH_TOKEN` gesetzt ist),
+2. **Lernen:** `node insights.js` (nur wenn `KRASS_IG_TOKEN` oder `IG_TOKEN` gesetzt ist), `node youtube.js statistik` (nur wenn `YT_REFRESH_TOKEN` gesetzt ist),
    `node trends.js` (Trend-Auswertung deutscher Wissens-Shorts der letzten 7 Tage → `data/trends.md`, lesen!),
    dann `node analyse.js` und danach `node choose.js empfehlung` (Trends und gute Geschichten haben Vorrang vor der Empfehlung).
    **Algorithmus-Analyse:** `data/analyse.md` lesen (Vergleich aller Posts nach Format, Thema, Uhrzeit, Überschrift, Videolänge, Wiedergabezeit usw.)
@@ -126,7 +128,7 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    `video-short.mp4` für YouTube mit Texten in der sicheren Zone und `video-45.mp4`)
    und auch davon Standbilder prüfen (Überschrift lesbar, Fakten nicht abgeschnitten, Video zeigt das Thema).
 9. **Speichern:** Post, Bilder, Videos unter `out/`, `videos/<post-id>.mp4`, `data/` und `music/library.json` committen und pushen.
-10. **Posten** (nur wenn `IG_TOKEN` gesetzt ist), je nach Format:
+10. **Posten** (nur wenn `KRASS_IG_TOKEN` oder `IG_TOKEN` gesetzt ist), je nach Format:
     - `bilder`: `node publish.js posts/<datei>.json`, danach `node publish.js posts/<datei>.json --reel`
     - `zusammen`: `node publish.js posts/<datei>.json --zusammen`, danach `node publish.js posts/<datei>.json --reel`
     - `video`: nur `node publish.js posts/<datei>.json --video` (echtes Video als Reel im Feed)

@@ -1,7 +1,7 @@
 // Holt die Statistiken aller veröffentlichten Posts und fasst zusammen, was am besten läuft: node insights.js
 const fs = require('fs');
 const API = 'https://graph.instagram.com/v23.0';
-const { IG_TOKEN } = process.env;
+const IG_TOKEN = process.env.KRASS_IG_TOKEN || process.env.IG_TOKEN;
 const METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'follows', 'views', 'profile_visits'];
 // Bei Reels zusätzlich die Wiedergabezeit: wie lange Leute im Schnitt zuschauen (eines der wichtigsten Signale für den Algorithmus)
 const REEL_METRICS = ['reach', 'likes', 'comments', 'shares', 'saved', 'views', 'ig_reels_avg_watch_time', 'ig_reels_video_view_total_time'];
@@ -13,6 +13,7 @@ async function insights(mediaId, metrics) {
 }
 
 (async () => {
+  await require('./ig-account').assertAccount(IG_TOKEN);
   const posted = fs.existsSync('data/posted.json') ? JSON.parse(fs.readFileSync('data/posted.json')) : [];
   for (const p of posted) {
     try {
