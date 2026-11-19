@@ -1,11 +1,11 @@
 {
-  "aktualisiert": "2026-11-18T06:47:03.570Z",
+  "aktualisiert": "2026-11-19T06:47:06.543Z",
   "ranking": [
     {
       "gruppe": "uhrzeit:7",
       "posts": 2,
       "punkte": 4.3,
-      "reichweite": 1983,
+      "reichweite": 1992,
       "follower": 0
     },
     {
@@ -51,13 +51,6 @@
       "follower": 0
     },
     {
-      "gruppe": "uhrzeit:12",
-      "posts": 7,
-      "punkte": 1.9,
-      "reichweite": 153,
-      "follower": 0
-    },
-    {
       "gruppe": "ton:nuetzlich",
       "posts": 5,
       "punkte": 1.83,
@@ -65,24 +58,31 @@
       "follower": 0
     },
     {
-      "gruppe": "thema:weltraum",
-      "posts": 7,
-      "punkte": 1.8,
-      "reichweite": 149,
-      "follower": 0
-    },
-    {
       "gruppe": "thema:geschichte",
       "posts": 1,
       "punkte": 1.78,
-      "reichweite": 3922,
+      "reichweite": 3939,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:12",
+      "posts": 8,
+      "punkte": 1.76,
+      "reichweite": 150,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:weltraum",
+      "posts": 8,
+      "punkte": 1.68,
+      "reichweite": 146,
       "follower": 0
     },
     {
       "gruppe": "ton:staunen",
-      "posts": 8,
-      "punkte": 1.59,
-      "reichweite": 636,
+      "posts": 9,
+      "punkte": 1.5,
+      "reichweite": 580,
       "follower": 0
     },
     {
@@ -94,9 +94,9 @@
     },
     {
       "gruppe": "format:video",
-      "posts": 13,
-      "punkte": 1.22,
-      "reichweite": 460,
+      "posts": 14,
+      "punkte": 1.19,
+      "reichweite": 437,
       "follower": 0
     },
     {

@@ -1,0 +1,67 @@
+{
+  "id": "2026-11-19-baertierchen",
+  "category": "Tiere",
+  "topic": "tiere",
+  "tone": "staunen",
+  "format": "video",
+  "test": "schnelle-schnitte",
+  "source": {
+    "name": "NASA: Microscopic Superheroes to Help Protect Astronaut Health in Space; NASA Science: Cell Science-04",
+    "url": "https://www.nasa.gov/feature/ames/microscopic-superheroes-to-help-protect-astronaut-health-in-space"
+  },
+  "image": {
+    "file": "images/2026-11-19-baertierchen.jpg",
+    "credit": "Collier Sparks via iNaturalist",
+    "short": "Foto: Collier Sparks, CC0",
+    "license": "CC0",
+    "page": "https://www.inaturalist.org/observations/300157332"
+  },
+  "video": {
+    "file": "videos/2026-11-19-baertierchen.mp4",
+    "start": 0,
+    "duration": 39,
+    "credit": "Fotos: Collier Sparks (CC0), Quentin His (CC BY) via iNaturalist; DSparrow14 (CC BY-SA 4.0) via Wikimedia Commons; NASA (ISS, gemeinfrei)",
+    "short": "Fotos: C. Sparks (CC0), Q. His (CC BY), DSparrow14 (CC BY-SA), NASA",
+    "license": "CC0 / CC BY / CC BY-SA 4.0 / Public domain",
+    "page": "https://www.inaturalist.org/observations/300157332",
+    "symbolisch": false,
+    "headline": "Dieses winzige Tier überlebt sogar das **Weltall** 😳",
+    "captions": [
+      "Überlebt das **Vakuum** im All?",
+      "Das **Bärtierchen**: 8 Beine",
+      "Hitze, Kälte, **Jahrzehnte** ohne Wasser",
+      "Draußen an der **ISS** überlebt",
+      "NASA sucht die **Gene** dafür",
+      "Hitze oder Vakuum? 👇"
+    ],
+    "voice": [
+      "Dieses Tier hat sogar das Vakuum im Weltall überlebt. Wie schafft es das?",
+      "Das ist ein Bärtierchen. Winzig klein, mit acht Beinen und so pummelig, dass es unter dem Mikroskop wie ein Bär aussieht.",
+      "Laut NASA hält es die heißesten und kältesten Orte der Erde aus, jahrzehntelang ohne Wasser, und dazu die starke Strahlung aus dem All.",
+      "Draußen an der Raumstation hat es sogar das Vakuum des Weltalls überlebt.",
+      "Ein Trick: Bei Strahlung bildet es viel mehr Schutzstoffe. Auf der ISS sucht die NASA nun die Gene dahinter, um eines Tages Astronauten zu schützen.",
+      "Welche Superkraft hättest du lieber, Hitze aushalten oder Vakuum? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ],
+    "voiceText": [
+      "Dieses Tier hat sogar das Vakuum im Weltall überlebt. Wie schafft es das?",
+      "Das ist ein Bärtierchen. Winzig klein, mit 8 Beinen und so pummelig, dass es unter dem Mikroskop wie ein Bär aussieht.",
+      "Laut NASA hält es die heißesten und kältesten Orte der Erde aus, jahrzehntelang ohne Wasser, und dazu die starke Strahlung aus dem All.",
+      "Draußen an der Raumstation hat es sogar das Vakuum des Weltalls überlebt.",
+      "Ein Trick: Bei Strahlung bildet es viel mehr Schutzstoffe. Auf der ISS sucht die NASA nun die Gene dahinter, um eines Tages Astronauten zu schützen.",
+      "Welche Superkraft hättest du lieber, Hitze aushalten oder Vakuum? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ]
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "label": "Tiere",
+      "title": "Dieses winzige Tier überlebt sogar das **Weltall** 😳"
+    },
+    {
+      "type": "cta",
+      "label": "Täglich ein Wow",
+      "title": "Folge für mehr verrückte Fakten aus der Wissenschaft."
+    }
+  ],
+  "caption": "Bärtierchen: Dieses winzige Tier hat sogar das Vakuum im Weltall überlebt! 😳 Laut NASA hält das achtbeinige Mikrotier die heißesten und kältesten Orte der Erde aus, jahrzehntelang ohne Wasser und dazu starke Strahlung. Bei Strahlung bildet es viel mehr Schutzstoffe (Antioxidantien) – auf der ISS sucht die NASA nun die Gene dahinter, um eines Tages Astronauten zu schützen.\n\nWelche Superkraft hättest du lieber: Hitze aushalten oder Vakuum? 👇\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuelle: NASA (Cell Science-04, „Microscopic Superheroes“) · Text und Stimme mit KI erstellt\nFotos: Collier Sparks (CC0) und Quentin His (CC BY) via iNaturalist; DSparrow14 (CC BY-SA 4.0) via Wikimedia Commons; ISS-Fotos: NASA (gemeinfrei)\n#bärtierchen #tardigrade #tiere #weltall #wissenschaft"
+}

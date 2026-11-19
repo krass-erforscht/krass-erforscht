@@ -1,22 +1,22 @@
-# Algorithmus-Analyse (2026-11-18)
+# Algorithmus-Analyse (2026-11-19)
 
-20 Posts ausgewertet (mind. 1 Tag alt). Follower: 5 (seit 2026-11-10: +0).
-Gesamtreichweite: 6.281 Konten, Median pro Post: 115,5.
+21 Posts ausgewertet (mind. 1 Tag alt). Follower: 5 (seit 2026-11-10: +0).
+Gesamtreichweite: 6.422 Konten, Median pro Post: 124.
 
 ## Deutlichste Unterschiede (Hinweise, noch wenig Daten)
 
-- Format: „video“ erreicht im Mittel 185,5 Konten, „bilder“ nur 13 (12 bzw. 3 Posts).
-- Thema: „geschichte“ erreicht im Mittel 1.967,5 Konten, „natur“ nur 57,5 (2 bzw. 2 Posts).
+- Format: „video“ erreicht im Mittel 175 Konten, „bilder“ nur 13 (13 bzw. 3 Posts).
+- Thema: „geschichte“ erreicht im Mittel 1.976 Konten, „natur“ nur 57,5 (2 bzw. 2 Posts).
 - Ton: „nuetzlich“ erreicht im Mittel 175 Konten, „witzig“ nur 106,5 (5 bzw. 6 Posts).
 - Uhrzeit: „20 Uhr“ erreicht im Mittel 203,5 Konten, „7 Uhr“ nur 31,5 (4 bzw. 4 Posts).
-- Wochentag: „Sa“ erreicht im Mittel 1.983 Konten, „Di“ nur 8 (2 bzw. 3 Posts).
+- Wochentag: „Sa“ erreicht im Mittel 1.991,5 Konten, „Di“ nur 57,5 (2 bzw. 4 Posts).
 - Videolänge: „bis 15 s“ erreicht im Mittel 185,5 Konten, „16–25 s“ nur 106,5 (8 bzw. 8 Posts).
-- Echtes Video oder Symbolvideo: „echtes Video“ erreicht im Mittel 163,5 Konten, „Symbolvideo“ nur 106 (12 bzw. 5 Posts).
+- Echtes Video oder Symbolvideo: „echtes Video“ erreicht im Mittel 163,5 Konten, „Symbolvideo“ nur 106,5 (12 bzw. 6 Posts).
 - Zuschau-Anteil und Reichweite: Rangkorrelation 0,7 (deutlicher Zusammenhang – Videos, die bis zum Ende geschaut werden, verbreiten sich weiter).
 
 ## Top 3
 
-- **In diesem Dino-Knochen steckt Blut – 115 Millionen Jahre alt** (2026-11-07, video, geschichte/staunen, 7 Uhr): 3922 Konten, 34 Likes, 4 Shares, 3 Saves, Ø 9,2 s geschaut
+- **In diesem Dino-Knochen steckt Blut – 115 Millionen Jahre alt** (2026-11-07, video, geschichte/staunen, 7 Uhr): 3939 Konten, 34 Likes, 4 Shares, 3 Saves, Ø 9,2 s geschaut
 - **Krähen entscheiden doppelt so schnell wie wir** (2026-11-13, video, tiere/staunen, 20 Uhr): 294 Konten, 0 Likes, 0 Shares, 0 Saves, Ø 6,1 s geschaut
 - **Könnte eine Atomexplosion die Erde vor einem Asteroiden retten?** (2026-11-08, video, weltraum/staunen, 12 Uhr): 234 Konten, 3 Likes, 0 Shares, 0 Saves, Ø 6 s geschaut
 
@@ -32,7 +32,7 @@ Gesamtreichweite: 6.281 Konten, Median pro Post: 115,5.
 
 | Ausprägung | Posts | Reichweite (Median) | Likes je 1000 erreichte | Teilen+Speichern je 1000 | Ø geschaut im Reel (s) |
 |---|---|---|---|---|---|
-| video | 12 | 185,5 | 9,2 | 1,2 | 5,6 |
+| video | 13 | 175 | 9 | 1,2 | 6 |
 | zusammen | 5 | 106 | 33,4 | 0 | 3 |
 | bilder | 3 | 13 | 289,5 | 0 | 3,7 |
 
@@ -40,9 +40,9 @@ Gesamtreichweite: 6.281 Konten, Median pro Post: 115,5.
 
 | Ausprägung | Posts | Reichweite (Median) | Likes je 1000 erreichte | Teilen+Speichern je 1000 | Ø geschaut im Reel (s) |
 |---|---|---|---|---|---|
-| geschichte | 2 | 1.967,5 | 9,7 | 1,8 | 6,4 |
+| geschichte | 2 | 1.976 | 9,6 | 1,8 | 6,4 |
 | technik | 2 | 211 | 9,5 | 0 | 6,8 |
-| weltraum | 7 | 152 | 15,9 | 0 | 4,6 |
+| weltraum | 8 | 138 | 14,1 | 0 | 4,9 |
 | kurios | 2 | 125,5 | 23,9 | 0 | 3,7 |
 | tiere | 3 | 106 | 17,2 | 0 | 5,6 |
 | koerper | 2 | 105 | 23,8 | 0 | 3,7 |
@@ -53,7 +53,7 @@ Gesamtreichweite: 6.281 Konten, Median pro Post: 115,5.
 | Ausprägung | Posts | Reichweite (Median) | Likes je 1000 erreichte | Teilen+Speichern je 1000 | Ø geschaut im Reel (s) |
 |---|---|---|---|---|---|
 | nuetzlich | 5 | 175 | 16,1 | 0 | 4,6 |
-| staunen | 9 | 152 | 9,2 | 1,4 | 5,2 |
+| staunen | 10 | 138 | 9 | 1,4 | 5,6 |
 | witzig | 6 | 106,5 | 39,3 | 0 | 3,7 |
 
 ### Uhrzeit
@@ -62,50 +62,50 @@ Gesamtreichweite: 6.281 Konten, Median pro Post: 115,5.
 |---|---|---|---|---|---|
 | 20 Uhr | 4 | 203,5 | 1,2 | 0 | 5,6 |
 | 21 Uhr | 1 | 152 | 0 | 0 | 8,3 |
-| 12 Uhr | 6 | 141 | 20 | 0 | 4,8 |
+| 12 Uhr | 7 | 124 | 17,7 | 0 | 5,2 |
 | 18 Uhr | 4 | 106,5 | 40 | 0 | 4,1 |
-| 7 Uhr | 4 | 31,5 | 10 | 1,8 | 3,1 |
+| 7 Uhr | 4 | 31,5 | 10 | 1,7 | 3,1 |
 | 15 Uhr | 1 | 6 | 666,7 | 0 | – |
 
 ### Wochentag
 
 | Ausprägung | Posts | Reichweite (Median) | Likes je 1000 erreichte | Teilen+Speichern je 1000 | Ø geschaut im Reel (s) |
 |---|---|---|---|---|---|
-| Sa | 2 | 1.983 | 9,3 | 1,8 | 5,8 |
+| Sa | 2 | 1.991,5 | 9,3 | 1,8 | 5,8 |
 | Fr | 3 | 226 | 15 | 0 | 6,1 |
 | So | 3 | 211 | 10,9 | 0 | 5,2 |
 | Mi | 3 | 127 | 21,8 | 0 | 3,7 |
 | Mo | 3 | 124 | 18,3 | 0 | 4,8 |
 | Do | 3 | 106 | 14,8 | 0 | 5,2 |
-| Di | 3 | 8 | 57,9 | 0 | 3 |
+| Di | 4 | 57,5 | 28,6 | 0 | 4,6 |
 
 ### Überschrift
 
 | Ausprägung | Posts | Reichweite (Median) | Likes je 1000 erreichte | Teilen+Speichern je 1000 | Ø geschaut im Reel (s) |
 |---|---|---|---|---|---|
 | kurz (≤45 Zeichen) | 8 | 151 | 14,5 | 0 | 4,8 |
-| lang (>45 Zeichen) | 12 | 106,5 | 11,9 | 1,4 | 4,5 |
+| lang (>45 Zeichen) | 13 | 107 | 11,6 | 1,3 | 4,6 |
 
 ### Zahl in der Überschrift
 
 | Ausprägung | Posts | Reichweite (Median) | Likes je 1000 erreichte | Teilen+Speichern je 1000 | Ø geschaut im Reel (s) |
 |---|---|---|---|---|---|
 | mit Zahl | 4 | 151,5 | 9 | 1,6 | 5,5 |
-| ohne Zahl | 16 | 115,5 | 20 | 0 | 4,5 |
+| ohne Zahl | 17 | 124 | 18,8 | 0 | 4,6 |
 
 ### Frage oder Aussage
 
 | Ausprägung | Posts | Reichweite (Median) | Likes je 1000 erreichte | Teilen+Speichern je 1000 | Ø geschaut im Reel (s) |
 |---|---|---|---|---|---|
-| Aussage | 17 | 124 | 11,5 | 1,2 | 4,7 |
-| Frage | 3 | 104 | 28,5 | 0 | 4,5 |
+| Aussage | 17 | 124 | 11,4 | 1,2 | 4,7 |
+| Frage | 4 | 114 | 21,1 | 0 | 5,2 |
 
 ### Videolänge
 
 | Ausprägung | Posts | Reichweite (Median) | Likes je 1000 erreichte | Teilen+Speichern je 1000 | Ø geschaut im Reel (s) |
 |---|---|---|---|---|---|
 | bis 15 s | 8 | 185,5 | 8,9 | 1,4 | 5,2 |
-| über 25 s | 1 | 152 | 0 | 0 | 8,3 |
+| über 25 s | 2 | 138 | 0 | 0 | 7,1 |
 | 16–25 s | 8 | 106,5 | 22,4 | 0 | 4,1 |
 
 ### Echtes Video oder Symbolvideo
@@ -113,7 +113,7 @@ Gesamtreichweite: 6.281 Konten, Median pro Post: 115,5.
 | Ausprägung | Posts | Reichweite (Median) | Likes je 1000 erreichte | Teilen+Speichern je 1000 | Ø geschaut im Reel (s) |
 |---|---|---|---|---|---|
 | echtes Video | 12 | 163,5 | 10,3 | 1,2 | 5,2 |
-| Symbolvideo | 5 | 106 | 15,4 | 0 | 4,5 |
+| Symbolvideo | 6 | 106,5 | 12,4 | 0 | 4,5 |
 
 ### Getestete Regel (Feld „test“ im Post)
 
@@ -123,6 +123,7 @@ Gesamtreichweite: 6.281 Konten, Median pro Post: 115,5.
 | zahl-im-titel | 1 | 196 | 0 | 0 | 6,5 |
 | kurzes-video | 2 | 169 | 3 | 0 | 3,9 |
 | erzaehlt-30s | 1 | 152 | 0 | 0 | 8,3 |
+| frage-titel | 1 | 124 | 0 | 0 | 6 |
 
 ## Alle Posts
 
@@ -139,7 +140,7 @@ Gesamtreichweite: 6.281 Konten, Median pro Post: 115,5.
 | 2026-11-04 | Ein versteckter Stern pflügt durch Beteigeuze | video | 175 | 195 | 3 | 0 | 0 | – | 4,1 s | 29 % |
 | 2026-11-05 | Warum steuert deine linke Hirnhälfte deine re | video | 104 | 111 | 3 | 0 | 0 | – | 4,5 s | 20 % |
 | 2026-11-06 | Stau im All: So voll ist es um die Erde | video | 226 | 272 | 4 | 0 | 0 | – | 7,1 s | 39 % |
-| 2026-11-07 | In diesem Dino-Knochen steckt Blut – 115 Mill | video | 3922 | 5293 | 34 | 4 | 3 | – | 9,2 s | 63 % |
+| 2026-11-07 | In diesem Dino-Knochen steckt Blut – 115 Mill | video | 3939 | 5314 | 34 | 4 | 3 | – | 9,2 s | 63 % |
 | 2026-11-08 | Könnte eine Atomexplosion die Erde vor einem  | video | 234 | 261 | 3 | 0 | 0 | – | 6 s | 25 % |
 | 2026-11-09 | Wir Menschen atmen 2 Milliarden Tonnen CO₂ au | zusammen | 106 | 5 | 2 | 0 | 0 | 0 | 3 s | – |
 | 2026-11-10 | Europa war kein dunkler Urwald | zusammen | 8 | 1 | 0 | 0 | 0 | 0 | 1,5 s | – |
@@ -148,30 +149,31 @@ Gesamtreichweite: 6.281 Konten, Median pro Post: 115,5.
 | 2026-11-13 | Krähen entscheiden doppelt so schnell wie wir | video | 294 | 323 | 0 | 0 | 0 | – | 6,1 s | 40 % |
 | 2026-11-15 | Zutat fürs Leben: Kohlenstoff im Marsgestein | video | 211 | 260 | 0 | 0 | 0 | – | 5,2 s | 43 % |
 | 2026-11-16 | Auf der Venus ist ein Tag länger als ein Jahr | video | 152 | 166 | 0 | 0 | 0 | – | 8,3 s | 28 % |
+| 2026-11-17 | Was passiert, wenn du in ein Schwarzes Loch f | video | 124 | 127 | 0 | 0 | 0 | – | 6 s | 13 % |
 
 ## YouTube
 
-30 Videos, 8.515 Aufrufe gesamt (Stand: `node youtube.js statistik`).
+31 Videos, 9.295 Aufrufe gesamt (Stand: `node youtube.js statistik`).
 
 | Art | Videos | Aufrufe (Median) | Likes gesamt |
 |---|---|---|---|
-| Video-Short (echtes Video) | 22 | 131,5 | 36 |
+| Video-Short (echtes Video) | 23 | 85 | 41 |
 | Folien-Reel | 5 | 1 | 0 |
 | Kurz-Doku | 3 | 4 | 3 |
 
 | Veröffentlicht um | Videos | Aufrufe (Median) |
 |---|---|---|
-| 7 Uhr | 5 | 48 |
+| 7 Uhr | 5 | 49 |
 | 8 Uhr | 6 | 1 |
-| 12 Uhr | 4 | 27 |
+| 12 Uhr | 4 | 35 |
 | 16 Uhr | 5 | 645 |
 | 18 Uhr | 2 | 604,5 |
-| 19 Uhr | 2 | 344,5 |
-| 21 Uhr | 6 | 119,5 |
+| 19 Uhr | 2 | 346 |
+| 21 Uhr | 7 | 80 |
 
 Top 5:
-- 2026-11-07-dino-blut (Video-Short (echtes Video)): 1403 Aufrufe, 9 Likes – https://youtube.com/shorts/QTh1Djisqq4
+- 2026-11-07-dino-blut (Video-Short (echtes Video)): 1404 Aufrufe, 9 Likes – https://youtube.com/shorts/QTh1Djisqq4
 - 2026-11-09-co2-atmen (Video-Short (echtes Video)): 1205 Aufrufe, 2 Likes – https://youtube.com/shorts/2ZNAge38YsE
 - 2026-10-29-feuersalamander (Video-Short (echtes Video)): 1196 Aufrufe, 9 Likes – https://youtube.com/shorts/VzJz3SaGiFs
-- 2026-11-06-satelliten-stau (Video-Short (echtes Video)): 1176 Aufrufe, 5 Likes – https://youtube.com/shorts/Bz6kea_1BZc
+- 2026-11-06-satelliten-stau (Video-Short (echtes Video)): 1177 Aufrufe, 5 Likes – https://youtube.com/shorts/Bz6kea_1BZc
 - 2026-11-08-asteroid-atombombe (Video-Short (echtes Video)): 964 Aufrufe, 3 Likes – https://youtube.com/shorts/gd14Zq0c1vs
