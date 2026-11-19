@@ -8,3 +8,4 @@
 ## 2026-11-19 – Instagram-Token ungültig
 Mittagslauf: Graph-API meldet „The user has not authorized application …“ (Code 190). Der Token wurde widerrufen (App-Berechtigung in Instagram entfernt, Passwortänderung o. Ä.), nicht abgelaufen.
 Kommentare und Posten auf Instagram blockiert. Post 2026-11-19-baertierchen ist fertig gerendert. Nutzer um neuen Token gebeten.
+Gelöst 19.11.: Nutzer hat neuen Token eingetragen, Zugriff getestet.
