@@ -14,7 +14,7 @@ const { slideHtml } = require('./template');
   }
   const outDir = path.join('out', post.id);
   fs.mkdirSync(outDir, { recursive: true });
-  const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
+  const browser = await chromium.launch({ executablePath: ['/opt/pw-browsers/chromium_headless_shell', '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell'].find(p => require('fs').existsSync(p)) });
   const page = await browser.newPage({ viewport: { width: 1080, height: 1350 } });
   for (let i = 0; i < post.slides.length; i++) {
     await page.setContent(slideHtml(post, post.slides[i], i, post.slides.length));

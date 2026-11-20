@@ -19,7 +19,7 @@ function duration(slide) {
   const tmp = fs.mkdtempSync('/tmp/reel-');
 
   // Jede Folie mittig auf den blauen Marken-Hintergrund setzen
-  const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
+  const browser = await chromium.launch({ executablePath: ['/opt/pw-browsers/chromium_headless_shell', '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell'].find(p => require('fs').existsSync(p)) });
   const page = await browser.newPage({ viewport: { width: W, height: H } });
   for (let i = 1; i <= post.slides.length; i++) {
     const img = fs.readFileSync(path.join(dir, `${i}.jpg`)).toString('base64');

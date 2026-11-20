@@ -158,7 +158,7 @@ function render(L, post, captions, music, tmp, tag, out, voice) {
     voice.spans = chunks.map(c => [c.start, c.end]);
   }
   const tmp = fs.mkdtempSync('/tmp/vreel-');
-  const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
+  const browser = await chromium.launch({ executablePath: ['/opt/pw-browsers/chromium_headless_shell', '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell'].find(p => require('fs').existsSync(p)) });
   const page = await browser.newPage();
   // Untertitel zur Stimme größer und mittig, damit man sie auch ohne Ton gut mitlesen kann
   if (voice) { LAYOUTS.reel.capSize = 80; LAYOUTS.short.capSize = 78; LAYOUTS['45'].capSize = 62; LAYOUTS.reel.center = LAYOUTS.short.center = LAYOUTS['45'].center = true; }
