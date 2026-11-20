@@ -1,48 +1,43 @@
 {
-  "datum": "2026-11-19T06:47:12.273Z",
+  "datum": "2026-11-20T06:47:45.225Z",
   "themen": [
     {
       "thema": "sonstiges",
-      "videos": 14,
-      "aufrufe": 501495
+      "videos": 10,
+      "aufrufe": 645417
     },
     {
       "thema": "tiere",
-      "videos": 12,
-      "aufrufe": 494586
+      "videos": 11,
+      "aufrufe": 489424
     },
     {
       "thema": "physik",
-      "videos": 7,
-      "aufrufe": 193732
+      "videos": 10,
+      "aufrufe": 266119
     },
     {
       "thema": "weltraum",
-      "videos": 4,
-      "aufrufe": 70421
-    },
-    {
-      "thema": "technik",
-      "videos": 1,
-      "aufrufe": 31351
+      "videos": 7,
+      "aufrufe": 184702
     },
     {
       "thema": "natur",
       "videos": 1,
-      "aufrufe": 27200
+      "aufrufe": 27788
     },
     {
       "thema": "geschichte",
       "videos": 1,
-      "aufrufe": 4520
+      "aufrufe": 5301
     }
   ],
   "top": [
     {
       "title": "🐎✨ Dieses Pferd ist absolut magisch! ✨🐎#Pferde #Naturwunder #HeiligesTier #Pferdeliebe #Unglaublich",
       "channel": "BRAVO-41",
-      "views": 237358,
-      "likes": 4359,
+      "views": 245834,
+      "likes": 4548,
       "s": 18,
       "id": "rMqSHOEYqZg",
       "topic": "tiere"
@@ -50,8 +45,8 @@
     {
       "title": "Ohne Fallschirm aus dem Flugzeug – kannst du überleben?",
       "channel": "Rein Theoretisch",
-      "views": 150591,
-      "likes": 370,
+      "views": 170767,
+      "likes": 412,
       "s": 68,
       "id": "59JrSoRxYVk",
       "topic": "sonstiges"
@@ -59,17 +54,44 @@
     {
       "title": "Woher kommt der Knall beim Fingerschnippen? 🫰",
       "channel": "Hans Von Pest",
-      "views": 131859,
-      "likes": 5105,
+      "views": 133382,
+      "likes": 5139,
       "s": 66,
       "id": "1qggZVLMeP0",
       "topic": "sonstiges"
     },
     {
+      "title": "Wie überlebst du einen Tsunami? 🌊 (3D)",
+      "channel": "Konstrukt 3D",
+      "views": 103169,
+      "likes": 1038,
+      "s": 66,
+      "id": "uTr7LdTVI-g",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Wie funktioniert eine Wärmepumpe?",
+      "channel": "Prinzipwerk",
+      "views": 92978,
+      "likes": 857,
+      "s": 73,
+      "id": "0994gvEw5S8",
+      "topic": "sonstiges"
+    },
+    {
+      "title": "Die Sonne verliert eine Erde #Shorts",
+      "channel": "Bieso- Mathe-Physik",
+      "views": 78239,
+      "likes": 3342,
+      "s": 76,
+      "id": "RoyUHWOgd1Q",
+      "topic": "weltraum"
+    },
+    {
       "title": "Ironische Anzeige über den Dogo Argentino  #tiere #tierfakten #hund #dogoargentino",
       "channel": "Tierisch.ehrlich",
-      "views": 66602,
-      "likes": 1350,
+      "views": 69464,
+      "likes": 1415,
       "s": 66,
       "id": "w7vo40sT38I",
       "topic": "tiere"
@@ -77,35 +99,17 @@
     {
       "title": "Warum finden Männer Füße attraktiv? #fakten #wissenschaft #deutsch",
       "channel": "MaxWeissDas",
-      "views": 64918,
-      "likes": 1323,
+      "views": 65007,
+      "likes": 1324,
       "s": 63,
       "id": "mg4pBH77sYY",
       "topic": "sonstiges"
     },
     {
-      "title": "5 Tiere, die mit zunehmendem Alter tödlicher werden! 😨😨",
-      "channel": "Wildes Königreich",
-      "views": 54354,
-      "likes": 0,
-      "s": 132,
-      "id": "LJl5FpGmQcI",
-      "topic": "tiere"
-    },
-    {
-      "title": "Wie überlebst du einen Tsunami? 🌊 (3D)",
-      "channel": "Konstrukt 3D",
-      "views": 40777,
-      "likes": 657,
-      "s": 66,
-      "id": "uTr7LdTVI-g",
-      "topic": "sonstiges"
-    },
-    {
       "title": "Absoluter Nullpunkt: Der kälteste Ort im Universum ❄️#absoluternullpunkt #physik #quantenphysik",
       "channel": "Kurz durchschaut",
-      "views": 39709,
-      "likes": 527,
+      "views": 48530,
+      "likes": 623,
       "s": 152,
       "id": "K0hzEJyjYKs",
       "topic": "weltraum"
@@ -113,8 +117,8 @@
     {
       "title": "Tiere, die jahrelang auf ihre Besitzer gewartet haben 🤯 #history #fakten #fyp",
       "channel": "Historische Zeit",
-      "views": 37275,
-      "likes": 1585,
+      "views": 41419,
+      "likes": 1789,
       "s": 92,
       "id": "2zkkXjGrbp0",
       "topic": "tiere"
@@ -122,8 +126,8 @@
     {
       "title": "Der Australian Shepherd  #tiere #tierfakten #hund #australianshepherd",
       "channel": "Tierisch.ehrlich",
-      "views": 36773,
-      "likes": 1068,
+      "views": 39110,
+      "likes": 1147,
       "s": 63,
       "id": "2uvsSwiF27U",
       "topic": "tiere"
@@ -131,53 +135,62 @@
     {
       "title": "Das unglaubliche Leben dieses Lkw-Fahrerpaares! 🚛😱 #shorts",
       "channel": "Doch die Wahrheit",
-      "views": 36372,
-      "likes": 607,
+      "views": 36935,
+      "likes": 612,
       "s": 29,
       "id": "p5fOGN6NroA",
       "topic": "sonstiges"
     },
     {
+      "title": "#rte #akp #akparti #erdogan #erdoğan #wissen #wissenschaft #politik #weltraum #physik",
+      "channel": "MO99",
+      "views": 35304,
+      "likes": 969,
+      "s": 61,
+      "id": "gQpMtQBFYw8",
+      "topic": "physik"
+    },
+    {
       "title": "Warum fällt eine 500-Tonnen-Wolke nicht runter? ☁️",
       "channel": "Hans Von Pest",
-      "views": 32928,
-      "likes": 2003,
+      "views": 33372,
+      "likes": 2034,
       "s": 64,
       "id": "CeHu0mMsYxM",
       "topic": "physik"
     },
     {
-      "title": "Warum schäumt dieses Pferd? 🐴 #shorts",
-      "channel": "Humanlab",
-      "views": 32003,
-      "likes": 426,
-      "s": 27,
-      "id": "H7G05WqkLzU",
-      "topic": "tiere"
+      "title": "Mit Physik in den Club #Shorts",
+      "channel": "Bieso- Mathe-Physik",
+      "views": 32445,
+      "likes": 2110,
+      "s": 80,
+      "id": "usY86kWKnd4",
+      "topic": "physik"
     },
     {
       "title": "Solche Experimente waren der Knaller gewesen 🤩 #fyp #reaktion #physik #Schule #cool #youtubeshorts",
       "channel": "Sercan",
-      "views": 31628,
-      "likes": 710,
+      "views": 32302,
+      "likes": 727,
       "s": 27,
       "id": "C5-WM_rsC5k",
       "topic": "physik"
     },
     {
-      "title": "Was Ist Das Für Ein Riesiger Ofen Unter Der Erde? 😱🔥",
-      "channel": "EduFakten",
-      "views": 31351,
-      "likes": 0,
-      "s": 30,
-      "id": "hto1RJrRgeM",
-      "topic": "technik"
+      "title": "Warum schäumt dieses Pferd? 🐴 #shorts",
+      "channel": "Humanlab",
+      "views": 32239,
+      "likes": 428,
+      "s": 27,
+      "id": "H7G05WqkLzU",
+      "topic": "tiere"
     },
     {
       "title": "ZARBEX ERKLÄRT PHYSIK!",
       "channel": "zarbex Uncut",
-      "views": 30211,
-      "likes": 747,
+      "views": 30647,
+      "likes": 749,
       "s": 41,
       "id": "zBjfuCd1prg",
       "topic": "physik"
@@ -185,17 +198,26 @@
     {
       "title": "Wenn ein Maschinenbauer 😂 #Maschinenbau #Beziehung #Physik #Wortwitz #erti",
       "channel": "Erti S.",
-      "views": 29739,
-      "likes": 215,
+      "views": 30059,
+      "likes": 216,
       "s": 6,
       "id": "PzzhXbTO7dc",
       "topic": "physik"
     },
     {
+      "title": "😱🐱 Gefährliche Dinge, die Katzen tun! 🐾 #Katzen #KatzenFakten #Tierwissen #Wissenswertes #Shorts",
+      "channel": "Fakten König",
+      "views": 28551,
+      "likes": 422,
+      "s": 28,
+      "id": "j0_F-YoeXnc",
+      "topic": "tiere"
+    },
+    {
       "title": "Wie eine Kuh aus Gras Milch macht... #gesundheit #naturwunder",
       "channel": "Gymperium_",
-      "views": 27200,
-      "likes": 1010,
+      "views": 27788,
+      "likes": 1013,
       "s": 146,
       "id": "7V4PUaRKg9Y",
       "topic": "natur"
@@ -203,8 +225,8 @@
     {
       "title": "Physik",
       "channel": "Makochako",
-      "views": 24837,
-      "likes": 580,
+      "views": 24986,
+      "likes": 581,
       "s": 63,
       "id": "od-CXE4l7p0",
       "topic": "physik"
@@ -212,8 +234,8 @@
     {
       "title": "Wenn das Boot sinkt, aber Felix Physik erklärt... 😂⛵ #comedy #funny #humor #alltag",
       "channel": "Chaos Bei Oma\n\n",
-      "views": 23523,
-      "likes": 251,
+      "views": 23671,
+      "likes": 252,
       "s": 20,
       "id": "0agGSs8BLyQ",
       "topic": "physik"
@@ -221,43 +243,52 @@
     {
       "title": "Spring hier ab – und du kommst NIE wieder runter 😳 #shorts",
       "channel": "ParkcardsDe",
-      "views": 22574,
-      "likes": 316,
+      "views": 23285,
+      "likes": 320,
       "s": 41,
       "id": "eSDLU04XDBE",
       "topic": "weltraum"
     },
     {
-      "title": "Wie viele Luftballons brauchst du, um wegzufliegen? 🎈",
-      "channel": "Wie funktioniert die Welt?",
-      "views": 21743,
-      "likes": 744,
-      "s": 33,
-      "id": "nhJk4nrXgBU",
+      "title": "Was passiert, wenn du in ein Schwarzes Loch fällst? 🕳️",
+      "channel": "HirnWirbel",
+      "views": 22579,
+      "likes": 660,
+      "s": 66,
+      "id": "PlDHB3I19G4",
+      "topic": "weltraum"
+    },
+    {
+      "title": "😳 Dieser Mann bricht die Realität! (Unglaubliche Illusion) #shorts",
+      "channel": "Doch die Wahrheit",
+      "views": 21632,
+      "likes": 226,
+      "s": 26,
+      "id": "sSmBRh91i3I",
       "topic": "sonstiges"
     },
     {
       "title": "Nur gedreht – und das Papier KLAPPT zusammen! 😳 #physik",
       "channel": "Wissensplattform",
-      "views": 20866,
+      "views": 20893,
       "likes": 134,
       "s": 13,
       "id": "T-CFi8ObI5Y",
       "topic": "physik"
     },
     {
-      "title": "😳 Dieser Mann bricht die Realität! (Unglaubliche Illusion) #shorts",
-      "channel": "Doch die Wahrheit",
-      "views": 19896,
-      "likes": 211,
-      "s": 26,
-      "id": "sSmBRh91i3I",
-      "topic": "sonstiges"
+      "title": "Die gefährlichsten Tiere in Deutschland",
+      "channel": "FaktenFaktenFakten",
+      "views": 12636,
+      "likes": 316,
+      "s": 59,
+      "id": "qJJMyGPgF1Y",
+      "topic": "tiere"
     },
     {
       "title": "Auto STÜRZT ins Wasser 😱 - was jetzt ❓ #fakten #wissenschaft #animation #3d #viral",
       "channel": "Knapp Erklärt",
-      "views": 12398,
+      "views": 12495,
       "likes": 278,
       "s": 51,
       "id": "hbmUnvNf9NQ",
@@ -266,71 +297,53 @@
     {
       "title": "Schlangen töten JEDES Jahr eine ganze Großstadt 🐍 #shorts #fakten #animation #wissen",
       "channel": "Simply Animiert",
-      "views": 7959,
+      "views": 7992,
       "likes": 47,
       "s": 25,
       "id": "d0sMWjxuRk8",
       "topic": "tiere"
     },
     {
-      "title": "Medizinische Säge 🩺⚡#Medizin#Wissenschaft#Fakten#Gesundheit#Wissen",
-      "channel": "BRAVO-41",
-      "views": 7534,
-      "likes": 71,
-      "s": 31,
-      "id": "0GuUPDS0fIo",
-      "topic": "sonstiges"
-    },
-    {
-      "title": "Tiere mit Farben wie ein Grafikfehler #tiere",
-      "channel": "Tierwissen",
-      "views": 7064,
-      "likes": 305,
-      "s": 138,
-      "id": "J6Nt9kpEJ6A",
-      "topic": "tiere"
-    },
-    {
       "title": "Die Milchstraße ist verbogen",
       "channel": "unyqoFakten",
-      "views": 5376,
-      "likes": 138,
+      "views": 5408,
+      "likes": 141,
       "s": 79,
       "id": "Qhr9Kv1ebSA",
       "topic": "weltraum"
     },
     {
-      "title": "Tiere, die vor deinen Augen verschwinden, das letzte findest du kaum! 😨",
-      "channel": "Wildes Königreich",
-      "views": 4783,
-      "likes": 0,
-      "s": 152,
-      "id": "xvjFNdiWvNI",
-      "topic": "tiere"
-    },
-    {
-      "title": "Ohne RAUMANZUG im All 😱 - was jetzt ❓#fakten #viral #wissenschaft #3d #animation #viralvideo",
-      "channel": "Knapp Erklärt",
-      "views": 4523,
-      "likes": 48,
-      "s": 59,
-      "id": "QHJo-ifjtjU",
-      "topic": "sonstiges"
-    },
-    {
       "title": "Häufige Mythen, die die Wissenschaft bereits aufgeklärt hat..  #fakten #geschichte #historisch",
       "channel": "Geschichtsgeheimnisse",
-      "views": 4520,
-      "likes": 73,
+      "views": 5301,
+      "likes": 82,
       "s": 75,
       "id": "KmHOEbFvFqM",
       "topic": "geschichte"
     },
     {
+      "title": "3 unglaubliche Fakten über den Deutschen Schäferhund! 🐕🚔",
+      "channel": "CuriousX",
+      "views": 4889,
+      "likes": 118,
+      "s": 30,
+      "id": "lnxIOmHDBCQ",
+      "topic": "tiere"
+    },
+    {
+      "title": "Ohne RAUMANZUG im All 😱 - was jetzt ❓#fakten #viral #wissenschaft #3d #animation #viralvideo",
+      "channel": "Knapp Erklärt",
+      "views": 4684,
+      "likes": 50,
+      "s": 59,
+      "id": "QHJo-ifjtjU",
+      "topic": "sonstiges"
+    },
+    {
       "title": "Bengalkatze: 7 faszinierende Fakten über diese Wildkatze! 😱🐆",
       "channel": "TierWow",
-      "views": 4355,
-      "likes": 176,
+      "views": 4567,
+      "likes": 184,
       "s": 75,
       "id": "JOpI5MbnhvY",
       "topic": "tiere"
@@ -338,26 +351,26 @@
     {
       "title": "Was passiert, wenn du in ein Loch durch die ganze Erde springst? 🌍🕳️ #shorts",
       "channel": "Lumo",
-      "views": 3880,
+      "views": 4368,
       "likes": 13,
       "s": 11,
       "id": "6OLt2wClgTE",
       "topic": "sonstiges"
     },
     {
-      "title": "3 unglaubliche Fakten über den Deutschen Schäferhund! 🐕🚔",
-      "channel": "CuriousX",
-      "views": 3351,
-      "likes": 89,
-      "s": 30,
-      "id": "lnxIOmHDBCQ",
-      "topic": "tiere"
+      "title": "Was passiert, wenn du von der ISS ins All fällst? 🚀🌍 #shorts",
+      "channel": "Lumo",
+      "views": 3871,
+      "likes": 18,
+      "s": 11,
+      "id": "IsDfZG1LO_A",
+      "topic": "weltraum"
     },
     {
       "title": "Galaxien bilden ein gigantisches Netz",
       "channel": "unyqoFakten",
-      "views": 2762,
-      "likes": 95,
+      "views": 2790,
+      "likes": 96,
       "s": 90,
       "id": "_c47tQiYFKo",
       "topic": "weltraum"
@@ -365,38 +378,20 @@
     {
       "title": "Dieses Tier wird einfach wieder jung 🪼🤯 #shorts",
       "channel": "🧠 Hirnfunke ",
-      "views": 2709,
+      "views": 2723,
       "likes": 14,
       "s": 24,
       "id": "ced_nVtZKJw",
       "topic": "tiere"
     },
     {
-      "title": "#fakten #wissenschaft #wusstestduschon #faktencheck #wissenswertes",
-      "channel": "Die Wissensdatenbank",
-      "views": 2419,
-      "likes": 31,
-      "s": 56,
-      "id": "BPKe4CJftUU",
-      "topic": "sonstiges"
-    },
-    {
-      "title": "Wieso Männer dir hinterherschauen.. 😱  #deutsch #wissenschaft #fakten #lernen #wissen",
-      "channel": "MaxWeissDas",
-      "views": 2312,
-      "likes": 29,
-      "s": 63,
-      "id": "buNVNdwpTSY",
-      "topic": "sonstiges"
-    },
-    {
-      "title": "😱 Diese Brücke Schwimmt Ohne Stützen! Die Unglaubliche Ingenieurskunst aus China! 🌉🔥 | #Shorts",
-      "channel": "RätselWelt",
-      "views": 2273,
-      "likes": 0,
-      "s": 36,
-      "id": "QLBuXZmeWt8",
-      "topic": "sonstiges"
+      "title": "Was passiert, wenn du in einen Vulkan springst? 🌋🔥 #shorts",
+      "channel": "Lumo",
+      "views": 2440,
+      "likes": 15,
+      "s": 9,
+      "id": "fZkevDqdE5w",
+      "topic": "physik"
     }
   ]
 }

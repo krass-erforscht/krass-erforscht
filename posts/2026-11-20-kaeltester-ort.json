@@ -1,0 +1,67 @@
+{
+  "id": "2026-11-20-kaeltester-ort",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "staunen",
+  "format": "video",
+  "test": "schnelle-schnitte",
+  "source": {
+    "name": "NASA Science: NASA Creates Super-Cooled Particles … (2022); NASA-Bildbeschreibung iss073e0817671 (2025); NASA Science: Cold Atom Laboratory",
+    "url": "https://science.nasa.gov/missions/station/nasa-creates-super-cooled-particles-to-try-to-prove-a-major-einstein-theory"
+  },
+  "image": {
+    "file": "images/2026-11-20-kaeltester-ort.jpg",
+    "credit": "NASA/JPL-Caltech (Animation „How Atoms are Defying Gravity in NASA's Cold Atom Lab“)",
+    "short": "Animation: NASA/JPL-Caltech, gemeinfrei",
+    "license": "Public domain",
+    "page": "https://images.nasa.gov/details/JPL-20240812-CALf-0001-How%20Atoms%20are%20Defying%20Gravity%20in%20NASAs%20Cold%20Atom%20Lab"
+  },
+  "video": {
+    "file": "videos/2026-11-20-kaeltester-ort.mp4",
+    "start": 0,
+    "duration": 42,
+    "credit": "NASA/JPL-Caltech (Animation „How Atoms are Defying Gravity in NASA's Cold Atom Lab“, Video „Working Remotely: How Astronauts Upgraded a Complex Experiment“)",
+    "short": "Animation & Video: NASA/JPL-Caltech, gemeinfrei",
+    "license": "Public domain",
+    "page": "https://images.nasa.gov/details/JPL-20240812-CALf-0001-How%20Atoms%20are%20Defying%20Gravity%20in%20NASAs%20Cold%20Atom%20Lab",
+    "symbolisch": false,
+    "headline": "Der kälteste bekannte Ort im Universum ist auf der **ISS** 🤯",
+    "captions": [
+      "Kältester Ort: **auf der ISS**?",
+      "So groß wie ein **Kühlschrank**",
+      "**0,0000000001 Grad** über dem Nullpunkt",
+      "Kälter als das **Weltall**",
+      "Ein **fünfter Zustand** der Materie",
+      "Gedacht: ja oder nein? 👇"
+    ],
+    "voice": [
+      "Der kälteste bekannte Ort im ganzen Universum ist eine Kiste auf der Raumstation ISS. Wie kann das sein?",
+      "Das Cold Atom Lab der NASA ist ungefähr so groß wie ein kleiner Kühlschrank.",
+      "Darin kühlen Laser Atome auf etwa ein Zehnmilliardstel Grad über dem absoluten Nullpunkt.",
+      "Das ist viel kälter als die durchschnittliche Temperatur im Weltall.",
+      "Dabei entsteht ein fünfter Zustand der Materie: ein Bose-Einstein-Kondensat. Weder fest, noch flüssig, noch Gas, noch Plasma.",
+      "Hättest du das gedacht, ja oder nein? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ],
+    "voiceText": [
+      "Der kälteste bekannte Ort im ganzen Universum ist eine Kiste auf der Raumstation ISS. Wie kann das sein?",
+      "Das Cold Atom Lab der NASA ist ungefähr so groß wie ein kleiner Kühlschrank.",
+      "Darin kühlen Laser Atome auf etwa ein Zehnmilliardstel Grad über dem absoluten Nullpunkt.",
+      "Das ist viel kälter als die durchschnittliche Temperatur im Weltall.",
+      "Dabei entsteht ein fünfter Zustand der Materie: ein Bose-Einstein-Kondensat. Weder fest, noch flüssig, noch Gas, noch Plasma.",
+      "Hättest du das gedacht, ja oder nein? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ]
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "label": "Weltraum",
+      "title": "Der kälteste bekannte Ort im Universum ist auf der **ISS** 🤯"
+    },
+    {
+      "type": "cta",
+      "label": "Täglich ein Wow",
+      "title": "Folge für mehr verrückte Fakten aus der Wissenschaft."
+    }
+  ],
+  "caption": "ISS: Hier liegt der kälteste bekannte Ort im Universum! 🤯 Im Cold Atom Lab der NASA – einer Kiste, etwa so groß wie ein kleiner Kühlschrank – kühlen Laser Atome auf etwa ein Zehnmilliardstel Grad über dem absoluten Nullpunkt. Das ist viel kälter als die durchschnittliche Temperatur im Weltall. Dabei entsteht ein Bose-Einstein-Kondensat, ein fünfter Zustand der Materie neben fest, flüssig, gasförmig und Plasma.\n\nHättest du das gedacht – ja oder nein? 👇\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuelle: NASA Science (Cold Atom Laboratory) · Text und Stimme mit KI erstellt\nAnimation & Video: NASA/JPL-Caltech – gemeinfrei, via NASA Images\n#iss #weltall #physik #kälte #wissenschaft"
+}
