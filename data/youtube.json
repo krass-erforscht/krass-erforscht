@@ -494,5 +494,15 @@
       "comments": 0
     },
     "statsAt": "2026-11-20T06:47:40.313Z"
+  },
+  {
+    "id": "2026-11-20-kaeltester-ort",
+    "type": "short",
+    "videoId": "HxJqPFZ7r1E",
+    "privacy": "private",
+    "publishAt": "2026-11-20T18:00:00.000Z",
+    "publishedAt": "2026-11-20T18:00:00.000Z",
+    "ytSlot": "abends",
+    "uploadedAt": "2026-11-20T17:16:24.160Z"
   }
 ]
