@@ -16,7 +16,7 @@
       "views": 12,
       "profile_visits": 1
     },
-    "statsAt": "2026-11-19T15:59:03.320Z"
+    "statsAt": "2026-11-21T15:08:29.776Z"
   },
   {
     "id": "2026-10-28-lavaplanet",
@@ -35,7 +35,7 @@
       "views": 10,
       "profile_visits": 0
     },
-    "statsAt": "2026-11-19T15:59:03.867Z",
+    "statsAt": "2026-11-21T15:08:30.575Z",
     "reelMediaId": "17869149900680079",
     "reelStats": {
       "reach": 14,
@@ -66,7 +66,7 @@
       "ig_reels_avg_watch_time": 5193,
       "ig_reels_video_view_total_time": 560951
     },
-    "statsAt": "2026-11-19T15:59:04.098Z"
+    "statsAt": "2026-11-21T15:08:30.798Z"
   },
   {
     "id": "2026-10-30-krokodile",
@@ -97,7 +97,7 @@
       "ig_reels_avg_watch_time": 3725,
       "ig_reels_video_view_total_time": 33526
     },
-    "statsAt": "2026-11-19T15:59:05.003Z"
+    "statsAt": "2026-11-21T15:08:31.713Z"
   },
   {
     "id": "2026-10-31-gluehwuermchen-aliens",
@@ -128,7 +128,7 @@
       "ig_reels_avg_watch_time": 2492,
       "ig_reels_video_view_total_time": 99691
     },
-    "statsAt": "2026-11-19T15:59:05.986Z"
+    "statsAt": "2026-11-21T15:08:32.942Z"
   },
   {
     "id": "2026-11-01-baum-muskeln",
@@ -148,7 +148,7 @@
       "ig_reels_avg_watch_time": 3653,
       "ig_reels_video_view_total_time": 409217
     },
-    "statsAt": "2026-11-19T15:59:06.277Z"
+    "statsAt": "2026-11-21T15:08:33.378Z"
   },
   {
     "id": "2026-11-02-vega-schaedel",
@@ -179,7 +179,7 @@
       "ig_reels_avg_watch_time": 4828,
       "ig_reels_video_view_total_time": 574570
     },
-    "statsAt": "2026-11-19T15:59:06.851Z"
+    "statsAt": "2026-11-21T15:08:34.113Z"
   },
   {
     "id": "2026-11-03-voyager-lichttag",
@@ -210,7 +210,7 @@
       "ig_reels_avg_watch_time": 4552,
       "ig_reels_video_view_total_time": 473440
     },
-    "statsAt": "2026-11-19T15:59:07.374Z"
+    "statsAt": "2026-11-21T15:08:34.826Z"
   },
   {
     "id": "2026-11-04-beteigeuze-begleiter",
@@ -230,7 +230,7 @@
       "ig_reels_avg_watch_time": 4121,
       "ig_reels_video_view_total_time": 737680
     },
-    "statsAt": "2026-11-19T15:59:07.565Z"
+    "statsAt": "2026-11-21T15:08:35.108Z"
   },
   {
     "id": "2026-11-05-ueberkreuz-gehirn",
@@ -250,7 +250,7 @@
       "ig_reels_avg_watch_time": 4450,
       "ig_reels_video_view_total_time": 480641
     },
-    "statsAt": "2026-11-19T15:59:07.858Z"
+    "statsAt": "2026-11-21T15:08:35.425Z"
   },
   {
     "id": "2026-11-06-satelliten-stau",
@@ -270,7 +270,7 @@
       "ig_reels_avg_watch_time": 7093,
       "ig_reels_video_view_total_time": 1645706
     },
-    "statsAt": "2026-11-19T15:59:08.084Z"
+    "statsAt": "2026-11-21T15:08:36.078Z"
   },
   {
     "id": "2026-11-07-dino-blut",
@@ -281,16 +281,16 @@
     "mediaId": "18169323721488278",
     "format": "video",
     "stats": {
-      "reach": 3940,
+      "reach": 3945,
       "likes": 34,
       "comments": 2,
       "shares": 4,
       "saved": 3,
-      "views": 5316,
-      "ig_reels_avg_watch_time": 9169,
-      "ig_reels_video_view_total_time": 36153930
+      "views": 5322,
+      "ig_reels_avg_watch_time": 9171,
+      "ig_reels_video_view_total_time": 36209885
     },
-    "statsAt": "2026-11-19T15:59:08.324Z"
+    "statsAt": "2026-11-21T15:08:36.377Z"
   },
   {
     "id": "2026-11-08-asteroid-atombombe",
@@ -310,7 +310,7 @@
       "ig_reels_avg_watch_time": 6025,
       "ig_reels_video_view_total_time": 1433965
     },
-    "statsAt": "2026-11-19T15:59:08.560Z"
+    "statsAt": "2026-11-21T15:08:36.688Z"
   },
   {
     "id": "2026-11-09-co2-atmen",
@@ -341,7 +341,7 @@
       "ig_reels_avg_watch_time": 3020,
       "ig_reels_video_view_total_time": 320122
     },
-    "statsAt": "2026-11-19T15:59:09.393Z"
+    "statsAt": "2026-11-21T15:08:37.351Z"
   },
   {
     "id": "2026-11-10-europa-urwald",
@@ -354,12 +354,12 @@
     "reelMediaId": "18126104297510418",
     "stats": {
       "reach": 8,
-      "likes": 0,
+      "likes": 1,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "follows": 0,
-      "views": 1,
+      "views": 4,
       "profile_visits": 0
     },
     "reelStats": {
@@ -372,7 +372,7 @@
       "ig_reels_avg_watch_time": 1461,
       "ig_reels_video_view_total_time": 11690
     },
-    "statsAt": "2026-11-19T15:59:11.077Z"
+    "statsAt": "2026-11-21T15:08:38.078Z"
   },
   {
     "id": "2026-11-11-katzen-miauen",
@@ -392,7 +392,7 @@
       "ig_reels_avg_watch_time": 2551,
       "ig_reels_video_view_total_time": 331684
     },
-    "statsAt": "2026-11-19T15:59:11.325Z"
+    "statsAt": "2026-11-21T15:08:38.432Z"
   },
   {
     "id": "2026-11-12-asteroiden-platin",
@@ -412,7 +412,7 @@
       "ig_reels_avg_watch_time": 6504,
       "ig_reels_video_view_total_time": 1287935
     },
-    "statsAt": "2026-11-19T15:59:11.560Z"
+    "statsAt": "2026-11-21T15:08:38.737Z"
   },
   {
     "id": "2026-11-13-kraehen-schnell",
@@ -432,7 +432,7 @@
       "ig_reels_avg_watch_time": 6073,
       "ig_reels_video_view_total_time": 1785724
     },
-    "statsAt": "2026-11-19T15:59:11.762Z"
+    "statsAt": "2026-11-21T15:08:39.000Z"
   },
   {
     "id": "2026-11-14-mars-kohlenstoff",
@@ -452,7 +452,7 @@
       "ig_reels_avg_watch_time": 5201,
       "ig_reels_video_view_total_time": 1102715
     },
-    "statsAt": "2026-11-19T15:59:12.001Z"
+    "statsAt": "2026-11-21T15:08:39.293Z"
   },
   {
     "id": "2026-11-16-venus-tag",
@@ -468,11 +468,11 @@
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "views": 166,
-      "ig_reels_avg_watch_time": 8268,
-      "ig_reels_video_view_total_time": 1265070
+      "views": 169,
+      "ig_reels_avg_watch_time": 8857,
+      "ig_reels_video_view_total_time": 1364049
     },
-    "statsAt": "2026-11-19T15:59:12.246Z"
+    "statsAt": "2026-11-21T15:08:39.793Z"
   },
   {
     "id": "2026-11-17-schwarzes-loch",
@@ -489,10 +489,10 @@
       "shares": 0,
       "saved": 0,
       "views": 128,
-      "ig_reels_avg_watch_time": 5969,
-      "ig_reels_video_view_total_time": 746247
+      "ig_reels_avg_watch_time": 5970,
+      "ig_reels_video_view_total_time": 752221
     },
-    "statsAt": "2026-11-19T15:59:12.503Z"
+    "statsAt": "2026-11-21T15:08:40.081Z"
   },
   {
     "id": "2026-11-18-mars-blau",
@@ -512,7 +512,7 @@
       "ig_reels_avg_watch_time": 6058,
       "ig_reels_video_view_total_time": 763406
     },
-    "statsAt": "2026-11-19T15:59:12.754Z"
+    "statsAt": "2026-11-21T15:08:40.466Z"
   },
   {
     "id": "2026-11-19-baertierchen",
@@ -521,6 +521,17 @@
     "tone": "staunen",
     "sourceUrl": "https://www.nasa.gov/feature/ames/microscopic-superheroes-to-help-protect-astronaut-health-in-space",
     "mediaId": "17953447467353925",
-    "format": "video"
+    "format": "video",
+    "stats": {
+      "reach": 150,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 162,
+      "ig_reels_avg_watch_time": 8872,
+      "ig_reels_video_view_total_time": 1304202
+    },
+    "statsAt": "2026-11-21T15:08:40.747Z"
   }
 ]

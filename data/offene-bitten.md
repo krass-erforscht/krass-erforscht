@@ -9,4 +9,4 @@ Zuerst gefragt: 2026-11-08. Nächste Erinnerung frühestens: 2026-11-11.
 Status 2026-11-08: Nutzer will freischalten. Seiten (docs/datenschutz.html, docs/datenloeschung.html), App-Symbol und Anleitung (docs/meta-freischaltung.md) liegen bereit. Wartet auf Nutzer: GitHub Pages, Meta-Einstellungen, App-Prüfung.
 Sobald der Nutzer einen Testkommentar meldet: den Kommentar beantworten. Nach Freigabe + neuem Token: Kommentar unter dem Dino-Post beantworten.
 
-- 2026-11-19 abends: **KRASS_IG_TOKEN anlegen** (eigene Variable mit dem krass.erforscht-Token, weil IG_TOKEN jetzt tagesbild.kompakt gehört). Gefragt 19.11., nächste Erinnerung frühestens 22.11.
+- 2026-11-19: Instagram-Token für krass.erforscht – erledigt am 21.11. (IG_TOKEN gehört wieder zu krass.erforscht, getestet).

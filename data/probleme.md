@@ -15,3 +15,4 @@ Nach dem Bärtierchen-Post (17:03, korrekt auf krass.erforscht) stand in `IG_TOK
 Ursache: Beide Projekte teilen die Cloud-Umgebung „Standar“ und dieselbe Variable. Kein falscher Post entstanden.
 Lösung: Skripte lesen jetzt zuerst `KRASS_IG_TOKEN`; `ig-account.js` bricht ab, wenn der Token nicht zu @krass.erforscht gehört
 (publish, comments, insights). comments.js überspringt gelöschte/unlesbare Posts statt abzubrechen. Nutzer muss KRASS_IG_TOKEN anlegen.
+Gelöst 21.11.: IG_TOKEN gehört wieder zu krass.erforscht (getestet).

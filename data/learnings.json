@@ -1,11 +1,11 @@
 {
-  "aktualisiert": "2026-11-19T15:59:12.925Z",
+  "aktualisiert": "2026-11-21T15:08:40.903Z",
   "ranking": [
     {
       "gruppe": "uhrzeit:7",
       "posts": 2,
       "punkte": 4.3,
-      "reichweite": 1992,
+      "reichweite": 1995,
       "follower": 0
     },
     {
@@ -60,8 +60,8 @@
     {
       "gruppe": "thema:geschichte",
       "posts": 1,
-      "punkte": 1.78,
-      "reichweite": 3940,
+      "punkte": 1.77,
+      "reichweite": 3945,
       "follower": 0
     },
     {
@@ -80,23 +80,23 @@
     },
     {
       "gruppe": "ton:staunen",
-      "posts": 9,
-      "punkte": 1.5,
-      "reichweite": 581,
-      "follower": 0
-    },
-    {
-      "gruppe": "thema:tiere",
-      "posts": 2,
-      "punkte": 1.42,
-      "reichweite": 200,
+      "posts": 10,
+      "punkte": 1.35,
+      "reichweite": 538,
       "follower": 0
     },
     {
       "gruppe": "format:video",
-      "posts": 14,
-      "punkte": 1.19,
-      "reichweite": 437,
+      "posts": 15,
+      "punkte": 1.11,
+      "reichweite": 418,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:tiere",
+      "posts": 3,
+      "punkte": 0.94,
+      "reichweite": 183,
       "follower": 0
     },
     {
@@ -118,6 +118,13 @@
       "posts": 1,
       "punkte": 0,
       "reichweite": 152,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:17",
+      "posts": 1,
+      "punkte": 0,
+      "reichweite": 150,
       "follower": 0
     }
   ]
