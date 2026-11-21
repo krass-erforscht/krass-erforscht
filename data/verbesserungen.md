@@ -21,3 +21,4 @@ Hier hält die App fest, was sie selbst verbessert hat (Datum, ein Satz).
 - 2026-11-18: choose.js testet „zum Weiterlernen“ jetzt die am wenigsten erprobte Option statt einer zufälligen – vorher kam zweimal hintereinander das schon 7-mal getestete, schwächste Fenster „mittags“ dran.
 - 2026-11-19: Kontoprüfung vor jedem Instagram-Zugriff (ig-account.js) und eigene Variable KRASS_IG_TOKEN – verhindert Posts auf dem falschen Konto; comments.js bricht bei gelöschten Posts nicht mehr ab.
 - 2026-11-20: render.js, reel.js und video-reel.js nutzen den festen Browser-Pfad /opt/pw-browsers/chromium_headless_shell (mit altem Pfad als Rückfall) – nach einem Neustart mit neuer Browserversion brach das Rendern sonst ab.
+- 2026-11-21: slot.js merkt sich die Tagesentscheidung (data/slot-heute.json), damit neue Statistiken im Laufe des Tages das Posting-Fenster nicht mehr verschieben.

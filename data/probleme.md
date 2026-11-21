@@ -16,3 +16,7 @@ Ursache: Beide Projekte teilen die Cloud-Umgebung „Standar“ und dieselbe Var
 Lösung: Skripte lesen jetzt zuerst `KRASS_IG_TOKEN`; `ig-account.js` bricht ab, wenn der Token nicht zu @krass.erforscht gehört
 (publish, comments, insights). comments.js überspringt gelöschte/unlesbare Posts statt abzubrechen. Nutzer muss KRASS_IG_TOKEN anlegen.
 Gelöst 21.11.: IG_TOKEN gehört wieder zu krass.erforscht (getestet).
+
+## 2026-11-21 abends – IG_TOKEN wieder tagesbild.kompakt
+Um 15:08 korrekt (krass.erforscht), um 17:15 enthalten IG_TOKEN und KLARTEXT_IG_TOKEN denselben tagesbild-Token. Kein falscher Post (Kontoprüfung). Video zum manuellen Hochladen an Nutzer geschickt.
+Außerdem: slot.js sprang nachmittags von „abends“ auf „morgens“ (neue Statistik) → Tagesentscheidung wird jetzt gespeichert.

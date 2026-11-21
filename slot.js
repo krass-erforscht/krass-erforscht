@@ -21,6 +21,12 @@ const fmt = p => p.format || 'bilder';
 const all = posts(), byFormat = {};
 for (const p of all) (byFormat[fmt(p)] ||= []).push(p.stats.reach);
 const relative = p => p.stats.reach / Math.max(median(byFormat[fmt(p)]), 1);
-const { pick, why, rows } = choose(Object.keys(SLOTS), slotOf, 'uhrzeit', relative);
+let { pick, why, rows } = choose(Object.keys(SLOTS), slotOf, 'uhrzeit', relative);
+// Die Tagesentscheidung festhalten: neue Statistiken im Laufe des Tages dürfen das Fenster nicht mehr verschieben
+// (am 21.11. sprang die Wahl nachmittags von „abends“ auf das schon vergangene „morgens“).
+const MEMO = 'data/slot-heute.json', today = berlinDate(Date.now());
+const memo = fs.existsSync(MEMO) ? JSON.parse(fs.readFileSync(MEMO)) : {};
+if (memo.datum === today && SLOTS[memo.fenster]) { pick = memo.fenster; why = memo.grund; }
+else fs.writeFileSync(MEMO, JSON.stringify({ datum: today, fenster: pick, grund: why }, null, 2) + '\n');
 console.log(pick === slot ? `JA (${why})` : `NEIN (heute ist ${pick} dran, ${why})`);
 console.error(rows.map(r => `${r.option}: ${r.reichweite}× (${r.posts} Posts)`).join(', '));
