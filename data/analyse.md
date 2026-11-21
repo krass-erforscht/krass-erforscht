@@ -1,4 +1,4 @@
-# Algorithmus-Analyse (2026-11-20)
+# Algorithmus-Analyse (2026-11-21)
 
 22 Posts ausgewertet (mind. 1 Tag alt). Follower: 5 (seit 2026-11-10: +0).
 Gesamtreichweite: 6.545 Konten, Median pro Post: 123.
@@ -154,27 +154,27 @@ Gesamtreichweite: 6.545 Konten, Median pro Post: 123.
 
 ## YouTube
 
-32 Videos, 9.910 Aufrufe gesamt (Stand: `node youtube.js statistik`).
+33 Videos, 10.768 Aufrufe gesamt (Stand: `node youtube.js statistik`).
 
 | Art | Videos | Aufrufe (Median) | Likes gesamt |
 |---|---|---|---|
-| Video-Short (echtes Video) | 24 | 133 | 48 |
+| Video-Short (echtes Video) | 25 | 181 | 57 |
 | Folien-Reel | 5 | 1 | 0 |
 | Kurz-Doku | 3 | 4 | 3 |
 
 | Veröffentlicht um | Videos | Aufrufe (Median) |
 |---|---|---|
-| 7 Uhr | 5 | 49 |
+| 7 Uhr | 5 | 51 |
 | 8 Uhr | 6 | 1 |
-| 12 Uhr | 4 | 38,5 |
+| 12 Uhr | 4 | 42 |
 | 16 Uhr | 5 | 645 |
 | 18 Uhr | 2 | 604,5 |
-| 19 Uhr | 2 | 345,5 |
-| 21 Uhr | 8 | 231,5 |
+| 19 Uhr | 3 | 169 |
+| 21 Uhr | 8 | 537 |
 
 Top 5:
-- 2026-11-07-dino-blut (Video-Short (echtes Video)): 1404 Aufrufe, 9 Likes – https://youtube.com/shorts/QTh1Djisqq4
+- 2026-11-07-dino-blut (Video-Short (echtes Video)): 1405 Aufrufe, 9 Likes – https://youtube.com/shorts/QTh1Djisqq4
 - 2026-11-09-co2-atmen (Video-Short (echtes Video)): 1205 Aufrufe, 2 Likes – https://youtube.com/shorts/2ZNAge38YsE
 - 2026-10-29-feuersalamander (Video-Short (echtes Video)): 1196 Aufrufe, 9 Likes – https://youtube.com/shorts/VzJz3SaGiFs
 - 2026-11-06-satelliten-stau (Video-Short (echtes Video)): 1177 Aufrufe, 5 Likes – https://youtube.com/shorts/Bz6kea_1BZc
-- 2026-11-08-asteroid-atombombe (Video-Short (echtes Video)): 964 Aufrufe, 3 Likes – https://youtube.com/shorts/gd14Zq0c1vs
+- 2026-11-08-asteroid-atombombe (Video-Short (echtes Video)): 965 Aufrufe, 3 Likes – https://youtube.com/shorts/gd14Zq0c1vs

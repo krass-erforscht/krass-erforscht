@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-21-knallkrebs",
+  "category": "Tiere",
+  "topic": "tiere",
+  "tone": "staunen",
+  "format": "video",
+  "test": "schnelle-schnitte",
+  "source": {
+    "name": "NOAA National Marine Sanctuaries: Oh Snap! (2021); University of Texas Marine Science Institute: It's a Snap (2017)",
+    "url": "https://sanctuaries.noaa.gov/news/dec21/oh-snap.html"
+  },
+  "image": {
+    "file": "images/2026-11-21-knallkrebs.jpg",
+    "credit": "Paul Winthrop via iNaturalist",
+    "short": "Foto: Paul Winthrop, CC BY",
+    "license": "CC BY",
+    "page": "https://www.inaturalist.org/observations/408016457"
+  },
+  "video": {
+    "file": "videos/2026-11-21-knallkrebs.mp4",
+    "start": 0,
+    "duration": 40,
+    "credit": "Fotos via iNaturalist (CC BY): Paul Winthrop, Sam Kieschnick, Kelvin Perrie, Saryu Mae, Pauline Walsh Jacobson",
+    "short": "Fotos: P. Winthrop, S. Kieschnick, K. Perrie, S. Mae, P. W. Jacobson (CC BY)",
+    "license": "CC BY",
+    "page": "https://www.inaturalist.org/observations/408016457",
+    "symbolisch": false,
+    "headline": "Dieser winzige Krebs knallt lauter als ein **Pistolenschuss** 😱",
+    "captions": [
+      "Lauter als ein **Schuss**?",
+      "Schere: **halb so groß** wie der Körper",
+      "Zu mit fast **100 km/h**",
+      "**Knall + Lichtblitz**",
+      "Bis zu **210 Dezibel**",
+      "Zugetraut? 👇"
+    ],
+    "voice": [
+      "Dieses Tier ist nur ein paar Zentimeter groß, und knallt lauter als ein Pistolenschuss. Wie macht es das?",
+      "Das ist ein Knallkrebs, auch Pistolenkrebs genannt. Seine Schere kann halb so groß werden wie sein ganzer Körper.",
+      "Er schlägt sie mit fast hundert Kilometern pro Stunde zu.",
+      "Dabei entsteht eine Blase, die mit einem lauten Knall und einem Lichtblitz platzt, in weniger als einer Tausendstelsekunde.",
+      "Mit bis zu zweihundertzehn Dezibel gehört er zu den lautesten Tieren im Meer. Forschende vermuten, dass er so Beute betäubt.",
+      "Hättest du dem kleinen Krebs das zugetraut, ja oder nein? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ],
+    "voiceText": [
+      "Dieses Tier ist nur ein paar Zentimeter groß, und knallt lauter als ein Pistolenschuss. Wie macht es das?",
+      "Das ist ein Knallkrebs, auch Pistolenkrebs genannt. Seine Schere kann halb so groß werden wie sein ganzer Körper.",
+      "Er schlägt sie mit fast 100 Kilometern pro Stunde zu.",
+      "Dabei entsteht eine Blase, die mit einem lauten Knall und einem Lichtblitz platzt, in weniger als einer Tausendstelsekunde.",
+      "Mit bis zu 210 Dezibel gehört er zu den lautesten Tieren im Meer. Forschende vermuten, dass er so Beute betäubt.",
+      "Hättest du dem kleinen Krebs das zugetraut, ja oder nein? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ]
+  },
+  "slides": [
+    { "type": "cover", "label": "Tiere", "title": "Dieser winzige Krebs knallt lauter als ein **Pistolenschuss** 😱" },
+    { "type": "cta", "label": "Täglich ein Wow", "title": "Folge für mehr verrückte Fakten aus der Wissenschaft." }
+  ],
+  "caption": "Knallkrebs: Nur ein paar Zentimeter groß – und lauter als ein Pistolenschuss! 😱 Der Pistolenkrebs schlägt seine riesige Schere mit fast 100 km/h zu. Dabei entsteht eine Blase, die mit lautem Knall und Lichtblitz platzt – in weniger als einer Tausendstelsekunde. Mit 183 bis 210 Dezibel gehört er zu den lautesten Tieren im Meer.\n\nHättest du dem kleinen Krebs das zugetraut – ja oder nein? 👇\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuellen: NOAA National Marine Sanctuaries, University of Texas Marine Science Institute · Text und Stimme mit KI erstellt\nFotos: Paul Winthrop, Sam Kieschnick, Kelvin Perrie, Saryu Mae, Pauline Walsh Jacobson (alle CC BY) via iNaturalist\n#knallkrebs #pistolenkrebs #tiere #meer #wissenschaft"
+}
