@@ -360,8 +360,8 @@
     "mood": "staunen",
     "file": "music/files/incompetech-Kevin_MacLeod-Colorless_Aura.mp3",
     "seconds": 158,
-    "used": 0,
-    "lastUsed": null
+    "used": 1,
+    "lastUsed": "2026-11-21T06:57:39.558Z"
   },
   {
     "source": "incompetech",
@@ -416,6 +416,34 @@
     "mood": "staunen",
     "file": "music/files/Internet_Archive-razxca-004_AGWEK.mp3",
     "seconds": 318,
+    "used": 0,
+    "lastUsed": null
+  },
+  {
+    "source": "incompetech",
+    "title": "Day of Chaos",
+    "artist": "Kevin MacLeod",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://incompetech.com",
+    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Day%20of%20Chaos.mp3",
+    "mood": "staunen",
+    "file": "music/files/incompetech-Kevin_MacLeod-Day_of_Chaos.mp3",
+    "seconds": 250,
+    "used": 0,
+    "lastUsed": null
+  },
+  {
+    "source": "incompetech",
+    "title": "Voxel Revolution",
+    "artist": "Kevin MacLeod",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://incompetech.com",
+    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Voxel%20Revolution.mp3",
+    "mood": "staunen",
+    "file": "music/files/incompetech-Kevin_MacLeod-Voxel_Revolution.mp3",
+    "seconds": 130,
     "used": 0,
     "lastUsed": null
   }
