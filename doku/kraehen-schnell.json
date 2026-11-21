@@ -1,0 +1,77 @@
+{
+  "id": "kraehen-schnell",
+  "title": "Schneller als wir: Krähen entscheiden doppelt so schnell wie Menschen | Kurz-Doku",
+  "thumbText": "Krähen denken\ndoppelt so schnell",
+  "description": "Krähen treffen Entscheidungen doppelt so schnell wie Menschen und Affen – und liegen dabei fast immer richtig. Forschende der Universität Tübingen haben Rabenkrähen bewegte Punkte gezeigt und dabei in ihr Gehirn geschaut. Schon nach 70 Millisekunden verrieten ihre Nervenzellen die Entscheidung.\n\nWas glaubst du: Warum sind Vögel so schnell? Schreib's in die Kommentare!",
+  "tags": ["Krähen", "Rabenkrähe", "Vögel", "Gehirn", "Entscheidungen", "Neurobiologie", "Tiere", "Doku", "Wissenschaft"],
+  "hashtags": ["#krähen", "#vögel", "#tiere", "#gehirn", "#wissenschaft"],
+  "mood": "staunen",
+  "sources": [
+    "Universität Tübingen / ScienceDaily (November 2026)",
+    "Schmidbauer & Nieder, Fachjournal Science (2026)"
+  ],
+  "segments": [
+    {
+      "kapitel": "Schneller als wir",
+      "text": "Was glaubst du: Wer entscheidet schneller, du oder eine Krähe?\nForschende der Universität Tübingen haben es getestet, und das Ergebnis ist verblüffend.",
+      "visuals": [
+        { "file": "videos/2026-11-13-kraehen-schnell.mp4", "start": 4, "label": "Rabenkrähen", "credit": "Video: The Nature Box, CC BY-SA 4.0" }
+      ]
+    },
+    {
+      "text": "Krähen treffen bestimmte Entscheidungen doppelt so schnell wie Menschen und Affen.\nUnd dabei liegen sie trotzdem erstaunlich oft richtig.",
+      "visuals": [
+        { "file": "images/2026-11-13-kraehen-schnell.jpg", "label": "Rabenkrähe", "credit": "Foto: Alexis Lours, CC BY 4.0" }
+      ]
+    },
+    {
+      "kapitel": "Der Test mit den Punkten",
+      "text": "Für den Versuch arbeiteten die Forschenden mit zwei Rabenkrähen.\nAuf einem Touchscreen sahen die Vögel viele bewegte Punkte.\nIhre Aufgabe: Erkennen, ob sich die meisten Punkte nach links oder nach rechts bewegen, und dann auf die passende Seite picken.",
+      "visuals": [
+        { "file": "videos/doku/kraehen-punkte.mp4", "start": 0, "label": "So sah der Test aus (eigene Darstellung)", "credit": "Grafik: krass.erforscht nach Uni Tübingen" },
+        { "file": "images/2026-11-13-kraehen-schnell-2.jpg", "label": "Rabenkrähe", "credit": "Foto: Priya Sandhu, CC BY, via iNaturalist" }
+      ]
+    },
+    {
+      "text": "Im Schnitt brauchten die Krähen nur zweihundertfünfunddreißig Millisekunden.\nDas ist ungefähr eine Viertelsekunde.",
+      "visuals": [
+        { "file": "images/doku/kraehen-zeitachse.png", "label": "Eigene Darstellung", "credit": "Grafik: krass.erforscht nach Uni Tübingen" }
+      ]
+    },
+    {
+      "kapitel": "Fast immer richtig",
+      "text": "Selbst wenn die Bewegung kaum zu erkennen war, lagen die Krähen besser als bloßes Raten.\nUnd bei klaren Signalen erreichten sie fast hundert Prozent richtige Antworten.",
+      "visuals": [
+        { "file": "images/2026-11-13-kraehen-schnell-3.jpg", "label": "Rabenkrähe", "credit": "Foto: Marie-Lan Taÿ Pamart, CC BY 4.0" }
+      ]
+    },
+    {
+      "kapitel": "Ein Blick ins Krähenhirn",
+      "text": "Die Forschenden haben dabei auch einzelne Nervenzellen belauscht.\nIn einem Teil des Vogelgehirns, der beim Entscheiden eine ähnliche Rolle spielt wie bei uns die Stirnhirnrinde.\nSchon siebzig Millisekunden nach dem Start zeigten die Nervenzellen an, wie sich die Krähe entscheiden wird, lange bevor sie pickte.",
+      "visuals": [
+        { "file": "images/doku/kraehen-zeitachse.png", "label": "Eigene Darstellung", "credit": "Grafik: krass.erforscht nach Uni Tübingen" },
+        { "file": "images/2026-11-13-kraehen-schnell.jpg", "label": "Rabenkrähe", "credit": "Foto: Alexis Lours, CC BY 4.0" }
+      ]
+    },
+    {
+      "text": "Das Spannende: Vögel haben keine geschichtete Großhirnrinde wie wir.\nTrotzdem folgt ihr Gehirn denselben Grundregeln beim Abwägen und Entscheiden, nur eben doppelt so schnell.",
+      "visuals": [
+        { "file": "videos/2026-11-13-kraehen-schnell.mp4", "start": 25, "label": "Rabenkrähen", "credit": "Video: The Nature Box, CC BY-SA 4.0" }
+      ]
+    },
+    {
+      "kapitel": "Warum so schnell?",
+      "text": "Die Forschenden vermuten, dass das mit dem Fliegen zusammenhängt.\nVögel müssen im Flug blitzschnell reagieren und ihren Schnabel bei der Futtersuche genau ans Ziel führen.",
+      "visuals": [
+        { "file": "images/2026-11-13-kraehen-schnell-4.jpg", "label": "Krähe im Flug", "credit": "Foto: Wikimedia Commons, CC BY-SA 3.0" },
+        { "file": "images/doku/kraehen-nebelkraehe.jpg", "label": "Nebelkrähe, eine enge Verwandte", "credit": "Foto: Iryna Mosiiash, CC BY, via iNaturalist" }
+      ]
+    },
+    {
+      "text": "Wie genau ihr Gehirn das schafft, ist aber noch offen. Das sollen weitere Studien klären.\nUnd du? Was glaubst du: Wärst du gegen eine Krähe im Schnell-Entscheiden chancenlos?",
+      "visuals": [
+        { "file": "videos/2026-11-13-kraehen-schnell.mp4", "start": 45, "label": "Rabenkrähen", "credit": "Video: The Nature Box, CC BY-SA 4.0" }
+      ]
+    }
+  ]
+}
