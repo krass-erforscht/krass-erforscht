@@ -520,5 +520,13 @@
     "publishedAt": "2026-11-21T18:00:00.000Z",
     "ytSlot": "abends",
     "uploadedAt": "2026-11-21T17:16:47.404Z"
+  },
+  {
+    "id": "kraehen-schnell",
+    "type": "doku",
+    "videoId": "X_-HT2Xrrrs",
+    "privacy": "public",
+    "publishedAt": "2026-11-21T18:02:45.488Z",
+    "uploadedAt": "2026-11-21T18:02:45.488Z"
   }
 ]
