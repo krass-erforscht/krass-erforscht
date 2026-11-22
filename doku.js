@@ -67,7 +67,9 @@ function main() {
     console.log('Sprecherstimme wird erzeugt (dauert einige Minuten) …');
     execFileSync(PY, [path.join(__dirname, 'stimme/sprechen.py'), path.join(tmp, 'text.txt'), voice], { stdio: ['ignore', 'ignore', 'inherit'] });
   }
-  const times = JSON.parse(fs.readFileSync(voice.replace(/\.wav$/, '.json')));
+  // Sprechtempo wie in den Reels (Wunsch des Nutzers, 22.11.): 1,2-fach; Satzzeiten entsprechend umrechnen
+  const SPEED = spec.voiceSpeed || 1.2;
+  const times = JSON.parse(fs.readFileSync(voice.replace(/\.wav$/, '.json'))).map(t => ({ ...t, start: t.start / SPEED, end: t.end / SPEED }));
 
   // 2. Abschnittsgrenzen aus den Satzzeiten: jeder Abschnitt läuft bis zum ersten Satz des nächsten
   let k = 0;
@@ -108,7 +110,7 @@ function main() {
     return out;
   });
 
-  return { spec, dir, tmp, voice, clips, bounds, total: bounds.at(-1).end + END };
+  return { spec, dir, tmp, voice, clips, bounds, SPEED, total: bounds.at(-1).end + END };
 }
 
 // Kapitel für YouTube (Abschnitte mit „kapitel“; YouTube verlangt mind. 3, das erste bei 0:00, jedes mind. 10 s lang)
@@ -120,7 +122,7 @@ function chapters(spec, bounds) {
 }
 
 (async () => {
-  const { spec, dir, tmp, voice, clips, bounds, total } = main();
+  const { spec, dir, tmp, voice, clips, bounds, SPEED, total } = main();
 
   // 4. Abspann: Quellen, Nachweise, KI-Hinweis
   // Musik pro Doku merken, damit ein Neubau dieselbe Musik behält (wichtig für Nachweise in schon hochgeladenen Videos)
@@ -141,7 +143,10 @@ function chapters(spec, bounds) {
   const list = path.join(tmp, 'list.txt');
   fs.writeFileSync(list, [...clips, endClip].map(c => `file '${path.resolve(c)}'`).join('\n'));
   const out = path.join(dir, 'doku.mp4');
-  ff(['-f', 'concat', '-safe', '0', '-i', list, '-i', voice, '-stream_loop', '-1', '-i', mus.file, '-filter_complex',
+  // Stimme vorab beschleunigen (atempo direkt im Mix ließ die Tonspur abbrechen)
+  const fast = path.join(tmp, `stimme-${SPEED}.wav`);
+  ff(['-i', voice, '-af', `atempo=${SPEED}`, fast]);
+  ff(['-f', 'concat', '-safe', '0', '-i', list, '-i', fast, '-stream_loop', '-1', '-i', mus.file, '-filter_complex',
     `[1:a]adelay=${LEAD * 1000}|${LEAD * 1000},aresample=48000,pan=stereo|c0=c0|c1=c0,apad=pad_dur=4,loudnorm=I=-16,aresample=48000[v];` +
     `[2:a]aresample=48000,volume=0.10,afade=t=in:d=2,afade=t=out:st=${(total - 4).toFixed(2)}:d=4[m];` +
     `[v][m]amix=inputs=2:duration=first:normalize=0,apad[a]`,

@@ -12,7 +12,7 @@ import sys, os, re, json, difflib, torch, torchaudio as ta
 from chatterbox.mtl_tts import ChatterboxMultilingualTTS
 from faster_whisper import WhisperModel
 
-TRIES, GOOD = 4, 0.85
+TRIES, GOOD = 6, 0.85
 src, out = sys.argv[1], sys.argv[2]
 ref = os.path.join(os.path.dirname(__file__), 'referenz.wav')
 m = ChatterboxMultilingualTTS.from_pretrained(device='cpu')
@@ -30,8 +30,16 @@ def check(line, wav):
     heard = ' '.join(w.word for w in ws)
     exp, hyp = words(line), words(heard)
     score = difflib.SequenceMatcher(None, exp, hyp).ratio() if exp else 1.0
-    end = ws[-1].end + 0.2 if ws else wav.shape[1] / m.sr
-    return score, heard, end
+    # Wörter mit Umlaut/ß müssen genau so gehört werden (sonst z. B. „laiser“ statt „leiser“) – Wunsch des Nutzers 22.11.
+    missing = [x for x in exp if re.search('[äöüß]', x) and x not in hyp]
+    if missing: score = min(score, GOOD - 0.01); heard += f'   [Umlaut falsch: {", ".join(missing)}]'
+    # Ende: nicht nach Whisper-Wortzeit schneiden (beim letzten Wort oft zu früh), sondern nach dem echten Ausklingen
+    x = wav[0]; fr = int(m.sr * 0.02); n = x.shape[0] // fr
+    rms = x[:n * fr].reshape(n, fr).pow(2).mean(1).sqrt()
+    loud = (rms > rms.max() * 0.04).nonzero()
+    end = (int(loud[-1]) + 1) * fr / m.sr + 0.25 if len(loud) else wav.shape[1] / m.sr
+    if ws: end = max(end, ws[-1].end + 0.45)
+    return score, heard, min(end, wav.shape[1] / m.sr)
 
 parts, times, pos = [], [], 0.0
 for line in open(src, encoding='utf-8').read().split('\n'):

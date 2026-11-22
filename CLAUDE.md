@@ -128,6 +128,10 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Bei Format `video` oder `zusammen` außerdem: `node video-reel.js posts/<datei>.json` (macht `video-reel.mp4` für Instagram mit großem Video,
    `video-short.mp4` für YouTube mit Texten in der sicheren Zone und `video-45.mp4`)
    und auch davon Standbilder prüfen (Überschrift lesbar, Fakten nicht abgeschnitten, Video zeigt das Thema).
+   **Stimme abhören vor dem Posten (Wunsch des Nutzers):** die Ausgabe von `video-reel.js` auf „Versuch“/„WARNUNG“ prüfen
+   (Wörter mit Umlaut müssen exakt erkannt werden, z. B. nicht „laiser“ statt „leiser“) und das Ende des fertigen Reels mit Whisper abhören:
+   der Schlusssatz muss vollständig sein, danach mindestens eine halbe Sekunde Ruhe. Bei WARNUNG den Satz umformulieren
+   (schwieriges Wort ersetzen) und neu bauen (`out/<id>/voice.wav` löschen).
 9. **Speichern:** Post, Bilder, Videos unter `out/`, `videos/<post-id>.mp4`, `data/` und `music/library.json` committen und pushen.
 10. **Posten** (nur wenn `KRASS_IG_TOKEN` oder `IG_TOKEN` gesetzt ist), je nach Format:
     - `bilder`: `node publish.js posts/<datei>.json`, danach `node publish.js posts/<datei>.json --reel`
