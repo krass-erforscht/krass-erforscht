@@ -4,6 +4,7 @@ Instagram- und YouTube-Account mit kuriosen, echten Wissens-Fakten auf Deutsch. 
 Grundregel: **Es darf nichts kosten.** Keine kostenpflichtigen APIs, keine bezahlten Bilder.
 
 Instagram-Token: bevorzugt `KRASS_IG_TOKEN` (eigene Variable, weil die Cloud-Umgebung mit Tagesbild.kompakt geteilt wird), sonst `IG_TOKEN`. `ig-account.js` bricht ab, wenn der Token zu einem anderen Konto gehört.
+Vor dem Bauen eines neuen Posts `data/warteschlange.md` lesen: Liegen dort fertige, noch nicht gepostete Posts, zuerst diese veröffentlichen.
 
 Vor jedem `node`-Befehl: `export NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt NODE_NO_WARNINGS=1`
 
