@@ -12,7 +12,7 @@ import sys, os, re, json, difflib, torch, torchaudio as ta
 from chatterbox.mtl_tts import ChatterboxMultilingualTTS
 from faster_whisper import WhisperModel
 
-TRIES, GOOD = 6, 0.85
+TRIES, GOOD = 6, 0.95   # 0.85 ließ einzelne falsche Wörter durch („jiegt“ statt „liegt“)
 src, out = sys.argv[1], sys.argv[2]
 ref = os.path.join(os.path.dirname(__file__), 'referenz.wav')
 m = ChatterboxMultilingualTTS.from_pretrained(device='cpu')
@@ -33,6 +33,7 @@ def check(line, wav):
     # Wörter mit Umlaut/ß müssen genau so gehört werden (sonst z. B. „laiser“ statt „leiser“) – Wunsch des Nutzers 22.11.
     missing = [x for x in exp if re.search('[äöüß]', x) and x not in hyp]
     if missing: score = min(score, GOOD - 0.01); heard += f'   [Umlaut falsch: {", ".join(missing)}]'
+    if len(hyp) > len(exp) + 1: score = min(score, GOOD - 0.01); heard += '   [Wiederholung]'
     # Ende: nicht nach Whisper-Wortzeit schneiden (beim letzten Wort oft zu früh), sondern nach dem echten Ausklingen
     x = wav[0]; fr = int(m.sr * 0.02); n = x.shape[0] // fr
     rms = x[:n * fr].reshape(n, fr).pow(2).mean(1).sqrt()
@@ -49,7 +50,7 @@ for line in open(src, encoding='utf-8').read().split('\n'):
         continue
     best = None
     for i in range(TRIES):
-        w = m.generate(line, language_id='de', audio_prompt_path=ref, exaggeration=0.4, cfg_weight=0.4)
+        w = m.generate(line, language_id='de', audio_prompt_path=ref, exaggeration=float(os.environ.get('CB_EXAG', 0.4)), cfg_weight=float(os.environ.get('CB_CFG', 0.4)))
         score, heard, end = check(line, w)
         if not best or score > best[0]: best = (score, w, heard, end)
         if score >= GOOD: break
