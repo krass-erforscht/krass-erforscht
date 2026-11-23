@@ -13,6 +13,9 @@ const berlinDate = d => new Date(d).toLocaleDateString('de-DE', { timeZone: 'Eur
 const posted = fs.existsSync('data/posted.json') ? JSON.parse(fs.readFileSync('data/posted.json')) : [];
 
 if (posted.some(p => berlinDate(p.postedAt) === berlinDate(Date.now()))) { console.log('NEIN (heute schon gepostet)'); process.exit(0); }
+// Absicherung (23.11.): Liegt der letzte Instagram-Post über 30 Stunden zurück (z. B. verpasster Lauf), sofort posten
+const lastPost = Math.max(0, ...posted.map(p => +new Date(p.postedAt)));
+if (lastPost && Date.now() - lastPost > 30 * 3600e3) { console.log('JA (Nachholen: letzter Post vor über 30 Stunden)'); process.exit(0); }
 
 const hour = p => +new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', hourCycle: 'h23' }).format(new Date(p.postedAt));
 const slotOf = p => Object.keys(SLOTS).find(s => SLOTS[s].includes(hour(p)));
