@@ -20,3 +20,6 @@ Gelöst 21.11.: IG_TOKEN gehört wieder zu krass.erforscht (getestet).
 ## 2026-11-21 abends – IG_TOKEN wieder tagesbild.kompakt
 Um 15:08 korrekt (krass.erforscht), um 17:15 enthalten IG_TOKEN und KLARTEXT_IG_TOKEN denselben tagesbild-Token. Kein falscher Post (Kontoprüfung). Video zum manuellen Hochladen an Nutzer geschickt.
 Außerdem: slot.js sprang nachmittags von „abends“ auf „morgens“ (neue Statistik) → Tagesentscheidung wird jetzt gespeichert.
+
+## 2026-11-22 – Spät-Lauf kam 11 Stunden zu spät an
+Die geplante Aufgabe „spät“ (20:45) wurde erst am 23.11. um 07:46 zugestellt. Knallkrebs daher nicht gepostet, auf 23.11. verschoben.
