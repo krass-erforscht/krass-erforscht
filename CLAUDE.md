@@ -23,6 +23,22 @@ deutschen Wissens-Shorts (siehe `data/strategie.md`, Abschnitt „Vorbilder“, 
   oder „Folge für mehr verrückte Fakten aus der Wissenschaft“ (das Wort „Wow“ nicht sprechen lassen – die Stimme sagt „Bau“).
 - Getestet wird nur noch **innerhalb** dieser Richtung (z. B. 25 vs. 45 s, Frage- vs. Listen-Titel, Thema), immer eine Sache pro Post.
 
+## Format „Geschichte“ (vom Nutzer gewünscht, 2026-11-23) – 3–4 Mal pro Woche, sonst Fakten-Video
+
+Vorbild: erzählte Erklär-Videos mit einfachen, flachen Zeichnungen (z. B. „Rattenpark“). Aufbau immer:
+Ausgangslage → Wendung („Doch Forschende stellten eine andere Frage …“) → Auflösung mit Zahlen → Bezug zum eigenen Leben („Und du? …“)
+→ nachdenkliche Schlussfrage. 60–80 s, sehr kurze Sätze, Zahlen aus der Quelle, nichts erfinden. Berühmte Experimente/Entdeckungen
+mit überraschender Wendung (Psychologie, Tiere, Weltall, Physik); keine Gesundheits-, Drogen- oder Politikthemen.
+1. `geschichten/<name>/text.txt` (ein Satz pro Zeile, Zahlen ausschreiben), Stimme:
+   `CB_EXAG=0.6 CB_CFG=0.5 /tmp/cb/bin/python stimme/sprechen.py geschichten/<name>/text.txt geschichten/<name>/stimme.wav`
+   (klarere Stimme; WARNUNGEN lesen, schwierige Wörter ersetzen).
+2. `geschichten/<name>/szenen.json` nach dem Muster `geschichten/marshmallow/szenen.json` (Szene je Satz, Elemente siehe Kopf von `geschichte.py`;
+   neue Bausteine bei Bedarf in `geschichte.py` ergänzen). `"post": "<post-id>"` eintragen.
+3. `python3 geschichte.py geschichten/<name>/szenen.json` (Instagram) und `… short` (YouTube) → landet in `out/<post-id>/`.
+   Standbild-Bogen ansehen (nichts ragt in die Untertitel, Texte nicht abgeschnitten), Ton mit Whisper abhören.
+4. Post-Datei wie `posts/2026-11-24-marshmallow.json` (`"art": "geschichte"`, `"test": "geschichte"`), dann wie gewohnt
+   `node publish.js … --video` und `node youtube.js reels …`. Caption: „Text, Stimme und Animation mit KI erstellt“, Musiknachweis automatisch.
+
 ## Ablauf
 
 A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wird; nur wenn `KRASS_IG_TOKEN` oder `IG_TOKEN` gesetzt ist):

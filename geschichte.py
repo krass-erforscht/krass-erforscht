@@ -12,6 +12,9 @@ import json, math, os, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
 
 W, H, FPS, SPEED, LEAD, ZOOM = 1080, 1920, 30, 1.2, 0.15, 1.25
+SUB_Y, SUB_TOP = 1660, 1560   # Untertitel-Bereich: Zeichnungen dürfen nicht unter SUB_TOP reichen
+SHORT = len(sys.argv) > 2 and sys.argv[2] == 'short'   # YouTube: unten liegt die Beschreibung → alles höher und kleiner
+if SHORT: ZOOM, SUB_Y, SUB_TOP = 1.0, 1300, 1235
 BG, INK, WHITE = (38, 40, 43), (232, 232, 228), (255, 255, 255)
 BLUE, PURPLE, ORANGE, RED, GREEN, SKIN = (90, 170, 235), (190, 110, 235), (240, 140, 60), (230, 80, 80), (90, 200, 120), (235, 200, 170)
 FB = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
@@ -155,11 +158,11 @@ def subtitle(dr, now):
     for a, b, txt in chunks:
         if a <= now < b:
             f = font(74)
-            dr.text((W / 2, 1520), txt, font=f, fill=WHITE, anchor='mm', stroke_width=6, stroke_fill=(20, 20, 22))
+            dr.text((W / 2, SUB_Y), txt, font=f, fill=WHITE, anchor='mm', stroke_width=6, stroke_fill=(20, 20, 22))
             return
 
 # ---------- Rendern ----------
-out = os.path.join(d, 'bild.mp4')
+out = os.path.join(d, 'bild-short.mp4' if SHORT else 'bild.mp4')
 proc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
                          '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', out], stdin=subprocess.PIPE)
 frames = int(total * FPS)
@@ -175,18 +178,19 @@ for fi in range(frames):
         p = (p_scene - start) / max(0.05, 1 - start)
         x, y = e.get('x', W / 2), e.get('y', 900)
         if 'nach' in e: x, y = x + (e['nach'][0] - x) * ease(p * 1.5), y + (e['nach'][1] - y) * ease(p * 1.5)
-        x, y = W / 2 + (x - W / 2) * ZOOM, 950 + (y - 950) * ZOOM   # alles etwas größer, Bildmitte bleibt
+        x, y = W / 2 + (x - W / 2) * ZOOM, (850 if SHORT else 950) + (y - 950) * ZOOM   # alles etwas größer, Bildmitte bleibt
         pop = ease((now - (sc['t0'] + start * (sc['t1'] - sc['t0']))) * 4)   # kurzes Hereinwachsen
         DRAW[e['typ']](dr, x, y + (1 - pop) * 30, e.get('s', 1) * ZOOM * (0.85 + 0.15 * pop), e, p)
+    dr.rectangle((0, SUB_TOP, W, H), fill=tuple(sc.get('bg', BG)))
     subtitle(dr, now)
     proc.stdin.write(im.tobytes())
 proc.stdin.close(); proc.wait()
 
 # ---------- Ton ----------
 # „Klare“ Stimme (Wunsch des Nutzers 23.11.): Dumpfes raus, Präsenz rein, Kompressor – wie bei Radio-/YouTube-Sprechern
-KLAR = ('highpass=f=90,equalizer=f=250:t=q:w=1.2:g=-3,equalizer=f=3200:t=q:w=1.0:g=5,equalizer=f=8000:t=q:w=1.5:g=2,'
-        'acompressor=threshold=-20dB:ratio=3.5:attack=4:release=60:makeup=4')
-final = os.path.join(d, 'video.mp4')
+KLAR = ('adeclick,highpass=f=90,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3000:t=q:w=1.5:g=3.5,'
+        'acompressor=threshold=-18dB:ratio=2.5:attack=20:release=150:makeup=2,adeclick')   # sanft: schneller Kompressor erzeugte Knackser
+final = os.path.join(d, 'video-short.mp4' if SHORT else 'video.mp4')
 mus = spec['musik']
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(d, 'stimme.wav'), '-af', f'atempo={SPEED}' + (',' + KLAR if spec.get('stimmeKlar', True) else ''), os.path.join(d, 'stimme-schnell.wav')], check=True)
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', out, '-i', os.path.join(d, 'stimme-schnell.wav'), '-stream_loop', '-1', '-i', mus, '-filter_complex',
@@ -195,3 +199,13 @@ subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', out, '-i', os.path.join(d, 
                 f'[v][m]amix=inputs=2:duration=first:normalize=0,atrim=0:{total:.2f},loudnorm=I=-15[a]',
                 '-map', '0:v', '-map', '[a]', '-t', f'{total:.2f}', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', final], check=True)
 print(f'Geschichte ({total:.1f} s) -> {final}')
+
+# ---------- Für publish.js / youtube.js bereitlegen (out/<post>/video-reel.mp4 bzw. video-short.mp4) ----------
+if spec.get('post'):
+    import shutil
+    o = os.path.join('out', spec['post']); os.makedirs(o, exist_ok=True)
+    shutil.copy(final, os.path.join(o, 'video-short.mp4' if SHORT else 'video-reel.mp4'))
+    json.dump({'version': 3, 'format': 'geschichte'}, open(os.path.join(o, 'video-layout.json'), 'w'))   # nicht von video-reel.js überschreiben lassen
+    m = os.path.basename(spec['musik'])
+    json.dump({'credit': spec['musikNachweis'], 'file': spec['musik']}, open(os.path.join(o, 'video-music.json'), 'w'), ensure_ascii=False)
+    print(f'-> {o}/' + ('video-short.mp4' if SHORT else 'video-reel.mp4'))

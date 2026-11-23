@@ -84,3 +84,5 @@ Zusatz zu Regel 2 (2026-11-16): Videos bis 15 s erreichen im Mittel 175 Konten, 
 - 2026-11-16: Zwischenbilanz mit Nutzer: Reichweite wächst (100–300 je Video-Post, YouTube ~7.000 Aufrufe), aber Follower stagnieren (IG 5, YT 1). Neue Tests: Sprecherstimme (5), Grund zum Folgen/Serie (6). Nutzer pinnt den Dino-Post an.
 - 2026-11-11: Format bewusst „video“ statt der Zufalls-Testvariante „zusammen“ (Video 175 vs. zusammen 105 Konten bei 7/5 Posts – Regel 1). Erster Post um 20:45 (spät). Test: kurzes-video (10,5 s).
 - 2026-11-10: Analyse eingeführt, Regeln 1–4 aufgestellt. Vierte Instagram-Uhrzeit (20:45) ergänzt, YouTube-Statistik und -Uhrzeitwahl eingeführt. YouTube: nur noch Video-Shorts, max. 2/Tag mit 6 h Abstand.
+
+- 2026-11-23: Nutzer: Format der Vorbild-Videos (erzählte Geschichten mit einfachen Zeichnungen) übernehmen, weil die Fakten-Videos kaum Follower bringen. Test-Kurzname `geschichte`; 3–4 pro Woche, Vergleich mit Fakten-Videos nach Reichweite, Wiedergabezeit und Followern.

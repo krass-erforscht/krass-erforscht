@@ -24,3 +24,4 @@ Hier hält die App fest, was sie selbst verbessert hat (Datum, ein Satz).
 - 2026-11-21: slot.js merkt sich die Tagesentscheidung (data/slot-heute.json), damit neue Statistiken im Laufe des Tages das Posting-Fenster nicht mehr verschieben.
 - 2026-11-22: Stimmprüfung strenger (Wörter mit Umlaut müssen exakt erkannt werden, bis zu 6 Versuche) und Satzende wird erst nach dem echten Ausklingen geschnitten – Schlusssätze wurden vorher manchmal abgeschnitten (Hinweis des Nutzers). Doku-Stimme jetzt ebenfalls 1,2-fach schnell.
 - 2026-11-23: slot.js postet sofort, wenn der letzte Instagram-Post über 30 Stunden zurückliegt (verpasste oder verspätete Läufe führten zu 4 Tagen Pause).
+- 2026-11-23: Neues Format „Geschichte“ (geschichte.py): selbst gezeichnete Erklär-Animationen mit klarerer Stimme, Untertitel im eigenen Bereich, Klick-Filter; 15-ms-Blenden zwischen Sätzen in sprechen.py.

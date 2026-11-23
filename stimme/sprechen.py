@@ -60,6 +60,9 @@ for line in open(src, encoding='utf-8').read().split('\n'):
     if score < GOOD: print(f'WARNUNG ({score:.2f}): „{line}“ klingt wie „{heard.strip()}“', file=sys.stderr)
     times.append({'text': line, 'start': round(pos, 2), 'end': round(pos + w.shape[1] / m.sr, 2), 'score': round(score, 2)})
     pos += w.shape[1] / m.sr + 0.45
+    # 15 ms ein-/ausblenden: harte Schnitte zwischen Sätzen knacken sonst hörbar (Hinweis des Nutzers 23.11.)
+    f = int(m.sr * 0.015); ramp = torch.linspace(0, 1, f)
+    w = w.clone(); w[:, :f] *= ramp; w[:, -f:] *= ramp.flip(0)
     parts += [w, torch.zeros(1, int(m.sr * 0.45))]
 ta.save(out, torch.cat(parts, 1), m.sr)
 # Zeitpunkte der Sätze für Untertitel

@@ -1,0 +1,18 @@
+{
+  "id": "2026-11-24-marshmallow",
+  "category": "Psychologie",
+  "topic": "kurios",
+  "tone": "staunen",
+  "format": "video",
+  "art": "geschichte",
+  "test": "geschichte",
+  "source": {
+    "name": "University of Rochester: The Marshmallow Study Revisited (2012), Studie: Kidd, Palmeri & Aslin, Fachjournal Cognition",
+    "url": "https://www.rochester.edu/news/printable.php?id=4622"
+  },
+  "slides": [
+    { "type": "cover", "label": "Psychologie", "title": "Der Marshmallow-Test hatte einen **Haken** 😳" },
+    { "type": "cta", "label": "Täglich ein Wow", "title": "Folge für mehr verrückte Fakten aus der Wissenschaft." }
+  ],
+  "caption": "Marshmallow-Test: Jahrzehntelang galt er als Beweis für Willenskraft. 😳 Doch Forschende der University of Rochester zeigten: Kinder, denen vorher zweimal ein Versprechen gebrochen wurde, warteten im Schnitt nur 3 Minuten – Kinder mit verlässlichen Erwachsenen 12 Minuten. Viermal so lang. Die Kinder waren nicht schwach, sie haben vernünftig entschieden.\n\nWem hast du zuletzt ein Versprechen gehalten? 👇\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuelle: University of Rochester (2012), Studie im Fachjournal Cognition · Text, Stimme und Animation mit KI erstellt\n#marshmallowtest #psychologie #vertrauen #kinder #wissenschaft"
+}
