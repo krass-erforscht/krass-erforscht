@@ -1,25 +1,25 @@
 {
-  "aktualisiert": "2026-11-21T15:08:40.903Z",
+  "aktualisiert": "2026-11-24T17:06:02.851Z",
   "ranking": [
-    {
-      "gruppe": "uhrzeit:7",
-      "posts": 2,
-      "punkte": 4.3,
-      "reichweite": 1995,
-      "follower": 0
-    },
     {
       "gruppe": "format:zusammen",
       "posts": 4,
-      "punkte": 3.89,
-      "reichweite": 95,
+      "punkte": 3.88,
+      "reichweite": 96,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:7",
+      "posts": 3,
+      "punkte": 3.42,
+      "reichweite": 1356,
       "follower": 0
     },
     {
       "gruppe": "uhrzeit:18",
       "posts": 3,
-      "punkte": 2.91,
-      "reichweite": 112,
+      "punkte": 2.9,
+      "reichweite": 113,
       "follower": 0
     },
     {
@@ -30,24 +30,24 @@
       "follower": 0
     },
     {
-      "gruppe": "thema:kurios",
-      "posts": 2,
-      "punkte": 2.41,
-      "reichweite": 126,
-      "follower": 0
-    },
-    {
       "gruppe": "thema:koerper",
       "posts": 2,
-      "punkte": 2.39,
-      "reichweite": 105,
+      "punkte": 2.38,
+      "reichweite": 106,
       "follower": 0
     },
     {
       "gruppe": "ton:witzig",
       "posts": 4,
-      "punkte": 2.38,
-      "reichweite": 116,
+      "punkte": 2.37,
+      "reichweite": 117,
+      "follower": 0
+    },
+    {
+      "gruppe": "thema:kurios",
+      "posts": 3,
+      "punkte": 2.16,
+      "reichweite": 104,
       "follower": 0
     },
     {
@@ -61,7 +61,7 @@
       "gruppe": "thema:geschichte",
       "posts": 1,
       "punkte": 1.77,
-      "reichweite": 3945,
+      "reichweite": 3964,
       "follower": 0
     },
     {
@@ -80,23 +80,16 @@
     },
     {
       "gruppe": "ton:staunen",
-      "posts": 10,
-      "punkte": 1.35,
-      "reichweite": 538,
+      "posts": 12,
+      "punkte": 1.3,
+      "reichweite": 473,
       "follower": 0
     },
     {
       "gruppe": "format:video",
-      "posts": 15,
-      "punkte": 1.11,
-      "reichweite": 418,
-      "follower": 0
-    },
-    {
-      "gruppe": "thema:tiere",
-      "posts": 3,
-      "punkte": 0.94,
-      "reichweite": 183,
+      "posts": 17,
+      "punkte": 1.1,
+      "reichweite": 386,
       "follower": 0
     },
     {
@@ -107,10 +100,24 @@
       "follower": 0
     },
     {
+      "gruppe": "thema:tiere",
+      "posts": 4,
+      "punkte": 0.82,
+      "reichweite": 192,
+      "follower": 0
+    },
+    {
+      "gruppe": "uhrzeit:16",
+      "posts": 1,
+      "punkte": 0.47,
+      "reichweite": 215,
+      "follower": 0
+    },
+    {
       "gruppe": "uhrzeit:20",
       "posts": 4,
       "punkte": 0.2,
-      "reichweite": 207,
+      "reichweite": 208,
       "follower": 0
     },
     {

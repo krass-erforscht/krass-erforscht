@@ -86,3 +86,5 @@ Zusatz zu Regel 2 (2026-11-16): Videos bis 15 s erreichen im Mittel 175 Konten, 
 - 2026-11-10: Analyse eingeführt, Regeln 1–4 aufgestellt. Vierte Instagram-Uhrzeit (20:45) ergänzt, YouTube-Statistik und -Uhrzeitwahl eingeführt. YouTube: nur noch Video-Shorts, max. 2/Tag mit 6 h Abstand.
 
 - 2026-11-23: Nutzer: Format der Vorbild-Videos (erzählte Geschichten mit einfachen Zeichnungen) übernehmen, weil die Fakten-Videos kaum Follower bringen. Test-Kurzname `geschichte`; 3–4 pro Woche, Vergleich mit Fakten-Videos nach Reichweite, Wiedergabezeit und Followern.
+
+- 2026-11-24: Zwischenbilanz mit Nutzer. Instagram: 25 Posts, Reichweite meist 120–300 (1 Ausreißer 3.964), Likes/Teilen/Speichern ~0, Follower seit Wochen 5; Wiedergabezeit gestiegen (6 s → 9–10,5 s). YouTube: 12.231 Aufrufe, 4 Abos, Shorts stabil 550–800 Aufrufe (3–5× Instagram), Dokus 4–5 Aufrufe. Tagesbild.kompakt ähnlich (Median 110 Konten, 5–6 Follower). Ziele bis 08.12.: Instagram Median ≥ 400 Konten oder +20 Follower; YouTube ≥ 1.000 Aufrufe/Short und ≥ 25 Abos – sonst Kurs ändern.
