@@ -10,3 +10,4 @@ Status 2026-11-08: Nutzer will freischalten. Seiten (docs/datenschutz.html, docs
 Sobald der Nutzer einen Testkommentar meldet: den Kommentar beantworten. Nach Freigabe + neuem Token: Kommentar unter dem Dino-Post beantworten.
 
 - Instagram-Token: seit 22.11. eigene Variable KRASS_IG_TOKEN (getestet, gehört zu krass.erforscht) – erledigt.
+- 2026-11-24: Nutzer schaltet Direktnachrichten-Berechtigung frei (instagram_business_manage_messages) für „Kommentiere WORT“-Antworten. Danach: Stichwort-Auto-Antwort bauen und testen.

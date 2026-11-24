@@ -165,7 +165,9 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
     Danach `node youtube.js nachholen` (ältere Video-Shorts, auch vom Nutzer gelöschte, höchstens 1 pro Tag, damit Platz für neue bleibt).
     `data/youtube.json` committen und pushen. Kommt der Status „private“ zurück, den Nutzer einmalig bitten, es in YouTube Studio auf „Öffentlich“ zu stellen.
     Zeigt die Analyse, dass etwas auf YouTube dauerhaft kaum Aufrufe bringt (Art, Uhrzeit, Abstand), anpassen und in `data/strategie.md` begründen.
-10c. **Kurz-Doku für YouTube** (einmal pro Woche, samstags im Lauf, in dem gepostet wird):
+10c. **Kurz-Doku für YouTube – PAUSIERT seit 2026-11-24** (Dokus brachten nur 4–5 Aufrufe; Entscheidung mit Nutzer).
+    Stattdessen samstags eine zusätzliche **Geschichte nur für YouTube** bauen (Format „Geschichte“, `node youtube.js reels` mit eigener Post-Datei ohne Instagram-Post),
+    damit an möglichst vielen Tagen 2 Shorts erscheinen. Alte Doku-Anleitung zum Nachlesen:
     - Thema: der Post der letzten 14 Tage mit der höchsten Reichweite (`data/posted.json`), der noch keine Doku hat (`data/youtube.json`, type „doku“).
     - Originalquelle nochmal ganz lesen, Drehbuch `doku/<id>.json` nach dem Muster von `doku/dino-blut.json` schreiben: 8–10 Abschnitte, ca. 3 Minuten,
       ruhiger Doku-Ton, nur Fakten aus der Quelle, 4–6 Abschnitte mit `kapitel` (YouTube-Kapitel, der erste Abschnitt immer), 5 passende `hashtags`, Zahlen ausschreiben, sehr kurze Sätze (1–3 Wörter) mit dem Nachbarsatz verbinden, letzte Zeile eine Frage an die Zuschauer.
