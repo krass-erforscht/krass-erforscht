@@ -542,5 +542,14 @@
     "sourceUrl": "https://sanctuaries.noaa.gov/news/dec21/oh-snap.html",
     "mediaId": "18474585469185206",
     "format": "video"
+  },
+  {
+    "id": "2026-11-24-marshmallow",
+    "postedAt": "2026-11-24T06:06:24.324Z",
+    "topic": "kurios",
+    "tone": "staunen",
+    "sourceUrl": "https://www.rochester.edu/news/printable.php?id=4622",
+    "mediaId": "18027146267715836",
+    "format": "video"
   }
 ]
