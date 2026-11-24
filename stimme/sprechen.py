@@ -25,7 +25,7 @@ def words(s):
 
 def check(line, wav):
     a = ta.functional.resample(wav, m.sr, 16000)[0].numpy()
-    segs, _ = ear.transcribe(a, language='de', word_timestamps=True)
+    segs, _ = ear.transcribe(a, language='de', word_timestamps=True, beam_size=5)   # genauer, weniger Fehlalarme
     ws = [w for s in segs for w in (s.words or [])]
     heard = ' '.join(w.word for w in ws)
     exp, hyp = words(line), words(heard)
@@ -42,11 +42,22 @@ def check(line, wav):
     if ws: end = max(end, ws[-1].end + 0.45)
     return score, heard, min(end, wav.shape[1] / m.sr)
 
-parts, times, pos = [], [], 0.0
+# NUR=3,10: nur diese Sätze (Zählung ab 0, ohne Leerzeilen) neu sprechen, alle anderen aus der vorhandenen Aufnahme übernehmen
+NUR = {int(x) for x in os.environ.get('NUR', '').split(',') if x.strip()}
+old_w = old_t = None
+if NUR:
+    old_w, _sr = ta.load(out); old_t = json.load(open(out.rsplit('.', 1)[0] + '.json'))
+parts, times, pos, k = [], [], 0.0, -1
 for line in open(src, encoding='utf-8').read().split('\n'):
     line = line.strip()
     if not line:
         parts.append(torch.zeros(1, int(m.sr * 0.5))); pos += 0.5
+        continue
+    k += 1
+    if NUR and k not in NUR:
+        o = old_t[k]; w = old_w[:, int(o['start'] * m.sr):int(o['end'] * m.sr)]
+        times.append({**o, 'start': round(pos, 2), 'end': round(pos + w.shape[1] / m.sr, 2)})
+        pos += w.shape[1] / m.sr + 0.45; parts += [w, torch.zeros(1, int(m.sr * 0.45))]
         continue
     best = None
     for i in range(TRIES):

@@ -4,3 +4,4 @@ Im nächsten Posting-Fenster zuerst diese veröffentlichen (`node publish.js <da
 statt einen neuen Post zu bauen. Nach dem Posten die Zeile hier löschen.
 
 - 2026-11-24 (spät, zweiter Post): posts/2026-11-20-kaeltester-ort.json (Fakten-Video; auf YouTube schon online)
+- 2026-11-25: posts/2026-11-25-marmelade.json (Geschichte, neues Design – Nutzer sieht es vorher)
