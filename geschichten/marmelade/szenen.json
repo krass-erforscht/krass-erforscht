@@ -1,0 +1,70 @@
+{
+  "titel": "Mehr Auswahl, weniger gekauft 🤯",
+  "post": "2026-11-25-marmelade",
+  "thema": "hell",
+  "hook": "24 Sorten oder 6 –\nwas verkauft mehr?",
+  "quelle": "Iyengar & Lepper (2000): When Choice is Demotivating, Journal of Personality and Social Psychology 79(6)",
+  "musik": "music/files/incompetech-Kevin_MacLeod-Cattails.mp3",
+  "musikNachweis": "Musik: „Cattails“ von Kevin MacLeod (incompetech), CC BY 4.0",
+  "musikLautstaerke": 0.09,
+  "szenen": [
+    { "ab": 0, "els": [
+      { "typ": "tisch", "x": 540, "y": 1150, "w": 640 },
+      { "typ": "glaeser", "x": 540, "y": 1150, "n": 24, "spalten": 8, "s": 0.75 },
+      { "typ": "frage", "x": 540, "y": 640, "rein": 0.55 } ] },
+    { "ab": 1, "els": [
+      { "typ": "figur", "name": "forscherin", "x": 300, "y": 1360, "h": 700, "spricht": true },
+      { "typ": "tisch", "x": 760, "y": 1180, "w": 420 },
+      { "typ": "glaeser", "x": 760, "y": 1180, "n": 6, "spalten": 3, "s": 0.85, "rein": 0.3 } ] },
+    { "ab": 2, "els": [
+      { "typ": "text", "x": 300, "y": 560, "t": "24", "gr": 120, "farbe": [240, 140, 60] },
+      { "typ": "tisch", "x": 300, "y": 1150, "w": 440 },
+      { "typ": "glaeser", "x": 300, "y": 1150, "n": 24, "spalten": 6, "s": 0.62 },
+      { "typ": "text", "x": 790, "y": 560, "t": "6", "gr": 120, "farbe": [90, 170, 235], "rein": 0.5 },
+      { "typ": "tisch", "x": 790, "y": 1150, "w": 380, "rein": 0.5 },
+      { "typ": "glaeser", "x": 790, "y": 1150, "n": 6, "spalten": 3, "s": 0.8, "rein": 0.5 } ] },
+    { "ab": 3, "els": [
+      { "typ": "tisch", "x": 540, "y": 1150, "w": 560 },
+      { "typ": "glaeser", "x": 540, "y": 1150, "n": 24, "spalten": 8, "s": 0.62 },
+      { "typ": "figur", "name": "person", "x": 220, "y": 1380, "h": 620, "gesicht": "staunen", "rein": 0.15 },
+      { "typ": "figur", "name": "mann", "x": 860, "y": 1380, "h": 620, "gesicht": "staunen", "spiegeln": true, "rein": 0.4 } ] },
+    { "ab": 4, "els": [
+      { "typ": "zaehler", "x": 300, "y": 520, "titel": "24 Sorten", "von": 0, "bis": 60, "einheit": " %", "farbe": [240, 140, 60] },
+      { "typ": "figur", "name": "person", "x": 300, "y": 1380, "h": 560, "gesicht": "froh" },
+      { "typ": "zaehler", "x": 790, "y": 520, "titel": "6 Sorten", "von": 0, "bis": 40, "einheit": " %", "farbe": [90, 170, 235], "rein": 0.5 },
+      { "typ": "figur", "name": "entspannt", "x": 790, "y": 1380, "h": 560, "rein": 0.5 } ] },
+    { "ab": 5, "els": [
+      { "typ": "kasse", "x": 640, "y": 1250, "s": 1.2, "t": "Kasse" },
+      { "typ": "figur", "name": "zeigend", "x": 250, "y": 1380, "h": 640, "spricht": true },
+      { "typ": "frage", "x": 820, "y": 560, "rein": 0.4 } ] },
+    { "ab": 6, "els": [
+      { "typ": "zaehler", "x": 540, "y": 480, "titel": "6 Sorten · gekauft", "von": 0, "bis": 30, "einheit": " %", "farbe": [90, 200, 120] },
+      { "typ": "figur", "name": "person", "x": 300, "y": 1380, "h": 620, "gesicht": "froh" },
+      { "typ": "kasse", "x": 780, "y": 1250, "s": 0.95, "t": "1 Glas ✓" },
+      { "typ": "haken", "x": 780, "y": 860, "rein": 0.55 } ] },
+    { "ab": 7, "els": [
+      { "typ": "zaehler", "x": 540, "y": 480, "titel": "24 Sorten · gekauft", "von": 0, "bis": 3, "einheit": " %", "farbe": [230, 80, 80] },
+      { "typ": "figur", "name": "mann", "x": 300, "y": 1380, "h": 620, "gesicht": "traurig" },
+      { "typ": "tisch", "x": 780, "y": 1170, "w": 380 },
+      { "typ": "glaeser", "x": 780, "y": 1170, "n": 24, "spalten": 6, "s": 0.55 },
+      { "typ": "kreuz", "x": 780, "y": 880, "rein": 0.5 } ] },
+    { "ab": 8, "els": [
+      { "typ": "balken", "x": 540, "y": 1250, "h": 560, "max": 30, "fmt": "{:.0f} %", "werte": [["6 Sorten", 30, [90, 200, 120]], ["24 Sorten", 3, [230, 80, 80]]] },
+      { "typ": "text", "x": 540, "y": 470, "t": "10× weniger", "gr": 90, "farbe": [240, 140, 60], "rein": 0.55 } ] },
+    { "ab": 9, "els": [
+      { "typ": "figur", "name": "forscherin", "x": 320, "y": 1380, "h": 700, "spricht": true },
+      { "typ": "glaeser", "x": 790, "y": 1000, "n": 24, "spalten": 4, "s": 0.6 },
+      { "typ": "frage", "x": 790, "y": 470, "farbe": [230, 80, 80], "rein": 0.4 } ] },
+    { "ab": 10, "els": [
+      { "typ": "text", "x": 540, "y": 470, "t": "…lieber gar nicht.", "gr": 72 },
+      { "typ": "figur", "name": "sitzend", "x": 540, "y": 1380, "h": 560, "gesicht": "traurig" } ] },
+    { "ab": 11, "els": [
+      { "typ": "bildschirm", "x": 540, "y": 640, "s": 1.15 },
+      { "typ": "figur", "name": "sitzend", "x": 540, "y": 1400, "h": 500 } ] },
+    { "ab": 12, "els": [
+      { "typ": "text", "x": 540, "y": 470, "t": "weniger ist mehr", "gr": 80, "farbe": [90, 200, 120] },
+      { "typ": "figur", "name": "entspannt", "x": 540, "y": 1380, "h": 680, "gesicht": "froh" } ] },
+    { "ab": 13, "els": [
+      { "typ": "text", "x": 540, "y": 860, "t": "Was macht dich\nglücklicher:\n3 Möglichkeiten\noder 30?", "gr": 70 } ] }
+  ]
+}

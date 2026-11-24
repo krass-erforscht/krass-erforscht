@@ -20,6 +20,8 @@ BLUE, PURPLE, ORANGE, RED, GREEN, SKIN = (90, 170, 235), (190, 110, 235), (240, 
 FB = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 font = lambda s: ImageFont.truetype(FB, int(s))
 ease = lambda p: 1 - (1 - max(0, min(1, p))) ** 3
+import numpy as np, random
+ROOT = os.path.dirname(os.path.abspath(__file__))
 
 spec_path = sys.argv[1]
 d = os.path.dirname(spec_path)
@@ -29,6 +31,8 @@ for t in times: t['start'] = t['start'] / SPEED + LEAD; t['end'] = t['end'] / SP
 total = times[-1]['end'] + 1.6
 
 scenes = spec['szenen']
+HELL = spec.get('thema') == 'hell'          # helles Papier-Design (für die Open-Peeps-Figuren, ab 24.11.)
+if HELL: BG, INK = (244, 239, 230), (38, 38, 44)
 for i, sc in enumerate(scenes):
     sc['t0'] = 0 if i == 0 else times[sc['ab']]['start'] - 0.15
 for i, sc in enumerate(scenes):
@@ -81,7 +85,8 @@ def tuer(dr, x, y, s, e, p):
 def zaehler(dr, x, y, s, e, p):
     v = e['von'] + (e['bis'] - e['von']) * ease(p * e.get('tempo', 1.4))
     c = tuple(e.get('farbe', BLUE))
-    dr.rounded_rectangle((x - 150 * s, y - 95 * s, x + 150 * s, y + 95 * s), 22 * s, fill=(28, 30, 34))
+    bw = max(150 * s, dr.textlength(e['titel'], font=font(32 * s)) / 2 + 30 * s)
+    dr.rounded_rectangle((x - bw, y - 95 * s, x + bw, y + 95 * s), 22 * s, fill=(28, 30, 34))
     dr.text((x, y - 50 * s), e['titel'], font=font(32 * s), fill=(200, 200, 200), anchor='mm')
     txt = (f"{v:.0f}" if e.get('fmt') != 'min' else f"{int(v)}:{int((v % 1) * 60):02d}") + e.get('einheit', '')
     dr.text((x, y + 30 * s), txt, font=font(62 * s), fill=c, anchor='mm')
@@ -138,7 +143,59 @@ def sticker(dr, x, y, s, e, p):
 def frage(dr, x, y, s, e, p):
     dr.text((x, y), '?', font=font(260 * s), fill=tuple(e.get('farbe', ORANGE)), anchor='mm')
 
-DRAW = {k: v for k, v in globals().items() if k in 'kind erwachsene tisch marshmallow tuer zaehler uhr text balken gruppe kreuz haken stifte sticker frage'.split()}
+JAM = [(200, 40, 60), (240, 140, 60), (150, 60, 160), (230, 190, 60), (90, 160, 80), (120, 40, 40)]
+def glaeser(dr, x, y, s, e, p):
+    """Marmeladengläser: n Stück in Reihen (spalten), erscheinen nacheinander. Unterkante bei y."""
+    n, sp = e.get('n', 6), e.get('spalten', 6)
+    shown = int(n * min(1, ease(p * 3)) + 0.999)
+    for i in range(shown):
+        r, c = divmod(i, sp); gx = x + (c - (sp - 1) / 2) * 78 * s; gy = y - r * 110 * s
+        col = JAM[i % len(JAM)]
+        dr.rounded_rectangle((gx - 28 * s, gy - 80 * s, gx + 28 * s, gy), 10 * s, fill=col, outline=(40, 40, 44), width=int(4 * s))
+        dr.rectangle((gx - 31 * s, gy - 98 * s, gx + 31 * s, gy - 80 * s), fill=(240, 235, 225), outline=(40, 40, 44), width=int(4 * s))
+        dr.rectangle((gx - 18 * s, gy - 58 * s, gx + 18 * s, gy - 30 * s), fill=(250, 248, 240))
+
+def bildschirm(dr, x, y, s, e, p):
+    """Fernseher mit vielen Kacheln (Streaming-Auswahl), Kacheln laufen langsam durch."""
+    w, h = 520 * s, 320 * s
+    dr.rounded_rectangle((x - w / 2 - 16 * s, y - h / 2 - 16 * s, x + w / 2 + 16 * s, y + h / 2 + 16 * s), 18 * s, fill=(40, 40, 44))
+    dr.rectangle((x - w / 2, y - h / 2, x + w / 2, y + h / 2), fill=(25, 28, 40))
+    off = (p * 300 * s) % (110 * s)
+    for r in range(3):
+        for c in range(6):
+            tx = x - w / 2 + 15 * s + c * 110 * s - off; ty = y - h / 2 + 20 * s + r * 100 * s
+            if tx + 95 * s < x - w / 2 or tx > x + w / 2: continue
+            col = JAM[(r * 6 + c) % len(JAM)]
+            dr.rectangle((max(tx, x - w / 2), ty, min(tx + 95 * s, x + w / 2), ty + 80 * s), fill=col)
+    dr.rectangle((x - 60 * s, y + h / 2 + 16 * s, x + 60 * s, y + h / 2 + 40 * s), fill=(40, 40, 44))
+
+def kasse(dr, x, y, s, e, p):
+    """Kasse (Unterkante bei y)."""
+    dr.rounded_rectangle((x - 150 * s, y - 120 * s, x + 150 * s, y), 16 * s, fill=(90, 95, 110), outline=(40, 40, 44), width=int(5 * s))
+    dr.rounded_rectangle((x - 110 * s, y - 230 * s, x + 110 * s, y - 130 * s), 12 * s, fill=(60, 64, 78), outline=(40, 40, 44), width=int(5 * s))
+    dr.rectangle((x - 90 * s, y - 215 * s, x + 90 * s, y - 150 * s), fill=(140, 220, 160))
+    dr.text((x, y - 183 * s), e.get('t', '1,99 €'), font=font(44 * s), fill=(30, 60, 40), anchor='mm')
+
+# Open-Peeps-Figur (assets/figuren/<name>-<gesicht>.png, CC0): Füße bei (x, y), Höhe h; spricht=true → Mund bewegt sich,
+# solange die Stimme spricht; blinzelt alle paar Sekunden. gesicht: neutral | froh | traurig | staunen; spiegeln=true
+FIG = {}
+def fig_img(name, mood, h, flip):
+    key = (name, mood, int(h), flip)
+    if key not in FIG:
+        im = Image.open(os.path.join(ROOT, 'assets/figuren', f'{name}-{mood}.png')).convert('RGBA')
+        im = im.crop(im.getbbox()); im = im.resize((max(1, int(im.width * h / im.height)), int(h)), Image.LANCZOS)
+        FIG[key] = im.transpose(Image.FLIP_LEFT_RIGHT) if flip else im
+    return FIG[key]
+def speaking(now): return any(t['start'] <= now < t['end'] for t in times)
+def figur(dr, x, y, s, e, p):
+    mood = e.get('gesicht', 'neutral'); now = NOW
+    seed = hash(e.get('name', '')) % 97
+    if e.get('spricht') and speaking(now) and int(now * 7 + seed) % 2: mood = 'spricht'
+    elif (now + seed * 0.37) % 3.3 < 0.12: mood = 'zu'
+    im = fig_img(e['name'], mood, e.get('h', 700) * s, e.get('spiegeln', False))
+    CANVAS.paste(im, (int(x - im.width / 2), int(y - im.height)), im)
+
+DRAW = {k: v for k, v in globals().items() if k in 'kind erwachsene tisch marshmallow tuer zaehler uhr text balken gruppe kreuz haken stifte sticker frage figur glaeser bildschirm kasse'.split()}
 
 # ---------- Untertitel: 2–3 Wörter, mittig, Wort für Wort zeitlich verteilt ----------
 chunks = []
@@ -157,8 +214,10 @@ for t in times:
 def subtitle(dr, now):
     for a, b, txt in chunks:
         if a <= now < b:
-            f = font(74)
-            dr.text((W / 2, SUB_Y), txt, font=f, fill=WHITE, anchor='mm', stroke_width=6, stroke_fill=(20, 20, 22))
+            size = 74
+            while size > 40 and dr.textlength(txt, font=font(size)) > W - 80: size -= 4
+            f = font(size)
+            dr.text((W / 2, SUB_Y), txt, font=f, fill=(30, 30, 34) if HELL else WHITE, anchor='mm', stroke_width=6, stroke_fill=WHITE if HELL else (20, 20, 22))
             return
 
 # ---------- Rendern ----------
@@ -166,11 +225,14 @@ out = os.path.join(d, 'bild-short.mp4' if SHORT else 'bild.mp4')
 proc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
                          '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', out], stdin=subprocess.PIPE)
 frames = int(total * FPS)
+prev_last, cur_scene, last_im = None, None, None
 for fi in range(frames):
-    now = fi / FPS
+    now = fi / FPS; NOW = now
     sc = next(s for s in scenes if s['t0'] <= now < s['t1'] or s is scenes[-1])
+    if sc is not cur_scene: prev_last, cur_scene = last_im, sc
     p_scene = (now - sc['t0']) / max(0.1, sc['t1'] - sc['t0'])
     im = Image.new('RGB', (W, H), tuple(sc.get('bg', BG)))
+    CANVAS = im
     dr = ImageDraw.Draw(im)
     for e in sc['els']:
         start = e.get('rein', 0)
@@ -181,6 +243,20 @@ for fi in range(frames):
         x, y = W / 2 + (x - W / 2) * ZOOM, (850 if SHORT else 950) + (y - 950) * ZOOM   # alles etwas größer, Bildmitte bleibt
         pop = ease((now - (sc['t0'] + start * (sc['t1'] - sc['t0']))) * 4)   # kurzes Hereinwachsen
         DRAW[e['typ']](dr, x, y + (1 - pop) * 30, e.get('s', 1) * ZOOM * (0.85 + 0.15 * pop), e, p)
+    # langsamer Kamera-Zoom (bis 5 %) in jeder Szene – wirkt lebendiger als ein starres Bild
+    z = 1 + 0.05 * ease(p_scene)
+    if z > 1.001:
+        cw, ch = W / z, SUB_TOP / z; cx, cy = W / 2, SUB_TOP * 0.5
+        im.paste(im.crop((int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))).resize((W, SUB_TOP), Image.BILINEAR), (0, 0))
+    # weiche Überblendung in den ersten 0,25 s einer neuen Szene
+    if prev_last is not None and now - sc['t0'] < 0.25:
+        im = Image.blend(prev_last, im, (now - sc['t0']) / 0.25); dr = ImageDraw.Draw(im)
+    last_im = im.copy()
+    # Einstiegsfrage groß in der ersten Sekunde (Hook)
+    if spec.get('hook') and now < 2.2:
+        a = ease(now * 4); hy = 260 if not SHORT else 200
+        dr.text((W / 2, hy + (1 - a) * 40), spec['hook'], font=font(76), fill=(30, 30, 34) if HELL else WHITE, anchor='mm', align='center',
+                spacing=20, stroke_width=8, stroke_fill=WHITE if HELL else (20, 20, 22))
     dr.rectangle((0, SUB_TOP, W, H), fill=tuple(sc.get('bg', BG)))
     subtitle(dr, now)
     proc.stdin.write(im.tobytes())
@@ -191,12 +267,35 @@ proc.stdin.close(); proc.wait()
 KLAR = ('adeclick,highpass=f=90,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3000:t=q:w=1.5:g=3.5,'
         'acompressor=threshold=-18dB:ratio=2.5:attack=20:release=150:makeup=2,adeclick')   # sanft: schneller Kompressor erzeugte Knackser
 final = os.path.join(d, 'video-short.mp4' if SHORT else 'video.mp4')
+# Soundeffekte (selbst erzeugt, assets/sfx): Wusch beim Szenenwechsel, Plopp beim Erscheinen, Ticken bei Zählern/Uhren,
+# Ding beim Haken, Brummen beim Kreuz – leise unter der Stimme
+def sfx(name):
+    import wave
+    w = wave.open(os.path.join(ROOT, 'assets/sfx', name + '.wav'))
+    a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+    return a.reshape(-1, w.getnchannels()).mean(1)
+SR = 48000; track = np.zeros(int((total + 2) * SR), np.float32); last_pop = -1
+def put(name, t, vol):
+    a = sfx(name) * vol; i = int(t * SR); track[i:i + len(a)] += a[:max(0, len(track) - i)]
+for k, sc in enumerate(scenes):
+    if k: put('wusch', sc['t0'], 0.35)
+    for e in sc['els']:
+        t = sc['t0'] + e.get('rein', 0) * (sc['t1'] - sc['t0'])
+        if e['typ'] == 'kreuz': put('falsch', t, 0.35)
+        elif e['typ'] == 'haken': put('ding', t, 0.3)
+        elif e['typ'] in ('zaehler', 'uhr'):
+            for j in range(10): put('tick', t + j * 0.11, 0.25)
+        elif e.get('rein', 0) > 0 and t - last_pop > 0.3: put('plopp', t, 0.3); last_pop = t
+import wave
+with wave.open(os.path.join(d, 'sfx.wav'), 'w') as w:
+    w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((np.clip(track, -1, 1) * 32767).astype(np.int16).tobytes())
 mus = spec['musik']
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(d, 'stimme.wav'), '-af', f'atempo={SPEED}' + (',' + KLAR if spec.get('stimmeKlar', True) else ''), os.path.join(d, 'stimme-schnell.wav')], check=True)
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', out, '-i', os.path.join(d, 'stimme-schnell.wav'), '-stream_loop', '-1', '-i', mus, '-filter_complex',
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', out, '-i', os.path.join(d, 'stimme-schnell.wav'), '-stream_loop', '-1', '-i', mus, '-i', os.path.join(d, 'sfx.wav'), '-filter_complex',
                 f'[1:a]adelay={int(LEAD*1000)}|{int(LEAD*1000)},aresample=48000,pan=stereo|c0=c0|c1=c0,apad=pad_dur=3[v];'
                 f'[2:a]aresample=48000,volume={spec.get("musikLautstaerke", 0.08)},afade=t=in:d=1.5,afade=t=out:st={total-2:.2f}:d=2[m];'
-                f'[v][m]amix=inputs=2:duration=first:normalize=0,atrim=0:{total:.2f},loudnorm=I=-15[a]',
+                f'[3:a]aresample=48000,pan=stereo|c0=c0|c1=c0[x];'
+                f'[v][m][x]amix=inputs=3:duration=first:normalize=0,atrim=0:{total:.2f},loudnorm=I=-15[a]',
                 '-map', '0:v', '-map', '[a]', '-t', f'{total:.2f}', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', final], check=True)
 print(f'Geschichte ({total:.1f} s) -> {final}')
 
