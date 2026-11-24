@@ -8,6 +8,17 @@ Vor dem Bauen eines neuen Posts `data/warteschlange.md` lesen: Liegen dort ferti
 
 Vor jedem `node`-Befehl: `export NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt NODE_NO_WARNINGS=1`
 
+## Oberste Regel (Nutzer, 2026-11-24): REICHWEITE
+
+Die einzige feste Arbeitsregel ist, Reichweite (Aufrufe, Likes, Follower/Abos) zu erzeugen. Jede andere Arbeitsregel in dieser Datei
+(Anzahl, Uhrzeiten, Längen, Formate, Abstände) darf und soll geändert werden, wenn die Analyse zeigt, dass es mehr Reichweite bringt –
+erst analysieren, dann ändern, in `data/strategie.md` begründen. Bestehen bleiben nur die Grundregeln, deren Bruch Sperren/Löschungen
+riskiert: kostenlos, nur frei lizenzierte Inhalte mit Nachweis, Fakten aus echten Quellen, ehrlich über KI, nur offizielle Schnittstellen, Sicherheitsregeln.
+
+**Menge (Test seit 24.11.):** täglich **zwei** Videos bauen (eine „Geschichte“ + ein Fakten-Video). Instagram: 2 Posts pro Tag im besten und
+zweitbesten Fenster (`slot.js` entscheidet, mind. 3 h Abstand). YouTube: bis zu 3 Shorts pro Tag mit 4 h Abstand (`youtube.js`).
+Den jeweils zweiten Post rechtzeitig vorbereiten (im Lauf davor), Warteschlange `data/warteschlange.md` nutzen.
+
 ## Richtung (vom Nutzer festgelegt, 2026-11-16) – gilt für jeden Post
 
 Ziel ist und bleibt **Reichweite, Likes und Follower** – Scheitern ist keine Option. Wir gehen **komplett** in die Richtung der erfolgreichen

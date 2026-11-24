@@ -129,7 +129,8 @@ function publishTime(slot, n) {
 }
 // Nicht zu viele Shorts auf einmal: höchstens 2 pro Tag und mindestens 6 Stunden Abstand (viele direkt hintereinander liefen
 // am 9./10.11. kaum, die einzeln veröffentlichten dagegen sehr gut). Freie Plätze werden bis zu 4 Tage im Voraus belegt.
-const MAX_SHORTS_PER_DAY = 2, MIN_GAP_H = 6, DAYS_AHEAD = 4;
+// 24.11.: Reichweite hat Vorrang (Nutzer) → Test mit bis zu 3 Shorts/Tag, 4 h Abstand; Statistik entscheidet, ob es dabei bleibt
+const MAX_SHORTS_PER_DAY = 3, MIN_GAP_H = 4, DAYS_AHEAD = 4;
 const berlinDay = t => new Date(t).toLocaleDateString('en-CA', { timeZone: 'Europe/Berlin' });
 function atBerlin(day, hour) {
   for (const off of [1, 2]) { const t = new Date(`${day}T${String(hour).padStart(2, '0')}:00:00Z`).getTime() - off * 36e5; if (berlinHour(t) === hour) return t; }

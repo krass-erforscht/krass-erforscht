@@ -12,7 +12,10 @@ if (!SLOTS[slot]) { console.error('Fenster muss morgens, mittags, abends oder sp
 const berlinDate = d => new Date(d).toLocaleDateString('de-DE', { timeZone: 'Europe/Berlin' });
 const posted = fs.existsSync('data/posted.json') ? JSON.parse(fs.readFileSync('data/posted.json')) : [];
 
-if (posted.some(p => berlinDate(p.postedAt) === berlinDate(Date.now()))) { console.log('NEIN (heute schon gepostet)'); process.exit(0); }
+// 24.11.: Test mit 2 Instagram-Posts pro Tag (Reichweite hat Vorrang) – im besten und zweitbesten Fenster
+const POSTS_PER_DAY = 2;
+const postedToday = posted.filter(p => berlinDate(p.postedAt) === berlinDate(Date.now())).length;
+if (postedToday >= POSTS_PER_DAY) { console.log('NEIN (heute schon ' + postedToday + '× gepostet)'); process.exit(0); }
 // Absicherung (23.11.): Liegt der letzte Instagram-Post über 30 Stunden zurück (z. B. verpasster Lauf), sofort posten
 const lastPost = Math.max(0, ...posted.map(p => +new Date(p.postedAt)));
 if (lastPost && Date.now() - lastPost > 30 * 3600e3) { console.log('JA (Nachholen: letzter Post vor über 30 Stunden)'); process.exit(0); }
@@ -31,5 +34,13 @@ const MEMO = 'data/slot-heute.json', today = berlinDate(Date.now());
 const memo = fs.existsSync(MEMO) ? JSON.parse(fs.readFileSync(MEMO)) : {};
 if (memo.datum === today && SLOTS[memo.fenster]) { pick = memo.fenster; why = memo.grund; }
 else fs.writeFileSync(MEMO, JSON.stringify({ datum: today, fenster: pick, grund: why }, null, 2) + '\n');
-console.log(pick === slot ? `JA (${why})` : `NEIN (heute ist ${pick} dran, ${why})`);
+const second = memo.zweites || rows.map(r => r.option).find(o => o !== pick);
+if (memo.datum === today && !memo.zweites) fs.writeFileSync(MEMO, JSON.stringify({ ...memo, zweites: second }, null, 2) + '\n');
+const lastToday = Math.max(0, ...posted.filter(p => berlinDate(p.postedAt) === berlinDate(Date.now())).map(p => +new Date(p.postedAt)));
+const gapOk = !lastToday || Date.now() - lastToday > 3 * 3600e3;   // mindestens 3 Stunden zwischen zwei Posts
+const usedSlots = posted.filter(p => berlinDate(p.postedAt) === berlinDate(Date.now())).map(slotOf);
+if (usedSlots.includes(slot)) console.log(`NEIN (in diesem Fenster heute schon gepostet)`);
+else if (slot === pick && gapOk) console.log(`JA (${why})`);
+else if (slot === second && gapOk) console.log(`JA (zweiter Post des Tages, ${postedToday ? 'nach ' + pick : 'vor ' + pick})`);
+else console.log(`NEIN (heute sind ${pick} und ${second} dran)`);
 console.error(rows.map(r => `${r.option}: ${r.reichweite}× (${r.posts} Posts)`).join(', '));
