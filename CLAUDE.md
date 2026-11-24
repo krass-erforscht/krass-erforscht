@@ -42,7 +42,8 @@ mit überraschender Wendung (Psychologie, Tiere, Weltall, Physik); keine Gesundh
 ## Ablauf
 
 A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wird; nur wenn `KRASS_IG_TOKEN` oder `IG_TOKEN` gesetzt ist):
-   `node comments.js list` zeigt offene Kommentare. Für jeden Kommentar entscheiden (Regeln siehe „Kommentare“ unten):
+   Zuerst `node comments.js stichwort`: beantwortet Kommentare „QUELLE“ automatisch mit der Originalquelle per Direktnachricht (+ kurze öffentliche Antwort).
+   Dann `node comments.js list` zeigt offene Kommentare. Für jeden Kommentar entscheiden (Regeln siehe „Kommentare“ unten):
    antworten mit `node comments.js reply <id> "<text>"` oder auslassen mit `node comments.js skip <id>`.
    Danach `data/answered.json` committen und pushen.
    **YouTube genauso** (nur wenn `YT_REFRESH_TOKEN` gesetzt ist): `node yt-comments.js list`, dann `node yt-comments.js reply <id> "<text>"`
@@ -132,7 +133,7 @@ A. **Kommentare beantworten** (bei jedem Lauf, auch wenn heute nicht gepostet wi
    Caption:
    - Erster Satz = Hook **mit dem Suchbegriff**, unter dem Leute das Thema suchen würden (z. B. „Schlange“, „Exoplanet“, „Sternschnuppen“).
      Instagram durchsucht Beschreibungen inzwischen wie eine Suchmaschine.
-   - Dann 1–2 Sätze Inhalt, eine Frage an die Leser, Quellen, „Text mit KI erstellt“, Bildnachweise aller verwendeten Fotos mit Lizenz
+   - Dann 1–2 Sätze Inhalt, eine Frage an die Leser, die Zeile „💬 Kommentiere QUELLE und ich schick dir die Original-Studie per DM.“, Quellen, „Text mit KI erstellt“, Bildnachweise aller verwendeten Fotos mit Lizenz
      (z. B. „Fotos: Sharon Reid (CC BY), Max Tibby (CC0) via iNaturalist“).
    - **Höchstens 5 Hashtags** (Instagram-Grenze seit Dezember 2025): 1–2 allgemeine (#wissenschaft) und 3–4 genaue zum Thema.
      `publish.js` kürzt überzählige automatisch, aber besser gleich 5 passende wählen.

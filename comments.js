@@ -49,12 +49,40 @@ async function reply(id, text) {
   console.log(`Beantwortet: ${id}`);
 }
 
+// „Kommentiere QUELLE“: Wer nur das Stichwort kommentiert, bekommt die Originalquelle per Direktnachricht (private reply)
+// und eine kurze öffentliche Antwort. Läuft bei jedem Lauf vor `list` (Wunsch des Nutzers 24.11.).
+const KEYWORD = /^\W*quelle\W*$/i;
+async function stichwort() {
+  const me = await get('me?fields=username');
+  const posted = fs.existsSync('data/posted.json') ? JSON.parse(fs.readFileSync('data/posted.json')) : [];
+  let n = 0;
+  for (const p of posted.filter(p => Date.now() - new Date(p.postedAt) < 7 * 864e5)) {   // Direktantwort nur 7 Tage möglich
+    const post = fs.existsSync(`posts/${p.id}.json`) ? JSON.parse(fs.readFileSync(`posts/${p.id}.json`)) : null;
+    if (!post?.source?.url) continue;
+    for (const mediaId of [p.mediaId, p.reelMediaId].filter(Boolean)) {
+      let r; try { r = await get(`${mediaId}/comments?fields=id,text,username&limit=50`); } catch { continue; }
+      for (const c of r.data || []) {
+        if (done.includes(c.id) || c.username === me.username || !KEYWORD.test(c.text || '')) continue;
+        const msg = `Hi! Hier ist die Quelle zu deinem Kommentar 🔬\n${post.source.name}\n${post.source.url}\n\nDanke fürs Mitlesen – mehr verrückte Fakten jeden Tag bei @krass.erforscht!`;
+        const dm = await (await fetch(`${API}/me/messages`, { method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ recipient: { comment_id: c.id }, message: { text: msg }, access_token: IG_TOKEN }) })).json();
+        if (dm.error) { console.error(`DM an @${c.username} fehlgeschlagen: ${dm.error.message}`); continue; }
+        await fetch(`${API}/${c.id}/replies`, { method: 'POST', body: new URLSearchParams({ message: `@${c.username} Ist unterwegs – schau in deine Nachrichten 📩`, access_token: IG_TOKEN }) });
+        done.push(c.id); save(); n++;
+        console.log(`Quelle per DM an @${c.username} (${p.id})`);
+      }
+    }
+  }
+  console.log(`${n} Stichwort-Kommentare beantwortet`);
+}
+
 (async () => {
   if (!IG_TOKEN) throw new Error('IG_TOKEN fehlt');
   await require('./ig-account').assertAccount(IG_TOKEN);
   const [cmd, id, text] = process.argv.slice(2);
-  if (cmd === 'list') await list();
+  if (cmd === 'stichwort') await stichwort();
+  else if (cmd === 'list') await list();
   else if (cmd === 'reply' && id && text) await reply(id, text);
   else if (cmd === 'skip' && id) { done.push(id); save(); console.log(`Übersprungen: ${id}`); }
-  else throw new Error('Aufruf: list | reply <id> "<text>" | skip <id>');
+  else throw new Error('Aufruf: stichwort | list | reply <id> "<text>" | skip <id>');
 })().catch(e => { console.error(e.message); process.exit(1); });
