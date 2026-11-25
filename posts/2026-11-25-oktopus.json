@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-25-oktopus",
+  "category": "Tiere",
+  "topic": "tiere",
+  "tone": "staunen",
+  "format": "video",
+  "test": "schnelle-schnitte",
+  "source": {
+    "name": "Live Science: How many hearts does an octopus have? (2023), mit Oktopus-Biologe Kirt Onthank, Walla Walla University",
+    "url": "https://www.livescience.com/how-many-hearts-does-an-octopus-have"
+  },
+  "image": {
+    "file": "images/2026-11-25-oktopus.jpg",
+    "credit": "Don Loarie via iNaturalist",
+    "short": "Foto: Don Loarie, CC BY",
+    "license": "CC BY",
+    "page": "https://www.inaturalist.org/observations/37654081"
+  },
+  "video": {
+    "file": "videos/2026-11-25-oktopus.mp4",
+    "start": 0,
+    "duration": 38,
+    "credit": "Video: Amada44 (CC BY-SA 3.0) via Wikimedia Commons; Fotos: Don Loarie, Matt Muir, Cristhoffer Rodríguez (CC BY), Georgina Jones (CC BY-SA) via iNaturalist",
+    "short": "Video: Amada44 (CC BY-SA) · Fotos: D. Loarie, M. Muir, C. Rodríguez, G. Jones",
+    "license": "CC BY-SA 3.0 / CC BY",
+    "page": "https://commons.wikimedia.org/wiki/File:Octopus_vulgaris_-_5919.ogg",
+    "symbolisch": false,
+    "headline": "Dieses Tier hat **drei Herzen** und blaues Blut 🤯",
+    "captions": [
+      "**3 Herzen** + blaues Blut",
+      "1 Körperherz, **2 Kiemenherzen**",
+      "Beim Schwimmen: Herz **setzt aus**",
+      "Lieber **krabbeln**",
+      "**Kupfer** statt Eisen im Blut",
+      "Was ist verrückter? 👇"
+    ],
+    "voice": [
+      "Dieses Tier hat drei Herzen. Und sein Blut ist blau.",
+      "Der Oktopus hat ein großes Herz für den Körper und zwei kleine, eines für jede Kieme.",
+      "Wenn er schwimmt, setzt sein Herz kurz aus. Warum, wissen Forschende nicht genau.",
+      "Deshalb krabbelt er meistens lieber, als zu schwimmen.",
+      "Und blau ist sein Blut, weil darin Kupfer statt Eisen den Sauerstoff transportiert.",
+      "Was ist verrückter, drei Herzen oder blaues Blut? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ],
+    "voiceText": [
+      "Dieses Tier hat 3 Herzen. Und sein Blut ist blau.",
+      "Der Oktopus hat ein großes Herz für den Körper und 2 kleine, eines für jede Kieme.",
+      "Wenn er schwimmt, setzt sein Herz kurz aus. Warum, wissen Forschende nicht genau.",
+      "Deshalb krabbelt er meistens lieber, als zu schwimmen.",
+      "Und blau ist sein Blut, weil darin Kupfer statt Eisen den Sauerstoff transportiert.",
+      "Was ist verrückter, 3 Herzen oder blaues Blut? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ]
+  },
+  "slides": [
+    { "type": "cover", "label": "Tiere", "title": "Dieses Tier hat **drei Herzen** und blaues Blut 🤯" },
+    { "type": "cta", "label": "Täglich ein Wow", "title": "Folge für mehr verrückte Fakten aus der Wissenschaft." }
+  ],
+  "caption": "Oktopus: drei Herzen und blaues Blut! 🤯 Ein großes Herz versorgt den Körper, zwei kleine pumpen Blut durch die Kiemen. Beim Schwimmen setzt sein Herz kurz aus – deshalb krabbelt er meist lieber. Und blau ist sein Blut, weil Kupfer statt Eisen den Sauerstoff transportiert.\n\nWas ist verrückter: drei Herzen oder blaues Blut? 👇\n\n💬 Kommentiere QUELLE und ich schick dir die Original-Quelle per DM.\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuelle: Live Science mit Oktopus-Biologe Kirt Onthank (Walla Walla University) · Text und Stimme mit KI erstellt\nVideo: Amada44 (CC BY-SA 3.0) via Wikimedia Commons · Fotos: Don Loarie, Matt Muir, Cristhoffer Rodríguez (CC BY), Georgina Jones (CC BY-SA) via iNaturalist\n#oktopus #tiere #meer #biologie #wissenschaft"
+}
