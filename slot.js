@@ -34,8 +34,8 @@ const MEMO = 'data/slot-heute.json', today = berlinDate(Date.now());
 const memo = fs.existsSync(MEMO) ? JSON.parse(fs.readFileSync(MEMO)) : {};
 if (memo.datum === today && SLOTS[memo.fenster]) { pick = memo.fenster; why = memo.grund; }
 else fs.writeFileSync(MEMO, JSON.stringify({ datum: today, fenster: pick, grund: why }, null, 2) + '\n');
-const second = memo.zweites || rows.map(r => r.option).find(o => o !== pick);
-if (memo.datum === today && !memo.zweites) fs.writeFileSync(MEMO, JSON.stringify({ ...memo, zweites: second }, null, 2) + '\n');
+const second = (memo.datum === today && memo.zweites && memo.zweites !== pick) ? memo.zweites : rows.map(r => r.option).find(o => o !== pick);
+fs.writeFileSync(MEMO, JSON.stringify({ datum: today, fenster: pick, grund: why, zweites: second }, null, 2) + '\n');
 const lastToday = Math.max(0, ...posted.filter(p => berlinDate(p.postedAt) === berlinDate(Date.now())).map(p => +new Date(p.postedAt)));
 const gapOk = !lastToday || Date.now() - lastToday > 3 * 3600e3;   // mindestens 3 Stunden zwischen zwei Posts
 const usedSlots = posted.filter(p => berlinDate(p.postedAt) === berlinDate(Date.now())).map(slotOf);
