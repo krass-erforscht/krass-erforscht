@@ -582,5 +582,14 @@
     "sourceUrl": "https://science.nasa.gov/missions/station/nasa-creates-super-cooled-particles-to-try-to-prove-a-major-einstein-theory",
     "mediaId": "18195020131407247",
     "format": "video"
+  },
+  {
+    "id": "2026-11-25-marmelade",
+    "postedAt": "2026-11-25T17:19:01.596Z",
+    "topic": "kurios",
+    "tone": "staunen",
+    "sourceUrl": "https://doi.org/10.1037/0022-3514.79.6.995",
+    "mediaId": "18141123793734596",
+    "format": "video"
   }
 ]
