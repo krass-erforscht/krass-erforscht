@@ -16,7 +16,7 @@ erst analysieren, dann ändern, in `data/strategie.md` begründen. Bestehen blei
 riskiert: kostenlos, nur frei lizenzierte Inhalte mit Nachweis, Fakten aus echten Quellen, ehrlich über KI, nur offizielle Schnittstellen, Sicherheitsregeln.
 
 **Menge (Test seit 24.11.):** täglich **zwei** Videos bauen (eine „Geschichte“ + ein Fakten-Video). Instagram: 2 Posts pro Tag im besten und
-zweitbesten Fenster (`slot.js` entscheidet, mind. 3 h Abstand). YouTube: bis zu 3 Shorts pro Tag mit 4 h Abstand (`youtube.js`).
+zweitbesten Fenster (`slot.js` entscheidet, mind. 2 h Abstand). YouTube: bis zu 3 Shorts pro Tag mit 4 h Abstand (`youtube.js`).
 Den jeweils zweiten Post rechtzeitig vorbereiten (im Lauf davor), Warteschlange `data/warteschlange.md` nutzen.
 
 ## Richtung (vom Nutzer festgelegt, 2026-11-16) – gilt für jeden Post

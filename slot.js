@@ -37,7 +37,7 @@ else fs.writeFileSync(MEMO, JSON.stringify({ datum: today, fenster: pick, grund:
 const second = (memo.datum === today && memo.zweites && memo.zweites !== pick) ? memo.zweites : rows.map(r => r.option).find(o => o !== pick);
 fs.writeFileSync(MEMO, JSON.stringify({ datum: today, fenster: pick, grund: why, zweites: second }, null, 2) + '\n');
 const lastToday = Math.max(0, ...posted.filter(p => berlinDate(p.postedAt) === berlinDate(Date.now())).map(p => +new Date(p.postedAt)));
-const gapOk = !lastToday || Date.now() - lastToday > 3 * 3600e3;   // mindestens 3 Stunden zwischen zwei Posts
+const gapOk = !lastToday || Date.now() - lastToday > 2 * 3600e3;   // mindestens 2 Stunden zwischen zwei Posts
 const usedSlots = posted.filter(p => berlinDate(p.postedAt) === berlinDate(Date.now())).map(slotOf);
 if (usedSlots.includes(slot)) console.log(`NEIN (in diesem Fenster heute schon gepostet)`);
 else if (slot === pick && gapOk) console.log(`JA (${why})`);
