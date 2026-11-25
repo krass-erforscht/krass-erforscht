@@ -36,7 +36,7 @@
     ],
     "voice": [
       "Dieses Tier hat drei Herzen. Und sein Blut ist blau.",
-      "Der Oktopus hat ein großes Herz für den Körper und zwei kleine, eines für jede Kieme.",
+      "Der Oktopus hat ein großes Herz für den Körper und zwei kleine, die Blut durch die Kiemen pumpen.",
       "Wenn er schwimmt, setzt sein Herz kurz aus. Warum, wissen Forschende nicht genau.",
       "Deshalb krabbelt er meistens lieber, als zu schwimmen.",
       "Und blau ist sein Blut, weil darin Kupfer statt Eisen den Sauerstoff transportiert.",
@@ -44,7 +44,7 @@
     ],
     "voiceText": [
       "Dieses Tier hat 3 Herzen. Und sein Blut ist blau.",
-      "Der Oktopus hat ein großes Herz für den Körper und 2 kleine, eines für jede Kieme.",
+      "Der Oktopus hat ein großes Herz für den Körper und 2 kleine, die Blut durch die Kiemen pumpen.",
       "Wenn er schwimmt, setzt sein Herz kurz aus. Warum, wissen Forschende nicht genau.",
       "Deshalb krabbelt er meistens lieber, als zu schwimmen.",
       "Und blau ist sein Blut, weil darin Kupfer statt Eisen den Sauerstoff transportiert.",
@@ -52,8 +52,16 @@
     ]
   },
   "slides": [
-    { "type": "cover", "label": "Tiere", "title": "Dieses Tier hat **drei Herzen** und blaues Blut 🤯" },
-    { "type": "cta", "label": "Täglich ein Wow", "title": "Folge für mehr verrückte Fakten aus der Wissenschaft." }
+    {
+      "type": "cover",
+      "label": "Tiere",
+      "title": "Dieses Tier hat **drei Herzen** und blaues Blut 🤯"
+    },
+    {
+      "type": "cta",
+      "label": "Täglich ein Wow",
+      "title": "Folge für mehr verrückte Fakten aus der Wissenschaft."
+    }
   ],
   "caption": "Oktopus: drei Herzen und blaues Blut! 🤯 Ein großes Herz versorgt den Körper, zwei kleine pumpen Blut durch die Kiemen. Beim Schwimmen setzt sein Herz kurz aus – deshalb krabbelt er meist lieber. Und blau ist sein Blut, weil Kupfer statt Eisen den Sauerstoff transportiert.\n\nWas ist verrückter: drei Herzen oder blaues Blut? 👇\n\n💬 Kommentiere QUELLE und ich schick dir die Original-Quelle per DM.\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuelle: Live Science mit Oktopus-Biologe Kirt Onthank (Walla Walla University) · Text und Stimme mit KI erstellt\nVideo: Amada44 (CC BY-SA 3.0) via Wikimedia Commons · Fotos: Don Loarie, Matt Muir, Cristhoffer Rodríguez (CC BY), Georgina Jones (CC BY-SA) via iNaturalist\n#oktopus #tiere #meer #biologie #wissenschaft"
 }
