@@ -18,10 +18,11 @@ ref = os.path.join(os.path.dirname(__file__), 'referenz.wav')
 m = ChatterboxMultilingualTTS.from_pretrained(device='cpu')
 ear = WhisperModel('small', device='cpu', compute_type='int8')
 # Zahlwörter schreibt Whisper oft als Ziffern – die werden beim Vergleich ignoriert
-NUM = re.compile(r'^(und|ein|eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|zwan|zig|ßig|hundert|tausend|millionen?|milliarden?)+$')
+NUM = re.compile(r'^(und|ein|eins|zwei|drei|vier|fünf|sechs|sech|sieben|sieb|acht|neun|zehn|elf|zwölf|zwan|zig|ßig|hundert|tausend|millionen?|milliarden?|komma)+$')
 
 def words(s):
     s = s.replace(' -', '').replace('- ', '').replace('-', '')   # „Gorilla -Kostüm“ = „Gorillakostüm“
+    s = re.sub(r'\bkm\b', 'kilometer', s, flags=re.I)
     return [x for x in re.findall(r'[a-zäöüß]+|\d+', s.lower()) if not x.isdigit() and not NUM.match(x)]
 
 def check(line, wav):

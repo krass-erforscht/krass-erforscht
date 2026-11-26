@@ -26,3 +26,4 @@ Hier hält die App fest, was sie selbst verbessert hat (Datum, ein Satz).
 - 2026-11-23: slot.js postet sofort, wenn der letzte Instagram-Post über 30 Stunden zurückliegt (verpasste oder verspätete Läufe führten zu 4 Tagen Pause).
 - 2026-11-23: Neues Format „Geschichte“ (geschichte.py): selbst gezeichnete Erklär-Animationen mit klarerer Stimme, Untertitel im eigenen Bereich, Klick-Filter; 15-ms-Blenden zwischen Sätzen in sprechen.py.
 - 2026-11-24: „Kommentiere QUELLE“ → automatische Direktnachricht mit der Originalquelle (comments.js stichwort), Hinweis in jeder Beschreibung.
+- 2026-11-26: Stimmprüfung erkennt Zahlwörter mit „Komma“, „km“ und Bindestrich-Wörter richtig (weniger Fehlalarme, falsche Fassungen werden nicht mehr bevorzugt).
