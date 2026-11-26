@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-26-saturn",
+  "category": "Weltraum",
+  "topic": "weltraum",
+  "tone": "staunen",
+  "format": "video",
+  "test": "schnelle-schnitte",
+  "source": { "name": "NASA Science: Saturn Facts", "url": "https://science.nasa.gov/saturn/facts/" },
+  "image": { "file": "images/2026-11-26-saturn.jpg", "credit": "NASA/JPL-Caltech/Space Science Institute (Cassini)", "short": "Foto: NASA/JPL-Caltech/SSI, gemeinfrei", "license": "Public domain", "page": "https://images.nasa.gov/details/PIA21345" },
+  "video": {
+    "file": "videos/2026-11-26-saturn.mp4", "start": 0, "duration": 39,
+    "credit": "NASA/GSFC (Animation „Saturn's Rings Are Disappearing“), Fotos NASA/JPL-Caltech/Space Science Institute (Cassini)",
+    "short": "Animation & Fotos: NASA, gemeinfrei", "license": "Public domain",
+    "page": "https://images.nasa.gov/details/PIA14646", "symbolisch": false,
+    "headline": "Dieser Planet würde in der **Badewanne** schwimmen 🤯",
+    "captions": ["Schwimmt in der **Badewanne**?", "Dichte **geringer als Wasser**", "Wenn es so eine Wanne gäbe …", "Ein Tag: nur **10,7 Stunden**", "**Sechseck** am Nordpol: 30.000 km", "Was ist verrückter? 👇"],
+    "voice": [
+      "Dieser Planet würde in einer Badewanne schwimmen.",
+      "Saturn ist der einzige Planet in unserem Sonnensystem, dessen Dichte im Mittel geringer ist als die von Wasser.",
+      "Natürlich nur, wenn es eine so riesige Wanne gäbe.",
+      "Ein Tag auf Saturn dauert nur zehn Komma sieben Stunden.",
+      "Und über seinem Nordpol kreist ein sechseckiges Windband, rund dreißigtausend Kilometer breit.",
+      "Was ist verrückter, der schwimmende Planet oder das Sechseck? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ],
+    "voiceText": [
+      "Dieser Planet würde in einer Badewanne schwimmen.",
+      "Saturn ist der einzige Planet in unserem Sonnensystem, dessen Dichte im Mittel geringer ist als die von Wasser.",
+      "Natürlich nur, wenn es eine so riesige Wanne gäbe.",
+      "Ein Tag auf Saturn dauert nur 10,7 Stunden.",
+      "Und über seinem Nordpol kreist ein sechseckiges Windband, rund 30.000 Kilometer breit.",
+      "Was ist verrückter, der schwimmende Planet oder das Sechseck? Folge für mehr verrückte Fakten aus der Wissenschaft."
+    ]
+  },
+  "slides": [
+    { "type": "cover", "label": "Weltraum", "title": "Dieser Planet würde in der **Badewanne** schwimmen 🤯" },
+    { "type": "cta", "label": "Täglich ein Wow", "title": "Folge für mehr verrückte Fakten aus der Wissenschaft." }
+  ],
+  "caption": "Saturn würde in einer Badewanne schwimmen! 🤯 Er ist laut NASA der einzige Planet unseres Sonnensystems, dessen mittlere Dichte geringer ist als die von Wasser – wenn es nur eine so riesige Wanne gäbe. Ein Tag dauert dort nur 10,7 Stunden, und über dem Nordpol kreist ein sechseckiges Windband, rund 30.000 Kilometer breit.\n\nWas ist verrückter: der schwimmende Planet oder das Sechseck? 👇\n\n💬 Kommentiere QUELLE und ich schick dir die Quelle per DM.\n\nFolge für mehr verrückte Fakten aus der Wissenschaft.\n\nQuelle: NASA Science (Saturn Facts) · Text und Stimme mit KI erstellt\nAnimation & Fotos: NASA/GSFC, NASA/JPL-Caltech/Space Science Institute (Cassini) – gemeinfrei\n#saturn #weltall #planeten #astronomie #wissenschaft"
+}
