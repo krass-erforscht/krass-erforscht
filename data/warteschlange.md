@@ -3,3 +3,4 @@
 Im nächsten Posting-Fenster zuerst diese veröffentlichen (`node publish.js <datei> --video`, danach `node youtube.js reels <datei>`),
 statt einen neuen Post zu bauen. Nach dem Posten die Zeile hier löschen.
 
+- 2026-11-26 (abends, 18:15): posts/2026-11-26-gorilla.json (Geschichte)

@@ -21,6 +21,7 @@ ear = WhisperModel('small', device='cpu', compute_type='int8')
 NUM = re.compile(r'^(und|ein|eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|zwan|zig|ßig|hundert|tausend|millionen?|milliarden?)+$')
 
 def words(s):
+    s = s.replace(' -', '').replace('- ', '').replace('-', '')   # „Gorilla -Kostüm“ = „Gorillakostüm“
     return [x for x in re.findall(r'[a-zäöüß]+|\d+', s.lower()) if not x.isdigit() and not NUM.match(x)]
 
 def check(line, wav):
