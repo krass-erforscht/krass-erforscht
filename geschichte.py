@@ -176,6 +176,56 @@ def kasse(dr, x, y, s, e, p):
     dr.rectangle((x - 90 * s, y - 215 * s, x + 90 * s, y - 150 * s), fill=(140, 220, 160))
     dr.text((x, y - 183 * s), e.get('t', '1,99 €'), font=font(44 * s), fill=(30, 60, 40), anchor='mm')
 
+def ball(dr, x, y, s, e, p):
+    """Basketball; mit bahn [[x,y],…] fliegt er zwischen den Punkten hin und her (Bogen)."""
+    pts = e.get('bahn')
+    if pts:
+        seg = p * e.get('paesse', 6); i = int(seg) % (len(pts) - 1 if len(pts) > 1 else 1); f = seg % 1
+        (ax, ay), (bx, by) = pts[i], pts[i + 1]
+        x = W / 2 + ((ax + (bx - ax) * f) - W / 2) * ZOOM; y = (850 if SHORT else 950) + ((ay + (by - ay) * f - math.sin(f * math.pi) * 120) - 950) * ZOOM
+    r = 34 * s
+    dr.ellipse((x - r, y - r, x + r, y + r), fill=(235, 130, 40), outline=(40, 40, 44), width=int(4 * s))
+    dr.line((x - r, y, x + r, y), fill=(40, 40, 44), width=int(3 * s)); dr.line((x, y - r, x, y + r), fill=(40, 40, 44), width=int(3 * s))
+    dr.arc((x - r * 1.6, y - r, x - r * 0.2, y + r), -60, 60, fill=(40, 40, 44), width=int(3 * s))
+    dr.arc((x + r * 0.2, y - r, x + r * 1.6, y + r), 120, 240, fill=(40, 40, 44), width=int(3 * s))
+
+def gorilla(dr, x, y, s, e, p):
+    """Gorilla(kostüm), Füße bei (x, y); trommeln=true → Fäuste trommeln vor der Brust."""
+    D, D2, F = (52, 52, 58), (38, 38, 44), (150, 135, 125)
+    o = (40, 40, 44)
+    # Beine (kurz, kräftig)
+    for sx in (-1, 1): dr.rounded_rectangle((x + sx * 70 * s - 38 * s, y - 200 * s, x + sx * 70 * s + 38 * s, y), 30 * s, fill=D2)
+    # Rumpf: breite Schultern, schmalere Hüfte
+    dr.polygon([(x - 170 * s, y - 470 * s), (x + 170 * s, y - 470 * s), (x + 110 * s, y - 170 * s), (x - 110 * s, y - 170 * s)], fill=D)
+    dr.ellipse((x - 175 * s, y - 520 * s, x + 175 * s, y - 400 * s), fill=D)
+    dr.ellipse((x - 80 * s, y - 420 * s, x + 80 * s, y - 250 * s), fill=(80, 78, 84))   # Brust
+    # Kopf
+    dr.ellipse((x - 80 * s, y - 650 * s, x + 80 * s, y - 490 * s), fill=D)
+    dr.ellipse((x - 58 * s, y - 600 * s, x + 58 * s, y - 505 * s), fill=F)
+    dr.rounded_rectangle((x - 60 * s, y - 612 * s, x + 60 * s, y - 590 * s), 10 * s, fill=D2)   # Stirnwulst
+    for dx in (-24, 24): dr.ellipse((x + dx * s - 9 * s, y - 588 * s, x + dx * s + 9 * s, y - 570 * s), fill=(20, 20, 20))
+    dr.ellipse((x - 22 * s, y - 560 * s, x + 22 * s, y - 535 * s), fill=(95, 82, 78))
+    dr.arc((x - 20 * s, y - 545 * s, x + 20 * s, y - 520 * s), 20, 160, fill=(40, 30, 30), width=int(4 * s))
+    # Arme
+    if e.get('trommeln'):
+        hop = math.sin(NOW * 20) * 22 * s
+        for sx in (-1, 1):
+            hx, hy = x + sx * 45 * s, y - 360 * s + sx * hop
+            dr.line([(x + sx * 160 * s, y - 470 * s), (x + sx * 175 * s, y - 330 * s), (hx, hy)], fill=D, width=int(62 * s), joint='curve')
+            dr.ellipse((hx - 38 * s, hy - 34 * s, hx + 38 * s, hy + 34 * s), fill=D2, outline=o, width=int(3 * s))
+    else:
+        sw = math.sin(NOW * 6) * 12 * s if e.get('nach') else 0
+        for sx in (-1, 1):
+            hx, hy = x + sx * 195 * s + sx * sw, y - 150 * s
+            dr.line([(x + sx * 160 * s, y - 470 * s), (x + sx * 200 * s, y - 300 * s), (hx, hy)], fill=D, width=int(62 * s), joint='curve')
+            dr.ellipse((hx - 38 * s, hy - 32 * s, hx + 38 * s, hy + 32 * s), fill=D2, outline=o, width=int(3 * s))
+
+def handy(dr, x, y, s, e, p):
+    """Smartphone mit leuchtendem Bildschirm (Mitte x, y)."""
+    dr.rounded_rectangle((x - 95 * s, y - 180 * s, x + 95 * s, y + 180 * s), 26 * s, fill=(40, 40, 44))
+    dr.rounded_rectangle((x - 80 * s, y - 155 * s, x + 80 * s, y + 150 * s), 14 * s, fill=(110, 180, 245))
+    for i in range(4): dr.rounded_rectangle((x - 60 * s, y - 130 * s + i * 70 * s, x + 60 * s, y - 80 * s + i * 70 * s), 8 * s, fill=(240, 245, 250))
+
 # Open-Peeps-Figur (assets/figuren/<name>-<gesicht>.png, CC0): Füße bei (x, y), Höhe h; spricht=true → Mund bewegt sich,
 # solange die Stimme spricht; blinzelt alle paar Sekunden. gesicht: neutral | froh | traurig | staunen; spiegeln=true
 FIG = {}
@@ -195,7 +245,7 @@ def figur(dr, x, y, s, e, p):
     im = fig_img(e['name'], mood, e.get('h', 700) * s, e.get('spiegeln', False))
     CANVAS.paste(im, (int(x - im.width / 2), int(y - im.height)), im)
 
-DRAW = {k: v for k, v in globals().items() if k in 'kind erwachsene tisch marshmallow tuer zaehler uhr text balken gruppe kreuz haken stifte sticker frage figur glaeser bildschirm kasse'.split()}
+DRAW = {k: v for k, v in globals().items() if k in 'kind erwachsene tisch marshmallow tuer zaehler uhr text balken gruppe kreuz haken stifte sticker frage figur glaeser bildschirm kasse ball gorilla handy'.split()}
 
 # ---------- Untertitel: 2–3 Wörter, mittig, Wort für Wort zeitlich verteilt ----------
 chunks = []

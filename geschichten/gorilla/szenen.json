@@ -1,0 +1,372 @@
+{
+  "titel": "Die Hälfte übersieht diesen Gorilla 😳",
+  "post": "2026-11-26-gorilla",
+  "thema": "hell",
+  "hook": "Würdest du einen\nGorilla übersehen?",
+  "musik": "music/files/incompetech-Kevin_MacLeod-Cattails.mp3",
+  "musikNachweis": "Musik: „Cattails“ von Kevin MacLeod (incompetech), CC BY 4.0",
+  "musikLautstaerke": 0.09,
+  "szenen": [
+    {
+      "ab": 0,
+      "els": [
+        {
+          "typ": "gorilla",
+          "x": 540,
+          "y": 1380,
+          "s": 1.0
+        },
+        {
+          "typ": "frage",
+          "x": 870,
+          "y": 700,
+          "rein": 0.5
+        }
+      ]
+    },
+    {
+      "ab": 1,
+      "els": [
+        {
+          "typ": "figur",
+          "name": "person",
+          "x": 220,
+          "y": 1380,
+          "h": 520
+        },
+        {
+          "typ": "figur",
+          "name": "zeigend",
+          "x": 540,
+          "y": 1380,
+          "h": 520
+        },
+        {
+          "typ": "figur",
+          "name": "entspannt",
+          "x": 860,
+          "y": 1380,
+          "h": 520,
+          "spiegeln": true
+        },
+        {
+          "typ": "ball",
+          "bahn": [
+            [
+              250,
+              1010
+            ],
+            [
+              540,
+              960
+            ],
+            [
+              830,
+              1010
+            ],
+            [
+              540,
+              960
+            ],
+            [
+              250,
+              1010
+            ]
+          ],
+          "paesse": 4
+        }
+      ]
+    },
+    {
+      "ab": 2,
+      "els": [
+        {
+          "typ": "zaehler",
+          "x": 540,
+          "y": 470,
+          "titel": "Pässe",
+          "von": 0,
+          "bis": 15,
+          "tempo": 1.0,
+          "farbe": [
+            90,
+            170,
+            235
+          ]
+        },
+        {
+          "typ": "figur",
+          "name": "person",
+          "x": 220,
+          "y": 1380,
+          "h": 520
+        },
+        {
+          "typ": "figur",
+          "name": "zeigend",
+          "x": 540,
+          "y": 1380,
+          "h": 520
+        },
+        {
+          "typ": "figur",
+          "name": "entspannt",
+          "x": 860,
+          "y": 1380,
+          "h": 520,
+          "spiegeln": true
+        },
+        {
+          "typ": "ball",
+          "bahn": [
+            [
+              250,
+              1010
+            ],
+            [
+              540,
+              960
+            ],
+            [
+              830,
+              1010
+            ],
+            [
+              540,
+              960
+            ],
+            [
+              250,
+              1010
+            ]
+          ],
+          "paesse": 6
+        }
+      ]
+    },
+    {
+      "ab": 3,
+      "els": [
+        {
+          "typ": "figur",
+          "name": "person",
+          "x": 190,
+          "y": 1380,
+          "h": 520
+        },
+        {
+          "typ": "figur",
+          "name": "entspannt",
+          "x": 890,
+          "y": 1380,
+          "h": 520,
+          "spiegeln": true
+        },
+        {
+          "typ": "gorilla",
+          "x": 1250,
+          "y": 1380,
+          "s": 0.85,
+          "nach": [
+            540,
+            1380
+          ]
+        },
+        {
+          "typ": "ball",
+          "bahn": [
+            [
+              230,
+              1000
+            ],
+            [
+              880,
+              960
+            ],
+            [
+              230,
+              1000
+            ]
+          ],
+          "paesse": 3
+        }
+      ]
+    },
+    {
+      "ab": 4,
+      "els": [
+        {
+          "typ": "gorilla",
+          "x": 540,
+          "y": 1380,
+          "s": 1.05,
+          "trommeln": true
+        }
+      ]
+    },
+    {
+      "ab": 5,
+      "els": [
+        {
+          "typ": "figur",
+          "name": "person",
+          "x": 190,
+          "y": 1380,
+          "h": 520
+        },
+        {
+          "typ": "figur",
+          "name": "entspannt",
+          "x": 890,
+          "y": 1380,
+          "h": 520,
+          "spiegeln": true
+        },
+        {
+          "typ": "gorilla",
+          "x": 540,
+          "y": 1380,
+          "s": 0.85,
+          "nach": [
+            -250,
+            1380
+          ]
+        }
+      ]
+    },
+    {
+      "ab": 6,
+      "els": [
+        {
+          "typ": "text",
+          "x": 540,
+          "y": 470,
+          "t": "50 %",
+          "gr": 150,
+          "farbe": [
+            230,
+            80,
+            80
+          ]
+        },
+        {
+          "typ": "text",
+          "x": 540,
+          "y": 640,
+          "t": "haben ihn nicht gesehen",
+          "gr": 56,
+          "rein": 0.2
+        },
+        {
+          "typ": "figur",
+          "name": "mann",
+          "x": 330,
+          "y": 1380,
+          "h": 560
+        },
+        {
+          "typ": "figur",
+          "name": "person",
+          "x": 760,
+          "y": 1380,
+          "h": 560,
+          "gesicht": "staunen",
+          "rein": 0.35
+        }
+      ]
+    },
+    {
+      "ab": 7,
+      "els": [
+        {
+          "typ": "text",
+          "x": 540,
+          "y": 500,
+          "t": "Augen = Kamera?",
+          "gr": 80
+        },
+        {
+          "typ": "figur",
+          "name": "zeigend",
+          "x": 540,
+          "y": 1380,
+          "h": 680,
+          "spricht": true
+        }
+      ]
+    },
+    {
+      "ab": 8,
+      "els": [
+        {
+          "typ": "figur",
+          "name": "forscherin",
+          "x": 330,
+          "y": 1380,
+          "h": 700,
+          "spricht": true
+        },
+        {
+          "typ": "text",
+          "x": 760,
+          "y": 720,
+          "t": "weniger\nals wir\ndenken",
+          "gr": 70,
+          "farbe": [
+            240,
+            140,
+            60
+          ],
+          "rein": 0.3
+        }
+      ]
+    },
+    {
+      "ab": 9,
+      "els": [
+        {
+          "typ": "handy",
+          "x": 760,
+          "y": 820,
+          "s": 1.2
+        },
+        {
+          "typ": "figur",
+          "name": "person",
+          "x": 330,
+          "y": 1380,
+          "h": 620
+        },
+        {
+          "typ": "gorilla",
+          "x": 1300,
+          "y": 1380,
+          "s": 0.55,
+          "nach": [
+            -300,
+            1380
+          ],
+          "rein": 0.2
+        }
+      ]
+    },
+    {
+      "ab": 10,
+      "els": [
+        {
+          "typ": "text",
+          "x": 540,
+          "y": 560,
+          "t": "Hättest du den\nGorilla gesehen?",
+          "gr": 72
+        },
+        {
+          "typ": "gorilla",
+          "x": 540,
+          "y": 1380,
+          "s": 0.6
+        }
+      ]
+    }
+  ]
+}
